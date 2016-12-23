@@ -53,7 +53,7 @@ export class Videos extends BaseComponent implements OnInit, AfterViewInit {
         let cachedLang = this.cacheManager.GetFromCache('lang', Language.Hebrew);
         let lang = cachedLang == Language.English ? 'en' : 'he';
         this.yts.fetchVideos().subscribe(i => (<Array<any>>i).forEach(j => {
-            console.log(j);
+           
             this.videos.push({ title: j['snippet']['title'], videoId: j['snippet']['resourceId']['videoId'], lang: lang })
 
         }

@@ -87,6 +87,8 @@
   <ItemGroup>
     <Content Include="copy-dist-files.js" />
     <Content Include="dist\build.js" />
+    <Content Include="lib\swipe.js" />
+    <Content Include="lib\swiper.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="rollup-config.js" />
@@ -94,6 +96,7 @@
     <Content Include="typings.json" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
     <Content Include="tsconfig-aot.json" />
+    <None Include="Properties\PublishProfiles\noyaschleien.com - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -465,7 +468,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\widgets\" />
-    <Folder Include="lib\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

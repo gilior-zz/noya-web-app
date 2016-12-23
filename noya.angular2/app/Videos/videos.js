@@ -54,7 +54,6 @@ var Videos = (function (_super) {
         var cachedLang = this.cacheManager.GetFromCache('lang', models_1.Language.Hebrew);
         var lang = cachedLang == models_1.Language.English ? 'en' : 'he';
         this.yts.fetchVideos().subscribe(function (i) { return i.forEach(function (j) {
-            console.log(j);
             _this.videos.push({ title: j['snippet']['title'], videoId: j['snippet']['resourceId']['videoId'], lang: lang });
         }); });
     };

@@ -195,7 +195,6 @@ var youTubeService = (function () {
         //params.set('key', 'AIzaSyBH2ltO-MFMiW7dftsCCM3w8F86M-kwDHM');
         //return this.http.get('https://www.googleapis.com/youtube/v3/channels', { search: params }).toPromise().then(i => i.json()['items'][0]['contentDetails']['relatedPlaylists']['uploads']).then(
         //    j => {
-        //console.log(j);
         var params = new http_1.URLSearchParams();
         params.set('part', 'snippet'); // the user's search value
         params.set('playlistId', 'UUO2Xi-wHrqM27neDaVrfebQ');
