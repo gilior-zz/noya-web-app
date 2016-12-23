@@ -1,0 +1,78 @@
+﻿<div class="jumbotron" data-toggle="modal" [attr.data-target]="'#myModal'+traverseItem.ID">
+    <div class="h2 text-center">
+        {{traverseItem.Description}}
+    </div>
+</div>
+
+<div class="modal fade" [id]="'myModal'+traverseItem.ID" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">{{traverseItem.Title}}</h4>
+            </div>
+            <div class="modal-body">
+                {{traverseItem.Text}}
+            </div>
+            <div class="modal-footer text-center">
+                <div (click)="isCollapsed=!isCollapsed;contactForm.reset()" [attr.href]="'#collapseExample'+traverseItem.ID" data-toggle="collapse" aria-expanded="false" [attr.aria-controls]="'collapseExample'+traverseItem.ID">
+                    <span [class]="isCollapsed?'glyphicon glyphicon-menu-up':'glyphicon glyphicon-menu-down'" aria-hidden="true"></span>
+                    <span [class]="isCollapsed?'glyphicon glyphicon-menu-up':'glyphicon glyphicon-menu-down'" aria-hidden="true"></span>
+                </div>
+
+                <!--<div (click)="contactForm.reset()" class="bounce" data-toggle="collapse" [attr.href]="'#collapseExample'+traverseItem.ID" aria-expanded="false" [attr.aria-controls]="'collapseExample'+traverseItem.ID"><i class="fa fa-angle-double-down"></i></div>-->
+            </div>
+            <div class="collapse" [id]="'collapseExample'+traverseItem.ID">
+                <div class="well">
+                    <form (ngSubmit)="onSubmit()" class="text-center form-horizontal" #contactForm="ngForm">
+
+                        <div class="form-group">
+                            <label for="name" class="col-xs-2 control-label">{{'Name'|translate}}</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="name"
+                                       required
+                                       [(ngModel)]="person.Name" name="name"
+                                       #name="ngModel">
+                                <div [hidden]="name.valid || name.pristine"
+                                     class="alert alert-danger">
+                                    {{'Name is required'|translate}}
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email" class="col-xs-2 control-label">{{'Email'|translate}}</label>
+                            <div class="col-xs-10">
+                                <input type="email" class="form-control" id="email"
+                                       required
+                                       [(ngModel)]="person.Email" name="email"
+                                       #email="ngModel">
+                                <div [hidden]="email.valid || email.pristine"
+                                     class="alert alert-danger">
+                                    {{'Email is required'|translate}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="content" class="col-xs-2 control-label">{{'Content'|translate}}</label>
+                            <div class="col-xs-10">
+                                <textarea rows="3" class="form-control" id="content"
+                                          required
+                                          [(ngModel)]="message.Content" name="content"
+                                          #content="ngModel"></textarea>
+                                <div [hidden]="content.valid || content.pristine"
+                                     class="alert alert-danger">
+                                    {{'Content is required'|translate}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" [class.not-allowed]="!contactForm.form.valid" [class.draw]="contactForm.form.valid" class="submit" [disabled]="!contactForm.form.valid">{{'Submit'|translate}}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

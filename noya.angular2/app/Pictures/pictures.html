@@ -1,0 +1,44 @@
+﻿<!--<header-image [pageName]="'pictures'">loading...</header-image>-->
+<!-- Slider main container -->
+<div class="swiper-container hidden-lg hidden-md hidden-sm">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div *ngFor="let img of images" class="swiper-slide">
+            <img class="img-responsive swiper-slide" height="100" [id]="img.ID" [src]="img.ImageURL" (click)="onSelectedImage(img)" [class.thumbnail-selected]="isSelected(img)" />
+
+        </div>
+
+    </div>
+    <!-- If we need pagination -->
+    <!--<div class="swiper-pagination"></div>-->
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+
+</div>
+
+
+<div id="" class="black-panel hidden-xs">
+    <div class="outer-image-div">
+        <div *ngIf="isEnglish" class="left-filler  col-sm-1">
+            <span [hidden]="mainImagePath==null" class="glyphicon glyphicon-hand-left switch-image-glyphicon left-arrow" aria-hidden="true" (click)="onLeft()"></span>
+        </div>
+        <div *ngIf="isHebrew" class="right-filler   col-sm-1">
+            <span class="glyphicon glyphicon-hand-right switch-image-glyphicon right-arrow" aria-hidden="true" (click)="onRight()"></span>
+        </div>
+        <div class="col-sm-10   text-center main-image" [style.background-image]="mainImagePath">
+        </div>
+        <div *ngIf="isEnglish" class="right-filler  col-sm-1">
+            <span class="glyphicon glyphicon-hand-right switch-image-glyphicon right-arrow float-right" aria-hidden="true" (click)="onRight()"></span>
+        </div>
+        <div *ngIf="isHebrew" class="left-filler   col-sm-1">
+            <span [hidden]="mainImagePath==null" class="glyphicon float-left glyphicon-hand-left switch-image-glyphicon left-arrow" aria-hidden="true" (click)="onLeft()"></span>
+        </div>
+    </div>
+    <div class="tool-strip ">
+        <img class="img-thumbnail" *ngFor="let img of images" height="100" [id]="img.ID" [src]="img.ImageURL" (click)="onSelectedImage(img)" [class.thumbnail-selected]="isSelected(img)" />
+    </div>
+
+</div>

@@ -1,0 +1,29 @@
+﻿.fixed-button {
+  position: fixed;
+  bottom: 0;
+  /*z-index: 100;*/ }
+
+.non-footer-mode {
+  position: fixed;
+  bottom: 0; }
+
+.footer-mode {
+  position: absolute;
+  bottom: 100px; }
+
+.hebrew-mode {
+  left: 30px; }
+
+.english-mode {
+  right: 30px; }
+
+div {
+  /*border: solid;*/
+  /*min-height:50px;*/ }
+
+button {
+  opacity: 0.5;
+  border-radius: 50% !important; }
+  button:hover {
+    opacity: 1; }
+

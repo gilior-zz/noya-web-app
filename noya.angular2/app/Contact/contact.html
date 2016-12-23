@@ -1,0 +1,51 @@
+﻿<!--<header-image [pageName]="'contact'">loading...</header-image>-->
+<div class="white-panel contact-form">
+    <div [hidden]="submitted">
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <!--  <label for="name">Name</label>-->
+                <input [disabled]="isSubmitting" type="text" class="form-control form-field input-lg" required
+                       [(ngModel)]="message.Sender.Name" name="Name"
+                       ngControl="name" #spy placeholder="{{'Name'|translate}}">
+                <!--<div>{{spy.className}}</div>-->
+            </div>
+            <div class="form-group">
+                <!--<label for="email">Email</label>-->
+                <input [disabled]="isSubmitting" type="email" class="form-control form-field input-lg" required
+                       [(ngModel)]="message.Sender.Email" name="Email" placeholder="{{'Email'|translate}}"
+                       ngControl="email">
+            </div>
+            <div class="form-group">
+                <!--<label for="content">Content</label>-->
+                <textarea rows="8" [disabled]="isSubmitting" class="form-control input-lg" required
+                          [(ngModel)]="message.Content" name="Content"
+                          ngControl="content" placeholder="{{'Content'|translate}}"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default" [disabled]="isSubmitting">Submit</button>
+            <span class="alert alert-danger" [hidden]="!displaySubmitError || isSubmitting">message not sent - plz try again later</span>
+        </form>
+    </div>
+    <div [hidden]="!submitted">
+        <h2>You have submitted the following:</h2>
+        <div class="row back-cornsilk-color margin-row black-border x-large-font">
+            <div class="col-xs-12 col-sm-1">Name:</div>
+            <div class="col-xs-12 col-sm-11">{{ message.Sender.Name }}</div>
+        </div>
+
+        <div class="row back-cornsilk-color margin-row black-border x-large-font">
+            <div class="col-xs-12 col-sm-1">Email:</div>
+            <div class="col-xs-12 col-sm-11">{{ message.Sender.Email }}</div>
+        </div>
+
+        <div class="row back-cornsilk-color margin-row black-border x-large-font">
+            <div class="col-xs-12 col-sm-1">Content:</div>
+            <div class="col-xs-12 col-sm-11">{{ message.Content }}</div>
+        </div>
+
+
+        <div class="row">
+            <button class="btn btn-default" (click)="submitted=false">Send Another</button>
+        </div>
+
+    </div>
+</div>

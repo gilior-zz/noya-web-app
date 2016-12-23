@@ -1,0 +1,159 @@
+﻿/*div{
+    height:100px;
+}*/
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+.jumbotron {
+  background-color: #1b1a1a;
+  color: #f1dddd;
+  cursor: pointer; }
+
+/*#region name */
+.fa {
+  width: 60px;
+  /*display: block;*/
+  text-align: center;
+  color: #990000;
+  font: normal 45px 'FontAwesome';
+  line-height: 60px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
+
+.fa-angle-double-down:before {
+  content: "\f103"; }
+
+.glyphicon {
+  height: 6px !important;
+  display: block;
+  animation: bounce 2s infinite; }
+
+.modal-footer {
+  padding: 0 !important;
+  height: 40px; }
+
+.bounce {
+  /*position: absolute;*/
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  bottom: 30px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  /*border: 2px solid #990000;*/
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px); }
+  60% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px); } }
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(10px);
+    transform: translateY(10px); }
+  60% {
+    -moz-transform: translateY(5px);
+    transform: translateY(5px); } }
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -o-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -o-transform: translateY(10px);
+    transform: translateY(10px); }
+  60% {
+    -o-transform: translateY(5px);
+    transform: translateY(5px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(10px); }
+  60% {
+    transform: translateY(5px); } }
+
+/*#endregion */
+.not-allowed {
+  cursor: not-allowed; }
+
+/*#region name */
+.submit {
+  border-radius: 5px;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #f45e61;
+  color: #f45e61;
+  font-size: inherit;
+  font-weight: 700;
+  margin: 1em;
+  padding: 1em 1em;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  vertical-align: middle; }
+
+.submit::before, .submit::after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.draw {
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s; }
+
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0; }
+
+.draw::before {
+  top: 0;
+  left: 0; }
+
+.draw::after {
+  bottom: 0;
+  right: 0; }
+
+.draw:hover {
+  color: #60daaa; }
+
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%; }
+
+.draw:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+
+.draw:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+
+/*#endregion */
+
