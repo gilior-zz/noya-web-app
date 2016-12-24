@@ -105,39 +105,39 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
   _el_0:any;
   _text_1:any;
   _el_2:any;
-  compView_2:import1.AppView<import12.HeaderImage>;
-  _HeaderImage_2_3:import13.Wrapper_HeaderImage;
   _text_3:any;
   _el_4:any;
+  compView_4:import1.AppView<import12.HeaderImage>;
+  _HeaderImage_4_3:import13.Wrapper_HeaderImage;
   _text_5:any;
   _el_6:any;
   _text_7:any;
   _el_8:any;
   _text_9:any;
-  _text_10:any;
-  _el_11:any;
+  _el_10:any;
+  _text_11:any;
   _text_12:any;
-  _text_13:any;
-  _el_14:any;
+  _el_13:any;
+  _text_14:any;
   _text_15:any;
-  _text_16:any;
+  _el_16:any;
   _text_17:any;
   _text_18:any;
   _text_19:any;
   _text_20:any;
-  _anchor_21:any;
-  /*private*/ _vc_21:import14.ViewContainer;
-  _TemplateRef_21_5:any;
-  _NgIf_21_6:import15.Wrapper_NgIf;
+  _text_21:any;
   _text_22:any;
-  _el_23:any;
+  _anchor_23:any;
+  /*private*/ _vc_23:import14.ViewContainer;
+  _TemplateRef_23_5:any;
+  _NgIf_23_6:import15.Wrapper_NgIf;
   _text_24:any;
   _el_25:any;
-  /*private*/ _vc_25:import14.ViewContainer;
-  _RouterOutlet_25_5:import16.Wrapper_RouterOutlet;
   _text_26:any;
-  _text_27:any;
-  _el_28:any;
+  _el_27:any;
+  /*private*/ _vc_27:import14.ViewContainer;
+  _RouterOutlet_27_5:import16.Wrapper_RouterOutlet;
+  _text_28:any;
   _text_29:any;
   _el_30:any;
   _text_31:any;
@@ -147,161 +147,169 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
   _text_35:any;
   _el_36:any;
   _text_37:any;
-  _text_38:any;
+  _el_38:any;
   _text_39:any;
-  _el_40:any;
+  _text_40:any;
   _text_41:any;
   _el_42:any;
   _text_43:any;
   _el_44:any;
   _text_45:any;
-  _text_46:any;
+  _el_46:any;
   _text_47:any;
-  _el_48:any;
+  _text_48:any;
   _text_49:any;
   _el_50:any;
   _text_51:any;
   _el_52:any;
   _text_53:any;
-  _text_54:any;
-  _el_55:any;
+  _el_54:any;
+  _text_55:any;
   _text_56:any;
-  _text_57:any;
-  _el_58:any;
+  _el_57:any;
+  _text_58:any;
   _text_59:any;
-  _text_60:any;
-  _el_61:any;
+  _el_60:any;
+  _text_61:any;
   _text_62:any;
-  _text_63:any;
+  _el_63:any;
   _text_64:any;
-  _el_65:any;
+  _text_65:any;
   _text_66:any;
   _el_67:any;
   _text_68:any;
-  _text_69:any;
+  _el_69:any;
   _text_70:any;
-  _el_71:any;
+  _text_71:any;
   _text_72:any;
   _el_73:any;
   _text_74:any;
-  _text_75:any;
-  _el_76:any;
+  _el_75:any;
+  _text_76:any;
   _text_77:any;
-  _text_78:any;
+  _el_78:any;
   _text_79:any;
   _text_80:any;
   _text_81:any;
   _text_82:any;
   _text_83:any;
-  /*private*/ _expr_91:any;
-  /*private*/ _expr_92:any;
-  _pipe_translate_0:import17.TranslatePipe;
+  _text_84:any;
+  _text_85:any;
+  _text_86:any;
   /*private*/ _expr_94:any;
+  /*private*/ _expr_95:any;
+  /*private*/ _expr_96:any;
+  _pipe_translate_0:import17.TranslatePipe;
+  /*private*/ _expr_98:any;
   _pipe_translate_0_17:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_AppComponent0,renderType_AppComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
-    this._expr_91 = import18.UNINITIALIZED;
-    this._expr_92 = import18.UNINITIALIZED;
     this._expr_94 = import18.UNINITIALIZED;
+    this._expr_95 = import18.UNINITIALIZED;
+    this._expr_96 = import18.UNINITIALIZED;
+    this._expr_98 = import18.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container-fluid'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'header-image',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this.compView_2 = new import13.View_HeaderImage0(this.viewUtils,this,2,this._el_2);
-    this._HeaderImage_2_3 = new import13.Wrapper_HeaderImage(this.parentView.injectorGet(import10.pageNameService,this.parentIndex),this.parentView.injectorGet(import8.DataService,this.parentIndex),this.parentView.injectorGet(import8.LogService,this.parentIndex),this.parentView.injectorGet(import19.DomSanitizer,this.parentIndex),this.parentView.injectorGet(import9.Router,this.parentIndex));
-    this.compView_2.create(this._HeaderImage_2_3.context);
-    this._text_3 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._el_4 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','row container-fluid-margin'),(null as any));
-    this._text_5 = this.renderer.createText(this._el_4,'\n\n        ',(null as any));
-    this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_7 = this.renderer.createText(this._el_6,'\n            ',(null as any));
-    this._el_8 = import3.createRenderElement(this.renderer,this._el_6,'div',new import3.InlineArray2(2,'class','btn-group-sm'),(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','container-fluid'),(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'\n        ',(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'header-image',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this.compView_4 = new import13.View_HeaderImage0(this.viewUtils,this,4,this._el_4);
+    this._HeaderImage_4_3 = new import13.Wrapper_HeaderImage(this.parentView.injectorGet(import10.pageNameService,this.parentIndex),this.parentView.injectorGet(import8.DataService,this.parentIndex),this.parentView.injectorGet(import8.LogService,this.parentIndex),this.parentView.injectorGet(import19.DomSanitizer,this.parentIndex),this.parentView.injectorGet(import9.Router,this.parentIndex));
+    this.compView_4.create(this._HeaderImage_4_3.context);
+    this._text_5 = this.renderer.createText(this._el_2,'\n        ',(null as any));
+    this._el_6 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'class','row container-fluid-margin'),(null as any));
+    this._text_7 = this.renderer.createText(this._el_6,'\n\n            ',(null as any));
+    this._el_8 = import3.createRenderElement(this.renderer,this._el_6,'div',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._text_9 = this.renderer.createText(this._el_8,'\n                ',(null as any));
-    this._text_10 = this.renderer.createText(this._el_8,'\n                ',(null as any));
-    this._el_11 = import3.createRenderElement(this.renderer,this._el_8,'button',new import3.InlineArray4(4,'class','langLinks','type','button'),(null as any));
-    this._text_12 = this.renderer.createText(this._el_11,'Eng',(null as any));
-    this._text_13 = this.renderer.createText(this._el_8,'\n                ',(null as any));
-    this._el_14 = import3.createRenderElement(this.renderer,this._el_8,'button',new import3.InlineArray4(4,'class','langLinks','type','button'),(null as any));
-    this._text_15 = this.renderer.createText(this._el_14,'עבר',(null as any));
-    this._text_16 = this.renderer.createText(this._el_8,'\n\n            ',(null as any));
-    this._text_17 = this.renderer.createText(this._el_6,'\n        ',(null as any));
-    this._text_18 = this.renderer.createText(this._el_4,'\n\n    ',(null as any));
-    this._text_19 = this.renderer.createText(this._el_0,'\n\n\n\n',(null as any));
-    this._text_20 = this.renderer.createText(parentRenderNode,'\n\n\n\n\n',(null as any));
-    this._anchor_21 = this.renderer.createTemplateAnchor(parentRenderNode,(null as any));
-    this._vc_21 = new import14.ViewContainer(21,(null as any),this,this._anchor_21);
-    this._TemplateRef_21_5 = new import20.TemplateRef_(this,21,this._anchor_21);
-    this._NgIf_21_6 = new import15.Wrapper_NgIf(this._vc_21.vcRef,this._TemplateRef_21_5);
-    this._text_22 = this.renderer.createText(parentRenderNode,'\n\n\n\n\n\n\n',(null as any));
-    this._el_23 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','container-fluid'),(null as any));
-    this._text_24 = this.renderer.createText(this._el_23,'\n    ',(null as any));
-    this._el_25 = import3.createRenderElement(this.renderer,this._el_23,'router-outlet',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._vc_25 = new import14.ViewContainer(25,23,this,this._el_25);
-    this._RouterOutlet_25_5 = new import16.Wrapper_RouterOutlet(this.parentView.injectorGet(import21.RouterOutletMap,this.parentIndex),this._vc_25.vcRef,this.parentView.injectorGet(import22.ComponentFactoryResolver,this.parentIndex),(null as any));
-    this._text_26 = this.renderer.createText(this._el_23,'\n\n',(null as any));
-    this._text_27 = this.renderer.createText(parentRenderNode,'\n\n\n\n',(null as any));
-    this._el_28 = import3.createRenderElement(this.renderer,parentRenderNode,'footer',new import3.InlineArray2(2,'id','footer'),(null as any));
-    this._text_29 = this.renderer.createText(this._el_28,'\n    ',(null as any));
-    this._el_30 = import3.createRenderElement(this.renderer,this._el_28,'div',new import3.InlineArray2(2,'class','container-fluid'),(null as any));
+    this._el_10 = import3.createRenderElement(this.renderer,this._el_8,'div',new import3.InlineArray2(2,'class','btn-group-sm'),(null as any));
+    this._text_11 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
+    this._text_12 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
+    this._el_13 = import3.createRenderElement(this.renderer,this._el_10,'button',new import3.InlineArray4(4,'class','langLinks','type','button'),(null as any));
+    this._text_14 = this.renderer.createText(this._el_13,'Eng',(null as any));
+    this._text_15 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
+    this._el_16 = import3.createRenderElement(this.renderer,this._el_10,'button',new import3.InlineArray4(4,'class','langLinks','type','button'),(null as any));
+    this._text_17 = this.renderer.createText(this._el_16,'עבר',(null as any));
+    this._text_18 = this.renderer.createText(this._el_10,'\n\n                ',(null as any));
+    this._text_19 = this.renderer.createText(this._el_8,'\n            ',(null as any));
+    this._text_20 = this.renderer.createText(this._el_6,'\n        ',(null as any));
+    this._text_21 = this.renderer.createText(this._el_2,'\n    ',(null as any));
+    this._text_22 = this.renderer.createText(this._el_0,'\n\n    ',(null as any));
+    this._anchor_23 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_23 = new import14.ViewContainer(23,0,this,this._anchor_23);
+    this._TemplateRef_23_5 = new import20.TemplateRef_(this,23,this._anchor_23);
+    this._NgIf_23_6 = new import15.Wrapper_NgIf(this._vc_23.vcRef,this._TemplateRef_23_5);
+    this._text_24 = this.renderer.createText(this._el_0,'\n\n\n\n\n\n\n    ',(null as any));
+    this._el_25 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','container-fluid'),(null as any));
+    this._text_26 = this.renderer.createText(this._el_25,'\n        ',(null as any));
+    this._el_27 = import3.createRenderElement(this.renderer,this._el_25,'router-outlet',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._vc_27 = new import14.ViewContainer(27,25,this,this._el_27);
+    this._RouterOutlet_27_5 = new import16.Wrapper_RouterOutlet(this.parentView.injectorGet(import21.RouterOutletMap,this.parentIndex),this._vc_27.vcRef,this.parentView.injectorGet(import22.ComponentFactoryResolver,this.parentIndex),(null as any));
+    this._text_28 = this.renderer.createText(this._el_25,'\n\n    ',(null as any));
+    this._text_29 = this.renderer.createText(this._el_0,'\n\n\n\n    ',(null as any));
+    this._el_30 = import3.createRenderElement(this.renderer,this._el_0,'footer',new import3.InlineArray2(2,'id','footer'),(null as any));
     this._text_31 = this.renderer.createText(this._el_30,'\n        ',(null as any));
-    this._el_32 = import3.createRenderElement(this.renderer,this._el_30,'div',new import3.InlineArray2(2,'class','row footer-row text-center'),(null as any));
+    this._el_32 = import3.createRenderElement(this.renderer,this._el_30,'div',new import3.InlineArray2(2,'class','container-fluid'),(null as any));
     this._text_33 = this.renderer.createText(this._el_32,'\n            ',(null as any));
-    this._el_34 = import3.createRenderElement(this.renderer,this._el_32,'div',new import3.InlineArray2(2,'class','col-xs-12 col-sm-3'),(null as any));
+    this._el_34 = import3.createRenderElement(this.renderer,this._el_32,'div',new import3.InlineArray2(2,'class','row footer-row text-center'),(null as any));
     this._text_35 = this.renderer.createText(this._el_34,'\n                ',(null as any));
-    this._el_36 = import3.createRenderElement(this.renderer,this._el_34,'a',new import3.InlineArray4(4,'class','h5','href','mailto:noyaschleien@gmail.com'),(null as any));
-    this._text_37 = this.renderer.createText(this._el_36,'noyaschleien@gmail.com',(null as any));
-    this._text_38 = this.renderer.createText(this._el_34,'\n            ',(null as any));
-    this._text_39 = this.renderer.createText(this._el_32,'\n            ',(null as any));
-    this._el_40 = import3.createRenderElement(this.renderer,this._el_32,'div',new import3.InlineArray2(2,'class','col-sm-7'),(null as any));
-    this._text_41 = this.renderer.createText(this._el_32,'\n            ',(null as any));
-    this._el_42 = import3.createRenderElement(this.renderer,this._el_32,'div',new import3.InlineArray2(2,'class','col-xs-12 col-sm-2'),(null as any));
-    this._text_43 = this.renderer.createText(this._el_42,'\n                ',(null as any));
-    this._el_44 = import3.createRenderElement(this.renderer,this._el_42,'button',new import3.InlineArray2(2,'class','btn btn-primary'),(null as any));
-    this._text_45 = this.renderer.createText(this._el_44,'',(null as any));
-    this._text_46 = this.renderer.createText(this._el_42,'\n            ',(null as any));
-    this._text_47 = this.renderer.createText(this._el_32,'\n            ',(null as any));
-    this._el_48 = import3.createRenderElement(this.renderer,this._el_32,'hr',new import3.InlineArray2(2,'class','dl-horizontal'),(null as any));
-    this._text_49 = this.renderer.createText(this._el_32,'\n            ',(null as any));
-    this._el_50 = import3.createRenderElement(this.renderer,this._el_32,'div',new import3.InlineArray2(2,'class','col-sm-12 hidden-xs'),(null as any));
-    this._text_51 = this.renderer.createText(this._el_50,'\n                ',(null as any));
-    this._el_52 = import3.createRenderElement(this.renderer,this._el_50,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_53 = this.renderer.createText(this._el_52,'Noya Schleien@2013',(null as any));
-    this._text_54 = this.renderer.createText(this._el_50,'\n                ',(null as any));
-    this._el_55 = import3.createRenderElement(this.renderer,this._el_50,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_56 = this.renderer.createText(this._el_55,'|',(null as any));
-    this._text_57 = this.renderer.createText(this._el_50,'\n                ',(null as any));
-    this._el_58 = import3.createRenderElement(this.renderer,this._el_50,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_59 = this.renderer.createText(this._el_58,'Developed by',(null as any));
-    this._text_60 = this.renderer.createText(this._el_50,'\n                ',(null as any));
-    this._el_61 = import3.createRenderElement(this.renderer,this._el_50,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_62 = this.renderer.createText(this._el_61,'Future WebSites',(null as any));
-    this._text_63 = this.renderer.createText(this._el_50,'\n            ',(null as any));
-    this._text_64 = this.renderer.createText(this._el_32,'\n            ',(null as any));
-    this._el_65 = import3.createRenderElement(this.renderer,this._el_32,'div',new import3.InlineArray2(2,'class','col-xs-12 hidden-sm hidden-md hidden-lg'),(null as any));
-    this._text_66 = this.renderer.createText(this._el_65,'\n                ',(null as any));
-    this._el_67 = import3.createRenderElement(this.renderer,this._el_65,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_68 = this.renderer.createText(this._el_67,'Noya Schleien@2013',(null as any));
-    this._text_69 = this.renderer.createText(this._el_65,'\n            ',(null as any));
-    this._text_70 = this.renderer.createText(this._el_32,'\n            ',(null as any));
-    this._el_71 = import3.createRenderElement(this.renderer,this._el_32,'div',new import3.InlineArray2(2,'class','col-xs-12 hidden-sm hidden-md hidden-lg'),(null as any));
-    this._text_72 = this.renderer.createText(this._el_71,'\n                ',(null as any));
-    this._el_73 = import3.createRenderElement(this.renderer,this._el_71,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_74 = this.renderer.createText(this._el_73,'Developed by',(null as any));
-    this._text_75 = this.renderer.createText(this._el_71,'\n                ',(null as any));
-    this._el_76 = import3.createRenderElement(this.renderer,this._el_71,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_77 = this.renderer.createText(this._el_76,'Future WebSites',(null as any));
-    this._text_78 = this.renderer.createText(this._el_71,'\n            ',(null as any));
-    this._text_79 = this.renderer.createText(this._el_32,'\n\n        ',(null as any));
-    this._text_80 = this.renderer.createText(this._el_30,'\n    ',(null as any));
-    this._text_81 = this.renderer.createText(this._el_28,'\n\n\n\n\n',(null as any));
-    this._text_82 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._text_83 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_11,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_11));
-    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_14,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_14));
+    this._el_36 = import3.createRenderElement(this.renderer,this._el_34,'div',new import3.InlineArray2(2,'class','col-xs-12 col-sm-3'),(null as any));
+    this._text_37 = this.renderer.createText(this._el_36,'\n                    ',(null as any));
+    this._el_38 = import3.createRenderElement(this.renderer,this._el_36,'a',new import3.InlineArray4(4,'class','h5','href','mailto:noyaschleien@gmail.com'),(null as any));
+    this._text_39 = this.renderer.createText(this._el_38,'noyaschleien@gmail.com',(null as any));
+    this._text_40 = this.renderer.createText(this._el_36,'\n                ',(null as any));
+    this._text_41 = this.renderer.createText(this._el_34,'\n                ',(null as any));
+    this._el_42 = import3.createRenderElement(this.renderer,this._el_34,'div',new import3.InlineArray2(2,'class','col-sm-7'),(null as any));
+    this._text_43 = this.renderer.createText(this._el_34,'\n                ',(null as any));
+    this._el_44 = import3.createRenderElement(this.renderer,this._el_34,'div',new import3.InlineArray2(2,'class','col-xs-12 col-sm-2'),(null as any));
+    this._text_45 = this.renderer.createText(this._el_44,'\n                    ',(null as any));
+    this._el_46 = import3.createRenderElement(this.renderer,this._el_44,'button',new import3.InlineArray2(2,'class','btn btn-primary'),(null as any));
+    this._text_47 = this.renderer.createText(this._el_46,'',(null as any));
+    this._text_48 = this.renderer.createText(this._el_44,'\n                ',(null as any));
+    this._text_49 = this.renderer.createText(this._el_34,'\n                ',(null as any));
+    this._el_50 = import3.createRenderElement(this.renderer,this._el_34,'hr',new import3.InlineArray2(2,'class','dl-horizontal'),(null as any));
+    this._text_51 = this.renderer.createText(this._el_34,'\n                ',(null as any));
+    this._el_52 = import3.createRenderElement(this.renderer,this._el_34,'div',new import3.InlineArray2(2,'class','col-sm-12 hidden-xs'),(null as any));
+    this._text_53 = this.renderer.createText(this._el_52,'\n                    ',(null as any));
+    this._el_54 = import3.createRenderElement(this.renderer,this._el_52,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_55 = this.renderer.createText(this._el_54,'Noya Schleien@2013',(null as any));
+    this._text_56 = this.renderer.createText(this._el_52,'\n                    ',(null as any));
+    this._el_57 = import3.createRenderElement(this.renderer,this._el_52,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_58 = this.renderer.createText(this._el_57,'|',(null as any));
+    this._text_59 = this.renderer.createText(this._el_52,'\n                    ',(null as any));
+    this._el_60 = import3.createRenderElement(this.renderer,this._el_52,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_61 = this.renderer.createText(this._el_60,'Developed by',(null as any));
+    this._text_62 = this.renderer.createText(this._el_52,'\n                    ',(null as any));
+    this._el_63 = import3.createRenderElement(this.renderer,this._el_52,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_64 = this.renderer.createText(this._el_63,'Future WebSites',(null as any));
+    this._text_65 = this.renderer.createText(this._el_52,'\n                ',(null as any));
+    this._text_66 = this.renderer.createText(this._el_34,'\n                ',(null as any));
+    this._el_67 = import3.createRenderElement(this.renderer,this._el_34,'div',new import3.InlineArray2(2,'class','col-xs-12 hidden-sm hidden-md hidden-lg'),(null as any));
+    this._text_68 = this.renderer.createText(this._el_67,'\n                    ',(null as any));
+    this._el_69 = import3.createRenderElement(this.renderer,this._el_67,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_70 = this.renderer.createText(this._el_69,'Noya Schleien@2013',(null as any));
+    this._text_71 = this.renderer.createText(this._el_67,'\n                ',(null as any));
+    this._text_72 = this.renderer.createText(this._el_34,'\n                ',(null as any));
+    this._el_73 = import3.createRenderElement(this.renderer,this._el_34,'div',new import3.InlineArray2(2,'class','col-xs-12 hidden-sm hidden-md hidden-lg'),(null as any));
+    this._text_74 = this.renderer.createText(this._el_73,'\n                    ',(null as any));
+    this._el_75 = import3.createRenderElement(this.renderer,this._el_73,'span',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_76 = this.renderer.createText(this._el_75,'Developed by',(null as any));
+    this._text_77 = this.renderer.createText(this._el_73,'\n                    ',(null as any));
+    this._el_78 = import3.createRenderElement(this.renderer,this._el_73,'a',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_79 = this.renderer.createText(this._el_78,'Future WebSites',(null as any));
+    this._text_80 = this.renderer.createText(this._el_73,'\n                ',(null as any));
+    this._text_81 = this.renderer.createText(this._el_34,'\n\n            ',(null as any));
+    this._text_82 = this.renderer.createText(this._el_32,'\n        ',(null as any));
+    this._text_83 = this.renderer.createText(this._el_30,'\n\n\n\n\n    ',(null as any));
+    this._text_84 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._text_85 = this.renderer.createText(parentRenderNode,'\n\n\n',(null as any));
+    this._text_86 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_13,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_13));
+    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_16,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_16));
     this._pipe_translate_0 = new import17.TranslatePipe(this.parentView.injectorGet(import8.TranslationService,this.parentIndex),this.parentView.injectorGet(import8.CacheManager,this.parentIndex));
-    var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_44,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_44));
+    var disposable_2:Function = import3.subscribeToRenderElement(this,this._el_46,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_46));
     this._pipe_translate_0_17 = import3.pureProxy1(this._pipe_translate_0.transform.bind(this._pipe_translate_0));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
@@ -314,25 +322,25 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
       this._text_7,
       this._el_8,
       this._text_9,
-      this._text_10,
-      this._el_11,
+      this._el_10,
+      this._text_11,
       this._text_12,
-      this._text_13,
-      this._el_14,
+      this._el_13,
+      this._text_14,
       this._text_15,
-      this._text_16,
+      this._el_16,
       this._text_17,
       this._text_18,
       this._text_19,
       this._text_20,
-      this._anchor_21,
+      this._text_21,
       this._text_22,
-      this._el_23,
+      this._anchor_23,
       this._text_24,
       this._el_25,
       this._text_26,
-      this._text_27,
-      this._el_28,
+      this._el_27,
+      this._text_28,
       this._text_29,
       this._el_30,
       this._text_31,
@@ -342,52 +350,55 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
       this._text_35,
       this._el_36,
       this._text_37,
-      this._text_38,
+      this._el_38,
       this._text_39,
-      this._el_40,
+      this._text_40,
       this._text_41,
       this._el_42,
       this._text_43,
       this._el_44,
       this._text_45,
-      this._text_46,
+      this._el_46,
       this._text_47,
-      this._el_48,
+      this._text_48,
       this._text_49,
       this._el_50,
       this._text_51,
       this._el_52,
       this._text_53,
-      this._text_54,
-      this._el_55,
+      this._el_54,
+      this._text_55,
       this._text_56,
-      this._text_57,
-      this._el_58,
+      this._el_57,
+      this._text_58,
       this._text_59,
-      this._text_60,
-      this._el_61,
+      this._el_60,
+      this._text_61,
       this._text_62,
-      this._text_63,
+      this._el_63,
       this._text_64,
-      this._el_65,
+      this._text_65,
       this._text_66,
       this._el_67,
       this._text_68,
-      this._text_69,
+      this._el_69,
       this._text_70,
-      this._el_71,
+      this._text_71,
       this._text_72,
       this._el_73,
       this._text_74,
-      this._text_75,
-      this._el_76,
+      this._el_75,
+      this._text_76,
       this._text_77,
-      this._text_78,
+      this._el_78,
       this._text_79,
       this._text_80,
       this._text_81,
       this._text_82,
-      this._text_83
+      this._text_83,
+      this._text_84,
+      this._text_85,
+      this._text_86
     ]
     ),[
       disposable_0,
@@ -398,52 +409,57 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import12.HeaderImage) && (2 === requestNodeIndex))) { return this._HeaderImage_2_3.context; }
-    if (((token === import20.TemplateRef) && (21 === requestNodeIndex))) { return this._TemplateRef_21_5; }
-    if (((token === import23.NgIf) && (21 === requestNodeIndex))) { return this._NgIf_21_6.context; }
-    if (((token === import24.RouterOutlet) && (25 === requestNodeIndex))) { return this._RouterOutlet_25_5.context; }
+    if (((token === import12.HeaderImage) && (4 === requestNodeIndex))) { return this._HeaderImage_4_3.context; }
+    if (((token === import20.TemplateRef) && (23 === requestNodeIndex))) { return this._TemplateRef_23_5; }
+    if (((token === import23.NgIf) && (23 === requestNodeIndex))) { return this._NgIf_23_6.context; }
+    if (((token === import24.RouterOutlet) && (27 === requestNodeIndex))) { return this._RouterOutlet_27_5.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
     const valUnwrapper:any = new import18.ValueUnwrapper();
-    const currVal_2_0_0:any = 'home';
-    this._HeaderImage_2_3.check_pageName(currVal_2_0_0,throwOnChange,false);
-    this._HeaderImage_2_3.ngDoCheck(this,this._el_2,throwOnChange);
-    const currVal_21_0_0:any = this.context.displayMenu;
-    this._NgIf_21_6.check_ngIf(currVal_21_0_0,throwOnChange,false);
-    this._NgIf_21_6.ngDoCheck(this,this._anchor_21,throwOnChange);
-    this._RouterOutlet_25_5.ngDoCheck(this,this._el_25,throwOnChange);
-    this._vc_21.detectChangesInNestedViews(throwOnChange);
-    this._vc_25.detectChangesInNestedViews(throwOnChange);
-    const currVal_91:any = this.context.isHebrew;
-    if (import3.checkBinding(throwOnChange,this._expr_91,currVal_91)) {
-      this.renderer.setElementClass(this._el_6,'text-left',currVal_91);
-      this._expr_91 = currVal_91;
-    }
-    const currVal_92:boolean = !this.context.isHebrew;
-    if (import3.checkBinding(throwOnChange,this._expr_92,currVal_92)) {
-      this.renderer.setElementClass(this._el_6,'text-right',currVal_92);
-      this._expr_92 = currVal_92;
-    }
-    valUnwrapper.reset();
-    const currVal_94:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_17,this._pipe_translate_0.transform)('Order Concert')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_94,currVal_94))) {
-      this.renderer.setText(this._text_45,currVal_94);
+    const currVal_4_0_0:any = 'home';
+    this._HeaderImage_4_3.check_pageName(currVal_4_0_0,throwOnChange,false);
+    this._HeaderImage_4_3.ngDoCheck(this,this._el_4,throwOnChange);
+    const currVal_23_0_0:any = this.context.displayMenu;
+    this._NgIf_23_6.check_ngIf(currVal_23_0_0,throwOnChange,false);
+    this._NgIf_23_6.ngDoCheck(this,this._anchor_23,throwOnChange);
+    this._RouterOutlet_27_5.ngDoCheck(this,this._el_27,throwOnChange);
+    this._vc_23.detectChangesInNestedViews(throwOnChange);
+    this._vc_27.detectChangesInNestedViews(throwOnChange);
+    const currVal_94:any = this.context.dir;
+    if (import3.checkBinding(throwOnChange,this._expr_94,currVal_94)) {
+      this.renderer.setElementProperty(this._el_0,'dir',currVal_94);
       this._expr_94 = currVal_94;
     }
-    this.compView_2.internalDetectChanges(throwOnChange);
+    const currVal_95:any = this.context.isHebrew;
+    if (import3.checkBinding(throwOnChange,this._expr_95,currVal_95)) {
+      this.renderer.setElementClass(this._el_8,'text-left',currVal_95);
+      this._expr_95 = currVal_95;
+    }
+    const currVal_96:boolean = !this.context.isHebrew;
+    if (import3.checkBinding(throwOnChange,this._expr_96,currVal_96)) {
+      this.renderer.setElementClass(this._el_8,'text-right',currVal_96);
+      this._expr_96 = currVal_96;
+    }
+    valUnwrapper.reset();
+    const currVal_98:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_17,this._pipe_translate_0.transform)('Order Concert')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_98,currVal_98))) {
+      this.renderer.setText(this._text_47,currVal_98);
+      this._expr_98 = currVal_98;
+    }
+    this.compView_4.internalDetectChanges(throwOnChange);
   }
   destroyInternal():void {
-    this._vc_21.destroyNestedViews();
-    this._vc_25.destroyNestedViews();
-    this.compView_2.destroy();
-    this._RouterOutlet_25_5.ngOnDestroy();
+    this._vc_23.destroyNestedViews();
+    this._vc_27.destroyNestedViews();
+    this.compView_4.destroy();
+    this._RouterOutlet_27_5.ngOnDestroy();
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 21)) { return new View_AppComponent1(this.viewUtils,this,21,this._anchor_21,this._vc_21); }
+    if ((nodeIndex == 23)) { return new View_AppComponent1(this.viewUtils,this,23,this._anchor_23,this._vc_23); }
     return (null as any);
   }
-  handleEvent_11(eventName:string,$event:any):boolean {
+  handleEvent_13(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
@@ -452,7 +468,7 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
     }
     return result;
   }
-  handleEvent_14(eventName:string,$event:any):boolean {
+  handleEvent_16(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
@@ -461,7 +477,7 @@ export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
     }
     return result;
   }
-  handleEvent_44(eventName:string,$event:any):boolean {
+  handleEvent_46(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {
@@ -732,153 +748,153 @@ class View_AppComponent1 extends import1.AppView<any> {
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray4(4,'class','navbar navbar-default my-navbar','style',''),(null as any));
-    this._text_1 = this.renderer.createText(this._el_0,'\n\n\n\n    ',(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n\n\n\n        ',(null as any));
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','navbar-header'),(null as any));
-    this._text_3 = this.renderer.createText(this._el_2,'\n        ',(null as any));
+    this._text_3 = this.renderer.createText(this._el_2,'\n            ',(null as any));
     this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'button',new import3.InlineArray8(8,'class','navbar-toggle','data-target','.navbar-collapse','data-toggle','collapse','type','button'),(null as any));
-    this._text_5 = this.renderer.createText(this._el_4,'\n            ',(null as any));
+    this._text_5 = this.renderer.createText(this._el_4,'\n                ',(null as any));
     this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'span',new import3.InlineArray2(2,'style','font-weight: 900; color: white'),(null as any));
     this._text_7 = this.renderer.createText(this._el_6,'',(null as any));
-    this._text_8 = this.renderer.createText(this._el_4,'\n        ',(null as any));
-    this._text_9 = this.renderer.createText(this._el_2,'\n        ',(null as any));
+    this._text_8 = this.renderer.createText(this._el_4,'\n            ',(null as any));
+    this._text_9 = this.renderer.createText(this._el_2,'\n            ',(null as any));
     this._el_10 = import3.createRenderElement(this.renderer,this._el_2,'h4',new import3.InlineArray2(2,'class','navMenu hidden-lg hidden-md hidden-sm mobliePath'),(null as any));
-    this._text_11 = this.renderer.createText(this._el_10,'\n            ',(null as any));
+    this._text_11 = this.renderer.createText(this._el_10,'\n                ',(null as any));
     this._el_12 = import3.createRenderElement(this.renderer,this._el_10,'span',new import3.InlineArray2(2,'class','white-font'),(null as any));
     this._text_13 = this.renderer.createText(this._el_12,'',(null as any));
-    this._text_14 = this.renderer.createText(this._el_10,'\n            ',(null as any));
+    this._text_14 = this.renderer.createText(this._el_10,'\n                ',(null as any));
     this._el_15 = import3.createRenderElement(this.renderer,this._el_10,'span',new import3.InlineArray2(2,'class','white-font'),(null as any));
     this._text_16 = this.renderer.createText(this._el_15,'|',(null as any));
-    this._text_17 = this.renderer.createText(this._el_10,'\n            ',(null as any));
+    this._text_17 = this.renderer.createText(this._el_10,'\n                ',(null as any));
     this._el_18 = import3.createRenderElement(this.renderer,this._el_10,'span',new import3.InlineArray2(2,'class','pageName white-font'),(null as any));
     this._text_19 = this.renderer.createText(this._el_18,'',(null as any));
-    this._text_20 = this.renderer.createText(this._el_10,'\n\n        ',(null as any));
-    this._text_21 = this.renderer.createText(this._el_2,'\n\n    ',(null as any));
-    this._text_22 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._text_20 = this.renderer.createText(this._el_10,'\n\n            ',(null as any));
+    this._text_21 = this.renderer.createText(this._el_2,'\n\n        ',(null as any));
+    this._text_22 = this.renderer.createText(this._el_0,'\n        ',(null as any));
     this._el_23 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','navbar-collapse collapse'),(null as any));
-    this._text_24 = this.renderer.createText(this._el_23,'\n\n        ',(null as any));
+    this._text_24 = this.renderer.createText(this._el_23,'\n\n            ',(null as any));
     this._el_25 = import3.createRenderElement(this.renderer,this._el_23,'ul',new import3.InlineArray2(2,'class','menu-ul nav nav-pills nav-justified '),(null as any));
-    this._text_26 = this.renderer.createText(this._el_25,'\n            ',(null as any));
+    this._text_26 = this.renderer.createText(this._el_25,'\n                ',(null as any));
     this._el_27 = import3.createRenderElement(this.renderer,this._el_25,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_28 = this.renderer.createText(this._el_27,'\n                ',(null as any));
+    this._text_28 = this.renderer.createText(this._el_27,'\n                    ',(null as any));
     this._el_29 = import3.createRenderElement(this.renderer,this._el_27,'a',new import3.InlineArray8(8,'class','menu-font  menu-anchor hidden-md hidden-lg hidden-sm','data-target','.navbar-collapse','data-toggle','collapse','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_29_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_29_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_29),this.renderer);
+    this._RouterLinkWithHref_29_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_29_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_29),this.renderer);
     this._query_RouterLink_29_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_29_1 = new import27.QueryList<any>();
     this._text_30 = this.renderer.createText(this._el_29,'',(null as any));
-    this._text_31 = this.renderer.createText(this._el_27,'\n                ',(null as any));
+    this._text_31 = this.renderer.createText(this._el_27,'\n                    ',(null as any));
     this._el_32 = import3.createRenderElement(this.renderer,this._el_27,'a',new import3.InlineArray4(4,'class','menu-font  menu-anchor hidden-xs','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_32_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_32_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_32),this.renderer);
+    this._RouterLinkWithHref_32_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_32_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_32),this.renderer);
     this._query_RouterLink_32_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_32_1 = new import27.QueryList<any>();
     this._text_33 = this.renderer.createText(this._el_32,'',(null as any));
-    this._text_34 = this.renderer.createText(this._el_27,'\n            ',(null as any));
-    this._text_35 = this.renderer.createText(this._el_25,'\n            ',(null as any));
+    this._text_34 = this.renderer.createText(this._el_27,'\n                ',(null as any));
+    this._text_35 = this.renderer.createText(this._el_25,'\n                ',(null as any));
     this._el_36 = import3.createRenderElement(this.renderer,this._el_25,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_37 = this.renderer.createText(this._el_36,'\n                ',(null as any));
+    this._text_37 = this.renderer.createText(this._el_36,'\n                    ',(null as any));
     this._el_38 = import3.createRenderElement(this.renderer,this._el_36,'a',new import3.InlineArray8(8,'class','menu-font  menu-anchor hidden-md hidden-lg hidden-sm','data-target','.navbar-collapse','data-toggle','collapse','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_38_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_38_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_38),this.renderer);
+    this._RouterLinkWithHref_38_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_38_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_38),this.renderer);
     this._query_RouterLink_38_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_38_1 = new import27.QueryList<any>();
     this._text_39 = this.renderer.createText(this._el_38,'',(null as any));
-    this._text_40 = this.renderer.createText(this._el_36,'\n                ',(null as any));
+    this._text_40 = this.renderer.createText(this._el_36,'\n                    ',(null as any));
     this._el_41 = import3.createRenderElement(this.renderer,this._el_36,'a',new import3.InlineArray4(4,'class','menu-font  menu-anchor hidden-xs','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_41_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_41_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_41),this.renderer);
+    this._RouterLinkWithHref_41_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_41_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_41),this.renderer);
     this._query_RouterLink_41_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_41_1 = new import27.QueryList<any>();
     this._text_42 = this.renderer.createText(this._el_41,'',(null as any));
-    this._text_43 = this.renderer.createText(this._el_36,'\n\n            ',(null as any));
-    this._text_44 = this.renderer.createText(this._el_25,'\n            ',(null as any));
+    this._text_43 = this.renderer.createText(this._el_36,'\n\n                ',(null as any));
+    this._text_44 = this.renderer.createText(this._el_25,'\n                ',(null as any));
     this._el_45 = import3.createRenderElement(this.renderer,this._el_25,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_46 = this.renderer.createText(this._el_45,'\n                ',(null as any));
+    this._text_46 = this.renderer.createText(this._el_45,'\n                    ',(null as any));
     this._el_47 = import3.createRenderElement(this.renderer,this._el_45,'a',new import3.InlineArray8(8,'class','menu-font  menu-anchor hidden-md hidden-lg hidden-sm','data-target','.navbar-collapse','data-toggle','collapse','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_47_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_47_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_47),this.renderer);
+    this._RouterLinkWithHref_47_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_47_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_47),this.renderer);
     this._query_RouterLink_47_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_47_1 = new import27.QueryList<any>();
     this._text_48 = this.renderer.createText(this._el_47,'',(null as any));
-    this._text_49 = this.renderer.createText(this._el_45,'\n                ',(null as any));
+    this._text_49 = this.renderer.createText(this._el_45,'\n                    ',(null as any));
     this._el_50 = import3.createRenderElement(this.renderer,this._el_45,'a',new import3.InlineArray4(4,'class','menu-font  menu-anchor hidden-xs','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_50_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_50_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_50),this.renderer);
+    this._RouterLinkWithHref_50_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_50_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_50),this.renderer);
     this._query_RouterLink_50_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_50_1 = new import27.QueryList<any>();
     this._text_51 = this.renderer.createText(this._el_50,'',(null as any));
-    this._text_52 = this.renderer.createText(this._el_45,'\n\n            ',(null as any));
-    this._text_53 = this.renderer.createText(this._el_25,'\n            ',(null as any));
+    this._text_52 = this.renderer.createText(this._el_45,'\n\n                ',(null as any));
+    this._text_53 = this.renderer.createText(this._el_25,'\n                ',(null as any));
     this._el_54 = import3.createRenderElement(this.renderer,this._el_25,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_55 = this.renderer.createText(this._el_54,'\n                ',(null as any));
+    this._text_55 = this.renderer.createText(this._el_54,'\n                    ',(null as any));
     this._el_56 = import3.createRenderElement(this.renderer,this._el_54,'a',new import3.InlineArray8(8,'class','menu-font  menu-anchor hidden-md hidden-lg hidden-sm','data-target','.navbar-collapse','data-toggle','collapse','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_56_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_56_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_56),this.renderer);
+    this._RouterLinkWithHref_56_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_56_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_56),this.renderer);
     this._query_RouterLink_56_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_56_1 = new import27.QueryList<any>();
     this._text_57 = this.renderer.createText(this._el_56,'',(null as any));
-    this._text_58 = this.renderer.createText(this._el_54,'\n                ',(null as any));
+    this._text_58 = this.renderer.createText(this._el_54,'\n                    ',(null as any));
     this._el_59 = import3.createRenderElement(this.renderer,this._el_54,'a',new import3.InlineArray4(4,'class','menu-font  menu-anchor hidden-xs','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_59_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_59_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_59),this.renderer);
+    this._RouterLinkWithHref_59_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_59_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_59),this.renderer);
     this._query_RouterLink_59_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_59_1 = new import27.QueryList<any>();
     this._text_60 = this.renderer.createText(this._el_59,'',(null as any));
-    this._text_61 = this.renderer.createText(this._el_54,'\n\n            ',(null as any));
-    this._text_62 = this.renderer.createText(this._el_25,'\n            ',(null as any));
+    this._text_61 = this.renderer.createText(this._el_54,'\n\n                ',(null as any));
+    this._text_62 = this.renderer.createText(this._el_25,'\n                ',(null as any));
     this._el_63 = import3.createRenderElement(this.renderer,this._el_25,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_64 = this.renderer.createText(this._el_63,'\n                ',(null as any));
+    this._text_64 = this.renderer.createText(this._el_63,'\n                    ',(null as any));
     this._el_65 = import3.createRenderElement(this.renderer,this._el_63,'a',new import3.InlineArray8(8,'class','menu-font  menu-anchor hidden-md hidden-lg hidden-sm','data-target','.navbar-collapse','data-toggle','collapse','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_65_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_65_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_65),this.renderer);
+    this._RouterLinkWithHref_65_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_65_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_65),this.renderer);
     this._query_RouterLink_65_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_65_1 = new import27.QueryList<any>();
     this._text_66 = this.renderer.createText(this._el_65,'',(null as any));
-    this._text_67 = this.renderer.createText(this._el_63,'\n                ',(null as any));
+    this._text_67 = this.renderer.createText(this._el_63,'\n                    ',(null as any));
     this._el_68 = import3.createRenderElement(this.renderer,this._el_63,'a',new import3.InlineArray4(4,'class','menu-font  menu-anchor hidden-xs','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_68_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_68_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_68),this.renderer);
+    this._RouterLinkWithHref_68_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_68_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_68),this.renderer);
     this._query_RouterLink_68_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_68_1 = new import27.QueryList<any>();
     this._text_69 = this.renderer.createText(this._el_68,'',(null as any));
-    this._text_70 = this.renderer.createText(this._el_63,'\n\n            ',(null as any));
-    this._text_71 = this.renderer.createText(this._el_25,'\n            ',(null as any));
+    this._text_70 = this.renderer.createText(this._el_63,'\n\n                ',(null as any));
+    this._text_71 = this.renderer.createText(this._el_25,'\n                ',(null as any));
     this._el_72 = import3.createRenderElement(this.renderer,this._el_25,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_73 = this.renderer.createText(this._el_72,'\n                ',(null as any));
+    this._text_73 = this.renderer.createText(this._el_72,'\n                    ',(null as any));
     this._el_74 = import3.createRenderElement(this.renderer,this._el_72,'a',new import3.InlineArray8(8,'class','menu-font  menu-anchor hidden-md hidden-lg hidden-sm','data-target','.navbar-collapse','data-toggle','collapse','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_74_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_74_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_74),this.renderer);
+    this._RouterLinkWithHref_74_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_74_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_74),this.renderer);
     this._query_RouterLink_74_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_74_1 = new import27.QueryList<any>();
     this._text_75 = this.renderer.createText(this._el_74,'',(null as any));
-    this._text_76 = this.renderer.createText(this._el_72,'\n                ',(null as any));
+    this._text_76 = this.renderer.createText(this._el_72,'\n                    ',(null as any));
     this._el_77 = import3.createRenderElement(this.renderer,this._el_72,'a',new import3.InlineArray4(4,'class','menu-font  menu-anchor hidden-xs','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_77_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_77_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_77),this.renderer);
+    this._RouterLinkWithHref_77_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_77_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_77),this.renderer);
     this._query_RouterLink_77_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_77_1 = new import27.QueryList<any>();
     this._text_78 = this.renderer.createText(this._el_77,'',(null as any));
-    this._text_79 = this.renderer.createText(this._el_72,'\n\n            ',(null as any));
-    this._text_80 = this.renderer.createText(this._el_25,'\n            ',(null as any));
+    this._text_79 = this.renderer.createText(this._el_72,'\n\n                ',(null as any));
+    this._text_80 = this.renderer.createText(this._el_25,'\n                ',(null as any));
     this._el_81 = import3.createRenderElement(this.renderer,this._el_25,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_82 = this.renderer.createText(this._el_81,'\n                ',(null as any));
+    this._text_82 = this.renderer.createText(this._el_81,'\n                    ',(null as any));
     this._el_83 = import3.createRenderElement(this.renderer,this._el_81,'a',new import3.InlineArray8(8,'class','menu-font  menu-anchor hidden-md hidden-lg hidden-sm','data-target','.navbar-collapse','data-toggle','collapse','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_83_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_83_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_83),this.renderer);
+    this._RouterLinkWithHref_83_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_83_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_83),this.renderer);
     this._query_RouterLink_83_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_83_1 = new import27.QueryList<any>();
     this._text_84 = this.renderer.createText(this._el_83,'',(null as any));
-    this._text_85 = this.renderer.createText(this._el_81,'\n                ',(null as any));
+    this._text_85 = this.renderer.createText(this._el_81,'\n                    ',(null as any));
     this._el_86 = import3.createRenderElement(this.renderer,this._el_81,'a',new import3.InlineArray4(4,'class','menu-font  menu-anchor hidden-xs','routerLinkActive','active-menu-item'),(null as any));
-    this._RouterLinkWithHref_86_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.injectorGet(import9.Router,this.parentIndex),this.parentView.injectorGet(import28.ActivatedRoute,this.parentIndex),this.parentView.injectorGet(import29.LocationStrategy,this.parentIndex));
-    this._RouterLinkActive_86_4 = new import26.Wrapper_RouterLinkActive(this.parentView.injectorGet(import9.Router,this.parentIndex),new import30.ElementRef(this._el_86),this.renderer);
+    this._RouterLinkWithHref_86_3 = new import25.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import28.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import29.LocationStrategy,this.parentView.parentIndex));
+    this._RouterLinkActive_86_4 = new import26.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import9.Router,this.parentView.parentIndex),new import30.ElementRef(this._el_86),this.renderer);
     this._query_RouterLink_86_0 = new import27.QueryList<any>();
     this._query_RouterLinkWithHref_86_1 = new import27.QueryList<any>();
     this._text_87 = this.renderer.createText(this._el_86,'',(null as any));
-    this._text_88 = this.renderer.createText(this._el_81,'\n\n            ',(null as any));
-    this._text_89 = this.renderer.createText(this._el_25,'\n\n\n        ',(null as any));
-    this._text_90 = this.renderer.createText(this._el_23,'\n    ',(null as any));
-    this._text_91 = this.renderer.createText(this._el_0,'\n\n',(null as any));
+    this._text_88 = this.renderer.createText(this._el_81,'\n\n                ',(null as any));
+    this._text_89 = this.renderer.createText(this._el_25,'\n\n\n            ',(null as any));
+    this._text_90 = this.renderer.createText(this._el_23,'\n        ',(null as any));
+    this._text_91 = this.renderer.createText(this._el_0,'\n\n    ',(null as any));
     this._pipe_translate_0_0 = import3.pureProxy1((<View_AppComponent0>this.parentView)._pipe_translate_0.transform.bind((<View_AppComponent0>this.parentView)._pipe_translate_0));
     this._pipe_translate_0_1 = import3.pureProxy1((<View_AppComponent0>this.parentView)._pipe_translate_0.transform.bind((<View_AppComponent0>this.parentView)._pipe_translate_0));
     this._pipe_translate_0_2 = import3.pureProxy1((<View_AppComponent0>this.parentView)._pipe_translate_0.transform.bind((<View_AppComponent0>this.parentView)._pipe_translate_0));

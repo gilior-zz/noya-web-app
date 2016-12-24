@@ -41,6 +41,17 @@ var AppComponent = (function (_super) {
     AppComponent.prototype.goToContact = function () {
         this.router.navigate(['/contact']);
     };
+    Object.defineProperty(AppComponent.prototype, "dir", {
+        get: function () {
+            var l = this.cacheManager.GetFromCache('lang', dal.Language.Hebrew);
+            if (l == dal.Language.Hebrew)
+                return 'rtl';
+            else
+                return 'ltr';
+        },
+        enumerable: true,
+        configurable: true
+    });
     AppComponent.prototype.changeMode = function () {
         if (this.pn.currentUrl.includes('galilu'))
             this.router.navigate(['/home']);

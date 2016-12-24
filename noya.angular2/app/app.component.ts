@@ -37,6 +37,12 @@ export class AppComponent extends BaseComponent implements OnInit, AfterViewInit
         this.router.navigate(['/contact']);
     }
 
+    get dir(): string {
+        let l = this.cacheManager.GetFromCache('lang', dal.Language.Hebrew);
+        if (l == dal.Language.Hebrew) return 'rtl'
+        else return 'ltr'
+    }
+
     changeMode() {
         if (this.pn.currentUrl.includes('galilu'))
             this.router.navigate(['/home']);
