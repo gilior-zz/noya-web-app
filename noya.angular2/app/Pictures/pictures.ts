@@ -1,16 +1,17 @@
-﻿import {Component, OnInit, AfterViewInit, Output, EventEmitter, OnDestroy, Injector} from '@angular/core'
+﻿import { Component, OnInit, AfterViewInit, Output, EventEmitter, OnDestroy, Injector } from '@angular/core'
 import * as dal from '../dal/models'
 import * as services from '../services/services'
 
-import { DomSanitizer, SafeUrl, SafeResourceUrl, SafeScript, SafeStyle} from '@angular/platform-browser';
-import {BaseComponent} from '../common/base.component'
-import {Router} from '@angular/router'
+import { DomSanitizer, SafeUrl, SafeResourceUrl, SafeScript, SafeStyle } from '@angular/platform-browser';
+import { BaseComponent } from '../common/base.component'
+import { Router } from '@angular/router'
 
 declare var Swiper: any;
 @Component({
 
     templateUrl: "./pictures.html",
     moduleId: module.id,
+    styleUrls: ['./pictures.css']
 
 })
 
@@ -38,6 +39,8 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
             // Enable lazy loading
             lazyLoading: true
         })
+
+
     }
 
 
@@ -47,7 +50,7 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
     }
 
     onKeyUp(event: KeyboardEvent) {
-      
+
         var nextData: dal.NextData = event.keyCode == 39 ? dal.NextData.Next : dal.NextData.Prev;
         this.LoadRequestedImage(nextData);
     }
@@ -144,7 +147,7 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
             (res: dal.ImageGalleryResponse) => {
                 this.mainImagePath = this.sanitizer.bypassSecurityTrustStyle(`url('${res.Image.ImageURL
                     }')`);
-                
+
                 this.cacheManager.StoreInCache('currentImageID', res.Image.ID);
 
             },

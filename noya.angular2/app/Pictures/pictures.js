@@ -135,6 +135,7 @@ var Pictures = (function (_super) {
         core_1.Component({
             templateUrl: "./pictures.html",
             moduleId: module.id,
+            styleUrls: ['./pictures.css']
         }), 
         __metadata('design:paramtypes', [platform_browser_1.DomSanitizer, services.DataService, services.CacheManager, router_1.Router, core_1.Injector])
     ], Pictures);
