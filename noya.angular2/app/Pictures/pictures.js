@@ -42,16 +42,13 @@ var Pictures = (function (_super) {
     Pictures.prototype.ngOnDestroy = function () {
     };
     Pictures.prototype.ngAfterViewInit = function () {
-        var mySwiper = new Swiper('.swiper-container', {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            //pagination: '.swiper-pagination',
-            //paginationClickable: true,
-            // Disable preloading of all images
-            preloadImages: false,
-            // Enable lazy loading
-            lazyLoading: true
-        });
+    };
+    Pictures.prototype.setClasses = function (imgId) {
+        var classes = {
+            item: true,
+            active: imgId == this.selectedID
+        };
+        return classes;
     };
     Pictures.prototype.onLeft = function () {
         this.LoadRequestedImage(dal.NextData.Prev);

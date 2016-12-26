@@ -415,64 +415,65 @@ var View_AppComponent1 = (function (_super) {
     function View_AppComponent1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
         _super.call(this, View_AppComponent1, renderType_AppComponent, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
         this._expr_148 = import18.UNINITIALIZED;
-        this._expr_150 = import18.UNINITIALIZED;
-        this._expr_152 = import18.UNINITIALIZED;
-        this._arr_154 = import3.pureProxy1(function (p0) {
+        this._expr_149 = import18.UNINITIALIZED;
+        this._expr_151 = import18.UNINITIALIZED;
+        this._expr_153 = import18.UNINITIALIZED;
+        this._arr_155 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_155 = import18.UNINITIALIZED;
-        this._arr_157 = import3.pureProxy1(function (p0) {
+        this._expr_156 = import18.UNINITIALIZED;
+        this._arr_158 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_158 = import18.UNINITIALIZED;
-        this._arr_160 = import3.pureProxy1(function (p0) {
+        this._expr_159 = import18.UNINITIALIZED;
+        this._arr_161 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_161 = import18.UNINITIALIZED;
-        this._arr_163 = import3.pureProxy1(function (p0) {
+        this._expr_162 = import18.UNINITIALIZED;
+        this._arr_164 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_164 = import18.UNINITIALIZED;
-        this._arr_166 = import3.pureProxy1(function (p0) {
+        this._expr_165 = import18.UNINITIALIZED;
+        this._arr_167 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_167 = import18.UNINITIALIZED;
-        this._arr_169 = import3.pureProxy1(function (p0) {
+        this._expr_168 = import18.UNINITIALIZED;
+        this._arr_170 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_170 = import18.UNINITIALIZED;
-        this._arr_172 = import3.pureProxy1(function (p0) {
+        this._expr_171 = import18.UNINITIALIZED;
+        this._arr_173 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_173 = import18.UNINITIALIZED;
-        this._arr_175 = import3.pureProxy1(function (p0) {
+        this._expr_174 = import18.UNINITIALIZED;
+        this._arr_176 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_176 = import18.UNINITIALIZED;
-        this._arr_178 = import3.pureProxy1(function (p0) {
+        this._expr_177 = import18.UNINITIALIZED;
+        this._arr_179 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_179 = import18.UNINITIALIZED;
-        this._arr_181 = import3.pureProxy1(function (p0) {
+        this._expr_180 = import18.UNINITIALIZED;
+        this._arr_182 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_182 = import18.UNINITIALIZED;
-        this._arr_184 = import3.pureProxy1(function (p0) {
+        this._expr_183 = import18.UNINITIALIZED;
+        this._arr_185 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_185 = import18.UNINITIALIZED;
-        this._arr_187 = import3.pureProxy1(function (p0) {
+        this._expr_186 = import18.UNINITIALIZED;
+        this._arr_188 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_188 = import18.UNINITIALIZED;
-        this._arr_190 = import3.pureProxy1(function (p0) {
+        this._expr_189 = import18.UNINITIALIZED;
+        this._arr_191 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_191 = import18.UNINITIALIZED;
-        this._arr_193 = import3.pureProxy1(function (p0) {
+        this._expr_192 = import18.UNINITIALIZED;
+        this._arr_194 = import3.pureProxy1(function (p0) {
             return [p0];
         });
-        this._expr_194 = import18.UNINITIALIZED;
+        this._expr_195 = import18.UNINITIALIZED;
     }
     View_AppComponent1.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.createRenderElement(this.renderer, null, 'div', new import3.InlineArray4(4, 'class', 'navbar navbar-default my-navbar', 'style', ''), null);
@@ -856,13 +857,13 @@ var View_AppComponent1 = (function (_super) {
         var valUnwrapper = new import18.ValueUnwrapper();
         var currVal_29_0_0 = '.navbar-collapse';
         this._RouterLinkWithHref_29_3.check_target(currVal_29_0_0, throwOnChange, false);
-        var currVal_29_0_1 = this._arr_154('home');
+        var currVal_29_0_1 = this._arr_155('home');
         this._RouterLinkWithHref_29_3.check_routerLink(currVal_29_0_1, throwOnChange, false);
         this._RouterLinkWithHref_29_3.ngDoCheck(this, this._el_29, throwOnChange);
         var currVal_29_1_0 = 'active-menu-item';
         this._RouterLinkActive_29_4.check_routerLinkActive(currVal_29_1_0, throwOnChange, false);
         this._RouterLinkActive_29_4.ngDoCheck(this, this._el_29, throwOnChange);
-        var currVal_32_0_0 = this._arr_157('home');
+        var currVal_32_0_0 = this._arr_158('home');
         this._RouterLinkWithHref_32_3.check_routerLink(currVal_32_0_0, throwOnChange, false);
         this._RouterLinkWithHref_32_3.ngDoCheck(this, this._el_32, throwOnChange);
         var currVal_32_1_0 = 'active-menu-item';
@@ -870,13 +871,13 @@ var View_AppComponent1 = (function (_super) {
         this._RouterLinkActive_32_4.ngDoCheck(this, this._el_32, throwOnChange);
         var currVal_38_0_0 = '.navbar-collapse';
         this._RouterLinkWithHref_38_3.check_target(currVal_38_0_0, throwOnChange, false);
-        var currVal_38_0_1 = this._arr_160('biography');
+        var currVal_38_0_1 = this._arr_161('biography');
         this._RouterLinkWithHref_38_3.check_routerLink(currVal_38_0_1, throwOnChange, false);
         this._RouterLinkWithHref_38_3.ngDoCheck(this, this._el_38, throwOnChange);
         var currVal_38_1_0 = 'active-menu-item';
         this._RouterLinkActive_38_4.check_routerLinkActive(currVal_38_1_0, throwOnChange, false);
         this._RouterLinkActive_38_4.ngDoCheck(this, this._el_38, throwOnChange);
-        var currVal_41_0_0 = this._arr_163('biography');
+        var currVal_41_0_0 = this._arr_164('biography');
         this._RouterLinkWithHref_41_3.check_routerLink(currVal_41_0_0, throwOnChange, false);
         this._RouterLinkWithHref_41_3.ngDoCheck(this, this._el_41, throwOnChange);
         var currVal_41_1_0 = 'active-menu-item';
@@ -884,13 +885,13 @@ var View_AppComponent1 = (function (_super) {
         this._RouterLinkActive_41_4.ngDoCheck(this, this._el_41, throwOnChange);
         var currVal_47_0_0 = '.navbar-collapse';
         this._RouterLinkWithHref_47_3.check_target(currVal_47_0_0, throwOnChange, false);
-        var currVal_47_0_1 = this._arr_166('pictures');
+        var currVal_47_0_1 = this._arr_167('pictures');
         this._RouterLinkWithHref_47_3.check_routerLink(currVal_47_0_1, throwOnChange, false);
         this._RouterLinkWithHref_47_3.ngDoCheck(this, this._el_47, throwOnChange);
         var currVal_47_1_0 = 'active-menu-item';
         this._RouterLinkActive_47_4.check_routerLinkActive(currVal_47_1_0, throwOnChange, false);
         this._RouterLinkActive_47_4.ngDoCheck(this, this._el_47, throwOnChange);
-        var currVal_50_0_0 = this._arr_169('pictures');
+        var currVal_50_0_0 = this._arr_170('pictures');
         this._RouterLinkWithHref_50_3.check_routerLink(currVal_50_0_0, throwOnChange, false);
         this._RouterLinkWithHref_50_3.ngDoCheck(this, this._el_50, throwOnChange);
         var currVal_50_1_0 = 'active-menu-item';
@@ -898,13 +899,13 @@ var View_AppComponent1 = (function (_super) {
         this._RouterLinkActive_50_4.ngDoCheck(this, this._el_50, throwOnChange);
         var currVal_56_0_0 = '.navbar-collapse';
         this._RouterLinkWithHref_56_3.check_target(currVal_56_0_0, throwOnChange, false);
-        var currVal_56_0_1 = this._arr_172('videos');
+        var currVal_56_0_1 = this._arr_173('videos');
         this._RouterLinkWithHref_56_3.check_routerLink(currVal_56_0_1, throwOnChange, false);
         this._RouterLinkWithHref_56_3.ngDoCheck(this, this._el_56, throwOnChange);
         var currVal_56_1_0 = 'active-menu-item';
         this._RouterLinkActive_56_4.check_routerLinkActive(currVal_56_1_0, throwOnChange, false);
         this._RouterLinkActive_56_4.ngDoCheck(this, this._el_56, throwOnChange);
-        var currVal_59_0_0 = this._arr_175('videos');
+        var currVal_59_0_0 = this._arr_176('videos');
         this._RouterLinkWithHref_59_3.check_routerLink(currVal_59_0_0, throwOnChange, false);
         this._RouterLinkWithHref_59_3.ngDoCheck(this, this._el_59, throwOnChange);
         var currVal_59_1_0 = 'active-menu-item';
@@ -912,13 +913,13 @@ var View_AppComponent1 = (function (_super) {
         this._RouterLinkActive_59_4.ngDoCheck(this, this._el_59, throwOnChange);
         var currVal_65_0_0 = '.navbar-collapse';
         this._RouterLinkWithHref_65_3.check_target(currVal_65_0_0, throwOnChange, false);
-        var currVal_65_0_1 = this._arr_178('programs');
+        var currVal_65_0_1 = this._arr_179('programs');
         this._RouterLinkWithHref_65_3.check_routerLink(currVal_65_0_1, throwOnChange, false);
         this._RouterLinkWithHref_65_3.ngDoCheck(this, this._el_65, throwOnChange);
         var currVal_65_1_0 = 'active-menu-item';
         this._RouterLinkActive_65_4.check_routerLinkActive(currVal_65_1_0, throwOnChange, false);
         this._RouterLinkActive_65_4.ngDoCheck(this, this._el_65, throwOnChange);
-        var currVal_68_0_0 = this._arr_181('programs');
+        var currVal_68_0_0 = this._arr_182('programs');
         this._RouterLinkWithHref_68_3.check_routerLink(currVal_68_0_0, throwOnChange, false);
         this._RouterLinkWithHref_68_3.ngDoCheck(this, this._el_68, throwOnChange);
         var currVal_68_1_0 = 'active-menu-item';
@@ -926,13 +927,13 @@ var View_AppComponent1 = (function (_super) {
         this._RouterLinkActive_68_4.ngDoCheck(this, this._el_68, throwOnChange);
         var currVal_74_0_0 = '.navbar-collapse';
         this._RouterLinkWithHref_74_3.check_target(currVal_74_0_0, throwOnChange, false);
-        var currVal_74_0_1 = this._arr_184('links');
+        var currVal_74_0_1 = this._arr_185('links');
         this._RouterLinkWithHref_74_3.check_routerLink(currVal_74_0_1, throwOnChange, false);
         this._RouterLinkWithHref_74_3.ngDoCheck(this, this._el_74, throwOnChange);
         var currVal_74_1_0 = 'active-menu-item';
         this._RouterLinkActive_74_4.check_routerLinkActive(currVal_74_1_0, throwOnChange, false);
         this._RouterLinkActive_74_4.ngDoCheck(this, this._el_74, throwOnChange);
-        var currVal_77_0_0 = this._arr_187('links');
+        var currVal_77_0_0 = this._arr_188('links');
         this._RouterLinkWithHref_77_3.check_routerLink(currVal_77_0_0, throwOnChange, false);
         this._RouterLinkWithHref_77_3.ngDoCheck(this, this._el_77, throwOnChange);
         var currVal_77_1_0 = 'active-menu-item';
@@ -940,13 +941,13 @@ var View_AppComponent1 = (function (_super) {
         this._RouterLinkActive_77_4.ngDoCheck(this, this._el_77, throwOnChange);
         var currVal_83_0_0 = '.navbar-collapse';
         this._RouterLinkWithHref_83_3.check_target(currVal_83_0_0, throwOnChange, false);
-        var currVal_83_0_1 = this._arr_190('contact');
+        var currVal_83_0_1 = this._arr_191('contact');
         this._RouterLinkWithHref_83_3.check_routerLink(currVal_83_0_1, throwOnChange, false);
         this._RouterLinkWithHref_83_3.ngDoCheck(this, this._el_83, throwOnChange);
         var currVal_83_1_0 = 'active-menu-item';
         this._RouterLinkActive_83_4.check_routerLinkActive(currVal_83_1_0, throwOnChange, false);
         this._RouterLinkActive_83_4.ngDoCheck(this, this._el_83, throwOnChange);
-        var currVal_86_0_0 = this._arr_193('contact');
+        var currVal_86_0_0 = this._arr_194('contact');
         this._RouterLinkWithHref_86_3.check_routerLink(currVal_86_0_0, throwOnChange, false);
         this._RouterLinkWithHref_86_3.ngDoCheck(this, this._el_86, throwOnChange);
         var currVal_86_1_0 = 'active-menu-item';
@@ -1136,121 +1137,126 @@ var View_AppComponent1 = (function (_super) {
                 this._RouterLinkActive_86_4.context.ngAfterContentInit();
             }
         }
-        valUnwrapper.reset();
-        var currVal_148 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_0, this.parentView._pipe_translate_0.transform)('Menu')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_148, currVal_148))) {
-            this.renderer.setText(this._text_7, currVal_148);
+        var currVal_148 = this.parentView.context.dir;
+        if (import3.checkBinding(throwOnChange, this._expr_148, currVal_148)) {
+            this.renderer.setElementProperty(this._el_0, 'dir', currVal_148);
             this._expr_148 = currVal_148;
         }
         valUnwrapper.reset();
-        var currVal_150 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_1, this.parentView._pipe_translate_0.transform)('Noya Schleien')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_150, currVal_150))) {
-            this.renderer.setText(this._text_13, currVal_150);
-            this._expr_150 = currVal_150;
+        var currVal_149 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_0, this.parentView._pipe_translate_0.transform)('Menu')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_149, currVal_149))) {
+            this.renderer.setText(this._text_7, currVal_149);
+            this._expr_149 = currVal_149;
         }
         valUnwrapper.reset();
-        var currVal_152 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_2, this.parentView._pipe_translate_0.transform)(this.parentView.context.pageName)), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_152, currVal_152))) {
-            this.renderer.setText(this._text_19, currVal_152);
-            this._expr_152 = currVal_152;
+        var currVal_151 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_1, this.parentView._pipe_translate_0.transform)('Noya Schleien')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_151, currVal_151))) {
+            this.renderer.setText(this._text_13, currVal_151);
+            this._expr_151 = currVal_151;
+        }
+        valUnwrapper.reset();
+        var currVal_153 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_2, this.parentView._pipe_translate_0.transform)(this.parentView.context.pageName)), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_153, currVal_153))) {
+            this.renderer.setText(this._text_19, currVal_153);
+            this._expr_153 = currVal_153;
         }
         this._RouterLinkWithHref_29_3.checkHost(this, this, this._el_29, throwOnChange);
         valUnwrapper.reset();
-        var currVal_155 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_3, this.parentView._pipe_translate_0.transform)('Home')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_155, currVal_155))) {
-            this.renderer.setText(this._text_30, currVal_155);
-            this._expr_155 = currVal_155;
+        var currVal_156 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_3, this.parentView._pipe_translate_0.transform)('Home')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_156, currVal_156))) {
+            this.renderer.setText(this._text_30, currVal_156);
+            this._expr_156 = currVal_156;
         }
         this._RouterLinkWithHref_32_3.checkHost(this, this, this._el_32, throwOnChange);
         valUnwrapper.reset();
-        var currVal_158 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_4, this.parentView._pipe_translate_0.transform)('Home')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_158, currVal_158))) {
-            this.renderer.setText(this._text_33, currVal_158);
-            this._expr_158 = currVal_158;
+        var currVal_159 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_4, this.parentView._pipe_translate_0.transform)('Home')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_159, currVal_159))) {
+            this.renderer.setText(this._text_33, currVal_159);
+            this._expr_159 = currVal_159;
         }
         this._RouterLinkWithHref_38_3.checkHost(this, this, this._el_38, throwOnChange);
         valUnwrapper.reset();
-        var currVal_161 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_5, this.parentView._pipe_translate_0.transform)('Biography')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_161, currVal_161))) {
-            this.renderer.setText(this._text_39, currVal_161);
-            this._expr_161 = currVal_161;
+        var currVal_162 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_5, this.parentView._pipe_translate_0.transform)('Biography')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_162, currVal_162))) {
+            this.renderer.setText(this._text_39, currVal_162);
+            this._expr_162 = currVal_162;
         }
         this._RouterLinkWithHref_41_3.checkHost(this, this, this._el_41, throwOnChange);
         valUnwrapper.reset();
-        var currVal_164 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_6, this.parentView._pipe_translate_0.transform)('Biography')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_164, currVal_164))) {
-            this.renderer.setText(this._text_42, currVal_164);
-            this._expr_164 = currVal_164;
+        var currVal_165 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_6, this.parentView._pipe_translate_0.transform)('Biography')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_165, currVal_165))) {
+            this.renderer.setText(this._text_42, currVal_165);
+            this._expr_165 = currVal_165;
         }
         this._RouterLinkWithHref_47_3.checkHost(this, this, this._el_47, throwOnChange);
         valUnwrapper.reset();
-        var currVal_167 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_7, this.parentView._pipe_translate_0.transform)('Pictures')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_167, currVal_167))) {
-            this.renderer.setText(this._text_48, currVal_167);
-            this._expr_167 = currVal_167;
+        var currVal_168 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_7, this.parentView._pipe_translate_0.transform)('Pictures')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_168, currVal_168))) {
+            this.renderer.setText(this._text_48, currVal_168);
+            this._expr_168 = currVal_168;
         }
         this._RouterLinkWithHref_50_3.checkHost(this, this, this._el_50, throwOnChange);
         valUnwrapper.reset();
-        var currVal_170 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_8, this.parentView._pipe_translate_0.transform)('Pictures')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_170, currVal_170))) {
-            this.renderer.setText(this._text_51, currVal_170);
-            this._expr_170 = currVal_170;
+        var currVal_171 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_8, this.parentView._pipe_translate_0.transform)('Pictures')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_171, currVal_171))) {
+            this.renderer.setText(this._text_51, currVal_171);
+            this._expr_171 = currVal_171;
         }
         this._RouterLinkWithHref_56_3.checkHost(this, this, this._el_56, throwOnChange);
         valUnwrapper.reset();
-        var currVal_173 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_9, this.parentView._pipe_translate_0.transform)('Videos')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_173, currVal_173))) {
-            this.renderer.setText(this._text_57, currVal_173);
-            this._expr_173 = currVal_173;
+        var currVal_174 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_9, this.parentView._pipe_translate_0.transform)('Videos')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_174, currVal_174))) {
+            this.renderer.setText(this._text_57, currVal_174);
+            this._expr_174 = currVal_174;
         }
         this._RouterLinkWithHref_59_3.checkHost(this, this, this._el_59, throwOnChange);
         valUnwrapper.reset();
-        var currVal_176 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_10, this.parentView._pipe_translate_0.transform)('Videos')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_176, currVal_176))) {
-            this.renderer.setText(this._text_60, currVal_176);
-            this._expr_176 = currVal_176;
+        var currVal_177 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_10, this.parentView._pipe_translate_0.transform)('Videos')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_177, currVal_177))) {
+            this.renderer.setText(this._text_60, currVal_177);
+            this._expr_177 = currVal_177;
         }
         this._RouterLinkWithHref_65_3.checkHost(this, this, this._el_65, throwOnChange);
         valUnwrapper.reset();
-        var currVal_179 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_11, this.parentView._pipe_translate_0.transform)('Programs')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_179, currVal_179))) {
-            this.renderer.setText(this._text_66, currVal_179);
-            this._expr_179 = currVal_179;
+        var currVal_180 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_11, this.parentView._pipe_translate_0.transform)('Programs')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_180, currVal_180))) {
+            this.renderer.setText(this._text_66, currVal_180);
+            this._expr_180 = currVal_180;
         }
         this._RouterLinkWithHref_68_3.checkHost(this, this, this._el_68, throwOnChange);
         valUnwrapper.reset();
-        var currVal_182 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_12, this.parentView._pipe_translate_0.transform)('Programs')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_182, currVal_182))) {
-            this.renderer.setText(this._text_69, currVal_182);
-            this._expr_182 = currVal_182;
+        var currVal_183 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_12, this.parentView._pipe_translate_0.transform)('Programs')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_183, currVal_183))) {
+            this.renderer.setText(this._text_69, currVal_183);
+            this._expr_183 = currVal_183;
         }
         this._RouterLinkWithHref_74_3.checkHost(this, this, this._el_74, throwOnChange);
         valUnwrapper.reset();
-        var currVal_185 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_13, this.parentView._pipe_translate_0.transform)('Links')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_185, currVal_185))) {
-            this.renderer.setText(this._text_75, currVal_185);
-            this._expr_185 = currVal_185;
+        var currVal_186 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_13, this.parentView._pipe_translate_0.transform)('Links')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_186, currVal_186))) {
+            this.renderer.setText(this._text_75, currVal_186);
+            this._expr_186 = currVal_186;
         }
         this._RouterLinkWithHref_77_3.checkHost(this, this, this._el_77, throwOnChange);
         valUnwrapper.reset();
-        var currVal_188 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_14, this.parentView._pipe_translate_0.transform)('Links')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_188, currVal_188))) {
-            this.renderer.setText(this._text_78, currVal_188);
-            this._expr_188 = currVal_188;
+        var currVal_189 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_14, this.parentView._pipe_translate_0.transform)('Links')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_189, currVal_189))) {
+            this.renderer.setText(this._text_78, currVal_189);
+            this._expr_189 = currVal_189;
         }
         this._RouterLinkWithHref_83_3.checkHost(this, this, this._el_83, throwOnChange);
         valUnwrapper.reset();
-        var currVal_191 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_15, this.parentView._pipe_translate_0.transform)('Contact')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_191, currVal_191))) {
-            this.renderer.setText(this._text_84, currVal_191);
-            this._expr_191 = currVal_191;
+        var currVal_192 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_15, this.parentView._pipe_translate_0.transform)('Contact')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_192, currVal_192))) {
+            this.renderer.setText(this._text_84, currVal_192);
+            this._expr_192 = currVal_192;
         }
         this._RouterLinkWithHref_86_3.checkHost(this, this, this._el_86, throwOnChange);
         valUnwrapper.reset();
-        var currVal_194 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_16, this.parentView._pipe_translate_0.transform)('Contact')), '');
-        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_194, currVal_194))) {
-            this.renderer.setText(this._text_87, currVal_194);
-            this._expr_194 = currVal_194;
+        var currVal_195 = import3.inlineInterpolate(1, '', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_16, this.parentView._pipe_translate_0.transform)('Contact')), '');
+        if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_195, currVal_195))) {
+            this.renderer.setText(this._text_87, currVal_195);
+            this._expr_195 = currVal_195;
         }
     };
     View_AppComponent1.prototype.destroyInternal = function () {

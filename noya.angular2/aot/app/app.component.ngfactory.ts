@@ -637,114 +637,116 @@ class View_AppComponent1 extends import1.AppView<any> {
   _text_90:any;
   _text_91:any;
   /*private*/ _expr_148:any;
+  /*private*/ _expr_149:any;
   _pipe_translate_0_0:any;
-  /*private*/ _expr_150:any;
+  /*private*/ _expr_151:any;
   _pipe_translate_0_1:any;
-  /*private*/ _expr_152:any;
+  /*private*/ _expr_153:any;
   _pipe_translate_0_2:any;
-  _arr_154:any;
-  /*private*/ _expr_155:any;
+  _arr_155:any;
+  /*private*/ _expr_156:any;
   _pipe_translate_0_3:any;
-  _arr_157:any;
-  /*private*/ _expr_158:any;
+  _arr_158:any;
+  /*private*/ _expr_159:any;
   _pipe_translate_0_4:any;
-  _arr_160:any;
-  /*private*/ _expr_161:any;
+  _arr_161:any;
+  /*private*/ _expr_162:any;
   _pipe_translate_0_5:any;
-  _arr_163:any;
-  /*private*/ _expr_164:any;
+  _arr_164:any;
+  /*private*/ _expr_165:any;
   _pipe_translate_0_6:any;
-  _arr_166:any;
-  /*private*/ _expr_167:any;
+  _arr_167:any;
+  /*private*/ _expr_168:any;
   _pipe_translate_0_7:any;
-  _arr_169:any;
-  /*private*/ _expr_170:any;
+  _arr_170:any;
+  /*private*/ _expr_171:any;
   _pipe_translate_0_8:any;
-  _arr_172:any;
-  /*private*/ _expr_173:any;
+  _arr_173:any;
+  /*private*/ _expr_174:any;
   _pipe_translate_0_9:any;
-  _arr_175:any;
-  /*private*/ _expr_176:any;
+  _arr_176:any;
+  /*private*/ _expr_177:any;
   _pipe_translate_0_10:any;
-  _arr_178:any;
-  /*private*/ _expr_179:any;
+  _arr_179:any;
+  /*private*/ _expr_180:any;
   _pipe_translate_0_11:any;
-  _arr_181:any;
-  /*private*/ _expr_182:any;
+  _arr_182:any;
+  /*private*/ _expr_183:any;
   _pipe_translate_0_12:any;
-  _arr_184:any;
-  /*private*/ _expr_185:any;
+  _arr_185:any;
+  /*private*/ _expr_186:any;
   _pipe_translate_0_13:any;
-  _arr_187:any;
-  /*private*/ _expr_188:any;
+  _arr_188:any;
+  /*private*/ _expr_189:any;
   _pipe_translate_0_14:any;
-  _arr_190:any;
-  /*private*/ _expr_191:any;
+  _arr_191:any;
+  /*private*/ _expr_192:any;
   _pipe_translate_0_15:any;
-  _arr_193:any;
-  /*private*/ _expr_194:any;
+  _arr_194:any;
+  /*private*/ _expr_195:any;
   _pipe_translate_0_16:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import14.ViewContainer) {
     super(View_AppComponent1,renderType_AppComponent,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_148 = import18.UNINITIALIZED;
-    this._expr_150 = import18.UNINITIALIZED;
-    this._expr_152 = import18.UNINITIALIZED;
-    this._arr_154 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_149 = import18.UNINITIALIZED;
+    this._expr_151 = import18.UNINITIALIZED;
+    this._expr_153 = import18.UNINITIALIZED;
+    this._arr_155 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_155 = import18.UNINITIALIZED;
-    this._arr_157 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_156 = import18.UNINITIALIZED;
+    this._arr_158 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_158 = import18.UNINITIALIZED;
-    this._arr_160 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_159 = import18.UNINITIALIZED;
+    this._arr_161 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_161 = import18.UNINITIALIZED;
-    this._arr_163 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_162 = import18.UNINITIALIZED;
+    this._arr_164 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_164 = import18.UNINITIALIZED;
-    this._arr_166 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_165 = import18.UNINITIALIZED;
+    this._arr_167 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_167 = import18.UNINITIALIZED;
-    this._arr_169 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_168 = import18.UNINITIALIZED;
+    this._arr_170 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_170 = import18.UNINITIALIZED;
-    this._arr_172 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_171 = import18.UNINITIALIZED;
+    this._arr_173 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_173 = import18.UNINITIALIZED;
-    this._arr_175 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_174 = import18.UNINITIALIZED;
+    this._arr_176 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_176 = import18.UNINITIALIZED;
-    this._arr_178 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_177 = import18.UNINITIALIZED;
+    this._arr_179 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_179 = import18.UNINITIALIZED;
-    this._arr_181 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_180 = import18.UNINITIALIZED;
+    this._arr_182 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_182 = import18.UNINITIALIZED;
-    this._arr_184 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_183 = import18.UNINITIALIZED;
+    this._arr_185 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_185 = import18.UNINITIALIZED;
-    this._arr_187 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_186 = import18.UNINITIALIZED;
+    this._arr_188 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_188 = import18.UNINITIALIZED;
-    this._arr_190 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_189 = import18.UNINITIALIZED;
+    this._arr_191 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_191 = import18.UNINITIALIZED;
-    this._arr_193 = import3.pureProxy1((p0:any):any[] => {
+    this._expr_192 = import18.UNINITIALIZED;
+    this._arr_194 = import3.pureProxy1((p0:any):any[] => {
       return [p0];
     });
-    this._expr_194 = import18.UNINITIALIZED;
+    this._expr_195 = import18.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray4(4,'class','navbar navbar-default my-navbar','style',''),(null as any));
@@ -1074,13 +1076,13 @@ class View_AppComponent1 extends import1.AppView<any> {
     const valUnwrapper:any = new import18.ValueUnwrapper();
     const currVal_29_0_0:any = '.navbar-collapse';
     this._RouterLinkWithHref_29_3.check_target(currVal_29_0_0,throwOnChange,false);
-    const currVal_29_0_1:any = this._arr_154('home');
+    const currVal_29_0_1:any = this._arr_155('home');
     this._RouterLinkWithHref_29_3.check_routerLink(currVal_29_0_1,throwOnChange,false);
     this._RouterLinkWithHref_29_3.ngDoCheck(this,this._el_29,throwOnChange);
     const currVal_29_1_0:any = 'active-menu-item';
     this._RouterLinkActive_29_4.check_routerLinkActive(currVal_29_1_0,throwOnChange,false);
     this._RouterLinkActive_29_4.ngDoCheck(this,this._el_29,throwOnChange);
-    const currVal_32_0_0:any = this._arr_157('home');
+    const currVal_32_0_0:any = this._arr_158('home');
     this._RouterLinkWithHref_32_3.check_routerLink(currVal_32_0_0,throwOnChange,false);
     this._RouterLinkWithHref_32_3.ngDoCheck(this,this._el_32,throwOnChange);
     const currVal_32_1_0:any = 'active-menu-item';
@@ -1088,13 +1090,13 @@ class View_AppComponent1 extends import1.AppView<any> {
     this._RouterLinkActive_32_4.ngDoCheck(this,this._el_32,throwOnChange);
     const currVal_38_0_0:any = '.navbar-collapse';
     this._RouterLinkWithHref_38_3.check_target(currVal_38_0_0,throwOnChange,false);
-    const currVal_38_0_1:any = this._arr_160('biography');
+    const currVal_38_0_1:any = this._arr_161('biography');
     this._RouterLinkWithHref_38_3.check_routerLink(currVal_38_0_1,throwOnChange,false);
     this._RouterLinkWithHref_38_3.ngDoCheck(this,this._el_38,throwOnChange);
     const currVal_38_1_0:any = 'active-menu-item';
     this._RouterLinkActive_38_4.check_routerLinkActive(currVal_38_1_0,throwOnChange,false);
     this._RouterLinkActive_38_4.ngDoCheck(this,this._el_38,throwOnChange);
-    const currVal_41_0_0:any = this._arr_163('biography');
+    const currVal_41_0_0:any = this._arr_164('biography');
     this._RouterLinkWithHref_41_3.check_routerLink(currVal_41_0_0,throwOnChange,false);
     this._RouterLinkWithHref_41_3.ngDoCheck(this,this._el_41,throwOnChange);
     const currVal_41_1_0:any = 'active-menu-item';
@@ -1102,13 +1104,13 @@ class View_AppComponent1 extends import1.AppView<any> {
     this._RouterLinkActive_41_4.ngDoCheck(this,this._el_41,throwOnChange);
     const currVal_47_0_0:any = '.navbar-collapse';
     this._RouterLinkWithHref_47_3.check_target(currVal_47_0_0,throwOnChange,false);
-    const currVal_47_0_1:any = this._arr_166('pictures');
+    const currVal_47_0_1:any = this._arr_167('pictures');
     this._RouterLinkWithHref_47_3.check_routerLink(currVal_47_0_1,throwOnChange,false);
     this._RouterLinkWithHref_47_3.ngDoCheck(this,this._el_47,throwOnChange);
     const currVal_47_1_0:any = 'active-menu-item';
     this._RouterLinkActive_47_4.check_routerLinkActive(currVal_47_1_0,throwOnChange,false);
     this._RouterLinkActive_47_4.ngDoCheck(this,this._el_47,throwOnChange);
-    const currVal_50_0_0:any = this._arr_169('pictures');
+    const currVal_50_0_0:any = this._arr_170('pictures');
     this._RouterLinkWithHref_50_3.check_routerLink(currVal_50_0_0,throwOnChange,false);
     this._RouterLinkWithHref_50_3.ngDoCheck(this,this._el_50,throwOnChange);
     const currVal_50_1_0:any = 'active-menu-item';
@@ -1116,13 +1118,13 @@ class View_AppComponent1 extends import1.AppView<any> {
     this._RouterLinkActive_50_4.ngDoCheck(this,this._el_50,throwOnChange);
     const currVal_56_0_0:any = '.navbar-collapse';
     this._RouterLinkWithHref_56_3.check_target(currVal_56_0_0,throwOnChange,false);
-    const currVal_56_0_1:any = this._arr_172('videos');
+    const currVal_56_0_1:any = this._arr_173('videos');
     this._RouterLinkWithHref_56_3.check_routerLink(currVal_56_0_1,throwOnChange,false);
     this._RouterLinkWithHref_56_3.ngDoCheck(this,this._el_56,throwOnChange);
     const currVal_56_1_0:any = 'active-menu-item';
     this._RouterLinkActive_56_4.check_routerLinkActive(currVal_56_1_0,throwOnChange,false);
     this._RouterLinkActive_56_4.ngDoCheck(this,this._el_56,throwOnChange);
-    const currVal_59_0_0:any = this._arr_175('videos');
+    const currVal_59_0_0:any = this._arr_176('videos');
     this._RouterLinkWithHref_59_3.check_routerLink(currVal_59_0_0,throwOnChange,false);
     this._RouterLinkWithHref_59_3.ngDoCheck(this,this._el_59,throwOnChange);
     const currVal_59_1_0:any = 'active-menu-item';
@@ -1130,13 +1132,13 @@ class View_AppComponent1 extends import1.AppView<any> {
     this._RouterLinkActive_59_4.ngDoCheck(this,this._el_59,throwOnChange);
     const currVal_65_0_0:any = '.navbar-collapse';
     this._RouterLinkWithHref_65_3.check_target(currVal_65_0_0,throwOnChange,false);
-    const currVal_65_0_1:any = this._arr_178('programs');
+    const currVal_65_0_1:any = this._arr_179('programs');
     this._RouterLinkWithHref_65_3.check_routerLink(currVal_65_0_1,throwOnChange,false);
     this._RouterLinkWithHref_65_3.ngDoCheck(this,this._el_65,throwOnChange);
     const currVal_65_1_0:any = 'active-menu-item';
     this._RouterLinkActive_65_4.check_routerLinkActive(currVal_65_1_0,throwOnChange,false);
     this._RouterLinkActive_65_4.ngDoCheck(this,this._el_65,throwOnChange);
-    const currVal_68_0_0:any = this._arr_181('programs');
+    const currVal_68_0_0:any = this._arr_182('programs');
     this._RouterLinkWithHref_68_3.check_routerLink(currVal_68_0_0,throwOnChange,false);
     this._RouterLinkWithHref_68_3.ngDoCheck(this,this._el_68,throwOnChange);
     const currVal_68_1_0:any = 'active-menu-item';
@@ -1144,13 +1146,13 @@ class View_AppComponent1 extends import1.AppView<any> {
     this._RouterLinkActive_68_4.ngDoCheck(this,this._el_68,throwOnChange);
     const currVal_74_0_0:any = '.navbar-collapse';
     this._RouterLinkWithHref_74_3.check_target(currVal_74_0_0,throwOnChange,false);
-    const currVal_74_0_1:any = this._arr_184('links');
+    const currVal_74_0_1:any = this._arr_185('links');
     this._RouterLinkWithHref_74_3.check_routerLink(currVal_74_0_1,throwOnChange,false);
     this._RouterLinkWithHref_74_3.ngDoCheck(this,this._el_74,throwOnChange);
     const currVal_74_1_0:any = 'active-menu-item';
     this._RouterLinkActive_74_4.check_routerLinkActive(currVal_74_1_0,throwOnChange,false);
     this._RouterLinkActive_74_4.ngDoCheck(this,this._el_74,throwOnChange);
-    const currVal_77_0_0:any = this._arr_187('links');
+    const currVal_77_0_0:any = this._arr_188('links');
     this._RouterLinkWithHref_77_3.check_routerLink(currVal_77_0_0,throwOnChange,false);
     this._RouterLinkWithHref_77_3.ngDoCheck(this,this._el_77,throwOnChange);
     const currVal_77_1_0:any = 'active-menu-item';
@@ -1158,13 +1160,13 @@ class View_AppComponent1 extends import1.AppView<any> {
     this._RouterLinkActive_77_4.ngDoCheck(this,this._el_77,throwOnChange);
     const currVal_83_0_0:any = '.navbar-collapse';
     this._RouterLinkWithHref_83_3.check_target(currVal_83_0_0,throwOnChange,false);
-    const currVal_83_0_1:any = this._arr_190('contact');
+    const currVal_83_0_1:any = this._arr_191('contact');
     this._RouterLinkWithHref_83_3.check_routerLink(currVal_83_0_1,throwOnChange,false);
     this._RouterLinkWithHref_83_3.ngDoCheck(this,this._el_83,throwOnChange);
     const currVal_83_1_0:any = 'active-menu-item';
     this._RouterLinkActive_83_4.check_routerLinkActive(currVal_83_1_0,throwOnChange,false);
     this._RouterLinkActive_83_4.ngDoCheck(this,this._el_83,throwOnChange);
-    const currVal_86_0_0:any = this._arr_193('contact');
+    const currVal_86_0_0:any = this._arr_194('contact');
     this._RouterLinkWithHref_86_3.check_routerLink(currVal_86_0_0,throwOnChange,false);
     this._RouterLinkWithHref_86_3.ngDoCheck(this,this._el_86,throwOnChange);
     const currVal_86_1_0:any = 'active-menu-item';
@@ -1326,121 +1328,126 @@ class View_AppComponent1 extends import1.AppView<any> {
       if ((this.numberOfChecks === 0)) { this._RouterLinkActive_83_4.context.ngAfterContentInit(); }
       if ((this.numberOfChecks === 0)) { this._RouterLinkActive_86_4.context.ngAfterContentInit(); }
     }
-    valUnwrapper.reset();
-    const currVal_148:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_0,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Menu')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_148,currVal_148))) {
-      this.renderer.setText(this._text_7,currVal_148);
+    const currVal_148:any = this.parentView.context.dir;
+    if (import3.checkBinding(throwOnChange,this._expr_148,currVal_148)) {
+      this.renderer.setElementProperty(this._el_0,'dir',currVal_148);
       this._expr_148 = currVal_148;
     }
     valUnwrapper.reset();
-    const currVal_150:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_1,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Noya Schleien')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_150,currVal_150))) {
-      this.renderer.setText(this._text_13,currVal_150);
-      this._expr_150 = currVal_150;
+    const currVal_149:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_0,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Menu')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_149,currVal_149))) {
+      this.renderer.setText(this._text_7,currVal_149);
+      this._expr_149 = currVal_149;
     }
     valUnwrapper.reset();
-    const currVal_152:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_2,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)(this.parentView.context.pageName)),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_152,currVal_152))) {
-      this.renderer.setText(this._text_19,currVal_152);
-      this._expr_152 = currVal_152;
+    const currVal_151:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_1,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Noya Schleien')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_151,currVal_151))) {
+      this.renderer.setText(this._text_13,currVal_151);
+      this._expr_151 = currVal_151;
+    }
+    valUnwrapper.reset();
+    const currVal_153:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_2,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)(this.parentView.context.pageName)),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_153,currVal_153))) {
+      this.renderer.setText(this._text_19,currVal_153);
+      this._expr_153 = currVal_153;
     }
     this._RouterLinkWithHref_29_3.checkHost(this,this,this._el_29,throwOnChange);
     valUnwrapper.reset();
-    const currVal_155:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_3,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Home')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_155,currVal_155))) {
-      this.renderer.setText(this._text_30,currVal_155);
-      this._expr_155 = currVal_155;
+    const currVal_156:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_3,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Home')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_156,currVal_156))) {
+      this.renderer.setText(this._text_30,currVal_156);
+      this._expr_156 = currVal_156;
     }
     this._RouterLinkWithHref_32_3.checkHost(this,this,this._el_32,throwOnChange);
     valUnwrapper.reset();
-    const currVal_158:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_4,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Home')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_158,currVal_158))) {
-      this.renderer.setText(this._text_33,currVal_158);
-      this._expr_158 = currVal_158;
+    const currVal_159:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_4,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Home')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_159,currVal_159))) {
+      this.renderer.setText(this._text_33,currVal_159);
+      this._expr_159 = currVal_159;
     }
     this._RouterLinkWithHref_38_3.checkHost(this,this,this._el_38,throwOnChange);
     valUnwrapper.reset();
-    const currVal_161:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_5,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Biography')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_161,currVal_161))) {
-      this.renderer.setText(this._text_39,currVal_161);
-      this._expr_161 = currVal_161;
+    const currVal_162:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_5,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Biography')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_162,currVal_162))) {
+      this.renderer.setText(this._text_39,currVal_162);
+      this._expr_162 = currVal_162;
     }
     this._RouterLinkWithHref_41_3.checkHost(this,this,this._el_41,throwOnChange);
     valUnwrapper.reset();
-    const currVal_164:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_6,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Biography')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_164,currVal_164))) {
-      this.renderer.setText(this._text_42,currVal_164);
-      this._expr_164 = currVal_164;
+    const currVal_165:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_6,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Biography')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_165,currVal_165))) {
+      this.renderer.setText(this._text_42,currVal_165);
+      this._expr_165 = currVal_165;
     }
     this._RouterLinkWithHref_47_3.checkHost(this,this,this._el_47,throwOnChange);
     valUnwrapper.reset();
-    const currVal_167:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_7,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Pictures')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_167,currVal_167))) {
-      this.renderer.setText(this._text_48,currVal_167);
-      this._expr_167 = currVal_167;
+    const currVal_168:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_7,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Pictures')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_168,currVal_168))) {
+      this.renderer.setText(this._text_48,currVal_168);
+      this._expr_168 = currVal_168;
     }
     this._RouterLinkWithHref_50_3.checkHost(this,this,this._el_50,throwOnChange);
     valUnwrapper.reset();
-    const currVal_170:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_8,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Pictures')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_170,currVal_170))) {
-      this.renderer.setText(this._text_51,currVal_170);
-      this._expr_170 = currVal_170;
+    const currVal_171:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_8,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Pictures')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_171,currVal_171))) {
+      this.renderer.setText(this._text_51,currVal_171);
+      this._expr_171 = currVal_171;
     }
     this._RouterLinkWithHref_56_3.checkHost(this,this,this._el_56,throwOnChange);
     valUnwrapper.reset();
-    const currVal_173:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_9,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Videos')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_173,currVal_173))) {
-      this.renderer.setText(this._text_57,currVal_173);
-      this._expr_173 = currVal_173;
+    const currVal_174:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_9,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Videos')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_174,currVal_174))) {
+      this.renderer.setText(this._text_57,currVal_174);
+      this._expr_174 = currVal_174;
     }
     this._RouterLinkWithHref_59_3.checkHost(this,this,this._el_59,throwOnChange);
     valUnwrapper.reset();
-    const currVal_176:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_10,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Videos')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_176,currVal_176))) {
-      this.renderer.setText(this._text_60,currVal_176);
-      this._expr_176 = currVal_176;
+    const currVal_177:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_10,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Videos')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_177,currVal_177))) {
+      this.renderer.setText(this._text_60,currVal_177);
+      this._expr_177 = currVal_177;
     }
     this._RouterLinkWithHref_65_3.checkHost(this,this,this._el_65,throwOnChange);
     valUnwrapper.reset();
-    const currVal_179:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_11,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Programs')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_179,currVal_179))) {
-      this.renderer.setText(this._text_66,currVal_179);
-      this._expr_179 = currVal_179;
+    const currVal_180:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_11,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Programs')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_180,currVal_180))) {
+      this.renderer.setText(this._text_66,currVal_180);
+      this._expr_180 = currVal_180;
     }
     this._RouterLinkWithHref_68_3.checkHost(this,this,this._el_68,throwOnChange);
     valUnwrapper.reset();
-    const currVal_182:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_12,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Programs')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_182,currVal_182))) {
-      this.renderer.setText(this._text_69,currVal_182);
-      this._expr_182 = currVal_182;
+    const currVal_183:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_12,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Programs')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_183,currVal_183))) {
+      this.renderer.setText(this._text_69,currVal_183);
+      this._expr_183 = currVal_183;
     }
     this._RouterLinkWithHref_74_3.checkHost(this,this,this._el_74,throwOnChange);
     valUnwrapper.reset();
-    const currVal_185:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_13,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Links')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_185,currVal_185))) {
-      this.renderer.setText(this._text_75,currVal_185);
-      this._expr_185 = currVal_185;
+    const currVal_186:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_13,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Links')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_186,currVal_186))) {
+      this.renderer.setText(this._text_75,currVal_186);
+      this._expr_186 = currVal_186;
     }
     this._RouterLinkWithHref_77_3.checkHost(this,this,this._el_77,throwOnChange);
     valUnwrapper.reset();
-    const currVal_188:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_14,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Links')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_188,currVal_188))) {
-      this.renderer.setText(this._text_78,currVal_188);
-      this._expr_188 = currVal_188;
+    const currVal_189:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_14,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Links')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_189,currVal_189))) {
+      this.renderer.setText(this._text_78,currVal_189);
+      this._expr_189 = currVal_189;
     }
     this._RouterLinkWithHref_83_3.checkHost(this,this,this._el_83,throwOnChange);
     valUnwrapper.reset();
-    const currVal_191:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_15,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Contact')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_191,currVal_191))) {
-      this.renderer.setText(this._text_84,currVal_191);
-      this._expr_191 = currVal_191;
+    const currVal_192:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_15,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Contact')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_192,currVal_192))) {
+      this.renderer.setText(this._text_84,currVal_192);
+      this._expr_192 = currVal_192;
     }
     this._RouterLinkWithHref_86_3.checkHost(this,this,this._el_86,throwOnChange);
     valUnwrapper.reset();
-    const currVal_194:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_16,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Contact')),'');
-    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_194,currVal_194))) {
-      this.renderer.setText(this._text_87,currVal_194);
-      this._expr_194 = currVal_194;
+    const currVal_195:any = import3.inlineInterpolate(1,'',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_16,(<View_AppComponent0>this.parentView)._pipe_translate_0.transform)('Contact')),'');
+    if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_195,currVal_195))) {
+      this.renderer.setText(this._text_87,currVal_195);
+      this._expr_195 = currVal_195;
     }
   }
   destroyInternal():void {

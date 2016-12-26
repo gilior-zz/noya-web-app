@@ -29,19 +29,18 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
     }
 
     ngAfterViewInit() {
-        var mySwiper = new Swiper('.swiper-container', {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            //pagination: '.swiper-pagination',
-            //paginationClickable: true,
-            // Disable preloading of all images
-            preloadImages: false,
-            // Enable lazy loading
-            lazyLoading: true
-        })
 
 
     }
+    selectedID: number;
+    setClasses(imgId: number) {
+        let classes = {
+            item: true,
+            active: imgId == this.selectedID
+        };
+        return classes;
+    }
+
 
 
     onLeft() {

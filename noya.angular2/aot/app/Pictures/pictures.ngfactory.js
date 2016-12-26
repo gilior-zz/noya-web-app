@@ -29,6 +29,10 @@ var import16 = require('@angular/core/src/change_detection/differs/iterable_diff
 var import17 = require('@angular/common/src/directives/ng_for');
 var import18 = require('@angular/core/src/change_detection/change_detection_util');
 var import19 = require('@angular/core/src/security');
+var import20 = require('../../node_modules/@angular/common/src/directives/ng_class.ngfactory');
+var import21 = require('@angular/core/src/change_detection/differs/keyvalue_differs');
+var import22 = require('@angular/core/src/linker/element_ref');
+var import23 = require('@angular/common/src/directives/ng_class');
 var Wrapper_Pictures = (function () {
     function Wrapper_Pictures(p0, p1, p2, p3, p4) {
         this._changed = false;
@@ -113,89 +117,140 @@ var View_Pictures0 = (function (_super) {
     }
     View_Pictures0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
-        this._el_0 = import3.createRenderElement(this.renderer, parentRenderNode, 'div', new import3.InlineArray8(8, 'class', 'carousel slide', 'data-interval', 'false', 'data-ride', 'carousel', 'id', 'carousel-example-generic'), null);
+        this._el_0 = import3.createRenderElement(this.renderer, parentRenderNode, 'div', new import3.InlineArray2(2, 'class', 'row'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
-        this._text_2 = this.renderer.createText(this._el_0, '\n    ', null);
-        this._text_3 = this.renderer.createText(this._el_0, '\n    ', null);
-        this._text_4 = this.renderer.createText(this._el_0, '\n    ', null);
-        this._el_5 = import3.createRenderElement(this.renderer, this._el_0, 'div', new import3.InlineArray4(4, 'class', 'carousel-inner', 'role', 'listbox'), null);
-        this._text_6 = this.renderer.createText(this._el_5, '\n        ', null);
-        this._anchor_7 = this.renderer.createTemplateAnchor(this._el_5, null);
-        this._vc_7 = new import12.ViewContainer(7, 5, this, this._anchor_7);
-        this._TemplateRef_7_5 = new import15.TemplateRef_(this, 7, this._anchor_7);
-        this._NgFor_7_6 = new import13.Wrapper_NgFor(this._vc_7.vcRef, this._TemplateRef_7_5, this.parentView.injectorGet(import16.IterableDiffers, this.parentIndex), this.ref);
-        this._text_8 = this.renderer.createText(this._el_5, '\n    ', null);
-        this._text_9 = this.renderer.createText(this._el_0, '\n    ', null);
-        this._text_10 = this.renderer.createText(this._el_0, '\n    ', null);
-        this._el_11 = import3.createRenderElement(this.renderer, this._el_0, 'a', new import3.InlineArray8(8, 'class', 'left carousel-control', 'data-slide', 'prev', 'href', '#carousel-example-generic', 'role', 'button'), null);
-        this._text_12 = this.renderer.createText(this._el_11, '\n        ', null);
-        this._el_13 = import3.createRenderElement(this.renderer, this._el_11, 'span', new import3.InlineArray4(4, 'aria-hidden', 'true', 'class', 'glyphicon glyphicon-chevron-left'), null);
-        this._text_14 = this.renderer.createText(this._el_11, '\n        ', null);
-        this._el_15 = import3.createRenderElement(this.renderer, this._el_11, 'span', new import3.InlineArray2(2, 'class', 'sr-only'), null);
-        this._text_16 = this.renderer.createText(this._el_15, 'Previous', null);
-        this._text_17 = this.renderer.createText(this._el_11, '\n    ', null);
-        this._text_18 = this.renderer.createText(this._el_0, '\n    ', null);
-        this._el_19 = import3.createRenderElement(this.renderer, this._el_0, 'a', new import3.InlineArray8(8, 'class', 'right carousel-control', 'data-slide', 'next', 'href', '#carousel-example-generic', 'role', 'button'), null);
-        this._text_20 = this.renderer.createText(this._el_19, '\n        ', null);
-        this._el_21 = import3.createRenderElement(this.renderer, this._el_19, 'span', new import3.InlineArray4(4, 'aria-hidden', 'true', 'class', 'glyphicon glyphicon-chevron-right'), null);
-        this._text_22 = this.renderer.createText(this._el_19, '\n        ', null);
-        this._el_23 = import3.createRenderElement(this.renderer, this._el_19, 'span', new import3.InlineArray2(2, 'class', 'sr-only'), null);
-        this._text_24 = this.renderer.createText(this._el_23, 'Next', null);
-        this._text_25 = this.renderer.createText(this._el_19, '\n    ', null);
-        this._text_26 = this.renderer.createText(this._el_0, '\n', null);
+        this._anchor_2 = this.renderer.createTemplateAnchor(this._el_0, null);
+        this._vc_2 = new import12.ViewContainer(2, 0, this, this._anchor_2);
+        this._TemplateRef_2_5 = new import15.TemplateRef_(this, 2, this._anchor_2);
+        this._NgFor_2_6 = new import13.Wrapper_NgFor(this._vc_2.vcRef, this._TemplateRef_2_5, this.parentView.injectorGet(import16.IterableDiffers, this.parentIndex), this.ref);
+        this._text_3 = this.renderer.createText(this._el_0, '\n', null);
+        this._text_4 = this.renderer.createText(parentRenderNode, '\n\n', null);
+        this._text_5 = this.renderer.createText(parentRenderNode, '\n', null);
+        this._el_6 = import3.createRenderElement(this.renderer, parentRenderNode, 'div', new import3.InlineArray16(10, 'aria-labelledby', 'myModalLabel', 'class', 'modal fade', 'id', 'myModal', 'role', 'dialog', 'tabindex', '-1'), null);
+        this._text_7 = this.renderer.createText(this._el_6, '\n    ', null);
+        this._el_8 = import3.createRenderElement(this.renderer, this._el_6, 'div', new import3.InlineArray4(4, 'class', 'modal-dialog', 'role', 'document'), null);
+        this._text_9 = this.renderer.createText(this._el_8, '\n        ', null);
+        this._el_10 = import3.createRenderElement(this.renderer, this._el_8, 'div', new import3.InlineArray2(2, 'class', 'modal-content'), null);
+        this._text_11 = this.renderer.createText(this._el_10, '\n            ', null);
+        this._el_12 = import3.createRenderElement(this.renderer, this._el_10, 'div', new import3.InlineArray2(2, 'class', 'modal-body'), null);
+        this._text_13 = this.renderer.createText(this._el_12, '\n                ', null);
+        this._el_14 = import3.createRenderElement(this.renderer, this._el_12, 'div', new import3.InlineArray8(8, 'class', 'carousel slide', 'data-interval', 'false', 'data-ride', 'carousel', 'id', 'carousel-example-generic'), null);
+        this._text_15 = this.renderer.createText(this._el_14, '\n\n\n                    ', null);
+        this._text_16 = this.renderer.createText(this._el_14, '\n                    ', null);
+        this._el_17 = import3.createRenderElement(this.renderer, this._el_14, 'div', new import3.InlineArray4(4, 'class', 'carousel-inner', 'role', 'listbox'), null);
+        this._text_18 = this.renderer.createText(this._el_17, '\n                        ', null);
+        this._anchor_19 = this.renderer.createTemplateAnchor(this._el_17, null);
+        this._vc_19 = new import12.ViewContainer(19, 17, this, this._anchor_19);
+        this._TemplateRef_19_5 = new import15.TemplateRef_(this, 19, this._anchor_19);
+        this._NgFor_19_6 = new import13.Wrapper_NgFor(this._vc_19.vcRef, this._TemplateRef_19_5, this.parentView.injectorGet(import16.IterableDiffers, this.parentIndex), this.ref);
+        this._text_20 = this.renderer.createText(this._el_17, '\n                    ', null);
+        this._text_21 = this.renderer.createText(this._el_14, '\n                    ', null);
+        this._text_22 = this.renderer.createText(this._el_14, '\n                    ', null);
+        this._el_23 = import3.createRenderElement(this.renderer, this._el_14, 'a', new import3.InlineArray8(8, 'class', 'left carousel-control', 'data-slide', 'prev', 'href', '#carousel-example-generic', 'role', 'button'), null);
+        this._text_24 = this.renderer.createText(this._el_23, '\n                        ', null);
+        this._el_25 = import3.createRenderElement(this.renderer, this._el_23, 'span', new import3.InlineArray4(4, 'aria-hidden', 'true', 'class', 'glyphicon glyphicon-chevron-left'), null);
+        this._text_26 = this.renderer.createText(this._el_23, '\n                        ', null);
+        this._el_27 = import3.createRenderElement(this.renderer, this._el_23, 'span', new import3.InlineArray2(2, 'class', 'sr-only'), null);
+        this._text_28 = this.renderer.createText(this._el_27, 'Previous', null);
+        this._text_29 = this.renderer.createText(this._el_23, '\n                    ', null);
+        this._text_30 = this.renderer.createText(this._el_14, '\n                    ', null);
+        this._el_31 = import3.createRenderElement(this.renderer, this._el_14, 'a', new import3.InlineArray8(8, 'class', 'right carousel-control', 'data-slide', 'next', 'href', '#carousel-example-generic', 'role', 'button'), null);
+        this._text_32 = this.renderer.createText(this._el_31, '\n                        ', null);
+        this._el_33 = import3.createRenderElement(this.renderer, this._el_31, 'span', new import3.InlineArray4(4, 'aria-hidden', 'true', 'class', 'glyphicon glyphicon-chevron-right'), null);
+        this._text_34 = this.renderer.createText(this._el_31, '\n                        ', null);
+        this._el_35 = import3.createRenderElement(this.renderer, this._el_31, 'span', new import3.InlineArray2(2, 'class', 'sr-only'), null);
+        this._text_36 = this.renderer.createText(this._el_35, 'Next', null);
+        this._text_37 = this.renderer.createText(this._el_31, '\n                    ', null);
+        this._text_38 = this.renderer.createText(this._el_14, '\n                ', null);
+        this._text_39 = this.renderer.createText(this._el_12, '\n            ', null);
+        this._text_40 = this.renderer.createText(this._el_10, '\n\n        ', null);
+        this._text_41 = this.renderer.createText(this._el_8, '\n    ', null);
+        this._text_42 = this.renderer.createText(this._el_6, '\n', null);
+        this._text_43 = this.renderer.createText(parentRenderNode, '\n\n', null);
         this._pipe_translate_0 = new import14.TranslatePipe(this.parentView.injectorGet(import9.TranslationService, this.parentIndex), this.parentView.injectorGet(import9.CacheManager, this.parentIndex));
         this.init(null, (this.renderer.directRenderer ? null : [
             this._el_0,
             this._text_1,
-            this._text_2,
+            this._anchor_2,
             this._text_3,
             this._text_4,
-            this._el_5,
-            this._text_6,
-            this._anchor_7,
-            this._text_8,
+            this._text_5,
+            this._el_6,
+            this._text_7,
+            this._el_8,
             this._text_9,
-            this._text_10,
-            this._el_11,
-            this._text_12,
-            this._el_13,
-            this._text_14,
-            this._el_15,
+            this._el_10,
+            this._text_11,
+            this._el_12,
+            this._text_13,
+            this._el_14,
+            this._text_15,
             this._text_16,
-            this._text_17,
+            this._el_17,
             this._text_18,
-            this._el_19,
+            this._anchor_19,
             this._text_20,
-            this._el_21,
+            this._text_21,
             this._text_22,
             this._el_23,
             this._text_24,
-            this._text_25,
-            this._text_26
+            this._el_25,
+            this._text_26,
+            this._el_27,
+            this._text_28,
+            this._text_29,
+            this._text_30,
+            this._el_31,
+            this._text_32,
+            this._el_33,
+            this._text_34,
+            this._el_35,
+            this._text_36,
+            this._text_37,
+            this._text_38,
+            this._text_39,
+            this._text_40,
+            this._text_41,
+            this._text_42,
+            this._text_43
         ]), null);
         return null;
     };
     View_Pictures0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import15.TemplateRef) && (7 === requestNodeIndex))) {
-            return this._TemplateRef_7_5;
+        if (((token === import15.TemplateRef) && (2 === requestNodeIndex))) {
+            return this._TemplateRef_2_5;
         }
-        if (((token === import17.NgFor) && (7 === requestNodeIndex))) {
-            return this._NgFor_7_6.context;
+        if (((token === import17.NgFor) && (2 === requestNodeIndex))) {
+            return this._NgFor_2_6.context;
+        }
+        if (((token === import15.TemplateRef) && (19 === requestNodeIndex))) {
+            return this._TemplateRef_19_5;
+        }
+        if (((token === import17.NgFor) && (19 === requestNodeIndex))) {
+            return this._NgFor_19_6.context;
         }
         return notFoundResult;
     };
     View_Pictures0.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_7_0_0 = this.context.images;
-        this._NgFor_7_6.check_ngForOf(currVal_7_0_0, throwOnChange, false);
-        this._NgFor_7_6.ngDoCheck(this, this._anchor_7, throwOnChange);
-        this._vc_7.detectChangesInNestedViews(throwOnChange);
+        var currVal_2_0_0 = this.context.images;
+        this._NgFor_2_6.check_ngForOf(currVal_2_0_0, throwOnChange, false);
+        this._NgFor_2_6.ngDoCheck(this, this._anchor_2, throwOnChange);
+        var currVal_19_0_0 = this.context.images;
+        this._NgFor_19_6.check_ngForOf(currVal_19_0_0, throwOnChange, false);
+        this._NgFor_19_6.ngDoCheck(this, this._anchor_19, throwOnChange);
+        this._vc_2.detectChangesInNestedViews(throwOnChange);
+        this._vc_19.detectChangesInNestedViews(throwOnChange);
     };
     View_Pictures0.prototype.destroyInternal = function () {
-        this._vc_7.destroyNestedViews();
+        this._vc_2.destroyNestedViews();
+        this._vc_19.destroyNestedViews();
     };
     View_Pictures0.prototype.createEmbeddedViewInternal = function (nodeIndex) {
-        if ((nodeIndex == 7)) {
-            return new View_Pictures1(this.viewUtils, this, 7, this._anchor_7, this._vc_7);
+        if ((nodeIndex == 2)) {
+            return new View_Pictures1(this.viewUtils, this, 2, this._anchor_2, this._vc_2);
+        }
+        if ((nodeIndex == 19)) {
+            return new View_Pictures2(this.viewUtils, this, 19, this._anchor_19, this._vc_19);
         }
         return null;
     };
@@ -206,18 +261,59 @@ var View_Pictures1 = (function (_super) {
     __extends(View_Pictures1, _super);
     function View_Pictures1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
         _super.call(this, View_Pictures1, renderType_Pictures, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
-        this._expr_7 = import18.UNINITIALIZED;
+        this._expr_4 = import18.UNINITIALIZED;
+    }
+    View_Pictures1.prototype.createInternal = function (rootSelector) {
+        this._el_0 = import3.createRenderElement(this.renderer, null, 'div', new import3.InlineArray2(2, 'class', 'col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center'), null);
+        this._text_1 = this.renderer.createText(this._el_0, '\n        ', null);
+        this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'img', new import3.InlineArray8(8, 'alt', '', 'class', 'img-responsive img-rounded', 'data-target', '#myModal', 'data-toggle', 'modal'), null);
+        this._text_3 = this.renderer.createText(this._el_0, '\n    ', null);
+        var disposable_0 = import3.subscribeToRenderElement(this, this._el_2, new import3.InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_2));
+        this.init(this._el_0, (this.renderer.directRenderer ? null : [
+            this._el_0,
+            this._text_1,
+            this._el_2,
+            this._text_3
+        ]), [disposable_0]);
+        return null;
+    };
+    View_Pictures1.prototype.detectChangesInternal = function (throwOnChange) {
+        var currVal_4 = this.context.$implicit.ImageURL;
+        if (import3.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
+            this.renderer.setElementProperty(this._el_2, 'src', this.viewUtils.sanitizer.sanitize(import19.SecurityContext.URL, currVal_4));
+            this._expr_4 = currVal_4;
+        }
+    };
+    View_Pictures1.prototype.visitRootNodesInternal = function (cb, ctx) {
+        cb(this._el_0, ctx);
+    };
+    View_Pictures1.prototype.handleEvent_2 = function (eventName, $event) {
+        this.markPathToRootAsCheckOnce();
+        var result = true;
+        if ((eventName == 'click')) {
+            var pd_sub_0 = ((this.parentView.context.selectedID = this.context.$implicit.ID) !== false);
+            result = (pd_sub_0 && result);
+        }
+        return result;
+    };
+    return View_Pictures1;
+}(import1.AppView));
+var View_Pictures2 = (function (_super) {
+    __extends(View_Pictures2, _super);
+    function View_Pictures2(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
+        _super.call(this, View_Pictures2, renderType_Pictures, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
         this._expr_8 = import18.UNINITIALIZED;
         this._expr_9 = import18.UNINITIALIZED;
     }
-    View_Pictures1.prototype.createInternal = function (rootSelector) {
-        this._el_0 = import3.createRenderElement(this.renderer, null, 'div', new import3.InlineArray2(2, 'class', 'item'), null);
-        this._text_1 = this.renderer.createText(this._el_0, '\n            ', null);
-        this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'img', new import3.InlineArray2(2, 'alt', '...'), null);
-        this._text_3 = this.renderer.createText(this._el_0, '\n            ', null);
+    View_Pictures2.prototype.createInternal = function (rootSelector) {
+        this._el_0 = import3.createRenderElement(this.renderer, null, 'div', import3.EMPTY_INLINE_ARRAY, null);
+        this._NgClass_0_3 = new import20.Wrapper_NgClass(this.parentView.parentView.injectorGet(import16.IterableDiffers, this.parentView.parentIndex), this.parentView.parentView.injectorGet(import21.KeyValueDiffers, this.parentView.parentIndex), new import22.ElementRef(this._el_0), this.renderer);
+        this._text_1 = this.renderer.createText(this._el_0, '\n                            ', null);
+        this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'img', new import3.InlineArray4(4, 'alt', '...', 'class', 'img-carousel img-responsive'), null);
+        this._text_3 = this.renderer.createText(this._el_0, '\n                            ', null);
         this._el_4 = import3.createRenderElement(this.renderer, this._el_0, 'div', new import3.InlineArray2(2, 'class', 'carousel-caption'), null);
         this._text_5 = this.renderer.createText(this._el_4, '', null);
-        this._text_6 = this.renderer.createText(this._el_0, '\n        ', null);
+        this._text_6 = this.renderer.createText(this._el_0, '\n                        ', null);
         this._pipe_translate_0_0 = import3.pureProxy1(this.parentView._pipe_translate_0.transform.bind(this.parentView._pipe_translate_0));
         this.init(this._el_0, (this.renderer.directRenderer ? null : [
             this._el_0,
@@ -230,28 +326,32 @@ var View_Pictures1 = (function (_super) {
         ]), null);
         return null;
     };
-    View_Pictures1.prototype.detectChangesInternal = function (throwOnChange) {
-        var valUnwrapper = new import18.ValueUnwrapper();
-        var currVal_7 = this.context.first;
-        if (import3.checkBinding(throwOnChange, this._expr_7, currVal_7)) {
-            this.renderer.setElementClass(this._el_0, 'active', currVal_7);
-            this._expr_7 = currVal_7;
+    View_Pictures2.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+        if (((token === import23.NgClass) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 6)))) {
+            return this._NgClass_0_3.context;
         }
+        return notFoundResult;
+    };
+    View_Pictures2.prototype.detectChangesInternal = function (throwOnChange) {
+        var valUnwrapper = new import18.ValueUnwrapper();
+        var currVal_0_0_0 = this.parentView.context.setClasses(this.context.$implicit.ID);
+        this._NgClass_0_3.check_ngClass(currVal_0_0_0, throwOnChange, false);
+        this._NgClass_0_3.ngDoCheck(this, this._el_0, throwOnChange);
         var currVal_8 = this.context.$implicit.ImageURL;
         if (import3.checkBinding(throwOnChange, this._expr_8, currVal_8)) {
             this.renderer.setElementProperty(this._el_2, 'src', this.viewUtils.sanitizer.sanitize(import19.SecurityContext.URL, currVal_8));
             this._expr_8 = currVal_8;
         }
         valUnwrapper.reset();
-        var currVal_9 = import3.inlineInterpolate(1, '\n                ', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_0, this.parentView._pipe_translate_0.transform)('Noya Schleien')), '\n            ');
+        var currVal_9 = import3.inlineInterpolate(1, '\n                                ', valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_0, this.parentView._pipe_translate_0.transform)('Noya Schleien')), '\n                            ');
         if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange, this._expr_9, currVal_9))) {
             this.renderer.setText(this._text_5, currVal_9);
             this._expr_9 = currVal_9;
         }
     };
-    View_Pictures1.prototype.visitRootNodesInternal = function (cb, ctx) {
+    View_Pictures2.prototype.visitRootNodesInternal = function (cb, ctx) {
         cb(this._el_0, ctx);
     };
-    return View_Pictures1;
+    return View_Pictures2;
 }(import1.AppView));
 //# sourceMappingURL=pictures.ngfactory.js.map

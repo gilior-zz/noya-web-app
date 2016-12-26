@@ -1,27 +1,40 @@
-﻿<div id="carousel-example-generic" class="carousel slide" data-interval="false"
-     data-ride="carousel">
-    <!-- Indicators -->
-    <!--<ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>-->
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div *ngFor="let img of images;let first=first" class="item" [class.active]="first">
-            <img [src]="img.ImageURL" alt="...">
-            <div class="carousel-caption">
-                {{'Noya Schleien'|translate}}
+﻿<div class="row">
+    <div *ngFor="let img of images" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
+        <img (click)="selectedID=img.ID" data-toggle="modal" data-target="#myModal" class="img-responsive img-rounded" [src]="img.ImageURL" alt="" />
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id="carousel-example-generic" class="carousel slide" data-interval="false"
+                     data-ride="carousel">
+
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div *ngFor="let img of images;let first=first" [ngClass]="setClasses(img.ID)">
+                            <img class="img-carousel img-responsive" [src]="img.ImageURL" alt="...">
+                            <div class="carousel-caption">
+                                {{'Noya Schleien'|translate}}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
+
         </div>
     </div>
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
+

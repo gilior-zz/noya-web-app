@@ -25,6 +25,10 @@ import * as import16 from '@angular/core/src/change_detection/differs/iterable_d
 import * as import17 from '@angular/common/src/directives/ng_for';
 import * as import18 from '@angular/core/src/change_detection/change_detection_util';
 import * as import19 from '@angular/core/src/security';
+import * as import20 from '../../node_modules/@angular/common/src/directives/ng_class.ngfactory';
+import * as import21 from '@angular/core/src/change_detection/differs/keyvalue_differs';
+import * as import22 from '@angular/core/src/linker/element_ref';
+import * as import23 from '@angular/common/src/directives/ng_class';
 export class Wrapper_Pictures {
   /*private*/ _eventHandler:Function;
   context:import0.Pictures;
@@ -96,119 +100,184 @@ var renderType_Pictures:import2.RenderComponentType = import3.createRenderCompon
 export class View_Pictures0 extends import1.AppView<import0.Pictures> {
   _el_0:any;
   _text_1:any;
-  _text_2:any;
+  _anchor_2:any;
+  /*private*/ _vc_2:import12.ViewContainer;
+  _TemplateRef_2_5:any;
+  _NgFor_2_6:import13.Wrapper_NgFor;
   _text_3:any;
   _text_4:any;
-  _el_5:any;
-  _text_6:any;
-  _anchor_7:any;
-  /*private*/ _vc_7:import12.ViewContainer;
-  _TemplateRef_7_5:any;
-  _NgFor_7_6:import13.Wrapper_NgFor;
-  _text_8:any;
+  _text_5:any;
+  _el_6:any;
+  _text_7:any;
+  _el_8:any;
   _text_9:any;
-  _text_10:any;
-  _el_11:any;
-  _text_12:any;
-  _el_13:any;
-  _text_14:any;
-  _el_15:any;
+  _el_10:any;
+  _text_11:any;
+  _el_12:any;
+  _text_13:any;
+  _el_14:any;
+  _text_15:any;
   _text_16:any;
-  _text_17:any;
+  _el_17:any;
   _text_18:any;
-  _el_19:any;
+  _anchor_19:any;
+  /*private*/ _vc_19:import12.ViewContainer;
+  _TemplateRef_19_5:any;
+  _NgFor_19_6:import13.Wrapper_NgFor;
   _text_20:any;
-  _el_21:any;
+  _text_21:any;
   _text_22:any;
   _el_23:any;
   _text_24:any;
-  _text_25:any;
+  _el_25:any;
   _text_26:any;
+  _el_27:any;
+  _text_28:any;
+  _text_29:any;
+  _text_30:any;
+  _el_31:any;
+  _text_32:any;
+  _el_33:any;
+  _text_34:any;
+  _el_35:any;
+  _text_36:any;
+  _text_37:any;
+  _text_38:any;
+  _text_39:any;
+  _text_40:any;
+  _text_41:any;
+  _text_42:any;
+  _text_43:any;
   _pipe_translate_0:import14.TranslatePipe;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_Pictures0,renderType_Pictures,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray8(8,'class','carousel slide','data-interval','false','data-ride','carousel','id','carousel-example-generic'),(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','row'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._text_2 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._text_3 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._text_4 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._el_5 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray4(4,'class','carousel-inner','role','listbox'),(null as any));
-    this._text_6 = this.renderer.createText(this._el_5,'\n        ',(null as any));
-    this._anchor_7 = this.renderer.createTemplateAnchor(this._el_5,(null as any));
-    this._vc_7 = new import12.ViewContainer(7,5,this,this._anchor_7);
-    this._TemplateRef_7_5 = new import15.TemplateRef_(this,7,this._anchor_7);
-    this._NgFor_7_6 = new import13.Wrapper_NgFor(this._vc_7.vcRef,this._TemplateRef_7_5,this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.ref);
-    this._text_8 = this.renderer.createText(this._el_5,'\n    ',(null as any));
-    this._text_9 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._text_10 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._el_11 = import3.createRenderElement(this.renderer,this._el_0,'a',new import3.InlineArray8(8,'class','left carousel-control','data-slide','prev','href','#carousel-example-generic','role','button'),(null as any));
-    this._text_12 = this.renderer.createText(this._el_11,'\n        ',(null as any));
-    this._el_13 = import3.createRenderElement(this.renderer,this._el_11,'span',new import3.InlineArray4(4,'aria-hidden','true','class','glyphicon glyphicon-chevron-left'),(null as any));
-    this._text_14 = this.renderer.createText(this._el_11,'\n        ',(null as any));
-    this._el_15 = import3.createRenderElement(this.renderer,this._el_11,'span',new import3.InlineArray2(2,'class','sr-only'),(null as any));
-    this._text_16 = this.renderer.createText(this._el_15,'Previous',(null as any));
-    this._text_17 = this.renderer.createText(this._el_11,'\n    ',(null as any));
-    this._text_18 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._el_19 = import3.createRenderElement(this.renderer,this._el_0,'a',new import3.InlineArray8(8,'class','right carousel-control','data-slide','next','href','#carousel-example-generic','role','button'),(null as any));
-    this._text_20 = this.renderer.createText(this._el_19,'\n        ',(null as any));
-    this._el_21 = import3.createRenderElement(this.renderer,this._el_19,'span',new import3.InlineArray4(4,'aria-hidden','true','class','glyphicon glyphicon-chevron-right'),(null as any));
-    this._text_22 = this.renderer.createText(this._el_19,'\n        ',(null as any));
-    this._el_23 = import3.createRenderElement(this.renderer,this._el_19,'span',new import3.InlineArray2(2,'class','sr-only'),(null as any));
-    this._text_24 = this.renderer.createText(this._el_23,'Next',(null as any));
-    this._text_25 = this.renderer.createText(this._el_19,'\n    ',(null as any));
-    this._text_26 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._anchor_2 = this.renderer.createTemplateAnchor(this._el_0,(null as any));
+    this._vc_2 = new import12.ViewContainer(2,0,this,this._anchor_2);
+    this._TemplateRef_2_5 = new import15.TemplateRef_(this,2,this._anchor_2);
+    this._NgFor_2_6 = new import13.Wrapper_NgFor(this._vc_2.vcRef,this._TemplateRef_2_5,this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.ref);
+    this._text_3 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._text_4 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
+    this._text_5 = this.renderer.createText(parentRenderNode,'\n',(null as any));
+    this._el_6 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray16(10,'aria-labelledby','myModalLabel','class','modal fade','id','myModal','role','dialog','tabindex','-1'),(null as any));
+    this._text_7 = this.renderer.createText(this._el_6,'\n    ',(null as any));
+    this._el_8 = import3.createRenderElement(this.renderer,this._el_6,'div',new import3.InlineArray4(4,'class','modal-dialog','role','document'),(null as any));
+    this._text_9 = this.renderer.createText(this._el_8,'\n        ',(null as any));
+    this._el_10 = import3.createRenderElement(this.renderer,this._el_8,'div',new import3.InlineArray2(2,'class','modal-content'),(null as any));
+    this._text_11 = this.renderer.createText(this._el_10,'\n            ',(null as any));
+    this._el_12 = import3.createRenderElement(this.renderer,this._el_10,'div',new import3.InlineArray2(2,'class','modal-body'),(null as any));
+    this._text_13 = this.renderer.createText(this._el_12,'\n                ',(null as any));
+    this._el_14 = import3.createRenderElement(this.renderer,this._el_12,'div',new import3.InlineArray8(8,'class','carousel slide','data-interval','false','data-ride','carousel','id','carousel-example-generic'),(null as any));
+    this._text_15 = this.renderer.createText(this._el_14,'\n\n\n                    ',(null as any));
+    this._text_16 = this.renderer.createText(this._el_14,'\n                    ',(null as any));
+    this._el_17 = import3.createRenderElement(this.renderer,this._el_14,'div',new import3.InlineArray4(4,'class','carousel-inner','role','listbox'),(null as any));
+    this._text_18 = this.renderer.createText(this._el_17,'\n                        ',(null as any));
+    this._anchor_19 = this.renderer.createTemplateAnchor(this._el_17,(null as any));
+    this._vc_19 = new import12.ViewContainer(19,17,this,this._anchor_19);
+    this._TemplateRef_19_5 = new import15.TemplateRef_(this,19,this._anchor_19);
+    this._NgFor_19_6 = new import13.Wrapper_NgFor(this._vc_19.vcRef,this._TemplateRef_19_5,this.parentView.injectorGet(import16.IterableDiffers,this.parentIndex),this.ref);
+    this._text_20 = this.renderer.createText(this._el_17,'\n                    ',(null as any));
+    this._text_21 = this.renderer.createText(this._el_14,'\n                    ',(null as any));
+    this._text_22 = this.renderer.createText(this._el_14,'\n                    ',(null as any));
+    this._el_23 = import3.createRenderElement(this.renderer,this._el_14,'a',new import3.InlineArray8(8,'class','left carousel-control','data-slide','prev','href','#carousel-example-generic','role','button'),(null as any));
+    this._text_24 = this.renderer.createText(this._el_23,'\n                        ',(null as any));
+    this._el_25 = import3.createRenderElement(this.renderer,this._el_23,'span',new import3.InlineArray4(4,'aria-hidden','true','class','glyphicon glyphicon-chevron-left'),(null as any));
+    this._text_26 = this.renderer.createText(this._el_23,'\n                        ',(null as any));
+    this._el_27 = import3.createRenderElement(this.renderer,this._el_23,'span',new import3.InlineArray2(2,'class','sr-only'),(null as any));
+    this._text_28 = this.renderer.createText(this._el_27,'Previous',(null as any));
+    this._text_29 = this.renderer.createText(this._el_23,'\n                    ',(null as any));
+    this._text_30 = this.renderer.createText(this._el_14,'\n                    ',(null as any));
+    this._el_31 = import3.createRenderElement(this.renderer,this._el_14,'a',new import3.InlineArray8(8,'class','right carousel-control','data-slide','next','href','#carousel-example-generic','role','button'),(null as any));
+    this._text_32 = this.renderer.createText(this._el_31,'\n                        ',(null as any));
+    this._el_33 = import3.createRenderElement(this.renderer,this._el_31,'span',new import3.InlineArray4(4,'aria-hidden','true','class','glyphicon glyphicon-chevron-right'),(null as any));
+    this._text_34 = this.renderer.createText(this._el_31,'\n                        ',(null as any));
+    this._el_35 = import3.createRenderElement(this.renderer,this._el_31,'span',new import3.InlineArray2(2,'class','sr-only'),(null as any));
+    this._text_36 = this.renderer.createText(this._el_35,'Next',(null as any));
+    this._text_37 = this.renderer.createText(this._el_31,'\n                    ',(null as any));
+    this._text_38 = this.renderer.createText(this._el_14,'\n                ',(null as any));
+    this._text_39 = this.renderer.createText(this._el_12,'\n            ',(null as any));
+    this._text_40 = this.renderer.createText(this._el_10,'\n\n        ',(null as any));
+    this._text_41 = this.renderer.createText(this._el_8,'\n    ',(null as any));
+    this._text_42 = this.renderer.createText(this._el_6,'\n',(null as any));
+    this._text_43 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
     this._pipe_translate_0 = new import14.TranslatePipe(this.parentView.injectorGet(import9.TranslationService,this.parentIndex),this.parentView.injectorGet(import9.CacheManager,this.parentIndex));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
-      this._text_2,
+      this._anchor_2,
       this._text_3,
       this._text_4,
-      this._el_5,
-      this._text_6,
-      this._anchor_7,
-      this._text_8,
+      this._text_5,
+      this._el_6,
+      this._text_7,
+      this._el_8,
       this._text_9,
-      this._text_10,
-      this._el_11,
-      this._text_12,
-      this._el_13,
-      this._text_14,
-      this._el_15,
+      this._el_10,
+      this._text_11,
+      this._el_12,
+      this._text_13,
+      this._el_14,
+      this._text_15,
       this._text_16,
-      this._text_17,
+      this._el_17,
       this._text_18,
-      this._el_19,
+      this._anchor_19,
       this._text_20,
-      this._el_21,
+      this._text_21,
       this._text_22,
       this._el_23,
       this._text_24,
-      this._text_25,
-      this._text_26
+      this._el_25,
+      this._text_26,
+      this._el_27,
+      this._text_28,
+      this._text_29,
+      this._text_30,
+      this._el_31,
+      this._text_32,
+      this._el_33,
+      this._text_34,
+      this._el_35,
+      this._text_36,
+      this._text_37,
+      this._text_38,
+      this._text_39,
+      this._text_40,
+      this._text_41,
+      this._text_42,
+      this._text_43
     ]
     ),(null as any));
     return (null as any);
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
-    if (((token === import15.TemplateRef) && (7 === requestNodeIndex))) { return this._TemplateRef_7_5; }
-    if (((token === import17.NgFor) && (7 === requestNodeIndex))) { return this._NgFor_7_6.context; }
+    if (((token === import15.TemplateRef) && (2 === requestNodeIndex))) { return this._TemplateRef_2_5; }
+    if (((token === import17.NgFor) && (2 === requestNodeIndex))) { return this._NgFor_2_6.context; }
+    if (((token === import15.TemplateRef) && (19 === requestNodeIndex))) { return this._TemplateRef_19_5; }
+    if (((token === import17.NgFor) && (19 === requestNodeIndex))) { return this._NgFor_19_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_7_0_0:any = this.context.images;
-    this._NgFor_7_6.check_ngForOf(currVal_7_0_0,throwOnChange,false);
-    this._NgFor_7_6.ngDoCheck(this,this._anchor_7,throwOnChange);
-    this._vc_7.detectChangesInNestedViews(throwOnChange);
+    const currVal_2_0_0:any = this.context.images;
+    this._NgFor_2_6.check_ngForOf(currVal_2_0_0,throwOnChange,false);
+    this._NgFor_2_6.ngDoCheck(this,this._anchor_2,throwOnChange);
+    const currVal_19_0_0:any = this.context.images;
+    this._NgFor_19_6.check_ngForOf(currVal_19_0_0,throwOnChange,false);
+    this._NgFor_19_6.ngDoCheck(this,this._anchor_19,throwOnChange);
+    this._vc_2.detectChangesInNestedViews(throwOnChange);
+    this._vc_19.detectChangesInNestedViews(throwOnChange);
   }
   destroyInternal():void {
-    this._vc_7.destroyNestedViews();
+    this._vc_2.destroyNestedViews();
+    this._vc_19.destroyNestedViews();
   }
   createEmbeddedViewInternal(nodeIndex:number):import1.AppView<any> {
-    if ((nodeIndex == 7)) { return new View_Pictures1(this.viewUtils,this,7,this._anchor_7,this._vc_7); }
+    if ((nodeIndex == 2)) { return new View_Pictures1(this.viewUtils,this,2,this._anchor_2,this._vc_2); }
+    if ((nodeIndex == 19)) { return new View_Pictures2(this.viewUtils,this,19,this._anchor_19,this._vc_19); }
     return (null as any);
   }
 }
@@ -217,27 +286,72 @@ class View_Pictures1 extends import1.AppView<any> {
   _text_1:any;
   _el_2:any;
   _text_3:any;
+  /*private*/ _expr_4:any;
+  constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
+    super(View_Pictures1,renderType_Pictures,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
+    this._expr_4 = import18.UNINITIALIZED;
+  }
+  createInternal(rootSelector:string):import7.ComponentRef<any> {
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center'),(null as any));
+    this._text_1 = this.renderer.createText(this._el_0,'\n        ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'img',new import3.InlineArray8(8,'alt','','class','img-responsive img-rounded','data-target','#myModal','data-toggle','modal'),(null as any));
+    this._text_3 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_2,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_2));
+    this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
+      this._el_0,
+      this._text_1,
+      this._el_2,
+      this._text_3
+    ]
+    ),[disposable_0]);
+    return (null as any);
+  }
+  detectChangesInternal(throwOnChange:boolean):void {
+    const currVal_4:any = this.context.$implicit.ImageURL;
+    if (import3.checkBinding(throwOnChange,this._expr_4,currVal_4)) {
+      this.renderer.setElementProperty(this._el_2,'src',this.viewUtils.sanitizer.sanitize(import19.SecurityContext.URL,currVal_4));
+      this._expr_4 = currVal_4;
+    }
+  }
+  visitRootNodesInternal(cb:any,ctx:any):void {
+    cb(this._el_0,ctx);
+  }
+  handleEvent_2(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    if ((eventName == 'click')) {
+      const pd_sub_0:any = ((<any>(this.parentView.context.selectedID = this.context.$implicit.ID)) !== false);
+      result = (pd_sub_0 && result);
+    }
+    return result;
+  }
+}
+class View_Pictures2 extends import1.AppView<any> {
+  _el_0:any;
+  _NgClass_0_3:import20.Wrapper_NgClass;
+  _text_1:any;
+  _el_2:any;
+  _text_3:any;
   _el_4:any;
   _text_5:any;
   _text_6:any;
-  /*private*/ _expr_7:any;
   /*private*/ _expr_8:any;
   /*private*/ _expr_9:any;
   _pipe_translate_0_0:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any,declaredViewContainer:import12.ViewContainer) {
-    super(View_Pictures1,renderType_Pictures,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
-    this._expr_7 = import18.UNINITIALIZED;
+    super(View_Pictures2,renderType_Pictures,import5.ViewType.EMBEDDED,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways,declaredViewContainer);
     this._expr_8 = import18.UNINITIALIZED;
     this._expr_9 = import18.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
-    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',new import3.InlineArray2(2,'class','item'),(null as any));
-    this._text_1 = this.renderer.createText(this._el_0,'\n            ',(null as any));
-    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'img',new import3.InlineArray2(2,'alt','...'),(null as any));
-    this._text_3 = this.renderer.createText(this._el_0,'\n            ',(null as any));
+    this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._NgClass_0_3 = new import20.Wrapper_NgClass(this.parentView.parentView.injectorGet(import16.IterableDiffers,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import21.KeyValueDiffers,this.parentView.parentIndex),new import22.ElementRef(this._el_0),this.renderer);
+    this._text_1 = this.renderer.createText(this._el_0,'\n                            ',(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'img',new import3.InlineArray4(4,'alt','...','class','img-carousel img-responsive'),(null as any));
+    this._text_3 = this.renderer.createText(this._el_0,'\n                            ',(null as any));
     this._el_4 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','carousel-caption'),(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'',(null as any));
-    this._text_6 = this.renderer.createText(this._el_0,'\n        ',(null as any));
+    this._text_6 = this.renderer.createText(this._el_0,'\n                        ',(null as any));
     this._pipe_translate_0_0 = import3.pureProxy1((<View_Pictures0>this.parentView)._pipe_translate_0.transform.bind((<View_Pictures0>this.parentView)._pipe_translate_0));
     this.init(this._el_0,((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
@@ -251,20 +365,22 @@ class View_Pictures1 extends import1.AppView<any> {
     ),(null as any));
     return (null as any);
   }
+  injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
+    if (((token === import23.NgClass) && ((0 <= requestNodeIndex) && (requestNodeIndex <= 6)))) { return this._NgClass_0_3.context; }
+    return notFoundResult;
+  }
   detectChangesInternal(throwOnChange:boolean):void {
     const valUnwrapper:any = new import18.ValueUnwrapper();
-    const currVal_7:any = this.context.first;
-    if (import3.checkBinding(throwOnChange,this._expr_7,currVal_7)) {
-      this.renderer.setElementClass(this._el_0,'active',currVal_7);
-      this._expr_7 = currVal_7;
-    }
+    const currVal_0_0_0:any = this.parentView.context.setClasses(this.context.$implicit.ID);
+    this._NgClass_0_3.check_ngClass(currVal_0_0_0,throwOnChange,false);
+    this._NgClass_0_3.ngDoCheck(this,this._el_0,throwOnChange);
     const currVal_8:any = this.context.$implicit.ImageURL;
     if (import3.checkBinding(throwOnChange,this._expr_8,currVal_8)) {
       this.renderer.setElementProperty(this._el_2,'src',this.viewUtils.sanitizer.sanitize(import19.SecurityContext.URL,currVal_8));
       this._expr_8 = currVal_8;
     }
     valUnwrapper.reset();
-    const currVal_9:any = import3.inlineInterpolate(1,'\n                ',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_0,(<View_Pictures0>this.parentView)._pipe_translate_0.transform)('Noya Schleien')),'\n            ');
+    const currVal_9:any = import3.inlineInterpolate(1,'\n                                ',valUnwrapper.unwrap(import3.castByValue(this._pipe_translate_0_0,(<View_Pictures0>this.parentView)._pipe_translate_0.transform)('Noya Schleien')),'\n                            ');
     if ((valUnwrapper.hasWrappedValue || import3.checkBinding(throwOnChange,this._expr_9,currVal_9))) {
       this.renderer.setText(this._text_5,currVal_9);
       this._expr_9 = currVal_9;
