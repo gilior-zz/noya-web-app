@@ -185,7 +185,7 @@ export class View_Pictures0 extends import1.AppView<import0.Pictures> {
     this._text_22 = this.renderer.createText(this._el_14,'\n                    ',(null as any));
     this._el_23 = import3.createRenderElement(this.renderer,this._el_14,'a',new import3.InlineArray8(8,'class','left carousel-control','data-slide','prev','href','#carousel-example-generic','role','button'),(null as any));
     this._text_24 = this.renderer.createText(this._el_23,'\n                        ',(null as any));
-    this._el_25 = import3.createRenderElement(this.renderer,this._el_23,'span',new import3.InlineArray4(4,'aria-hidden','true','class','glyphicon glyphicon-chevron-left'),(null as any));
+    this._el_25 = import3.createRenderElement(this.renderer,this._el_23,'span',new import3.InlineArray4(4,'aria-hidden','false','class','glyphicon glyphicon-chevron-left'),(null as any));
     this._text_26 = this.renderer.createText(this._el_23,'\n                        ',(null as any));
     this._el_27 = import3.createRenderElement(this.renderer,this._el_23,'span',new import3.InlineArray2(2,'class','sr-only'),(null as any));
     this._text_28 = this.renderer.createText(this._el_27,'Previous',(null as any));
@@ -193,7 +193,7 @@ export class View_Pictures0 extends import1.AppView<import0.Pictures> {
     this._text_30 = this.renderer.createText(this._el_14,'\n                    ',(null as any));
     this._el_31 = import3.createRenderElement(this.renderer,this._el_14,'a',new import3.InlineArray8(8,'class','right carousel-control','data-slide','next','href','#carousel-example-generic','role','button'),(null as any));
     this._text_32 = this.renderer.createText(this._el_31,'\n                        ',(null as any));
-    this._el_33 = import3.createRenderElement(this.renderer,this._el_31,'span',new import3.InlineArray4(4,'aria-hidden','true','class','glyphicon glyphicon-chevron-right'),(null as any));
+    this._el_33 = import3.createRenderElement(this.renderer,this._el_31,'span',new import3.InlineArray4(4,'aria-hidden','false','class','glyphicon glyphicon-chevron-right'),(null as any));
     this._text_34 = this.renderer.createText(this._el_31,'\n                        ',(null as any));
     this._el_35 = import3.createRenderElement(this.renderer,this._el_31,'span',new import3.InlineArray2(2,'class','sr-only'),(null as any));
     this._text_36 = this.renderer.createText(this._el_35,'Next',(null as any));
@@ -347,7 +347,7 @@ class View_Pictures2 extends import1.AppView<any> {
     this._el_0 = import3.createRenderElement(this.renderer,(null as any),'div',import3.EMPTY_INLINE_ARRAY,(null as any));
     this._NgClass_0_3 = new import20.Wrapper_NgClass(this.parentView.parentView.injectorGet(import16.IterableDiffers,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import21.KeyValueDiffers,this.parentView.parentIndex),new import22.ElementRef(this._el_0),this.renderer);
     this._text_1 = this.renderer.createText(this._el_0,'\n                            ',(null as any));
-    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'img',new import3.InlineArray4(4,'alt','...','class','img-carousel img-responsive'),(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'img',new import3.InlineArray4(4,'alt','...','class','img-carousel img-responsive img-rounded'),(null as any));
     this._text_3 = this.renderer.createText(this._el_0,'\n                            ',(null as any));
     this._el_4 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','carousel-caption'),(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'',(null as any));

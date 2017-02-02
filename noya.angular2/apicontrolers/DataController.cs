@@ -19,6 +19,46 @@ namespace noya.angular2
     {
 
         [AcceptVerbs("Post")]
+        public HomePageTextResponse GetHomePageText(dynamic request)
+        {
+            var dataRequest = this.ConvertStupidArgumentToNormalRequset<DataRequest>(request) as DataRequest;
+            SqlConnection connection = initializeConnection();
+            var res = new HomePageTextResponse();
+            var homePageTexts = new List<HomePageText>();
+            try
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("HomePageTextSelect", connection);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                var txt = dataRequest.Language == Language.English ? "Text_Eng" : "Text_Heb";
+                //cmd.Parameters.AddWithValue("@lang", txt);
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        HomePageText homePageText = new HomePageText()
+                        {
+
+                            Text = reader[txt].ToString(),
+
+                        };
+                        homePageTexts.Add(homePageText);
+                    }
+                }
+                res.HomePageTexts = homePageTexts.ToArray();
+                return res;
+            }
+
+
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+
+
+        [AcceptVerbs("Post")]
         public TraverseItemResponse GetTraverseItems(dynamic request)
         {
             var dataRequest = this.ConvertStupidArgumentToNormalRequset<DataRequest>(request) as DataRequest;
@@ -41,6 +81,7 @@ namespace noya.angular2
                             Description = dataRequest.Language == Language.English ? reader["Description_Eng"].ToString() : reader["Description_Heb"].ToString(),
                             Text = dataRequest.Language == Language.English ? reader["Text_Eng"].ToString() : reader["Text_Heb"].ToString(),
                             Title = dataRequest.Language == Language.English ? reader["Title_Eng"].ToString() : reader["Title_Heb"].ToString(),
+                            Image_Url = reader["Image_Url"].ToString(),
                             ID = Convert.ToInt32(reader["ID"].ToString())
                         };
                         traverseItems.Add(traverseItem);

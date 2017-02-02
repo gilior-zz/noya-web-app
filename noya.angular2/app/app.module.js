@@ -17,6 +17,7 @@ var home_1 = require("./Home/home");
 var calendar_1 = require('./Home/calendar');
 var traverse_item_component_1 = require('./Home/traverse-item.component');
 var updates_1 = require('./Home/updates');
+var cards_manager_1 = require('./Home/cards-manager');
 var press_1 = require('./Home/press');
 var biography_1 = require("./Biography/biography");
 var links_1 = require("./Links/links");
@@ -36,7 +37,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            declarations: [app_component_1.AppComponent, home_1.Home, biography_1.Biography, links_1.Links, contact_1.Contact, programs_1.Programs, pictures_1.Pictures, videos_1.Videos, header_image_1.HeaderImage, calendar_1.Calendar, press_1.Press, press_1.Press, updates_1.Updates, traverse_item_component_1.TraverseItemComponent, pipes.SafeResourcePipe, link_component_1.GaliluLink],
+            declarations: [app_component_1.AppComponent, home_1.Home, biography_1.Biography, links_1.Links, contact_1.Contact, programs_1.Programs, pictures_1.Pictures, videos_1.Videos, header_image_1.HeaderImage, calendar_1.Calendar, press_1.Press, press_1.Press, updates_1.Updates, traverse_item_component_1.TraverseItemComponent, pipes.SafeResourcePipe, link_component_1.GaliluLink, cards_manager_1.CardsManagerComponent],
             imports: [
                 platform_browser_1.BrowserModule,
                 http_1.HttpModule,

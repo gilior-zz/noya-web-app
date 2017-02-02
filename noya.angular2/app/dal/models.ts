@@ -4,8 +4,18 @@
 }
 
 export interface TraverseItem {
-    Text: string; Description: string; Title: string; ID: number;
+    Text: string; Description: string; Title: string; ID: number; Image_Url: string;
 }
+
+export interface HomePageText {
+    text: string;
+}
+
+export interface HomePageTextResponse extends DataResponse {
+    HomePageTexts: HomePageText[];
+}
+
+
 
 export interface VideoItem {
     title: string;

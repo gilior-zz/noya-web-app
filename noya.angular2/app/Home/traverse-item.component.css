@@ -155,5 +155,23 @@
   -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
 
+.item-image {
+  width: 100%;
+  height: auto; }
+
+.item-title {
+  /*height: 200px;*/
+  /*margin-right: 50px;
+    margin-left: 50px;*/
+  /*border: solid;*/
+  /*background-color: #5b9bd5;*/
+  border-radius: 5px;
+  /*border-color: #41719c;*/
+  margin-top: 30px; }
+
+.item-caption {
+  background-color: black;
+  margin-top: 2px; }
+
 /*#endregion */
 

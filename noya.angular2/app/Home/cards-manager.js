@@ -16,34 +16,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var base_component_1 = require('../common/base.component');
 var services_1 = require('../services/services');
-var router_1 = require('@angular/router');
-var Home = (function (_super) {
-    __extends(Home, _super);
-    function Home(router, injector, dataService, cacheManager) {
+var CardsManagerComponent = (function (_super) {
+    __extends(CardsManagerComponent, _super);
+    function CardsManagerComponent(dataService, cacheManager, injector) {
         _super.call(this, injector);
-        this.router = router;
-        this.injector = injector;
         this.dataService = dataService;
         this.cacheManager = cacheManager;
+        this.injector = injector;
     }
-    Home.prototype.ngAfterViewInit = function () {
-    };
-    Home.prototype.ngOnInit = function () {
+    CardsManagerComponent.prototype.ngOnInit = function () {
         var _this = this;
         var lang = +this.cacheManager.GetFromCache('lang', "0");
         var req = { Language: lang };
-        this.dataService.ConnectToApiData(req, 'api/Data/GetHomePageText').subscribe(function (res) {
-            _this.homePageText = res.HomePageTexts[0];
+        this.dataService.ConnectToApiData(req, 'api/Data/GetTraverseItems').subscribe(function (res) {
+            _this.traverseItems = res.TraverseItems;
         }, function (err) { });
     };
-    Home = __decorate([
-        core_1.Component({
-            templateUrl: "./home.html",
-            moduleId: module.id,
-        }), 
-        __metadata('design:paramtypes', [router_1.Router, core_1.Injector, services_1.DataService, services_1.CacheManager])
-    ], Home);
-    return Home;
+    CardsManagerComponent = __decorate([
+        core_1.Component({ selector: 'cards-manager', moduleId: module.id, templateUrl: './cards-manager.html', styleUrls: ['./cards-manager.css'] }), 
+        __metadata('design:paramtypes', [services_1.DataService, services_1.CacheManager, core_1.Injector])
+    ], CardsManagerComponent);
+    return CardsManagerComponent;
 }(base_component_1.BaseComponent));
-exports.Home = Home;
-//# sourceMappingURL=home.js.map
+exports.CardsManagerComponent = CardsManagerComponent;
+//# sourceMappingURL=cards-manager.js.map

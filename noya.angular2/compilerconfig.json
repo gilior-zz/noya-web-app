@@ -2,5 +2,29 @@
   {
     "outputFile": "Content/site.css",
     "inputFile": "Content/site.scss"
+  },
+  {
+    "outputFile": "app/app.component.css",
+    "inputFile": "app/app.component.scss"
+  },
+  {
+    "outputFile": "app/Pictures/pictures.css",
+    "inputFile": "app/Pictures/pictures.scss"
+  },
+  {
+    "outputFile": "app/Videos/videos.css",
+    "inputFile": "app/Videos/videos.scss"
+  },
+  {
+    "outputFile": "app/galilu/link/link.component.css",
+    "inputFile": "app/galilu/link/link.component.scss"
+  },
+  {
+    "outputFile": "app/Home/traverse-item.component.css",
+    "inputFile": "app/Home/traverse-item.component.scss"
+  },
+  {
+    "outputFile": "app/Home/cards-manager.css",
+    "inputFile": "app/Home/cards-manager.scss"
   }
 ]

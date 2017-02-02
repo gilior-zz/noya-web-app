@@ -168,6 +168,10 @@ namespace noya.angular2.Dal
     {
         public TraverseItem[] TraverseItems { get; set; }
     }
+    public class HomePageTextResponse : DataRespone
+    {
+        public HomePageText[] HomePageTexts { get; set; }
+    }
 
     public struct Link
     {
@@ -212,12 +216,19 @@ namespace noya.angular2.Dal
 
     }
 
+    public class HomePageText
+    {
+        public string Text { get; set; }
+    }
+
     public class TraverseItem
     {
         public int ID { get; set; }
         public string Text { get; set; }
         public string Description { get; set; }
         public string Title { get; set; }
+        public string Image_Url { get; set; }
+
     }
 
     public class Message

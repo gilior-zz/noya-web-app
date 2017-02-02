@@ -85,11 +85,28 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.component.css">
+      <DependentUpon>app.component.scss</DependentUpon>
+    </Content>
+    <Content Include="app\app.component.min.css">
+      <DependentUpon>app.component.css</DependentUpon>
+    </Content>
+    <Content Include="app\Home\cards-manager.css">
+      <DependentUpon>cards-manager.scss</DependentUpon>
+    </Content>
+    <Content Include="app\Home\cards-manager.html" />
+    <Content Include="app\Home\cards-manager.min.css">
+      <DependentUpon>cards-manager.css</DependentUpon>
+    </Content>
     <Content Include="app\Pictures\pictures.css" />
+    <Content Include="app\Pictures\pictures.min.css">
+      <DependentUpon>pictures.css</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\glyphicons-18-music.png" />
     <Content Include="copy-dist-files.js" />
     <Content Include="dist\build.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -119,6 +136,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="app\Pictures\pictures.scss" />
+    <Content Include="app\Home\cards-manager.scss" />
     <None Include="Properties\PublishProfiles\noyaschleien.com - Web Deploy.pubxml" />
     <Content Include="Scripts\jquery.hammer.min.map" />
     <Content Include="Scripts\jquery.hammer-full.min.map" />
@@ -135,9 +154,7 @@
     <Content Include="11.jpg" />
     <Content Include="12.jpg" />
     <Content Include="13.jpg" />
-    <Content Include="app\app.component.css" />
     <Content Include="app\app.component.html" />
-    <Content Include="app\app.component.min.css" />
     <Content Include="app\app.component.scss" />
     <Content Include="app\Biography\biography.html" />
     <Content Include="app\Contact\contact.html" />
@@ -416,7 +433,9 @@
     <Content Include="styles.css" />
     <Content Include="systemjs.config.extras.js" />
     <Content Include="systemjs.config.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="apicontrolers\DataController.cs" />
@@ -451,6 +470,7 @@
     <TypeScriptCompile Include="app\galilu\pallet\pallet.component.ts" />
     <TypeScriptCompile Include="app\HeaderImage\header.image.ts" />
     <TypeScriptCompile Include="app\Home\calendar.ts" />
+    <TypeScriptCompile Include="app\Home\cards-manager.ts" />
     <TypeScriptCompile Include="app\Home\home.ts" />
     <TypeScriptCompile Include="app\Home\press.ts" />
     <TypeScriptCompile Include="app\Home\traverse-item.component.ts" />

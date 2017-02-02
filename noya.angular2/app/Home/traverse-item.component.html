@@ -1,28 +1,31 @@
-﻿<div class="jumbotron" data-toggle="modal" [attr.data-target]="'#myModal'+traverseItem.ID">
-    <div class="h2 text-center">
-        {{traverseItem.Description}}
+﻿<div class="row item-title text-center" data-toggle="modal" [attr.data-target]="'#myModal'+traverseItem.ID">
+
+    <div class="col-lg-12  text-center">
+        <img [src]="traverseItem.Image_Url" alt="" class="item-image" />
+        <div class="item-caption" [innerHtml]="traverseItem.Title|safeResource:0"></div>
     </div>
+
+
 </div>
 
 <div class="modal fade" [id]="'myModal'+traverseItem.ID" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title text-center" id="myModalLabel">{{traverseItem.Title}}</h4>
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">{{traverseItem.Title}}</h4>-->
             </div>
-            <div class="modal-body">
-                {{traverseItem.Text}}
+            <div class="modal-body" [innerHtml]="traverseItem.Text|safeResource:0">
+
             </div>
             <div class="modal-footer text-center">
-                <div (click)="isCollapsed=!isCollapsed;contactForm.reset()" [attr.href]="'#collapseExample'+traverseItem.ID" data-toggle="collapse" aria-expanded="false" [attr.aria-controls]="'collapseExample'+traverseItem.ID">
+                <!--<div (click)="isCollapsed=!isCollapsed;contactForm.reset()" [attr.href]="'#collapseExample'+traverseItem.ID" data-toggle="collapse" aria-expanded="false" [attr.aria-controls]="'collapseExample'+traverseItem.ID">
                     <span [class]="isCollapsed?'glyphicon glyphicon-menu-up':'glyphicon glyphicon-menu-down'" aria-hidden="true"></span>
                     <span [class]="isCollapsed?'glyphicon glyphicon-menu-up':'glyphicon glyphicon-menu-down'" aria-hidden="true"></span>
-                </div>
-
+                </div>-->
                 <!--<div (click)="contactForm.reset()" class="bounce" data-toggle="collapse" [attr.href]="'#collapseExample'+traverseItem.ID" aria-expanded="false" [attr.aria-controls]="'collapseExample'+traverseItem.ID"><i class="fa fa-angle-double-down"></i></div>-->
             </div>
-            <div class="collapse" [id]="'collapseExample'+traverseItem.ID">
+            <!--<div class="collapse" [id]="'collapseExample'+traverseItem.ID">
                 <div class="well">
                     <form (ngSubmit)="onSubmit()" class="text-center form-horizontal" #contactForm="ngForm">
 
@@ -72,7 +75,7 @@
                         <button type="submit" [class.not-allowed]="!contactForm.form.valid" [class.draw]="contactForm.form.valid" class="submit" [disabled]="!contactForm.form.valid">{{'Submit'|translate}}</button>
                     </form>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 </div>

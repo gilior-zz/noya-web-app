@@ -5,4 +5,4 @@
  */
  /* tslint:disable */
 
-export const styles:any[] = ['.galilu-link[_ngcontent-%COMP%] {\n  opacity: 0.5;\n  border-radius: 50% !important; }\n  .galilu-link[_ngcontent-%COMP%]:hover {\n    opacity: 1; }'];
+export const styles:any[] = ['.galilu-link[_ngcontent-%COMP%] {\n  opacity: 0.5;\n  border-radius: 50% !important; }\n  .galilu-link[_ngcontent-%COMP%]:hover {\n    opacity: 1; }\n\nh4[_ngcontent-%COMP%] {\n  float: left !important; }'];

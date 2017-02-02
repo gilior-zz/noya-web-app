@@ -8,6 +8,7 @@ import { Home } from "./Home/home"
 import { Calendar } from './Home/calendar'
 import { TraverseItemComponent } from './Home/traverse-item.component'
 import { Updates } from './Home/updates'
+import { CardsManagerComponent } from './Home/cards-manager'
 import { Press } from './Home/press'
 import { Biography } from "./Biography/biography"
 import { Links } from "./Links/links"
@@ -24,7 +25,7 @@ import { BaseComponent } from './common/base.component'
 //import {GaliluModule} from './galilu/galilu-module'
 import { pageNameService } from './services/page-name.service'
 @NgModule({
-    declarations: [AppComponent, Home, Biography, Links, Contact, Programs, Pictures, Videos, HeaderImage, Calendar, Press, Press, Updates, TraverseItemComponent, pipes.SafeResourcePipe, GaliluLink],
+    declarations: [AppComponent, Home, Biography, Links, Contact, Programs, Pictures, Videos, HeaderImage, Calendar, Press, Press, Updates, TraverseItemComponent, pipes.SafeResourcePipe, GaliluLink, CardsManagerComponent],
     imports: [
         BrowserModule,
         HttpModule,
