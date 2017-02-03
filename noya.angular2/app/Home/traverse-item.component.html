@@ -1,4 +1,5 @@
-﻿<div class="row item-title text-center" data-toggle="modal" [attr.data-target]="'#myModal'+traverseItem.ID">
+﻿
+<div (click)="toggleModalState()" class="row item-title text-center" data-toggle="modal" [attr.data-target]="'#myModal'+traverseItem.ID">
 
     <div class="col-lg-12  text-center">
         <img [src]="traverseItem.Image_Url" alt="" class="item-image" />
@@ -8,12 +9,17 @@
 
 </div>
 
-<div class="modal fade" [id]="'myModal'+traverseItem.ID" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+
+<div data-backdrop="false" class="modal" [id]="'myModal'+traverseItem.ID" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title text-center" id="myModalLabel">{{traverseItem.Title}}</h4>-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                    <img src="../../Content/Images/close.ico" />
+                </button>
+                <h4 class="modal-title text-center" id="myModalLabel" [innerHtml]="traverseItem.Title|safeResource:0"></h4>
             </div>
             <div class="modal-body" [innerHtml]="traverseItem.Text|safeResource:0">
 

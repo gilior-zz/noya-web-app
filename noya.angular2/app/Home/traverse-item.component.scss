@@ -30,11 +30,11 @@
     content: "\f103";
 }
 
-.glyphicon {
+/*.glyphicon {
     height: 6px !important;
     display: block;
     animation: bounce 2s infinite;
-}
+}*/
 
 .modal-footer {
     padding: 0 !important;
@@ -220,11 +220,23 @@
     margin-top: 30px;
 }
 
-.item-caption{
-    background-color:black;
-    margin-top:2px;
+.item-caption {
+    background-color: black;
+    margin-top: 2px;
 }
 
+.modal.fade .modal-dialog {
+    /*transform: none !important;*/
+    /*transition: all 4s !important;*/
+}
 
+.modal-header {
+    background-color: black;
+}
+
+.close {
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important;
+}
 
 /*#endregion */
