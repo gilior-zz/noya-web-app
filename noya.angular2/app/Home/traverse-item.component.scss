@@ -226,9 +226,9 @@
     margin-top: 2px;
 }
 
-.modal.fade .modal-dialog {
-    /*transform: none !important;*/
-    /*transition: all 4s !important;*/
+.modal-dialog {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .modal-header {
@@ -241,9 +241,15 @@
 }
 
 .modal {
-    background-color: rgba(0, 0, 0, 0.80);
+    background-color: rgb(0, 0, 0);
+    /*transform:scale(0.9);*/
     /*display: none !important;*/
     /*opacity: 0;*/
+}
+
+.modal-feature {
+    background-color: white;
+    transform: scale(0.9);
 }
 
 /*#endregion */
