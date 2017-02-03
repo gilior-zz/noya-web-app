@@ -1,5 +1,5 @@
 ﻿
-<div (click)="toggleModalState()" class="row item-title text-center" data-toggle="modal" [attr.data-target]="'#myModal'+traverseItem.ID">
+<div (click)="toggleModalState('block')" class="row item-title text-center">
 
     <div class="col-lg-12  text-center">
         <img [src]="traverseItem.Image_Url" alt="" class="item-image" />
@@ -11,11 +11,11 @@
 
 
 
-<div data-backdrop="false" class="modal" [id]="'myModal'+traverseItem.ID" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div [style.display]="modalState" [@modalState]="modalState" data-backdrop="false" class="modal" [id]="'myModal'+traverseItem.ID" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button (click)="toggleModalState('none')" type="button" class="close" aria-label="Close">
 
                     <img src="../../Content/Images/close.ico" />
                 </button>

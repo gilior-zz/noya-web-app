@@ -15,18 +15,15 @@ var TraverseItemComponent = (function () {
     function TraverseItemComponent(dataService) {
         this.dataService = dataService;
         this.person = { Email: '', Name: '' };
-        this.modalState = 'inactive';
+        this.modalState = 'none';
     }
     TraverseItemComponent.prototype.ngOnInit = function () {
-        var _this = this;
         this.message = { Content: '', Date: new Date(), IP: '', Sender: { Email: this.person.Email, Name: this.person.Name } };
-        $('.modal').on('hidden.bs.modal', function () {
-            console.log("myModal closed");
-            _this.modalState = 'inactive';
-        });
     };
-    TraverseItemComponent.prototype.toggleModalState = function () {
-        this.modalState = this.modalState == 'inactive' ? 'active' : 'inactive';
+    TraverseItemComponent.prototype.toggleModalState = function (state) {
+        console.log(this.modalState);
+        this.modalState = state;
+        console.log(this.modalState);
     };
     TraverseItemComponent.prototype.onSubmit = function () {
         var _this = this;
@@ -54,8 +51,8 @@ var TraverseItemComponent = (function () {
             styleUrls: ['./traverse-item.component.css'],
             animations: [
                 core_1.trigger('modalState', [
-                    core_1.transition('inactive => active', core_1.animate(1000, core_1.style({ transform: 'rotate(720deg) scale(1)' }))),
-                    core_1.transition('active => inactive', core_1.animate(1000, core_1.style({ transform: 'rotate(720deg)  scale(0)' })))
+                    core_1.state('block', core_1.style({ opacity: 1, })),
+                    core_1.state('none', core_1.style({ opacity: 0, })),
                 ])
             ]
         }), 

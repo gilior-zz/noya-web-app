@@ -9,9 +9,10 @@ import { DataService, CacheManager } from '../services/services'
     styleUrls: ['./traverse-item.component.css'],
     animations: [
         trigger('modalState', [
-
-            transition('inactive => active', animate(1000, style({ transform: 'rotate(720deg) scale(1)' }))),
-            transition('active => inactive', animate(1000, style({ transform: 'rotate(720deg)  scale(0)' })))
+            state('block', style({ opacity: 1, })),
+            state('none', style({ opacity: 0, })),
+            //transition('none <=> block', animate(1000, style({ opcaity: 0 }))),
+            //transition('active => inactive', animate(1000, style({ transform: 'rotate(720deg)' })))
         ])
     ]
 })
@@ -25,10 +26,7 @@ export class TraverseItemComponent implements OnInit {
 
 
 
-        $('.modal').on('hidden.bs.modal', () => {
-            console.log("myModal closed");
-            this.modalState = 'inactive';
-        })
+
     }
 
     displaySubmitError: boolean;
@@ -36,10 +34,12 @@ export class TraverseItemComponent implements OnInit {
     submitted: boolean;
     message: Message;
 
-    modalState: string = 'inactive';
+    modalState: string = 'none';
 
-    toggleModalState() {
-        this.modalState = this.modalState == 'inactive' ? 'active' : 'inactive';
+    public toggleModalState(state: string): void {
+        console.log(this.modalState);
+        this.modalState = state;
+        console.log(this.modalState);
 
     }
 
