@@ -7,7 +7,18 @@ import { DataService, CacheManager } from '../services/services'
     moduleId: module.id,
     templateUrl: './traverse-item.component.html',
     styleUrls: ['./traverse-item.component.css'],
+
     animations: [
+        trigger('flyInOut', [
+            state('in', style({ transform: 'translateX(0)' })),
+            transition('void => *', [
+                style({ transform: 'translateX(-100%)' }),
+                animate('1s')
+            ]),
+            transition('* => void', [
+                animate('1s', style({ transform: 'translateX(100%)' }))
+            ])
+        ]),
         trigger('modalState', [
             state('block', style({ opacity: 1, })),
             state('none', style({ opacity: 0, })),
@@ -23,11 +34,10 @@ export class TraverseItemComponent implements OnInit {
     constructor(private dataService: DataService) { }
     ngOnInit() {
         this.message = { Content: '', Date: new Date(), IP: '', Sender: { Email: this.person.Email, Name: this.person.Name } };
-
-
-
-
     }
+
+    isImageMode: boolean = true;
+    toggleImageMode() { this.isImageMode = !this.isImageMode }
 
     displaySubmitError: boolean;
     isSubmitting: boolean;

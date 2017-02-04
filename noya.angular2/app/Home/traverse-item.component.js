@@ -15,11 +15,13 @@ var TraverseItemComponent = (function () {
     function TraverseItemComponent(dataService) {
         this.dataService = dataService;
         this.person = { Email: '', Name: '' };
+        this.isImageMode = true;
         this.modalState = 'none';
     }
     TraverseItemComponent.prototype.ngOnInit = function () {
         this.message = { Content: '', Date: new Date(), IP: '', Sender: { Email: this.person.Email, Name: this.person.Name } };
     };
+    TraverseItemComponent.prototype.toggleImageMode = function () { this.isImageMode = !this.isImageMode; };
     TraverseItemComponent.prototype.toggleModalState = function (state) {
         console.log(this.modalState);
         this.modalState = state;
@@ -50,6 +52,16 @@ var TraverseItemComponent = (function () {
             templateUrl: './traverse-item.component.html',
             styleUrls: ['./traverse-item.component.css'],
             animations: [
+                core_1.trigger('flyInOut', [
+                    core_1.state('in', core_1.style({ transform: 'translateX(0)' })),
+                    core_1.transition('void => *', [
+                        core_1.style({ transform: 'translateX(-100%)' }),
+                        core_1.animate('1s')
+                    ]),
+                    core_1.transition('* => void', [
+                        core_1.animate('1s', core_1.style({ transform: 'translateX(100%)' }))
+                    ])
+                ]),
                 core_1.trigger('modalState', [
                     core_1.state('block', core_1.style({ opacity: 1, })),
                     core_1.state('none', core_1.style({ opacity: 0, })),

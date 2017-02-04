@@ -1,8 +1,12 @@
 ﻿
-<div (click)="toggleModalState('block')" class="row item-title text-center">
+<div (click)="toggleImageMode()" class="row item-title text-center">
 
-    <div class="col-lg-12  text-center">
-        <img [src]="traverseItem.Image_Url" alt="" class="item-image" />
+    <div class="col-lg-12 text-center">
+        <div class="item-content">
+            <img  *ngIf="isImageMode" [src]="traverseItem.Image_Url" alt="" class="item-content--img" />
+            <div   class="card-text" *ngIf="!isImageMode" [innerHtml]="traverseItem.Text|safeResource:0"></div>
+        </div>
+        
         <div class="item-caption" [innerHtml]="traverseItem.Title|safeResource:0"></div>
     </div>
 

@@ -155,9 +155,14 @@
   -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
 
-.item-image {
-  width: 100%;
-  height: auto; }
+.item-content {
+  height: 300px; }
+  .item-content--img {
+    width: auto;
+    height: 100%; }
+
+.cared-wrapper, .card-text {
+  /*height: 400px;*/ }
 
 .item-title {
   /*height: 200px;*/
