@@ -9,8 +9,8 @@
                 <img (mouseover)="showCloseBtn=true" *ngIf="!isImageMode" (click)="toggleImageMode();" class="item-content--toggle-state--img" src="../../Content/Images/close.ico" />
             </div>
 
-            <img #img (click)="toggleImageMode();fixCardTextHeight(img,content)" [hidden]="!isImageMode" [src]="traverseItem.Image_Url" alt="" class="item-content--img" />
-            <div #content (mouseleave)="showCloseBtn=false" (mouseover)="showCloseBtn=true" class="item-content--card-text" [hidden]="isImageMode" [innerHtml]="traverseItem.Text|safeResource:0"></div>
+            <div class="item-content--img-wrp"> <img [@contentImageState]="contentImageState" #img (click)="toggleImageMode();fixCardTextHeight(img,content)" [src]="traverseItem.Image_Url" alt="" class="item-content--img" /></div>
+            <div [@contentTextState]="contentTextState" #content (mouseleave)="showCloseBtn=false" (mouseover)="showCloseBtn=true" class="item-content--card-text" [hidden]="isImageMode" [innerHtml]="traverseItem.Text|safeResource:0"></div>
         </div>
 
         <div class="item-caption" [innerHtml]="traverseItem.Title|safeResource:0"></div>

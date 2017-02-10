@@ -1,5 +1,5 @@
 ﻿@media (min-width: 992px) {
-    .img-rounded:hover {
+    .img-hover-animation:hover {
         -moz-transform: scale(1.15) !important;
         -ms-transform: scale(1.15) !important;
         -o-transform: scale(1.15) !important;
@@ -30,11 +30,15 @@
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     z-index: 0;
-    cursor: pointer;
+ 
     height: 200px;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.pointer{
+    cursor:pointer;
 }
 
 .row {

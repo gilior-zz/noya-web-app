@@ -26,14 +26,27 @@ import { DataService, CacheManager } from '../services/services'
             //transition('active => inactive', animate(1000, style({ transform: 'rotate(720deg)' })))
         ]),
         trigger('contentImageState', [
-            state('active', style({ opacity: 1 })),
-            state('inactive', style({ opacity: 0 })),
-            transition('active => inactive', [
-                style({ opacity: 1 }),
-                animate('1s')
-            ]),
+            state('active', style({ opacity: 1, hidden: 'false', display: 'inline' })),
+            state('inactive', style({ opacity: 0, hidden: 'true', display: 'none' })),
+            //transition('active => inactive', [
+            //    style({ opacity: 1 }),
+            //    animate('1s')
+            //]),
             transition('inactive => active', [
-                animate('1s', style({ opacity: 0 }), )
+                style({ opacity: 0 }),
+                animate('1s')
+            ])
+        ]),
+        trigger('contentTextState', [
+            state('active', style({ opacity: 1, hidden: 'false' })),
+            state('inactive', style({ opacity: 0, hidden: 'true' })),
+            //transition('active => inactive', [
+            //    style({ opacity: 1 }),
+            //    animate('1s')
+            //]),
+            transition('inactive => active', [
+                style({ opacity: 0 }),
+                animate('1s')
             ])
         ]),
     ]
@@ -48,15 +61,17 @@ export class TraverseItemComponent implements OnInit {
     }
 
     fixCardTextHeight(img: HTMLDivElement, content: HTMLDivElement) {
-      
-        let l = img.clientHeight-25;
+
+        let l = img.clientHeight - 25;
         $(content).height(`${l}px`);
     }
     contentImageState: string = 'active';
+    contentTextState: string = 'inactive';
     isImageMode: boolean = true;
     toggleImageMode() {
         this.isImageMode = !this.isImageMode
         this.contentImageState = this.isImageMode ? 'active' : 'inactive';
+        this.contentTextState = this.isImageMode ? 'inactive' : 'active';
     }
 
     displaySubmitError: boolean;

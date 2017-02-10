@@ -1,5 +1,15 @@
-﻿.item-content {
+﻿@media (min-width: 1200px) {
+  img:hover {
+    transform: scale(1.1);
+    transition: all 1s ease-out; }
+  img {
+    transition: all 1s ease-out;
+    transform: scale(1); } }
+
+.item-content {
   /*height: 350px;*/ }
+  .item-content--img-wrp {
+    overflow: hidden; }
   .item-content--img {
     width: 100%;
     height: auto;

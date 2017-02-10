@@ -1,7 +1,24 @@
 ﻿
+@import "../../stylesheets/bootstrap/variables";
+
+@media (min-width:$screen-lg-min) {
+    img:hover {
+        transform: scale(1.1);
+        transition: all 1s ease-out;
+    }
+
+    img {
+        transition: all 1s ease-out;
+        transform: scale(1);
+    }
+}
 
 .item-content {
     /*height: 350px;*/
+    &--img-wrp {
+        overflow: hidden;
+    }
+
     &--img {
         width: 100%;
         height: auto;

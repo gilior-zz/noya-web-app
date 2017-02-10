@@ -22,7 +22,8 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
     imagesToolBarPathes: string[];
     isHebrew: boolean = false;
     isEnglish: boolean = false;
-
+    HTMLDivElement:
+    HTMLDivElement
     example1SwipeOptions: any;
     ngOnDestroy() {
 

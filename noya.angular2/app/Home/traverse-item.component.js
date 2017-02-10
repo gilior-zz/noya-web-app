@@ -16,6 +16,7 @@ var TraverseItemComponent = (function () {
         this.dataService = dataService;
         this.person = { Email: '', Name: '' };
         this.contentImageState = 'active';
+        this.contentTextState = 'inactive';
         this.isImageMode = true;
         this.modalState = 'none';
     }
@@ -29,6 +30,7 @@ var TraverseItemComponent = (function () {
     TraverseItemComponent.prototype.toggleImageMode = function () {
         this.isImageMode = !this.isImageMode;
         this.contentImageState = this.isImageMode ? 'active' : 'inactive';
+        this.contentTextState = this.isImageMode ? 'inactive' : 'active';
     };
     TraverseItemComponent.prototype.toggleModalState = function (state) {
         //console.log(this.modalState);
@@ -78,14 +80,27 @@ var TraverseItemComponent = (function () {
                     core_1.state('none', core_1.style({ opacity: 0, })),
                 ]),
                 core_1.trigger('contentImageState', [
-                    core_1.state('active', core_1.style({ opacity: 1 })),
-                    core_1.state('inactive', core_1.style({ opacity: 0 })),
-                    core_1.transition('active => inactive', [
-                        core_1.style({ opacity: 1 }),
-                        core_1.animate('1s')
-                    ]),
+                    core_1.state('active', core_1.style({ opacity: 1, hidden: 'false', display: 'inline' })),
+                    core_1.state('inactive', core_1.style({ opacity: 0, hidden: 'true', display: 'none' })),
+                    //transition('active => inactive', [
+                    //    style({ opacity: 1 }),
+                    //    animate('1s')
+                    //]),
                     core_1.transition('inactive => active', [
-                        core_1.animate('1s', core_1.style({ opacity: 0 }))
+                        core_1.style({ opacity: 0 }),
+                        core_1.animate('1s')
+                    ])
+                ]),
+                core_1.trigger('contentTextState', [
+                    core_1.state('active', core_1.style({ opacity: 1, hidden: 'false' })),
+                    core_1.state('inactive', core_1.style({ opacity: 0, hidden: 'true' })),
+                    //transition('active => inactive', [
+                    //    style({ opacity: 1 }),
+                    //    animate('1s')
+                    //]),
+                    core_1.transition('inactive => active', [
+                        core_1.style({ opacity: 0 }),
+                        core_1.animate('1s')
                     ])
                 ]),
             ]
