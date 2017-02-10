@@ -15,21 +15,32 @@ var TraverseItemComponent = (function () {
     function TraverseItemComponent(dataService) {
         this.dataService = dataService;
         this.person = { Email: '', Name: '' };
+        this.contentImageState = 'active';
         this.isImageMode = true;
         this.modalState = 'none';
     }
     TraverseItemComponent.prototype.ngOnInit = function () {
         this.message = { Content: '', Date: new Date(), IP: '', Sender: { Email: this.person.Email, Name: this.person.Name } };
     };
-    TraverseItemComponent.prototype.toggleImageMode = function () { this.isImageMode = !this.isImageMode; };
+    TraverseItemComponent.prototype.fixCardTextHeight = function (img, content) {
+        var l = img.clientHeight - 25;
+        $(content).height(l + "px");
+    };
+    TraverseItemComponent.prototype.toggleImageMode = function () {
+        this.isImageMode = !this.isImageMode;
+        this.contentImageState = this.isImageMode ? 'active' : 'inactive';
+    };
     TraverseItemComponent.prototype.toggleModalState = function (state) {
-        console.log(this.modalState);
+        //console.log(this.modalState);
         this.modalState = state;
-        console.log(this.modalState);
+        //console.log(this.modalState);
+    };
+    TraverseItemComponent.prototype.logMe = function (event) {
+        //console.log(event);
     };
     TraverseItemComponent.prototype.onSubmit = function () {
         var _this = this;
-        console.log(this.message);
+        //console.log(this.message);
         this.isSubmitting = true;
         var req = { Message: this.message, Language: models_1.Language.Hebrew };
         this.dataService.ConnectToApiData(req, 'api/Data/SendMessage')
@@ -65,7 +76,18 @@ var TraverseItemComponent = (function () {
                 core_1.trigger('modalState', [
                     core_1.state('block', core_1.style({ opacity: 1, })),
                     core_1.state('none', core_1.style({ opacity: 0, })),
-                ])
+                ]),
+                core_1.trigger('contentImageState', [
+                    core_1.state('active', core_1.style({ opacity: 1 })),
+                    core_1.state('inactive', core_1.style({ opacity: 0 })),
+                    core_1.transition('active => inactive', [
+                        core_1.style({ opacity: 1 }),
+                        core_1.animate('1s')
+                    ]),
+                    core_1.transition('inactive => active', [
+                        core_1.animate('1s', core_1.style({ opacity: 0 }))
+                    ])
+                ]),
             ]
         }), 
         __metadata('design:paramtypes', [services_1.DataService])

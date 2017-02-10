@@ -40,6 +40,7 @@ var Home = (function (_super) {
         core_1.Component({
             templateUrl: "./home.html",
             moduleId: module.id,
+            styleUrls: ['./home.css']
         }), 
         __metadata('design:paramtypes', [router_1.Router, core_1.Injector, services_1.DataService, services_1.CacheManager])
     ], Home);

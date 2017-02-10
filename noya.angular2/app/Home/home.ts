@@ -6,7 +6,7 @@ import { Router } from '@angular/router'
 @Component({
     templateUrl: "./home.html",
     moduleId: module.id,
-
+    styleUrls: ['./home.css']
 })
 
 export class Home extends BaseComponent implements OnInit, AfterViewInit {

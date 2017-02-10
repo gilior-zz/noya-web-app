@@ -98,6 +98,12 @@
     <Content Include="app\Home\cards-manager.min.css">
       <DependentUpon>cards-manager.css</DependentUpon>
     </Content>
+    <Content Include="app\Home\home.css">
+      <DependentUpon>home.scss</DependentUpon>
+    </Content>
+    <Content Include="app\Home\home.min.css">
+      <DependentUpon>home.css</DependentUpon>
+    </Content>
     <Content Include="app\Pictures\pictures.css" />
     <Content Include="app\Pictures\pictures.min.css">
       <DependentUpon>pictures.css</DependentUpon>
@@ -106,8 +112,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\back.ico" />
+    <Content Include="Content\Images\back_32.ico" />
+    <Content Include="Content\Images\close.ico" />
     <Content Include="Content\Images\close.png" />
     <Content Include="Content\Images\glyphicons-18-music.png" />
+    <Content Include="Content\Images\plus.ico" />
     <Content Include="copy-dist-files.js" />
     <Content Include="dist\build.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

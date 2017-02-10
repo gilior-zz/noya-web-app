@@ -1,15 +1,21 @@
 ﻿
-<div (click)="toggleImageMode()" class="row item-title text-center">
+<div class="row item-title text-center">
 
     <div class="col-lg-12 text-center">
         <div class="item-content">
-            <img  *ngIf="isImageMode" [src]="traverseItem.Image_Url" alt="" class="item-content--img" />
-            <div   class="card-text" *ngIf="!isImageMode" [innerHtml]="traverseItem.Text|safeResource:0"></div>
-        </div>
-        
-        <div class="item-caption" [innerHtml]="traverseItem.Title|safeResource:0"></div>
-    </div>
+            <!--<div class="item-content--toggle-state">info</div>-->
+            <div class="item-content--toggle-state">
 
+                <img (mouseover)="showCloseBtn=true" *ngIf="!isImageMode" (click)="toggleImageMode();" class="item-content--toggle-state--img" src="../../Content/Images/close.ico" />
+            </div>
+
+            <img #img (click)="toggleImageMode();fixCardTextHeight(img,content)" [hidden]="!isImageMode" [src]="traverseItem.Image_Url" alt="" class="item-content--img" />
+            <div #content (mouseleave)="showCloseBtn=false" (mouseover)="showCloseBtn=true" class="item-content--card-text" [hidden]="isImageMode" [innerHtml]="traverseItem.Text|safeResource:0"></div>
+        </div>
+
+        <div class="item-caption" [innerHtml]="traverseItem.Title|safeResource:0"></div>
+
+    </div>
 
 </div>
 

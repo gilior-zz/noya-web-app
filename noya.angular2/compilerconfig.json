@@ -26,5 +26,9 @@
   {
     "outputFile": "app/Home/cards-manager.css",
     "inputFile": "app/Home/cards-manager.scss"
+  },
+  {
+    "outputFile": "app/Home/home.css",
+    "inputFile": "app/Home/home.scss"
   }
 ]

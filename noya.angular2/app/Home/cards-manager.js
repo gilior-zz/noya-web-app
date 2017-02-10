@@ -23,6 +23,8 @@ var CardsManagerComponent = (function (_super) {
         this.dataService = dataService;
         this.cacheManager = cacheManager;
         this.injector = injector;
+        this.trios = new Array();
+        this.dous = new Array();
     }
     CardsManagerComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -30,6 +32,18 @@ var CardsManagerComponent = (function (_super) {
         var req = { Language: lang };
         this.dataService.ConnectToApiData(req, 'api/Data/GetTraverseItems').subscribe(function (res) {
             _this.traverseItems = res.TraverseItems;
+            var i = 0;
+            var j = 0;
+            _this.traverseItems.forEach(function (traverseItem) {
+                if (i++ % 3 == 0) {
+                    _this.trios[_this.trios.length] = new Array();
+                }
+                _this.trios[_this.trios.length - 1].push(traverseItem);
+                if (j++ % 2 == 0) {
+                    _this.dous[_this.dous.length] = new Array();
+                }
+                _this.dous[_this.dous.length - 1].push(traverseItem);
+            });
         }, function (err) { });
     };
     CardsManagerComponent = __decorate([
