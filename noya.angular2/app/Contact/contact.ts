@@ -1,16 +1,31 @@
-﻿import {Component, OnDestroy, OnInit, Injector} from '@angular/core'
-import {Router} from '@angular/router'
-import {BaseComponent} from '../common/base.component'
+﻿import { Component, OnDestroy, OnInit, Injector, trigger, style, animate, state, transition } from '@angular/core'
+import { Router } from '@angular/router'
+import { BaseComponent } from '../common/base.component'
 
 import * as services from '../services/services'
 import * as dal from '../dal/models'
-import { Observable }     from 'rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
 import * as pipes from '../pipes/pipes'
 
 
 @Component({
     templateUrl: "./contact.html",
     moduleId: module.id,
+    styleUrls: ['./contact.css'],
+    animations: [
+        trigger('invalidAnimation', [
+            state('in', style({ transform: 'translateX(0)' })),
+            state('void', style({ transform: 'translateX(100%)' })),
+            transition('void => *', [
+                style({ transform: 'translateX(100%)' }),
+                animate(500)
+            ]),
+            transition('* => void', [
+                style({ transform: 'translateX(0)' }),
+                animate(500)
+            ])
+        ])
+    ]
 })
 
 export class Contact extends BaseComponent implements OnDestroy {
@@ -20,11 +35,11 @@ export class Contact extends BaseComponent implements OnDestroy {
     message: dal.Message;
 
 
-    constructor(private dataservice: services.DataService, private dialogService: services.DialogService, private dialogeService: services.DialogService, public router: Router, private injector: Injector) {
+    constructor(private dataservice: services.DataService, private cacheManager: services.CacheManager, private dialogService: services.DialogService, private dialogeService: services.DialogService, public router: Router, private injector: Injector) {
         super(injector);
     }
 
-    canDeactivate(): boolean | Promise<boolean> | Observable<boolean>{
+    canDeactivate(): boolean | Promise<boolean> | Observable<boolean> {
         // Allow synchronous navigation (`true`) if no crisis or the crisis is unchanged
         if (!this.isSubmitting)
             return true;
@@ -51,6 +66,14 @@ export class Contact extends BaseComponent implements OnDestroy {
         this.message = { Content: '', Date: new Date(), IP: '', Sender: { Email: '', Name: '' } };
 
     }
+
+    get isEng(): boolean {
+        let l = this.cacheManager.GetFromCache('lang', dal.Language.Hebrew) == dal.Language.English
+        //console.log(l);
+        return l;
+    };
+    get isHeb(): boolean { return !this.isEng };
+
 
     onSubmit() {
         this.isSubmitting = true;

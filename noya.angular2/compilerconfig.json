@@ -30,5 +30,9 @@
   {
     "outputFile": "app/Home/home.css",
     "inputFile": "app/Home/home.scss"
+  },
+  {
+    "outputFile": "app/Contact/contact.css",
+    "inputFile": "app/Contact/contact.scss"
   }
 ]

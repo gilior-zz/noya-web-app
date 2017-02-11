@@ -1,13 +1,14 @@
-﻿import {Component, OnInit, Injector} from '@angular/core'
-import {BaseComponent} from '../common/base.component'
-import {Router} from '@angular/router'
+﻿import { Component, OnInit, Injector, HostBinding } from '@angular/core'
+import { BaseComponent } from '../common/base.component'
+import { Router } from '@angular/router'
 import * as services from '../services/services'
 import * as dal from '../dal/models'
-
+import { slideInDownAnimation } from '../dal/animations'
 
 @Component({
     templateUrl: "./biography.html",
     moduleId: module.id,
+    //animations:[slideInDownAnimation]
 
 })
 
@@ -18,6 +19,10 @@ export class Biography extends BaseComponent implements OnInit {
     constructor(private dataService: services.DataService, public router: Router, private injector: Injector) {
         super(injector);
     }
+    //@HostBinding('@routeAnimation') routeAnimation = true;
+    //@HostBinding('style.display') display = 'block';
+    //@HostBinding('style.position') position = 'absolute';
+
     ngOnInit() {
 
 

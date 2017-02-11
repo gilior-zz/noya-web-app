@@ -1,11 +1,11 @@
 ﻿<div class="row">
     <div #foo *ngFor="let img of images" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center visible-md visible-sm visible-lg">
         <img (click)="selectedID=img.ID" [attr.data-toggle]="'modal'" [attr.data-target]="'#myModal'" class="img-responsive img-rounded img-hover-animation pointer" [src]="img.ImageURL" alt="" />
-     
+
     </div>
     <div #foo *ngFor="let img of images" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center visible-xs">
         <img (click)="selectedID=img.ID" class="img-responsive img-rounded img-hover-animation" [src]="img.ImageURL" alt="" />
-       
+
     </div>
 
 </div>

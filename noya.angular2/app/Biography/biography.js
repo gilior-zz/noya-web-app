@@ -26,6 +26,9 @@ var Biography = (function (_super) {
         this.router = router;
         this.injector = injector;
     }
+    //@HostBinding('@routeAnimation') routeAnimation = true;
+    //@HostBinding('style.display') display = 'block';
+    //@HostBinding('style.position') position = 'absolute';
     Biography.prototype.ngOnInit = function () {
         var _this = this;
         var req = { Language: dal.Language.Hebrew };

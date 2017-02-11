@@ -252,13 +252,13 @@ body {
     }
 
     .ng-valid[required], .ng-valid.required {
-        border-left: 5px solid #42A948; /* green */
-        border-right: 5px solid #42A948; /* green */
+        /*border-left: 5px solid #42A948;
+        border-right: 5px solid #42A948;*/
     }
 
     .ng-invalid.ng-dirty:not(form) {
-        border-left: 5px solid #a94442; /* red */
-        border-right: 5px solid #a94442; /* red */
+        /*border-left: 5px solid #a94442; 
+        border-right: 5px solid #a94442;*/ 
     }
 
 

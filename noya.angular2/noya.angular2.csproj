@@ -91,6 +91,12 @@
     <Content Include="app\app.component.min.css">
       <DependentUpon>app.component.css</DependentUpon>
     </Content>
+    <Content Include="app\Contact\contact.css">
+      <DependentUpon>contact.scss</DependentUpon>
+    </Content>
+    <Content Include="app\Contact\contact.min.css">
+      <DependentUpon>contact.css</DependentUpon>
+    </Content>
     <Content Include="app\Home\cards-manager.css">
       <DependentUpon>cards-manager.scss</DependentUpon>
     </Content>
@@ -170,6 +176,7 @@
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="app\Contact\contact.scss" />
     <None Include="Properties\PublishProfiles\noyaschleien.com - Web Deploy.pubxml" />
     <Content Include="Scripts\jquery.hammer.min.map" />
     <Content Include="Scripts\jquery.hammer-full.min.map" />
@@ -561,6 +568,7 @@
     <TypeScriptCompile Include="app\common\base.component.ts" />
     <TypeScriptCompile Include="app\common\can-deactivate-guard.service.ts" />
     <TypeScriptCompile Include="app\Contact\contact.ts" />
+    <TypeScriptCompile Include="app\dal\animations.ts" />
     <TypeScriptCompile Include="app\dal\models.ts" />
     <TypeScriptCompile Include="app\Footer\footer.ts" />
     <TypeScriptCompile Include="app\galilu\bags\bags.component.ts" />

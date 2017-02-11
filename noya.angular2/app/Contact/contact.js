@@ -20,9 +20,10 @@ var services = require('../services/services');
 var dal = require('../dal/models');
 var Contact = (function (_super) {
     __extends(Contact, _super);
-    function Contact(dataservice, dialogService, dialogeService, router, injector) {
+    function Contact(dataservice, cacheManager, dialogService, dialogeService, router, injector) {
         _super.call(this, injector);
         this.dataservice = dataservice;
+        this.cacheManager = cacheManager;
         this.dialogService = dialogService;
         this.dialogeService = dialogeService;
         this.router = router;
@@ -48,6 +49,22 @@ var Contact = (function (_super) {
         //this.message = { Content: 'sds', Date: new Date(), IP: '', Sender: { Email: 'sdsd@sdsd', Name: 'sdsd' } };
         this.message = { Content: '', Date: new Date(), IP: '', Sender: { Email: '', Name: '' } };
     };
+    Object.defineProperty(Contact.prototype, "isEng", {
+        get: function () {
+            var l = this.cacheManager.GetFromCache('lang', dal.Language.Hebrew) == dal.Language.English;
+            //console.log(l);
+            return l;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ;
+    Object.defineProperty(Contact.prototype, "isHeb", {
+        get: function () { return !this.isEng; },
+        enumerable: true,
+        configurable: true
+    });
+    ;
     Contact.prototype.onSubmit = function () {
         var _this = this;
         this.isSubmitting = true;
@@ -65,8 +82,23 @@ var Contact = (function (_super) {
         core_1.Component({
             templateUrl: "./contact.html",
             moduleId: module.id,
+            styleUrls: ['./contact.css'],
+            animations: [
+                core_1.trigger('invalidAnimation', [
+                    core_1.state('in', core_1.style({ transform: 'translateX(0)' })),
+                    core_1.state('void', core_1.style({ transform: 'translateX(100%)' })),
+                    core_1.transition('void => *', [
+                        core_1.style({ transform: 'translateX(100%)' }),
+                        core_1.animate(500)
+                    ]),
+                    core_1.transition('* => void', [
+                        core_1.style({ transform: 'translateX(0)' }),
+                        core_1.animate(500)
+                    ])
+                ])
+            ]
         }), 
-        __metadata('design:paramtypes', [services.DataService, services.DialogService, services.DialogService, router_1.Router, core_1.Injector])
+        __metadata('design:paramtypes', [services.DataService, services.CacheManager, services.DialogService, services.DialogService, router_1.Router, core_1.Injector])
     ], Contact);
     return Contact;
 }(base_component_1.BaseComponent));

@@ -3,8 +3,8 @@
         <header-image [pageName]="'home'"></header-image>
         <div class="row container-fluid-margin">
 
-            <div [class.text-left]="isHebrew" [class.text-right]="!isHebrew">
-                <div class="btn-group-sm">
+            <div [class.text-left]="isHebrew">
+                <div class="btn-group-sm lang-group">
                     <!--<button type="button" class="btn btn-danger galilu-link" (click)="changeMode()">{{galiluMessage|translate}}</button>-->
                     <button type="button" class="langLinks" (click)="changeToEnglish()">Eng</button>
                     <button type="button" class="langLinks" (click)="changeToHebrew()">עבר</button>
