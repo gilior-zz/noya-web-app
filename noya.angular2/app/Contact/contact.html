@@ -9,7 +9,7 @@
                        [(ngModel)]="message.Sender.Name" name="name"
                        placeholder="{{'Name'|translate}}" #name="ngModel" />
                 <div [@invalidAnimation]="'in'" class="invalid-label" *ngIf="!name.valid && !name.pristine">
-                    name is required
+                    {{'name is required'|translate}}
                 </div>
             </div>
             <div [class.has-error]="!email.valid && !email.pristine" [class.has-success]="email.valid && !email.pristine" class="form-group">
@@ -17,7 +17,7 @@
                 <input [disabled]="isSubmitting" type="email" class="form-control form-field input-lg" required
                        [(ngModel)]="message.Sender.Email" name="email" placeholder="{{'Email'|translate}}" #email="ngModel">
                 <div [@invalidAnimation]="'in'" class="invalid-label" *ngIf="!email.valid && !email.pristine">
-                    email is required
+                    {{'email is required'|translate}}
                 </div>
             </div>
             <div [class.has-error]="!content.valid && !content.pristine" [class.has-success]="content.valid && !content.pristine" class="form-group">
@@ -26,7 +26,7 @@
                           [(ngModel)]="message.Content" name="content"
                           placeholder="{{'Content'|translate}}" #content="ngModel"></textarea>
                 <div [@invalidAnimation]="'in'" class="invalid-label" *ngIf="!content.valid && !content.pristine">
-                    content is required
+                    {{'content is required'|translate}}
                 </div>
             </div>
             <div class="row">

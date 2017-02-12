@@ -12,6 +12,9 @@
     z-index: 100;
     width: auto; } }
 
+col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
+  transition: all 1s; }
+
 .carousel-control {
   background: none; }
 

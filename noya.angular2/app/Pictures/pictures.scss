@@ -13,7 +13,9 @@
         width: auto;
     }
 }
-
+col-lg-3,.col-md-4,.col-sm-6,.col-xs-12{
+     transition: all 1s; //replace 200ms with time of your choice
+}
 .carousel-control {
     background: none;
 }

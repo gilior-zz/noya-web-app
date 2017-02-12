@@ -1,7 +1,7 @@
 ﻿import { Component, OnDestroy, OnInit, Injector, trigger, style, animate, state, transition } from '@angular/core'
 import { Router } from '@angular/router'
 import { BaseComponent } from '../common/base.component'
-
+import { MyCacheManager } from '../services/services'
 import * as services from '../services/services'
 import * as dal from '../dal/models'
 import { Observable } from 'rxjs/Observable';
@@ -14,14 +14,14 @@ import * as pipes from '../pipes/pipes'
     styleUrls: ['./contact.css'],
     animations: [
         trigger('invalidAnimation', [
-            state('in', style({ transform: 'translateX(0)' })),
-            state('void', style({ transform: 'translateX(100%)' })),
+            state('in', style({ transform: 'translateX(0)', opacity: 1 })),
+            state('void', style({ transform: MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 })),
             transition('void => *', [
-                style({ transform: 'translateX(100%)' }),
+                style({ transform: MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
                 animate(500)
             ]),
             transition('* => void', [
-                style({ transform: 'translateX(0)' }),
+                style({ transform: 'translateX(0)', opacity: 1 }),
                 animate(500)
             ])
         ])
@@ -47,6 +47,7 @@ export class Contact extends BaseComponent implements OnDestroy {
         // Otherwise ask the user with the dialog service and return its
         // promise which resolves to true or false when the user decides
         return this.dialogService.confirm('Cancel submitting?');
+
     }
 
 
