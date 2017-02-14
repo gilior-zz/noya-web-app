@@ -118,6 +118,15 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\GYADBR.eot" />
+    <Content Include="Content\fonts\GYADBR.otf" />
+    <Content Include="Content\fonts\GYADBR.svg" />
+    <Content Include="Content\fonts\GYADBR.ttf" />
+    <Content Include="Content\fonts\GYADBR.woff" />
     <Content Include="Content\Images\back.ico" />
     <Content Include="Content\Images\back_32.ico" />
     <Content Include="Content\Images\close.ico" />
@@ -329,7 +338,6 @@
     <Content Include="app\Videos\videos.html" />
     <Content Include="app\Videos\videos.min.css" />
     <Content Include="Content\css\bootstrap-rtl.css" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Images\Biography.jpg" />
     <Content Include="Content\Images\Contact.jpg" />
     <Content Include="Content\Images\down_arrow.gif" />
@@ -508,9 +516,6 @@
     <Content Include="index.html" />
     <Content Include="Scripts\affix.js" />
     <Content Include="Scripts\alert.js" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="app\galilu\bags\bags.component.scss" />
     <Content Include="app\galilu\books\books.component.scss" />
     <Content Include="app\galilu\center\center.component.scss" />

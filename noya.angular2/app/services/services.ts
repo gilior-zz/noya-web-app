@@ -155,7 +155,8 @@ export class TranslationService {
         "submit": "שליחה",
         "name is required": "יש להזין שם",
         "email is required": "יש להזין אימייל",
-        "content is required": "יש להזין תוכן"
+        "content is required": "יש להזין תוכן",
+        "invalid email format":"אימייל אינו חוקי"
 
     };
     constructor(private cacheManager: CacheManager) {

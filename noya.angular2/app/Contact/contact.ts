@@ -1,5 +1,6 @@
 ﻿import { Component, OnDestroy, OnInit, Injector, trigger, style, animate, state, transition } from '@angular/core'
 import { Router } from '@angular/router'
+import { NgModel } from '@angular/forms'
 import { BaseComponent } from '../common/base.component'
 import { MyCacheManager } from '../services/services'
 import * as services from '../services/services'
@@ -15,14 +16,14 @@ import * as pipes from '../pipes/pipes'
     animations: [
         trigger('invalidAnimation', [
             state('in', style({ transform: 'translateX(0)', opacity: 1 })),
-            state('void', style({ transform: MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 })),
+
             transition('void => *', [
                 style({ transform: MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
                 animate(500)
             ]),
             transition('* => void', [
-                style({ transform: 'translateX(0)', opacity: 1 }),
-                animate(500)
+                animate(500, style({ transform: MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
+                )
             ])
         ])
     ]
@@ -50,7 +51,13 @@ export class Contact extends BaseComponent implements OnDestroy {
 
     }
 
+    get invalidEmail(): boolean {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return !re.test(this.message.Sender.Email);
 
+    }
+
+    public invalidEmailInput(email: NgModel): boolean { return (!email.valid && !email.pristine) || (email.valid && !email.pristine && this.invalidEmail) }
 
     ngOnDestroy(): void {
 

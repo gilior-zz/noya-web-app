@@ -9,10 +9,16 @@
     src: url(Sources/Sources/bold.ttf);
 }
 
+@font-face {
+    font-family: 'GYADBR';
+    src: url('fonts/GYADBR.eot') format('embedded-opentype'), url('fonts/GYADBR.otf') format('opentype'), url('fonts/GYADBR.ttf') format('truetype'), url('fonts/GYADBR.woff') format('woff');
+}
+
 $primary-back-color: rgba(21, 88, 135, 0.760784);
 
-
-
+.pointer{
+    cursor:pointer;
+}
 
 
 html {

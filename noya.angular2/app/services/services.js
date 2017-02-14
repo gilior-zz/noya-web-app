@@ -171,7 +171,8 @@ var TranslationService = (function () {
             "submit": "שליחה",
             "name is required": "יש להזין שם",
             "email is required": "יש להזין אימייל",
-            "content is required": "יש להזין תוכן"
+            "content is required": "יש להזין תוכן",
+            "invalid email format": "אימייל אינו חוקי"
         };
     }
     TranslationService.prototype.TranlateItem = function (value) {

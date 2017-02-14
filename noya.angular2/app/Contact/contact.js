@@ -38,6 +38,15 @@ var Contact = (function (_super) {
         // promise which resolves to true or false when the user decides
         return this.dialogService.confirm('Cancel submitting?');
     };
+    Object.defineProperty(Contact.prototype, "invalidEmail", {
+        get: function () {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return !re.test(this.message.Sender.Email);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Contact.prototype.invalidEmailInput = function (email) { return (!email.valid && !email.pristine) || (email.valid && !email.pristine && this.invalidEmail); };
     Contact.prototype.ngOnDestroy = function () {
         this.submitted = false;
         this.displaySubmitError = false;
@@ -87,14 +96,12 @@ var Contact = (function (_super) {
             animations: [
                 core_1.trigger('invalidAnimation', [
                     core_1.state('in', core_1.style({ transform: 'translateX(0)', opacity: 1 })),
-                    core_1.state('void', core_1.style({ transform: services_1.MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 })),
                     core_1.transition('void => *', [
                         core_1.style({ transform: services_1.MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
                         core_1.animate(500)
                     ]),
                     core_1.transition('* => void', [
-                        core_1.style({ transform: 'translateX(0)', opacity: 1 }),
-                        core_1.animate(500)
+                        core_1.animate(500, core_1.style({ transform: services_1.MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }))
                     ])
                 ])
             ]
