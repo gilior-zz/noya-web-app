@@ -1,14 +1,15 @@
-﻿import {Component, OnInit, ViewEncapsulation, Input } from '@angular/core'
-import { DomSanitizer, SafeUrl, SafeResourceUrl, SafeScript, SafeStyle} from '@angular/platform-browser';
-import {Router, NavigationEnd, CanActivate, ActivatedRoute, RouterStateSnapshot, ActivatedRouteSnapshot} from '@angular/router'
+﻿import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core'
+import { DomSanitizer, SafeUrl, SafeResourceUrl, SafeScript, SafeStyle } from '@angular/platform-browser';
+import { Router, NavigationEnd, CanActivate, ActivatedRoute, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router'
 import * as services from '../services/services'
 import * as dal from '../dal/models'
-import {pageNameService} from '../services/page-name.service'
+import { pageNameService } from '../services/page-name.service'
 
 @Component({
     selector: 'header-image',
     templateUrl: './header.image.html',
     moduleId: module.id,
+    styleUrls: ['./header.image.css']
 
 
 })

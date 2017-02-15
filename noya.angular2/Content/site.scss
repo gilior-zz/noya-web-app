@@ -16,8 +16,8 @@
 
 $primary-back-color: rgba(21, 88, 135, 0.760784);
 
-.pointer{
-    cursor:pointer;
+.pointer {
+    cursor: pointer;
 }
 
 
@@ -100,19 +100,55 @@ body {
     }
 
     .my-navbar {
-        background-color: $primary-back-color;
+        background-color: rgba(21, 88, 135, 0.360784);
         border: 0;
-        min-height: 0;
+        height: 100%;
 
-        li :hover {
-            /*color: $primary-back-color !important;
-            background-color: #eee !important;*/
-            background-color: rgba(132, 200, 248, 0.4) !important;
+        li {
+            /*text-decoration: none;
+            transition: text-decoration 0.5s;*/
         }
 
-        li :focus {
-            font-size: larger !important;
-            /*color: $primary-back-color !important;*/
+        li :hover {
+            background-color: transparent !important;
+            /* /*transform: scale(1.5);
+            text-decoration: underline !important;
+            transition: text-decoration 0.5s;*/
+        }
+
+        li:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0;
+            transition: width 0s ease, background .5s ease;
+        }
+
+        li:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0;
+            background: white;
+            transition: width .5s ease;
+        }
+
+        li:hover:before {
+            width: 100%;
+            background: white;
+            transition: width .5s ease;
+        }
+
+        li:hover:after {
+            width: 100%;
+            background: transparent;
+            transition: all 0s ease;
         }
     }
 
@@ -133,12 +169,7 @@ body {
     /*background-image: url('Sources/back_1.jpg') !important;*/
     background-color: rgba(132, 200, 248, 0.40) !important;
 
-    .header {
-        background-color: #484444;
-        background-size: cover;
-        background-size: 100% 100%;
-        height: 300px;
-    }
+
 
     .glyphicon {
         cursor: pointer;
@@ -264,7 +295,7 @@ body {
 
     .ng-invalid.ng-dirty:not(form) {
         /*border-left: 5px solid #a94442; 
-        border-right: 5px solid #a94442;*/ 
+        border-right: 5px solid #a94442;*/
     }
 
 
@@ -418,7 +449,7 @@ footer {
 
 .active-menu-item {
     font-weight: 900 !important;
-    background-color: rgba(132, 200, 248, 0.4) !important;
+    background-color: transparent !important;
     color: blue !important;
     font-size: larger !important;
 }

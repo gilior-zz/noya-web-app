@@ -66,6 +66,7 @@ var HeaderImage = (function () {
             selector: 'header-image',
             templateUrl: './header.image.html',
             moduleId: module.id,
+            styleUrls: ['./header.image.css']
         }), 
         __metadata('design:paramtypes', [page_name_service_1.pageNameService, services.DataService, services.LogService, platform_browser_1.DomSanitizer, router_1.Router])
     ], HeaderImage);

@@ -97,6 +97,12 @@
     <Content Include="app\Contact\contact.min.css">
       <DependentUpon>contact.css</DependentUpon>
     </Content>
+    <Content Include="app\HeaderImage\header.image.css">
+      <DependentUpon>header.image.scss</DependentUpon>
+    </Content>
+    <Content Include="app\HeaderImage\header.image.min.css">
+      <DependentUpon>header.image.css</DependentUpon>
+    </Content>
     <Content Include="app\Home\cards-manager.css">
       <DependentUpon>cards-manager.scss</DependentUpon>
     </Content>
@@ -186,6 +192,7 @@
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="app\Contact\contact.scss" />
+    <Content Include="app\HeaderImage\header.image.scss" />
     <None Include="Properties\PublishProfiles\noyaschleien.com - Web Deploy.pubxml" />
     <Content Include="Scripts\jquery.hammer.min.map" />
     <Content Include="Scripts\jquery.hammer-full.min.map" />
