@@ -1,6 +1,7 @@
-﻿<div [style.background-image]="safeImage" class="header row">
+﻿<lang-bar></lang-bar>
+<div [style.background-image]="safeImage" class="header row">
     <div class="padding-top-15 rotator col-xs-12 h2">{{Title|translate}}</div>
     <div class="rotator col-xs-12 h2">{{Subject|translate}}</div>
-    <ng-content class="menu"></ng-content>
+    <main-menu></main-menu>
 </div>
 

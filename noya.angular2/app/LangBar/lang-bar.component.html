@@ -1,0 +1,11 @@
+﻿<div (click)="toggleLangBarState()" [ngClass]="{'main-wrp-ltr':isEng,'main-wrp-rtl':isHeb}" [@isLangBarOpen]="isLangBarOpen" class="main-wrp pointer">
+
+    <div id="" [ngClass]="{'main-wrp--lang-wrp-ltr':isEng,'main-wrp--lang-wrp-rtl':isHeb}" class="main-wrp--lang-wrp">
+        <div (click)="toEng();$event.stopPropagation()">eng</div>
+        <div (click)="toHeb();$event.stopPropagation()">עבר</div>
+    </div>
+    <div [ngClass]="{'main-wrp--toggle-wrp-ltr':isEng,'main-wrp--toggle-wrp-rtl':isHeb}" class="main-wrp--toggle-wrp">
+    </div>
+
+
+</div>

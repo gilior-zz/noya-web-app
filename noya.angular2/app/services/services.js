@@ -31,16 +31,6 @@ var CacheManager = (function () {
     CacheManager.prototype.RemoveFromCache = function (key) {
         sessionStorage.removeItem(key);
     };
-    Object.defineProperty(CacheManager.prototype, "IsHebrewMode", {
-        get: function () { return +(sessionStorage.getItem('lang') || '0') == model.Language.Hebrew; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(CacheManager.prototype, "IsEnglishMode", {
-        get: function () { return !this.IsHebrewMode; },
-        enumerable: true,
-        configurable: true
-    });
     CacheManager.prototype.ClearCache = function () {
         sessionStorage.clear();
     };
@@ -51,7 +41,6 @@ var CacheManager = (function () {
     return CacheManager;
 }());
 exports.CacheManager = CacheManager;
-exports.MyCacheManager = new CacheManager();
 var DataService = (function () {
     function DataService(http, CacheManager) {
         this.http = http;

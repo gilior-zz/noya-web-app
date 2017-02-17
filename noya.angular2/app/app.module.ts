@@ -19,13 +19,15 @@ import { Pictures } from "./Pictures/pictures"
 import { Videos } from "./Videos/videos"
 import { GaliluLink } from './galilu/link/link.component'
 import { HeaderImage } from "./HeaderImage/header.image"
+import { MenuComponent } from "./Menu/menu"
+import { LangBarComponent } from "./LangBar/lang-bar.component"
 import * as pipes from './pipes/pipes'
 import * as services from "./services/services"
 import { BaseComponent } from './common/base.component'
 //import {GaliluModule} from './galilu/galilu-module'
 import { pageNameService } from './services/page-name.service'
 @NgModule({
-    declarations: [AppComponent, Home, Biography, Links, Contact, Programs, Pictures, Videos, HeaderImage, Calendar, Press, Press, Updates, TraverseItemComponent, pipes.SafeResourcePipe, GaliluLink, CardsManagerComponent],
+    declarations: [AppComponent, Home, Biography, Links, Contact, Programs, Pictures, Videos, HeaderImage, Calendar, Press, Press, Updates, TraverseItemComponent, pipes.SafeResourcePipe, GaliluLink, CardsManagerComponent, MenuComponent, LangBarComponent],
     imports: [
         BrowserModule,
         HttpModule,

@@ -116,6 +116,20 @@
     <Content Include="app\Home\home.min.css">
       <DependentUpon>home.css</DependentUpon>
     </Content>
+    <Content Include="app\LangBar\lang-bar.component.css">
+      <DependentUpon>lang-bar.component.scss</DependentUpon>
+    </Content>
+    <Content Include="app\LangBar\lang-bar.component.html" />
+    <Content Include="app\LangBar\lang-bar.component.min.css">
+      <DependentUpon>lang-bar.component.css</DependentUpon>
+    </Content>
+    <Content Include="app\Menu\menu.css">
+      <DependentUpon>menu.scss</DependentUpon>
+    </Content>
+    <Content Include="app\Menu\menu.html" />
+    <Content Include="app\Menu\menu.min.css">
+      <DependentUpon>menu.css</DependentUpon>
+    </Content>
     <Content Include="app\Pictures\pictures.css" />
     <Content Include="app\Pictures\pictures.min.css">
       <DependentUpon>pictures.css</DependentUpon>
@@ -193,6 +207,8 @@
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="app\Contact\contact.scss" />
     <Content Include="app\HeaderImage\header.image.scss" />
+    <Content Include="app\Menu\menu.scss" />
+    <Content Include="app\LangBar\lang-bar.component.scss" />
     <None Include="Properties\PublishProfiles\noyaschleien.com - Web Deploy.pubxml" />
     <Content Include="Scripts\jquery.hammer.min.map" />
     <Content Include="Scripts\jquery.hammer-full.min.map" />
@@ -601,15 +617,18 @@
     <TypeScriptCompile Include="app\Home\press.ts" />
     <TypeScriptCompile Include="app\Home\traverse-item.component.ts" />
     <TypeScriptCompile Include="app\Home\updates.ts" />
+    <TypeScriptCompile Include="app\LangBar\lang-bar.component.ts" />
     <TypeScriptCompile Include="app\Links\links.ts" />
     <TypeScriptCompile Include="app\main-aot.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\Menu\menu.ts" />
     <TypeScriptCompile Include="app\Pictures\pictures.ts" />
     <TypeScriptCompile Include="app\pipes\pipes.ts" />
     <TypeScriptCompile Include="app\Programs\programs.ts" />
     <TypeScriptCompile Include="app\services\mode.service.ts" />
     <TypeScriptCompile Include="app\services\page-name.service.ts" />
     <TypeScriptCompile Include="app\services\services.ts" />
+    <TypeScriptCompile Include="app\services\utitlity.ts" />
     <TypeScriptCompile Include="app\shared.module.ts" />
     <TypeScriptCompile Include="app\Videos\videos.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />

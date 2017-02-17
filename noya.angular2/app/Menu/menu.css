@@ -1,0 +1,40 @@
+﻿.my-navbar {
+  background-color: rgba(21, 88, 135, 0.360784);
+  border: 0;
+  height: 100%; }
+  .my-navbar li {
+    /*text-decoration: none;
+            transition: text-decoration 0.5s;*/ }
+  .my-navbar li :hover {
+    background-color: transparent !important;
+    /* /*transform: scale(1.5);
+            text-decoration: underline !important;
+            transition: text-decoration 0.5s;*/ }
+  .my-navbar li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease; }
+  .my-navbar li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: white;
+    transition: width .5s ease; }
+  .my-navbar li:hover:before {
+    width: 100%;
+    background: white;
+    transition: width .5s ease; }
+  .my-navbar li:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease; }
+

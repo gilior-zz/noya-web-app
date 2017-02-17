@@ -1,65 +1,6 @@
 ﻿<div [dir]="dir">
     <div class="container-fluid">
-        <header-image [pageName]="'home'">
-            <div [dir]="dir" class="navbar navbar-default my-navbar" *ngIf="displayMenu" style="">
-
-
-
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span style="font-weight: 900; color: white">{{'Menu'|translate}}</span>
-                    </button>
-                    <h4 class="navMenu hidden-lg hidden-md hidden-sm mobliePath">
-                        <span class="white-font">{{'Noya Schleien'|translate}}</span>
-                        <span class="white-font">|</span>
-                        <span class="pageName white-font">{{pageName|translate}}</span>
-
-                    </h4>
-
-                </div>
-                <div class="navbar-collapse collapse">
-
-                    <ul class="menu-ul nav nav-pills nav-justified ">
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-collapse" routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm" [routerLink]="['home']">{{'Home'|translate}}</a>
-                            <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs" [routerLink]="['home']">{{'Home'|translate}}</a>
-                        </li>
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-collapse" routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm" [routerLink]="['biography']">{{'Biography'|translate}}</a>
-                            <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs" [routerLink]="['biography']">{{'Biography'|translate}}</a>
-
-                        </li>
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-collapse" routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm" [routerLink]="['pictures']">{{'Pictures'|translate}}</a>
-                            <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs" [routerLink]="['pictures']">{{'Pictures'|translate}}</a>
-
-                        </li>
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-collapse" routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm" [routerLink]="['videos']">{{'Videos'|translate}}</a>
-                            <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs" [routerLink]="['videos']">{{'Videos'|translate}}</a>
-
-                        </li>
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-collapse" routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm" [routerLink]="['programs']">{{'Programs'|translate}}</a>
-                            <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs" [routerLink]="['programs']">{{'Programs'|translate}}</a>
-
-                        </li>
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-collapse" routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm" [routerLink]="['links']">{{'Links'|translate}}</a>
-                            <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs" [routerLink]="['links']">{{'Links'|translate}}</a>
-
-                        </li>
-                        <li>
-                            <a data-toggle="collapse" data-target=".navbar-collapse" routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-md hidden-lg hidden-sm" [routerLink]="['contact']">{{'Contact'|translate}}</a>
-                            <a routerLinkActive="active-menu-item" class="menu-font  menu-anchor hidden-xs" [routerLink]="['contact']">{{'Contact'|translate}}</a>
-
-                        </li>
-
-
-                    </ul>
-                </div>
-
-            </div>
+        <header-image [pageName]="'home'">        
         </header-image>
 
     </div>

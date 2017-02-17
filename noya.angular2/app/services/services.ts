@@ -21,8 +21,6 @@ export class CacheManager {
         sessionStorage.removeItem(key);
     }
 
-    get IsHebrewMode(): boolean { return +(sessionStorage.getItem('lang') || '0') == model.Language.Hebrew; }
-    get IsEnglishMode(): boolean { return !this.IsHebrewMode; }
 
     public ClearCache(): void {
         sessionStorage.clear();
@@ -31,7 +29,7 @@ export class CacheManager {
 
 }
 
-export var MyCacheManager: CacheManager = new CacheManager();
+
 
 
 

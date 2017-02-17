@@ -2,7 +2,7 @@
 import { Router } from '@angular/router'
 import { NgModel } from '@angular/forms'
 import { BaseComponent } from '../common/base.component'
-import { MyCacheManager } from '../services/services'
+import { utilty } from '../services/utitlity'
 import * as services from '../services/services'
 import * as dal from '../dal/models'
 import { Observable } from 'rxjs/Observable';
@@ -18,11 +18,11 @@ import * as pipes from '../pipes/pipes'
             state('in', style({ transform: 'translateX(0)', opacity: 1 })),
 
             transition('void => *', [
-                style({ transform: MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
+                style({ transform: utilty.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
                 animate(500)
             ]),
             transition('* => void', [
-                animate(500, style({ transform: MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
+                animate(500, style({ transform: utilty.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
                 )
             ])
         ])

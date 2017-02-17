@@ -16,7 +16,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var base_component_1 = require('../common/base.component');
-var services_1 = require('../services/services');
+var utitlity_1 = require('../services/utitlity');
 var services = require('../services/services');
 var dal = require('../dal/models');
 var Contact = (function (_super) {
@@ -97,11 +97,11 @@ var Contact = (function (_super) {
                 core_1.trigger('invalidAnimation', [
                     core_1.state('in', core_1.style({ transform: 'translateX(0)', opacity: 1 })),
                     core_1.transition('void => *', [
-                        core_1.style({ transform: services_1.MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
+                        core_1.style({ transform: utitlity_1.utilty.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
                         core_1.animate(500)
                     ]),
                     core_1.transition('* => void', [
-                        core_1.animate(500, core_1.style({ transform: services_1.MyCacheManager.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }))
+                        core_1.animate(500, core_1.style({ transform: utitlity_1.utilty.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }))
                     ])
                 ])
             ]

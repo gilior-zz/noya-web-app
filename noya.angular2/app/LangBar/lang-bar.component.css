@@ -1,0 +1,35 @@
+﻿.main-wrp {
+  /*background-color: red;*/
+  z-index: 1;
+  color: white;
+  position: absolute;
+  top: 0;
+  direction: initial;
+  height: 50px; }
+  .main-wrp-ltr {
+    right: 0; }
+  .main-wrp-rtl {
+    left: 0; }
+  .main-wrp--lang-wrp-rtl {
+    float: left; }
+  .main-wrp--lang-wrp-ltr {
+    float: right; }
+  .main-wrp--toggle-wrp {
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    background-color: white;
+    background-image: url("http://res.cloudinary.com/lior/image/upload/v1487316512/gibberish_burned_wcz5t1.png"); }
+    .main-wrp--toggle-wrp--img {
+      height: 50px;
+      width: auto; }
+  .main-wrp--toggle-wrp-rtl {
+    float: right;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%; }
+  .main-wrp--toggle-wrp-ltr {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    float: left; }
+

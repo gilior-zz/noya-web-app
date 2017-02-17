@@ -28,6 +28,8 @@ var pictures_1 = require("./Pictures/pictures");
 var videos_1 = require("./Videos/videos");
 var link_component_1 = require('./galilu/link/link.component');
 var header_image_1 = require("./HeaderImage/header.image");
+var menu_1 = require("./Menu/menu");
+var lang_bar_component_1 = require("./LangBar/lang-bar.component");
 var pipes = require('./pipes/pipes');
 var services = require("./services/services");
 //import {GaliluModule} from './galilu/galilu-module'
@@ -37,7 +39,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            declarations: [app_component_1.AppComponent, home_1.Home, biography_1.Biography, links_1.Links, contact_1.Contact, programs_1.Programs, pictures_1.Pictures, videos_1.Videos, header_image_1.HeaderImage, calendar_1.Calendar, press_1.Press, press_1.Press, updates_1.Updates, traverse_item_component_1.TraverseItemComponent, pipes.SafeResourcePipe, link_component_1.GaliluLink, cards_manager_1.CardsManagerComponent],
+            declarations: [app_component_1.AppComponent, home_1.Home, biography_1.Biography, links_1.Links, contact_1.Contact, programs_1.Programs, pictures_1.Pictures, videos_1.Videos, header_image_1.HeaderImage, calendar_1.Calendar, press_1.Press, press_1.Press, updates_1.Updates, traverse_item_component_1.TraverseItemComponent, pipes.SafeResourcePipe, link_component_1.GaliluLink, cards_manager_1.CardsManagerComponent, menu_1.MenuComponent, lang_bar_component_1.LangBarComponent],
             imports: [
                 platform_browser_1.BrowserModule,
                 http_1.HttpModule,
