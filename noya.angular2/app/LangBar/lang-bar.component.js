@@ -56,8 +56,18 @@ var LangBarComponent = (function (_super) {
             animations: [
                 core_1.trigger('isLangBarOpen', [
                     core_1.state('true', core_1.style({ transform: 'translateX(0)' })),
-                    core_1.state('false', core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(-35px)' : 'translateX(35px)' })),
-                    core_1.transition('0<=>1', [core_1.animate('500ms ease-out')])
+                    core_1.state('false', core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(-28px)' : 'translateX(28px)' })),
+                    core_1.transition('0=>1', [core_1.animate(300, core_1.keyframes([
+                            core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(-28px)' : 'translateX(28px)', offset: 0 }),
+                            core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(15px)' : 'translateX(-15px)', offset: 0.3 }),
+                            core_1.style({ transform: 'translateX(0)', offset: 1.0 })
+                        ]))]),
+                    core_1.transition('1=>0', [core_1.animate(300, core_1.keyframes([
+                            core_1.style({ transform: 'translateX(0)', offset: 0 }),
+                            core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(15px)' : 'translateX(-15px)', offset: 0.7 }),
+                            core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(-28px)' : 'translateX(28px)', offset: 1.0 })
+                        ]))
+                    ]),
                 ])
             ]
         }), 

@@ -1,4 +1,4 @@
-﻿import { Component, Injector, animate, trigger, state, style, transition } from '@angular/core'
+﻿import { Component, Injector, animate, trigger, state, style, transition, keyframes } from '@angular/core'
 import { BaseComponent } from '../common/base.component'
 import { Language } from '../dal/models'
 import { CacheManager } from '../services/services'
@@ -11,8 +11,18 @@ import { utilty } from '../services/utitlity'
         trigger(
             'isLangBarOpen', [
                 state('true', style({ transform: 'translateX(0)' })),
-                state('false', style({ transform: utilty.IsHebrewMode ? 'translateX(-35px)' : 'translateX(35px)' })),
-                transition('0<=>1', [animate('500ms ease-out')])
+                state('false', style({ transform: utilty.IsHebrewMode ? 'translateX(-28px)' : 'translateX(28px)' })),
+                transition('0=>1', [animate(300, keyframes([
+                    style({ transform: utilty.IsHebrewMode ? 'translateX(-28px)' : 'translateX(28px)', offset: 0 }),
+                    style({ transform: utilty.IsHebrewMode ? 'translateX(15px)' : 'translateX(-15px)', offset: 0.3 }),
+                    style({ transform: 'translateX(0)', offset: 1.0 })
+                ]))]),
+                transition('1=>0', [animate(300, keyframes([
+                    style({ transform: 'translateX(0)', offset: 0 }),
+                    style({ transform: utilty.IsHebrewMode ? 'translateX(15px)' : 'translateX(-15px)', offset: 0.7 }),
+                    style({ transform: utilty.IsHebrewMode ? 'translateX(-28px)' : 'translateX(28px)', offset: 1.0 })
+                ]))
+                ]),
             ]
         )
     ]

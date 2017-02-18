@@ -14,22 +14,40 @@
     float: left; }
   .main-wrp--lang-wrp-ltr {
     float: right; }
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotateY(0deg); }
+  to {
+    -webkit-transform: rotateY(180deg); } }
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(1.5); }
+  40% {
+    transform: scale(1); } }
   .main-wrp--toggle-wrp {
     height: 50px;
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;
-    background-color: white;
-    background-image: url("http://res.cloudinary.com/lior/image/upload/v1487316512/gibberish_burned_wcz5t1.png"); }
-    .main-wrp--toggle-wrp--img {
-      height: 50px;
-      width: auto; }
+    /*background-color: white;*/
+    /*background-image: url('http://res.cloudinary.com/lior/image/upload/v1487362544/download_1__burned_ov4ufh.png');*/
+    background-image: url("http://res.cloudinary.com/lior/image/upload/v1487411891/Rotating_globe_qhxrhh.gif");
+    /*background-image: url('http://res.cloudinary.com/lior/image/upload/v1487411718/56510_globus1_spv8wt.gif');*/
+    /*background-image: url('http://res.cloudinary.com/lior/image/upload/v1487410844/globus_gif_opzpfu.gif');*/
+    /*animation: enlarge 8s linear infinite;*/
+    transition: transform .main-wrp--toggle-wrp --img;
+      transition-height: 50px;
+      transition-width: auto; }
   .main-wrp--toggle-wrp-rtl {
     float: right;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%; }
+    /*border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;*/ }
   .main-wrp--toggle-wrp-ltr {
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+    /*border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;*/
     float: left; }
 

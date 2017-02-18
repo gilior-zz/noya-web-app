@@ -20,6 +20,9 @@ $primary-back-color: rgba(21, 88, 135, 0.760784);
     cursor: pointer;
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 html {
     position: relative;
