@@ -1,6 +1,6 @@
-﻿<div (click)="toggleLangBarState()" [ngClass]="{'main-wrp-ltr':isEng,'main-wrp-rtl':isHeb}" [@isLangBarOpen]="isLangBarOpen" class="main-wrp pointer">
+﻿<div (click)="toggleLangBarState()" [ngClass]="{'main-wrp-ltr':isEng,'main-wrp-rtl':isHeb}" [@isLangBarOpenRTL]="isHeb?isLangBarOpen:-1" [@isLangBarOpenLTR]="isEng?isLangBarOpen:-1"class="main-wrp pointer">
 
-    <div id="" [ngClass]="{'main-wrp--lang-wrp-ltr':isEng,'main-wrp--lang-wrp-rtl':isHeb}" class="main-wrp--lang-wrp">
+    <div (blur)="toggleLangBarState();$event.stopPropagation()"  id="" [ngClass]="{'main-wrp--lang-wrp-ltr':isEng,'main-wrp--lang-wrp-rtl':isHeb}" class="main-wrp--lang-wrp">
         <div (click)="toEng();$event.stopPropagation()">eng</div>
         <div (click)="toHeb();$event.stopPropagation()">עבר</div>
     </div>

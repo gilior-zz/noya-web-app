@@ -14,9 +14,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var forms_1 = require('@angular/forms');
 var router_1 = require('@angular/router');
 var base_component_1 = require('../common/base.component');
-var utitlity_1 = require('../services/utitlity');
 var services = require('../services/services');
 var dal = require('../dal/models');
 var Contact = (function (_super) {
@@ -29,7 +29,59 @@ var Contact = (function (_super) {
         this.dialogeService = dialogeService;
         this.router = router;
         this.injector = injector;
+        this.formErrors = {
+            'name': '',
+            'email': '',
+            'content': ''
+        };
+        this.validationMessages = {
+            'name': {
+                'required': 'name is required',
+                'minlength': 'name must be at least 4 characters long',
+                'maxlength': 'name cannot be more than 24 characters long',
+            },
+            'content': {
+                'required': 'name is required',
+                'minlength': 'name must be at least 4 characters long',
+                'maxlength': 'name cannot be more than 24 characters long',
+            },
+            'email': {
+                'required': 'email is required.',
+                'illegalEmailFormat': 'invalid email format'
+            }
+        };
     }
+    Contact.prototype.ngAfterViewChecked = function () {
+        this.formChanged();
+    };
+    Contact.prototype.formChanged = function () {
+        var _this = this;
+        if (this.currentForm === this.contactForm) {
+            return;
+        }
+        this.contactForm = this.currentForm;
+        if (this.contactForm) {
+            this.contactForm.valueChanges
+                .subscribe(function (data) { return _this.onValueChanged(data); });
+        }
+    };
+    Contact.prototype.onValueChanged = function (data) {
+        if (!this.contactForm) {
+            return;
+        }
+        var form = this.contactForm.form;
+        for (var field in this.formErrors) {
+            // clear previous error message (if any)
+            this.formErrors[field] = '';
+            var control = form.get(field);
+            if (control && control.dirty && !control.valid) {
+                var messages = this.validationMessages[field];
+                for (var key in control.errors) {
+                    this.formErrors[field] += messages[key] + ' ';
+                }
+            }
+        }
+    };
     Contact.prototype.canDeactivate = function () {
         // Allow synchronous navigation (`true`) if no crisis or the crisis is unchanged
         if (!this.isSubmitting)
@@ -88,6 +140,10 @@ var Contact = (function (_super) {
             _this.isSubmitting = false;
         });
     };
+    __decorate([
+        core_1.ViewChild('contactForm'), 
+        __metadata('design:type', forms_1.NgForm)
+    ], Contact.prototype, "currentForm", void 0);
     Contact = __decorate([
         core_1.Component({
             templateUrl: "./contact.html",
@@ -97,11 +153,11 @@ var Contact = (function (_super) {
                 core_1.trigger('invalidAnimation', [
                     core_1.state('in', core_1.style({ transform: 'translateX(0)', opacity: 1 })),
                     core_1.transition('void => *', [
-                        core_1.style({ transform: utitlity_1.utilty.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
+                        core_1.style({ transform: 'translateX(-100%)', opacity: 0 }),
                         core_1.animate(500)
                     ]),
                     core_1.transition('* => void', [
-                        core_1.animate(500, core_1.style({ transform: utitlity_1.utilty.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }))
+                        core_1.animate(500, core_1.style({ transform: 'translateX(-100%)', opacity: 0 }))
                     ])
                 ])
             ]

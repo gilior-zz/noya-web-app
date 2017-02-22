@@ -32,6 +32,7 @@ var menu_1 = require("./Menu/menu");
 var lang_bar_component_1 = require("./LangBar/lang-bar.component");
 var pipes = require('./pipes/pipes');
 var services = require("./services/services");
+var invalid_email_directive_1 = require('./common/invalid-email.directive');
 //import {GaliluModule} from './galilu/galilu-module'
 var page_name_service_1 = require('./services/page-name.service');
 var AppModule = (function () {
@@ -39,7 +40,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            declarations: [app_component_1.AppComponent, home_1.Home, biography_1.Biography, links_1.Links, contact_1.Contact, programs_1.Programs, pictures_1.Pictures, videos_1.Videos, header_image_1.HeaderImage, calendar_1.Calendar, press_1.Press, press_1.Press, updates_1.Updates, traverse_item_component_1.TraverseItemComponent, pipes.SafeResourcePipe, link_component_1.GaliluLink, cards_manager_1.CardsManagerComponent, menu_1.MenuComponent, lang_bar_component_1.LangBarComponent],
+            declarations: [app_component_1.AppComponent, home_1.Home, biography_1.Biography, links_1.Links, contact_1.Contact, programs_1.Programs, pictures_1.Pictures, videos_1.Videos, header_image_1.HeaderImage, calendar_1.Calendar, press_1.Press, press_1.Press, updates_1.Updates, traverse_item_component_1.TraverseItemComponent, pipes.SafeResourcePipe, link_component_1.GaliluLink, cards_manager_1.CardsManagerComponent, menu_1.MenuComponent, lang_bar_component_1.LangBarComponent, invalid_email_directive_1.EmailValidatorDirective],
             imports: [
                 platform_browser_1.BrowserModule,
                 http_1.HttpModule,

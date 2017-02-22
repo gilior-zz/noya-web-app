@@ -1,8 +1,9 @@
-﻿import { Component, OnDestroy, OnInit, Injector, trigger, style, animate, state, transition } from '@angular/core'
+﻿import { Component, OnDestroy, OnInit, Injector, trigger, style, animate, state, transition, AfterViewChecked, ViewChild } from '@angular/core'
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router'
 import { NgModel } from '@angular/forms'
 import { BaseComponent } from '../common/base.component'
-import { utilty } from '../services/utitlity'
+
 import * as services from '../services/services'
 import * as dal from '../dal/models'
 import { Observable } from 'rxjs/Observable';
@@ -18,27 +19,90 @@ import * as pipes from '../pipes/pipes'
             state('in', style({ transform: 'translateX(0)', opacity: 1 })),
 
             transition('void => *', [
-                style({ transform: utilty.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
+                style({ transform:'translateX(-100%)', opacity: 0 }),
                 animate(500)
             ]),
             transition('* => void', [
-                animate(500, style({ transform: utilty.IsEnglishMode ? 'translateX(100%)' : 'translateX(-100%)', opacity: 0 }),
+                animate(500, style({ transform: 'translateX(-100%)', opacity: 0 }),
                 )
             ])
         ])
+
     ]
 })
 
-export class Contact extends BaseComponent implements OnDestroy {
+export class Contact extends BaseComponent implements OnDestroy, AfterViewChecked {
     displaySubmitError: boolean;
     isSubmitting: boolean;
     submitted: boolean;
     message: dal.Message;
 
 
+
     constructor(private dataservice: services.DataService, private cacheManager: services.CacheManager, private dialogService: services.DialogService, private dialogeService: services.DialogService, public router: Router, private injector: Injector) {
         super(injector);
     }
+
+    //form handler
+    contactForm: NgForm;
+    @ViewChild('contactForm') currentForm: NgForm;
+    ngAfterViewChecked() {
+        this.formChanged();
+    }
+
+    formChanged() {
+        if (this.currentForm === this.contactForm) { return; }
+        this.contactForm = this.currentForm;
+        if (this.contactForm) {
+            this.contactForm.valueChanges
+                .subscribe(data => this.onValueChanged(data));
+        }
+    }
+
+    onValueChanged(data?: any) {
+        if (!this.contactForm) { return; }
+        const form = this.contactForm.form;
+
+        for (const field in this.formErrors) {
+            // clear previous error message (if any)
+            this.formErrors[field] = '';
+            const control = form.get(field);
+
+            if (control && control.dirty && !control.valid) {
+                const messages = this.validationMessages[field];
+                for (const key in control.errors) {
+                    this.formErrors[field] += messages[key] + ' ';
+                }
+            }
+        }
+    }
+
+    formErrors = {
+        'name': '',
+        'email': '',
+        'content': ''
+    };
+
+    validationMessages = {
+        'name': {
+            'required': 'name is required',
+            'minlength': 'name must be at least 4 characters long',
+            'maxlength': 'name cannot be more than 24 characters long',
+
+        },
+        'content': {
+            'required': 'name is required',
+            'minlength': 'name must be at least 4 characters long',
+            'maxlength': 'name cannot be more than 24 characters long',
+
+        },
+        'email': {
+            'required': 'email is required.',
+            'illegalEmailFormat': 'invalid email format'
+        }
+    };
+
+
 
     canDeactivate(): boolean | Promise<boolean> | Observable<boolean> {
         // Allow synchronous navigation (`true`) if no crisis or the crisis is unchanged

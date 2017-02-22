@@ -17,7 +17,6 @@ var core_1 = require('@angular/core');
 var base_component_1 = require('../common/base.component');
 var models_1 = require('../dal/models');
 var services_1 = require('../services/services');
-var utitlity_1 = require('../services/utitlity');
 var LangBarComponent = (function (_super) {
     __extends(LangBarComponent, _super);
     function LangBarComponent(injector, cacheManager) {
@@ -27,16 +26,15 @@ var LangBarComponent = (function (_super) {
         this.isLangBarOpen = false;
     }
     LangBarComponent.prototype.toggleLangBarState = function () {
-        console.log('toggleLangBarState');
         this.isLangBarOpen = !this.isLangBarOpen;
     };
     Object.defineProperty(LangBarComponent.prototype, "isEng", {
-        get: function () { return utitlity_1.utilty.IsEnglishMode; },
+        get: function () { return this.cacheManager.GetFromCache('lang', models_1.Language.Hebrew) == models_1.Language.English; },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(LangBarComponent.prototype, "isHeb", {
-        get: function () { return utitlity_1.utilty.IsHebrewMode; },
+        get: function () { return !this.isEng; },
         enumerable: true,
         configurable: true
     });
@@ -54,18 +52,33 @@ var LangBarComponent = (function (_super) {
             moduleId: module.id, templateUrl: './lang-bar.component.html',
             styleUrls: ['./lang-bar.component.css'],
             animations: [
-                core_1.trigger('isLangBarOpen', [
+                core_1.trigger('isLangBarOpenRTL', [
                     core_1.state('true', core_1.style({ transform: 'translateX(0)' })),
-                    core_1.state('false', core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(-28px)' : 'translateX(28px)' })),
+                    core_1.state('false', core_1.style({ transform: 'translateX(-28px)' })),
                     core_1.transition('0=>1', [core_1.animate(300, core_1.keyframes([
-                            core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(-28px)' : 'translateX(28px)', offset: 0 }),
-                            core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(15px)' : 'translateX(-15px)', offset: 0.3 }),
+                            core_1.style({ transform: 'translateX(-28px)', offset: 0 }),
+                            core_1.style({ transform: 'translateX(15px)', offset: 0.3 }),
                             core_1.style({ transform: 'translateX(0)', offset: 1.0 })
                         ]))]),
                     core_1.transition('1=>0', [core_1.animate(300, core_1.keyframes([
                             core_1.style({ transform: 'translateX(0)', offset: 0 }),
-                            core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(15px)' : 'translateX(-15px)', offset: 0.7 }),
-                            core_1.style({ transform: utitlity_1.utilty.IsHebrewMode ? 'translateX(-28px)' : 'translateX(28px)', offset: 1.0 })
+                            core_1.style({ transform: 'translateX(15px)', offset: 0.7 }),
+                            core_1.style({ transform: 'translateX(-28px)', offset: 1.0 })
+                        ]))
+                    ]),
+                ]),
+                core_1.trigger('isLangBarOpenLTR', [
+                    core_1.state('true', core_1.style({ transform: 'translateX(0)' })),
+                    core_1.state('false', core_1.style({ transform: 'translateX(28px)' })),
+                    core_1.transition('0=>1', [core_1.animate(300, core_1.keyframes([
+                            core_1.style({ transform: 'translateX(28px)', offset: 0 }),
+                            core_1.style({ transform: 'translateX(-15px)', offset: 0.3 }),
+                            core_1.style({ transform: 'translateX(0)', offset: 1.0 })
+                        ]))]),
+                    core_1.transition('1=>0', [core_1.animate(300, core_1.keyframes([
+                            core_1.style({ transform: 'translateX(0)', offset: 0 }),
+                            core_1.style({ transform: 'translateX(-15px)', offset: 0.7 }),
+                            core_1.style({ transform: 'translateX(28px)', offset: 1.0 })
                         ]))
                     ]),
                 ])

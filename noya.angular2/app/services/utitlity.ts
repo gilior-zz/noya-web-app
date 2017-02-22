@@ -1,14 +1,15 @@
 ﻿
 import { Language } from '../dal/models'
-class Utilty {
 
-    get IsHebrewMode(): boolean { return +(sessionStorage.getItem('lang') || '0') == Language.Hebrew; }
-    get IsEnglishMode(): boolean { return !this.IsHebrewMode; }
-    get IsMobile(): boolean { return window.innerWidth <= 480; }
-    get IsPhablet(): boolean { return window.innerWidth <= 767; }
-    get IsTablet(): boolean { return window.innerWidth <= 991; }
-    get IsDesktop(): boolean { return window.innerWidth >= 992; }
 
-}
+export function IsHebrewMode(): boolean { return +(sessionStorage.getItem('lang') || '0') == Language.Hebrew; }
+export function IsEnglishMode(): boolean { return +(sessionStorage.getItem('lang') || '0') == Language.English; }
+export function IsMobile(): boolean { return window.innerWidth <= 480; }
+export function IsPhablet(): boolean { return window.innerWidth <= 767; }
+export function IsTablet(): boolean { return window.innerWidth <= 991; }
+export function IsDesktop(): boolean { return window.innerWidth >= 992; }
 
-export var utilty: Utilty = new Utilty();
+
+
+
+

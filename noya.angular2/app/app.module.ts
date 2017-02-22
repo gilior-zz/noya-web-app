@@ -23,11 +23,13 @@ import { MenuComponent } from "./Menu/menu"
 import { LangBarComponent } from "./LangBar/lang-bar.component"
 import * as pipes from './pipes/pipes'
 import * as services from "./services/services"
+
 import { BaseComponent } from './common/base.component'
+import { EmailValidatorDirective } from './common/invalid-email.directive'
 //import {GaliluModule} from './galilu/galilu-module'
 import { pageNameService } from './services/page-name.service'
 @NgModule({
-    declarations: [AppComponent, Home, Biography, Links, Contact, Programs, Pictures, Videos, HeaderImage, Calendar, Press, Press, Updates, TraverseItemComponent, pipes.SafeResourcePipe, GaliluLink, CardsManagerComponent, MenuComponent, LangBarComponent],
+    declarations: [AppComponent, Home, Biography, Links, Contact, Programs, Pictures, Videos, HeaderImage, Calendar, Press, Press, Updates, TraverseItemComponent, pipes.SafeResourcePipe, GaliluLink, CardsManagerComponent, MenuComponent, LangBarComponent,EmailValidatorDirective],
     imports: [
         BrowserModule,
         HttpModule,

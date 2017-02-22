@@ -1,19 +1,17 @@
 ﻿<!DOCTYPE html>
 <html>
-<!-- #region jit -->
+
 <head>
-    <base href="/"/>
+    <base href="/" />
     <link rel="shortcut icon" type="image/png" href="Content/Images/glyphicons-18-music.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
-
 
     <link href="Content/site.css" rel="stylesheet" />
 
@@ -26,8 +24,8 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
 
-    <!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css?family=Rubik&amp;subset=hebrew" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto"rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik&subset=hebrew" rel="stylesheet">
 
 
 
@@ -35,50 +33,15 @@
         System.import('lib/swiper.js')
             .then(null, console.error.bind(console));
     </script>
-
 </head>
 <body>
     <my-app></my-app>
     <script>
         System.import('app').catch(function (err) { console.error(err); });
     </script>
-
-
-    </script>
-
 </body>
-<!-- #endregion jit-->
-<!-- #region aot -->
-<!-- #region name -->
-<!--<head>
-    <link rel="shortcut icon" type="image/png" href="Content/Images/glyphicons-18-music.png" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script>window.module = 'aot';</script>
 
 
-    <link href="Content/site.css" rel="stylesheet" />
-
-
-
-    <script src="Scripts/jquery-2.2.4.min.js"></script>
-
-
-    <script src="Scripts/bootstrap.min.js"></script>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="Content/Images/glyphicons-18-music.png" />
-</head>
-<body>
-    <my-app></my-app>
-</body>
-<script src="dist/build.js"></script>-->
-<!-- #endregion
-<!-- #endregion aot -->
 </html>
 
 

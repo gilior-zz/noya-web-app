@@ -8,19 +8,16 @@
                 <input [disabled]="isSubmitting" type="text" class="form-control form-field input-lg " required
                        [(ngModel)]="message.Sender.Name" name="name"
                        placeholder="{{'Name'|translate}}" #name="ngModel" />
-                <div [@invalidAnimation]="'in'" class="invalid-label" *ngIf="!name.valid && !name.pristine">
-                    {{'name is required'|translate}}
+                <div *ngIf="formErrors.name" [@invalidAnimation]="'in'" class="invalid-label">
+                    {{ formErrors.name |translate}}
                 </div>
             </div>
             <div [class.has-error]="invalidEmailInput(email)" [class.has-success]="!email.pristine&&!invalidEmailInput(email)" class="form-group">
 
-                <input [disabled]="isSubmitting" type="email" class="form-control form-field input-lg" required
+                <input emailValidator [disabled]="isSubmitting" type="email" class="form-control form-field input-lg" required
                        [(ngModel)]="message.Sender.Email" name="email" placeholder="{{'Email'|translate}}" #email="ngModel">
-                <div [@invalidAnimation]="'in'" class="invalid-label" *ngIf="!email.valid && !email.pristine">
-                    {{'email is required'|translate}}
-                </div>
-                <div [@invalidAnimation]="'in'" class="invalid-label" *ngIf="email.valid && !email.pristine && invalidEmail">
-                    {{'invalid email format'|translate}}
+                <div *ngIf="formErrors.email" [@invalidAnimation]="'in'" class="invalid-label">
+                    {{ formErrors.email |translate}}
                 </div>
             </div>
             <div [class.has-error]="!content.valid && !content.pristine" [class.has-success]="content.valid && !content.pristine" class="form-group">
@@ -28,13 +25,13 @@
                 <textarea rows="8" [disabled]="isSubmitting" class="form-control input-lg" required
                           [(ngModel)]="message.Content" name="content"
                           placeholder="{{'Content'|translate}}" #content="ngModel"></textarea>
-                <div [@invalidAnimation]="'in'" class="invalid-label" *ngIf="!content.valid && !content.pristine">
-                    {{'content is required'|translate}}
+                <div *ngIf="formErrors.content" [@invalidAnimation]="'in'" class="invalid-label">
+                    {{ formErrors.content |translate}}
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12" [ngClass]="{'text-right':isEng,'text-left':isHeb}">
-                    <button type="submit" class="btn btn-info" [disabled]="isSubmitting||!contactForm.form.valid || invalidEmail">{{'Submit'|translate}}</button>
+                    <button type="submit" class="btn btn-info" [disabled]="isSubmitting||!contactForm.form.valid">{{'Submit'|translate}}</button>
 
                 </div>
             </div>

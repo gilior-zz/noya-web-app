@@ -8,7 +8,7 @@ export interface TraverseItem {
 }
 
 export interface HomePageText {
-    text: string;
+    Text: string;
 }
 
 export interface HomePageTextResponse extends DataResponse {
