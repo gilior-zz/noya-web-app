@@ -17,13 +17,58 @@ h4 {
 }
 
 .down-arrow {
-    
-    height: 200px;
+    /*background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;*/
+    text-align: center;
+    height: 100px;
     width: 100%;
-    background-image:url('http://res.cloudinary.com/lior/image/upload/v1487794587/arr_burned_j9bqji.png');
-    
-    
-    
+    top: 80vh;
+    position: absolute;
+    /*background-image: url('http://res.cloudinary.com/lior/image/upload/v1487875642/Down-Arrow-PNG-Pic_lx4xrs.png');*/
     /*background-color:rgba(169, 170, 180, 0.37);*/
-   
+    &--inner {
+        /*padding:2px;*/
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 25px 0 25px;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        animation-name: color_change;
+        animation-delay: 2s;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+
+        &--bottom {
+            margin-top: 3px;
+            animation-delay: 0s !important;
+        }
+
+
+
+        @keyframes color_change {
+            0% {
+                border-top-color: #F5F5F5;
+            }
+
+            20% {
+                border-top-color: #FFFAFA;
+            }
+
+            40% {
+                border-top-color: #F0FFF0;
+            }
+
+            60% {
+                border-top-color: #F5FFFA;
+            }
+
+            80% {
+                border-top-color: #F0FFFF;
+            }
+        }
+    }
 }
