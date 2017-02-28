@@ -2,6 +2,7 @@
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router'
 import { NgModel } from '@angular/forms'
+
 import { BaseComponent } from '../common/base.component'
 
 import * as services from '../services/services'
@@ -19,7 +20,7 @@ import * as pipes from '../pipes/pipes'
             state('in', style({ transform: 'translateX(0)', opacity: 1 })),
 
             transition('void => *', [
-                style({ transform:'translateX(-100%)', opacity: 0 }),
+                style({ transform: 'translateX(-100%)', opacity: 0 }),
                 animate(500)
             ]),
             transition('* => void', [
@@ -91,14 +92,14 @@ export class Contact extends BaseComponent implements OnDestroy, AfterViewChecke
 
         },
         'content': {
-            'required': 'name is required',
-            'minlength': 'name must be at least 4 characters long',
-            'maxlength': 'name cannot be more than 24 characters long',
+            'required': 'content is required',
+            'minlength': 'content must be at least 4 characters long',
+            'maxlength': 'content cannot be more than 24 characters long',
 
         },
         'email': {
-            'required': 'email is required.',
-            'illegalEmailFormat': 'invalid email format'
+            'required': 'email is required',
+            'forbiddenName': 'invalid email format'
         }
     };
 

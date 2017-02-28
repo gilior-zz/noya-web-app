@@ -51,12 +51,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         width: 50px;
-        /*background-color: white;*/
-        /*background-image: url('http://res.cloudinary.com/lior/image/upload/v1487362544/download_1__burned_ov4ufh.png');*/
-        background-image: url('http://res.cloudinary.com/lior/image/upload/v1487411891/Rotating_globe_qhxrhh.gif');
-        /*background-image: url('http://res.cloudinary.com/lior/image/upload/v1487411718/56510_globus1_spv8wt.gif');*/
-        /*background-image: url('http://res.cloudinary.com/lior/image/upload/v1487410844/globus_gif_opzpfu.gif');*/
-        /*animation: enlarge 8s linear infinite;*/
+        background-image: url('http://res.cloudinary.com/lior/image/upload/v1488278819/ezgif-2-a9229be3be_ntr560.gif');
 
         transition: transform &--img {
             height: 50px;
@@ -74,5 +69,15 @@
         /*border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;*/
         float: left;
+    }
+}
+
+.select {
+    background-color: black;
+
+    &--option {
+        transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
     }
 }

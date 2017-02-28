@@ -1,20 +1,18 @@
-﻿<div class="row visible-lg visible-md" *ngFor="let trio of trios">
-    <traverse-item [traverseItem]="traverseItem" *ngFor="let traverseItem of trio" class="col-md-4 text-center"></traverse-item>
-</div>
-<div class="row visible-sm" *ngFor="let dou of dous">
-    <traverse-item [traverseItem]="traverseItem" *ngFor="let traverseItem of dou" class="col-sm-6 text-center"></traverse-item>
-</div>
-<div class="row visible-xs" *ngFor="let traverseItem of traverseItems">
-    <traverse-item [traverseItem]="traverseItem" class="col-xs-12 text-center"></traverse-item>
-</div>
+﻿<ng-container *ngIf="showTrio">
+    <div class="row" *ngFor="let trio of trios">
+        <traverse-item [traverseItem]="traverseItem" *ngFor="let traverseItem of trio" class="col-xs-4 text-center"></traverse-item>
+    </div>
+</ng-container>
+<ng-container *ngIf="showDuo">
+    <div class="row" *ngFor="let dou of dous">
+        <traverse-item [traverseItem]="traverseItem" *ngFor="let traverseItem of dou" class="col-xs-6 text-center"></traverse-item>
+    </div>
+</ng-container>
+<ng-container *ngIf="showOne">
+    <div class="row" *ngFor="let traverseItem of traverseItems">
+        <traverse-item [traverseItem]="traverseItem" class="col-xs-12 text-center"></traverse-item>
+    </div>
+</ng-container>
 
-<!--<div *ngIf="traverseItems" class="row">
-    <traverse-item [traverseItem]="traverseItems[0]" class="col-lg-4">    </traverse-item>
-    <traverse-item [traverseItem]="traverseItems[1]" class="col-lg-4">    </traverse-item>
-    <traverse-item [traverseItem]="traverseItems[2]" class="col-lg-4">    </traverse-item>
-</div>
-<div *ngIf="traverseItems" class="row">
-    <traverse-item [traverseItem]="traverseItems[3]" class="col-lg-4">    </traverse-item>
-    <traverse-item [traverseItem]="traverseItems[4]" class="col-lg-4">    </traverse-item>
-    <traverse-item [traverseItem]="traverseItems[5]" class="col-lg-4">    </traverse-item>
-</div>-->
+
+

@@ -161,7 +161,8 @@ var TranslationService = (function () {
             "name is required": "יש להזין שם",
             "email is required": "יש להזין אימייל",
             "content is required": "יש להזין תוכן",
-            "invalid email format": "אימייל אינו חוקי"
+            "invalid email format": "אימייל אינו חוקי",
+            "language": "שפה"
         };
     }
     TranslationService.prototype.TranlateItem = function (value) {
@@ -169,7 +170,7 @@ var TranslationService = (function () {
             return;
         var lang = this.cacheManager.GetFromCache('lang', model.Language.Hebrew);
         if (lang == 0) {
-            var translateItem = this.translationFile[value.toLowerCase()];
+            var translateItem = this.translationFile[value.trim().toLowerCase()];
             if (!translateItem)
                 return value;
             return translateItem;
@@ -190,20 +191,13 @@ var youTubeService = (function () {
         this.http = http;
     }
     youTubeService.prototype.fetchVideos = function () {
-        //let params = new URLSearchParams();
-        //params.set('part', 'contentDetails');
-        //params.set('forUsername', 'noyaschleien');
-        //params.set('key', 'AIzaSyBH2ltO-MFMiW7dftsCCM3w8F86M-kwDHM');
-        //return this.http.get('https://www.googleapis.com/youtube/v3/channels', { search: params }).toPromise().then(i => i.json()['items'][0]['contentDetails']['relatedPlaylists']['uploads']).then(
-        //    j => {
+        //return Observable.of(null);
         var params = new http_1.URLSearchParams();
-        params.set('part', 'snippet'); // the user's search value
+        params.set('part', 'snippet');
         params.set('playlistId', 'UUO2Xi-wHrqM27neDaVrfebQ');
         params.set('maxResults', '50');
         params.set('key', 'AIzaSyBH2ltO-MFMiW7dftsCCM3w8F86M-kwDHM');
         return this.http.get('https://www.googleapis.com/youtube/v3/playlistItems', { search: params }).map(function (k) { return k.json()['items']; });
-        // }
-        //);
     };
     youTubeService = __decorate([
         core_1.Injectable(), 

@@ -14,16 +14,16 @@ import { CacheManager } from '../services/services'
         trigger(
             'isLangBarOpenRTL', [
                 state('true', style({ transform: 'translateX(0)' })),
-                state('false', style({ transform: 'translateX(-28px)' })),
+                state('false', style({ transform: 'translateX(-52px)' })),
                 transition('0=>1', [animate(300, keyframes([
-                    style({ transform: 'translateX(-28px)', offset: 0 }),
+                    style({ transform: 'translateX(-52px)', offset: 0 }),
                     style({ transform: 'translateX(15px)', offset: 0.3 }),
                     style({ transform: 'translateX(0)', offset: 1.0 })
                 ]))]),
                 transition('1=>0', [animate(300, keyframes([
                     style({ transform: 'translateX(0)', offset: 0 }),
                     style({ transform: 'translateX(15px)', offset: 0.7 }),
-                    style({ transform: 'translateX(-28px)', offset: 1.0 })
+                    style({ transform: 'translateX(-52px)', offset: 1.0 })
                 ]))
                 ]),
             ]
@@ -31,16 +31,16 @@ import { CacheManager } from '../services/services'
         trigger(
             'isLangBarOpenLTR', [
                 state('true', style({ transform: 'translateX(0)' })),
-                state('false', style({ transform: 'translateX(28px)' })),
+                state('false', style({ transform: 'translateX(50px)' })),
                 transition('0=>1', [animate(300, keyframes([
-                    style({ transform: 'translateX(28px)', offset: 0 }),
+                    style({ transform: 'translateX(50px)', offset: 0 }),
                     style({ transform: 'translateX(-15px)', offset: 0.3 }),
                     style({ transform: 'translateX(0)', offset: 1.0 })
                 ]))]),
                 transition('1=>0', [animate(300, keyframes([
                     style({ transform: 'translateX(0)', offset: 0 }),
                     style({ transform: 'translateX(-15px)', offset: 0.7 }),
-                    style({ transform: 'translateX(28px)', offset: 1.0 })
+                    style({ transform: 'translateX(50px)', offset: 1.0 })
                 ]))
                 ]),
             ]
@@ -59,7 +59,7 @@ export class LangBarComponent extends BaseComponent {
 
     isLangBarOpen: boolean = false;
     toggleLangBarState() {
-       
+
         this.isLangBarOpen = !this.isLangBarOpen;
     }
 
@@ -73,5 +73,16 @@ export class LangBarComponent extends BaseComponent {
     toHeb() {
         this.cacheManager.StoreInCache("lang", Language.Hebrew);
         document.location.reload();
+    }
+
+    onChange(lang: string) {
+        switch (lang) {
+            case 'heb':
+                this.toHeb();
+                break;
+            case 'eng':
+                this.toEng();
+                break;
+        }
     }
 }

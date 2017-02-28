@@ -37,38 +37,48 @@ h4 {
         border-right-color: transparent;
         border-bottom-color: transparent;
         border-left-color: transparent;
-        animation-name: color_change;
-        animation-delay: 2s;
-        animation-duration: 15s;
+        animation-duration: 10s;
         animation-iteration-count: infinite;
+        animation-name: color_change;
+    }
 
-        &--bottom {
-            margin-top: 3px;
-            animation-delay: 0s !important;
+    &--inner:hover {
+        animation-name: none;
+    }
+
+    &--bottom {
+        margin-top: 3px;
+    }
+
+    &--top {
+        animation-delay: 1s;
+    }
+
+
+
+    @keyframes color_change {
+        0% {
+            border-top-color: rgba(225, 84, 84, 0.5);
         }
 
+        20% {
+            border-top-color: rgba(202, 219, 162, 0.5);
+        }
 
+        40% {
+            border-top-color: rgba(191, 166, 27, 0.5);
+        }
 
-        @keyframes color_change {
-            0% {
-                border-top-color: #F5F5F5;
-            }
+        60% {
+            border-top-color: rgba(91, 193, 193, 0.5);
+        }
 
-            20% {
-                border-top-color: #FFFAFA;
-            }
+        80% {
+            border-top-color: rgba(208, 37, 37, 0.50);
+        }
 
-            40% {
-                border-top-color: #F0FFF0;
-            }
-
-            60% {
-                border-top-color: #F5FFFA;
-            }
-
-            80% {
-                border-top-color: #F0FFFF;
-            }
+        100% {
+            border-top-color: rgba(225, 84, 84, 0.5);
         }
     }
 }

@@ -14,11 +14,12 @@
             </div>
             <div [class.has-error]="invalidEmailInput(email)" [class.has-success]="!email.pristine&&!invalidEmailInput(email)" class="form-group">
 
-                <input emailValidator [disabled]="isSubmitting" type="email" class="form-control form-field input-lg" required
+                <input forbiddenName [disabled]="isSubmitting" type="email" class="form-control form-field input-lg" required
                        [(ngModel)]="message.Sender.Email" name="email" placeholder="{{'Email'|translate}}" #email="ngModel">
                 <div *ngIf="formErrors.email" [@invalidAnimation]="'in'" class="invalid-label">
                     {{ formErrors.email |translate}}
                 </div>
+
             </div>
             <div [class.has-error]="!content.valid && !content.pristine" [class.has-success]="content.valid && !content.pristine" class="form-group">
 

@@ -16,16 +16,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var base_component_1 = require('../common/base.component');
 var services_1 = require('../services/services');
+var utitlity_1 = require('../services/utitlity');
 var CardsManagerComponent = (function (_super) {
     __extends(CardsManagerComponent, _super);
-    function CardsManagerComponent(dataService, cacheManager, injector) {
+    function CardsManagerComponent(dataService, cacheManager, injector, utiltyService) {
         _super.call(this, injector);
         this.dataService = dataService;
         this.cacheManager = cacheManager;
         this.injector = injector;
+        this.utiltyService = utiltyService;
         this.trios = new Array();
         this.dous = new Array();
     }
+    CardsManagerComponent.prototype.onResize = function () {
+    };
+    Object.defineProperty(CardsManagerComponent.prototype, "showTrio", {
+        get: function () { return this.utiltyService.IsDesktop || this.utiltyService.IsTablet; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CardsManagerComponent.prototype, "showDuo", {
+        get: function () { return this.utiltyService.IsPhablet; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CardsManagerComponent.prototype, "showOne", {
+        get: function () { return this.utiltyService.IsMobile; },
+        enumerable: true,
+        configurable: true
+    });
     CardsManagerComponent.prototype.ngOnInit = function () {
         var _this = this;
         var lang = +this.cacheManager.GetFromCache('lang', "0");
@@ -46,9 +65,15 @@ var CardsManagerComponent = (function (_super) {
             });
         }, function (err) { });
     };
+    __decorate([
+        core_1.HostListener('window:resize'), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', []), 
+        __metadata('design:returntype', void 0)
+    ], CardsManagerComponent.prototype, "onResize", null);
     CardsManagerComponent = __decorate([
         core_1.Component({ selector: 'cards-manager', moduleId: module.id, templateUrl: './cards-manager.html', styleUrls: ['./cards-manager.css'] }), 
-        __metadata('design:paramtypes', [services_1.DataService, services_1.CacheManager, core_1.Injector])
+        __metadata('design:paramtypes', [services_1.DataService, services_1.CacheManager, core_1.Injector, utitlity_1.UtiltyService])
     ], CardsManagerComponent);
     return CardsManagerComponent;
 }(base_component_1.BaseComponent));

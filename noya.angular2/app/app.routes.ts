@@ -25,7 +25,7 @@ import { CanDeactivateGuard } from './common/can-deactivate-guard.service';
             { path: "links", component: Links },
             { path: "contact", component: Contact, canDeactivate: [CanDeactivateGuard], },
             { path: '', redirectTo: 'home', pathMatch: 'full' }
-        ], {useHash:true})
+        ])
     ],
     exports: [
         RouterModule

@@ -43,6 +43,15 @@ export class AppComponent extends BaseComponent implements OnInit, AfterViewInit
         else return 'ltr'
     }
 
+    goToContent(): void {
+        var top = $('#content').offset().top;
+        //console.log(div.scrollTop);
+        $('html, body').animate({
+            scrollTop: top
+        }, 1000);
+        //console.log(div.scrollTop);
+    };
+
     changeMode() {
         if (this.pn.currentUrl.includes('galilu'))
             this.router.navigate(['/home']);

@@ -294,10 +294,6 @@ footer {
   display: flex !important;
   align-items: center !important; }
 
-.menu-font {
-  color: white !important;
-  font-weight: 900 !important; }
-
 .thumbnail {
   /*width: 100px;*/
   /*height:100px;*/ }

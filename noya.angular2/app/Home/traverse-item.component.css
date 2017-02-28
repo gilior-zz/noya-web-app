@@ -12,11 +12,19 @@
   overflow: hidden;
   height: 350px;
   background-color: black; }
+  .item-content:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+    /* Adjusts for spacing */ }
   .item-content--img {
     width: 100%;
     height: auto;
-    vertical-align: central;
-    cursor: pointer; }
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle; }
   .item-content--card-text {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -24,7 +32,9 @@
     padding-left: 25px;
     padding-right: 25px;
     background-color: aliceblue;
-    height: 100%; }
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle; }
   .item-content--toggle-state {
     position: absolute;
     z-index: 1;

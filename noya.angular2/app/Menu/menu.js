@@ -29,6 +29,7 @@ var MenuComponent = (function (_super) {
         this.injector = injector;
         this.pn = pn;
         this.yts = yts;
+        this.isCollapsed = true;
     }
     Object.defineProperty(MenuComponent.prototype, "pageName", {
         get: function () { return this.pn.currentPageName; },

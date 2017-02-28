@@ -1,34 +1,34 @@
-﻿import { Directive, Input, OnChanges, SimpleChanges } from '@angular/core';
+﻿import { Directive, Input, OnChanges, SimpleChanges, OnInit } from '@angular/core';
 import { AbstractControl, NG_VALIDATORS, Validator, ValidatorFn, Validators } from '@angular/forms';
 
 /** A hero's name can't match the given regular expression */
 export function forbiddenNameValidator(): ValidatorFn {
     return (control: AbstractControl): { [key: string]: any } => {
-        const email = control.value;
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        const no = re.test(email);
-        return no ? { 'illegalEmailFormat': { name } } : null;
+        const name = control.value;
+
+        let nameRe = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const no = nameRe.test(name) || !name;
+        return !no ? { 'forbiddenName': { name } } : null;
     };
 }
 
 @Directive({
-    selector: '[emailValidator]',
-    providers: [{ provide: NG_VALIDATORS, useExisting: EmailValidatorDirective, multi: true }]
+    selector: '[forbiddenName]',
+    providers: [{ provide: NG_VALIDATORS, useExisting: ForbiddenValidatorDirective, multi: true }]
 })
-export class EmailValidatorDirective implements Validator {
-   
-    private valFn = Validators.nullValidator;
+export class ForbiddenValidatorDirective implements Validator, OnInit {
 
-    //ngOnChanges(changes: SimpleChanges): void {
-    //    const change = changes['forbiddenName'];
-    //    if (change) {
-    //        const val: string | RegExp = change.currentValue;
-    //        const re = val instanceof RegExp ? val : new RegExp(val, 'i');
-    //        this.valFn = forbiddenNameValidator(re);
-    //    } else {
-    //        this.valFn = Validators.nullValidator;
-    //    }
-    //}
+    private valFn = Validators.nullValidator;
+    constructor() {
+
+    }
+
+    ngOnInit() {
+
+        this.valFn = forbiddenNameValidator();
+    }
+
+
 
     validate(control: AbstractControl): { [key: string]: any } {
         return this.valFn(control);

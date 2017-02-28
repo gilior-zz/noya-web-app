@@ -17,17 +17,24 @@ var core_1 = require('@angular/core');
 var base_component_1 = require('../common/base.component');
 var services_1 = require('../services/services');
 var router_1 = require('@angular/router');
+var utitlity_1 = require('../services/utitlity');
 var Home = (function (_super) {
     __extends(Home, _super);
-    function Home(router, injector, dataService, cacheManager) {
+    function Home(router, injector, dataService, cacheManager, utiltyService) {
         _super.call(this, injector);
         this.router = router;
         this.injector = injector;
         this.dataService = dataService;
         this.cacheManager = cacheManager;
+        this.utiltyService = utiltyService;
     }
     Home.prototype.ngAfterViewInit = function () {
     };
+    Object.defineProperty(Home.prototype, "isHeb", {
+        get: function () { return this.utiltyService.IsHebrewMode; },
+        enumerable: true,
+        configurable: true
+    });
     Home.prototype.ngOnInit = function () {
         var _this = this;
         var lang = +this.cacheManager.GetFromCache('lang', "0");
@@ -42,7 +49,7 @@ var Home = (function (_super) {
             moduleId: module.id,
             styleUrls: ['./home.css']
         }), 
-        __metadata('design:paramtypes', [router_1.Router, core_1.Injector, services_1.DataService, services_1.CacheManager])
+        __metadata('design:paramtypes', [router_1.Router, core_1.Injector, services_1.DataService, services_1.CacheManager, utitlity_1.UtiltyService])
     ], Home);
     return Home;
 }(base_component_1.BaseComponent));

@@ -22,11 +22,20 @@
     height: 350px;
     background-color: black;
 
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+    }
+
     &--img {
         width: 100%;
         height: auto;
-        vertical-align: central;
         cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
     }
 
 
@@ -39,6 +48,8 @@
         padding-right: 25px;
         background-color: aliceblue;
         height: 100%;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     &--toggle-state {

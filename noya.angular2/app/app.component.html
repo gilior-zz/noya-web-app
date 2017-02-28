@@ -2,10 +2,10 @@
     <div class="container-fluid">
         <header-image [pageName]="'home'">
         </header-image>
-        <div class="down-arrow">
-            <div class="down-arrow--inner"></div>
-           <!-- <br />-->
-            <div class="down-arrow--inner down-arrow--inner--bottom"></div>
+        <div class="down-arrow hidden-xs">
+            <div (click)="goToContent()" class="down-arrow--inner down-arrow--top pointer"></div>
+
+            <div (click)="goToContent()" class="down-arrow--inner down-arrow--bottom pointer"></div>
         </div>
     </div>
 
@@ -16,7 +16,7 @@
 
 
 
-    <div class="container-fluid">
+    <div id="content" class="container-fluid">
         <router-outlet></router-outlet>
 
     </div>

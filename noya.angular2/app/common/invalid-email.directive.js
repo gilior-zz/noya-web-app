@@ -13,40 +13,33 @@ var forms_1 = require('@angular/forms');
 /** A hero's name can't match the given regular expression */
 function forbiddenNameValidator() {
     return function (control) {
-        var email = control.value;
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        var no = re.test(email);
-        return no ? { 'illegalEmailFormat': { name: name } } : null;
+        var name = control.value;
+        var nameRe = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var no = nameRe.test(name) || !name;
+        return !no ? { 'forbiddenName': { name: name } } : null;
     };
 }
 exports.forbiddenNameValidator = forbiddenNameValidator;
-var EmailValidatorDirective = (function () {
-    function EmailValidatorDirective() {
+var ForbiddenValidatorDirective = (function () {
+    function ForbiddenValidatorDirective() {
         this.valFn = forms_1.Validators.nullValidator;
     }
-    //ngOnChanges(changes: SimpleChanges): void {
-    //    const change = changes['forbiddenName'];
-    //    if (change) {
-    //        const val: string | RegExp = change.currentValue;
-    //        const re = val instanceof RegExp ? val : new RegExp(val, 'i');
-    //        this.valFn = forbiddenNameValidator(re);
-    //    } else {
-    //        this.valFn = Validators.nullValidator;
-    //    }
-    //}
-    EmailValidatorDirective.prototype.validate = function (control) {
+    ForbiddenValidatorDirective.prototype.ngOnInit = function () {
+        this.valFn = forbiddenNameValidator();
+    };
+    ForbiddenValidatorDirective.prototype.validate = function (control) {
         return this.valFn(control);
     };
-    EmailValidatorDirective = __decorate([
+    ForbiddenValidatorDirective = __decorate([
         core_1.Directive({
-            selector: '[emailValidator]',
-            providers: [{ provide: forms_1.NG_VALIDATORS, useExisting: EmailValidatorDirective, multi: true }]
+            selector: '[forbiddenName]',
+            providers: [{ provide: forms_1.NG_VALIDATORS, useExisting: ForbiddenValidatorDirective, multi: true }]
         }), 
         __metadata('design:paramtypes', [])
-    ], EmailValidatorDirective);
-    return EmailValidatorDirective;
+    ], ForbiddenValidatorDirective);
+    return ForbiddenValidatorDirective;
 }());
-exports.EmailValidatorDirective = EmailValidatorDirective;
+exports.ForbiddenValidatorDirective = ForbiddenValidatorDirective;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

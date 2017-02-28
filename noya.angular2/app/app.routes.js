@@ -37,7 +37,7 @@ var AppRoutingModule = (function () {
                     { path: "links", component: links_1.Links },
                     { path: "contact", component: contact_1.Contact, canDeactivate: [can_deactivate_guard_service_1.CanDeactivateGuard], },
                     { path: '', redirectTo: 'home', pathMatch: 'full' }
-                ], { useHash: true })
+                ])
             ],
             exports: [
                 router_1.RouterModule

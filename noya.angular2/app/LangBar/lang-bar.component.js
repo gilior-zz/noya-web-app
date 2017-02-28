@@ -46,6 +46,16 @@ var LangBarComponent = (function (_super) {
         this.cacheManager.StoreInCache("lang", models_1.Language.Hebrew);
         document.location.reload();
     };
+    LangBarComponent.prototype.onChange = function (lang) {
+        switch (lang) {
+            case 'heb':
+                this.toHeb();
+                break;
+            case 'eng':
+                this.toEng();
+                break;
+        }
+    };
     LangBarComponent = __decorate([
         core_1.Component({
             selector: 'lang-bar',
@@ -54,31 +64,31 @@ var LangBarComponent = (function (_super) {
             animations: [
                 core_1.trigger('isLangBarOpenRTL', [
                     core_1.state('true', core_1.style({ transform: 'translateX(0)' })),
-                    core_1.state('false', core_1.style({ transform: 'translateX(-28px)' })),
+                    core_1.state('false', core_1.style({ transform: 'translateX(-52px)' })),
                     core_1.transition('0=>1', [core_1.animate(300, core_1.keyframes([
-                            core_1.style({ transform: 'translateX(-28px)', offset: 0 }),
+                            core_1.style({ transform: 'translateX(-52px)', offset: 0 }),
                             core_1.style({ transform: 'translateX(15px)', offset: 0.3 }),
                             core_1.style({ transform: 'translateX(0)', offset: 1.0 })
                         ]))]),
                     core_1.transition('1=>0', [core_1.animate(300, core_1.keyframes([
                             core_1.style({ transform: 'translateX(0)', offset: 0 }),
                             core_1.style({ transform: 'translateX(15px)', offset: 0.7 }),
-                            core_1.style({ transform: 'translateX(-28px)', offset: 1.0 })
+                            core_1.style({ transform: 'translateX(-52px)', offset: 1.0 })
                         ]))
                     ]),
                 ]),
                 core_1.trigger('isLangBarOpenLTR', [
                     core_1.state('true', core_1.style({ transform: 'translateX(0)' })),
-                    core_1.state('false', core_1.style({ transform: 'translateX(28px)' })),
+                    core_1.state('false', core_1.style({ transform: 'translateX(50px)' })),
                     core_1.transition('0=>1', [core_1.animate(300, core_1.keyframes([
-                            core_1.style({ transform: 'translateX(28px)', offset: 0 }),
+                            core_1.style({ transform: 'translateX(50px)', offset: 0 }),
                             core_1.style({ transform: 'translateX(-15px)', offset: 0.3 }),
                             core_1.style({ transform: 'translateX(0)', offset: 1.0 })
                         ]))]),
                     core_1.transition('1=>0', [core_1.animate(300, core_1.keyframes([
                             core_1.style({ transform: 'translateX(0)', offset: 0 }),
                             core_1.style({ transform: 'translateX(-15px)', offset: 0.7 }),
-                            core_1.style({ transform: 'translateX(28px)', offset: 1.0 })
+                            core_1.style({ transform: 'translateX(50px)', offset: 1.0 })
                         ]))
                     ]),
                 ])

@@ -1,7 +1,7 @@
 ﻿.invalid-label {
   background-color: #d9534f;
   padding: .2em .6em .3em;
-  font-size: 75%;
+  /*font-size: 75%;*/
   font-weight: 700;
   line-height: 1;
   color: #fff;

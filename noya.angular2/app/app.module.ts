@@ -23,13 +23,13 @@ import { MenuComponent } from "./Menu/menu"
 import { LangBarComponent } from "./LangBar/lang-bar.component"
 import * as pipes from './pipes/pipes'
 import * as services from "./services/services"
-
+import { UtiltyService} from './services/utitlity'
 import { BaseComponent } from './common/base.component'
-import { EmailValidatorDirective } from './common/invalid-email.directive'
+import { ForbiddenValidatorDirective } from './common/invalid-email.directive'
 //import {GaliluModule} from './galilu/galilu-module'
 import { pageNameService } from './services/page-name.service'
 @NgModule({
-    declarations: [AppComponent, Home, Biography, Links, Contact, Programs, Pictures, Videos, HeaderImage, Calendar, Press, Press, Updates, TraverseItemComponent, pipes.SafeResourcePipe, GaliluLink, CardsManagerComponent, MenuComponent, LangBarComponent,EmailValidatorDirective],
+    declarations: [AppComponent, Home, Biography, Links, Contact, Programs, Pictures, Videos, HeaderImage, Calendar, Press, Press, Updates, TraverseItemComponent, pipes.SafeResourcePipe, GaliluLink, CardsManagerComponent, MenuComponent, LangBarComponent, ForbiddenValidatorDirective],
     imports: [
         BrowserModule,
         HttpModule,
@@ -39,7 +39,7 @@ import { pageNameService } from './services/page-name.service'
         //GaliluModule
     ],
 
-    providers: [pageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService],
+    providers: [pageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService,UtiltyService],
     bootstrap: [AppComponent],
 })
 export class AppModule { }

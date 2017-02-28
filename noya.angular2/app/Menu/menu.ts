@@ -1,4 +1,4 @@
-﻿import { Component,Injector } from '@angular/core'
+﻿import { Component, Injector } from '@angular/core'
 import * as services from "../services/services"
 import * as dal from "../dal/models"
 
@@ -16,6 +16,8 @@ export class MenuComponent extends BaseComponent {
         super(injector);
 
     }
+
+    isCollapsed: boolean = true;
 
     get pageName(): string { return this.pn.currentPageName; }
     public UpdateImage(imageUrl: string) {

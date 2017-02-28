@@ -154,7 +154,8 @@ export class TranslationService {
         "name is required": "יש להזין שם",
         "email is required": "יש להזין אימייל",
         "content is required": "יש להזין תוכן",
-        "invalid email format":"אימייל אינו חוקי"
+        "invalid email format": "אימייל אינו חוקי",
+        "language":"שפה"
 
     };
     constructor(private cacheManager: CacheManager) {
@@ -164,7 +165,7 @@ export class TranslationService {
         var lang = this.cacheManager.GetFromCache('lang', model.Language.Hebrew);
         if (lang == 0)//hewbrew
         {
-            let translateItem = this.translationFile[value.toLowerCase()];
+            let translateItem = this.translationFile[value.trim().toLowerCase()];
             if (!translateItem)
                 return value;
             return translateItem;
@@ -182,24 +183,14 @@ export class youTubeService {
 
     constructor(private http: Http) { }
     public fetchVideos(): Observable<any> {
-
-        //let params = new URLSearchParams();
-        //params.set('part', 'contentDetails');
-        //params.set('forUsername', 'noyaschleien');
-        //params.set('key', 'AIzaSyBH2ltO-MFMiW7dftsCCM3w8F86M-kwDHM');
-        //return this.http.get('https://www.googleapis.com/youtube/v3/channels', { search: params }).toPromise().then(i => i.json()['items'][0]['contentDetails']['relatedPlaylists']['uploads']).then(
-        //    j => {
-
+        //return Observable.of(null);
         let params = new URLSearchParams();
-        params.set('part', 'snippet'); // the user's search value
+        params.set('part', 'snippet');
         params.set('playlistId', 'UUO2Xi-wHrqM27neDaVrfebQ');
         params.set('maxResults', '50');
         params.set('key', 'AIzaSyBH2ltO-MFMiW7dftsCCM3w8F86M-kwDHM');
         return this.http.get('https://www.googleapis.com/youtube/v3/playlistItems', { search: params }).map(
             k => k.json()['items'])
-
-        // }
-        //);
     }
 
 }

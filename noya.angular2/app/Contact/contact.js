@@ -41,13 +41,13 @@ var Contact = (function (_super) {
                 'maxlength': 'name cannot be more than 24 characters long',
             },
             'content': {
-                'required': 'name is required',
-                'minlength': 'name must be at least 4 characters long',
-                'maxlength': 'name cannot be more than 24 characters long',
+                'required': 'content is required',
+                'minlength': 'content must be at least 4 characters long',
+                'maxlength': 'content cannot be more than 24 characters long',
             },
             'email': {
-                'required': 'email is required.',
-                'illegalEmailFormat': 'invalid email format'
+                'required': 'email is required',
+                'forbiddenName': 'invalid email format'
             }
         };
     }

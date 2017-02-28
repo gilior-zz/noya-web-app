@@ -184,7 +184,6 @@
     <Content Include="Scripts\jquery.hammer-full.min.js" />
     <Content Include="Scripts\jquery.hammer.js" />
     <Content Include="Scripts\jquery.hammer.min.js" />
-    <Content Include="src\build.js" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />

@@ -52,6 +52,15 @@ var AppComponent = (function (_super) {
         enumerable: true,
         configurable: true
     });
+    AppComponent.prototype.goToContent = function () {
+        var top = $('#content').offset().top;
+        //console.log(div.scrollTop);
+        $('html, body').animate({
+            scrollTop: top
+        }, 1000);
+        //console.log(div.scrollTop);
+    };
+    ;
     AppComponent.prototype.changeMode = function () {
         if (this.pn.currentUrl.includes('galilu'))
             this.router.navigate(['/home']);
