@@ -1,9 +1,14 @@
 "use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13,20 +18,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var base_component_1 = require('../common/base.component');
-var services_1 = require('../services/services');
-var router_1 = require('@angular/router');
-var utitlity_1 = require('../services/utitlity');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var base_component_1 = require("../common/base.component");
+var services_1 = require("../services/services");
+var router_1 = require("@angular/router");
+var utitlity_1 = require("../services/utitlity");
 var Home = (function (_super) {
     __extends(Home, _super);
     function Home(router, injector, dataService, cacheManager, utiltyService) {
-        _super.call(this, injector);
-        this.router = router;
-        this.injector = injector;
-        this.dataService = dataService;
-        this.cacheManager = cacheManager;
-        this.utiltyService = utiltyService;
+        var _this = _super.call(this, injector) || this;
+        _this.router = router;
+        _this.injector = injector;
+        _this.dataService = dataService;
+        _this.cacheManager = cacheManager;
+        _this.utiltyService = utiltyService;
+        return _this;
     }
     Home.prototype.ngAfterViewInit = function () {
     };
@@ -43,15 +50,15 @@ var Home = (function (_super) {
             _this.homePageText = res.HomePageTexts[0];
         }, function (err) { });
     };
-    Home = __decorate([
-        core_1.Component({
-            templateUrl: "./home.html",
-            moduleId: module.id,
-            styleUrls: ['./home.css']
-        }), 
-        __metadata('design:paramtypes', [router_1.Router, core_1.Injector, services_1.DataService, services_1.CacheManager, utitlity_1.UtiltyService])
-    ], Home);
     return Home;
 }(base_component_1.BaseComponent));
+Home = __decorate([
+    core_1.Component({
+        templateUrl: "./home.html",
+        moduleId: module.id,
+        styleUrls: ['./home.css']
+    }),
+    __metadata("design:paramtypes", [router_1.Router, core_1.Injector, services_1.DataService, services_1.CacheManager, utitlity_1.UtiltyService])
+], Home);
 exports.Home = Home;
 //# sourceMappingURL=home.js.map

@@ -34,6 +34,7 @@ export class MenuComponent extends BaseComponent {
     }
 
     changeMode() {
+      
         if (this.pn.currentUrl.includes('galilu'))
             this.router.navigate(['/home']);
         else

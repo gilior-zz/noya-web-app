@@ -40,7 +40,9 @@
     z-index: 1;
     cursor: pointer; }
     .item-content--toggle-state--img {
-      cursor: pointer; }
+      cursor: pointer;
+      position: absolute;
+      top: -350px; }
 
 .item-wrp {
   border-radius: 5px;

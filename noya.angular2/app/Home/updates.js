@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var models_1 = require('../dal/models');
-var services_1 = require('../services/services');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var models_1 = require("../dal/models");
+var services_1 = require("../services/services");
 var Updates = (function () {
     function Updates(dataService) {
         this.dataService = dataService;
@@ -20,15 +21,15 @@ var Updates = (function () {
         var req = { Language: models_1.Language.Hebrew };
         this.dataService.ConnectToApiData(req, 'api/Data/GetUpdates').subscribe(function (res) { return _this.updates = res.Updates; });
     };
-    Updates = __decorate([
-        core_1.Component({
-            selector: 'noya-updates',
-            templateUrl: './updates.html',
-            moduleId: module.id
-        }), 
-        __metadata('design:paramtypes', [services_1.DataService])
-    ], Updates);
     return Updates;
 }());
+Updates = __decorate([
+    core_1.Component({
+        selector: 'noya-updates',
+        templateUrl: './updates.html',
+        moduleId: module.id
+    }),
+    __metadata("design:paramtypes", [services_1.DataService])
+], Updates);
 exports.Updates = Updates;
 //# sourceMappingURL=updates.js.map

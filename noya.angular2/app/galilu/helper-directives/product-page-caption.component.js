@@ -8,24 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 var ProductPageCaptionComponent = (function () {
     function ProductPageCaptionComponent() {
     }
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ProductPageCaptionComponent.prototype, "product", void 0);
-    ProductPageCaptionComponent = __decorate([
-        core_1.Component({
-            selector: 'product-page-caption',
-            moduleId: module.id,
-            templateUrl: './product-page-caption.component.html',
-            styleUrls: ['./product-page-caption.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ProductPageCaptionComponent);
     return ProductPageCaptionComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ProductPageCaptionComponent.prototype, "product", void 0);
+ProductPageCaptionComponent = __decorate([
+    core_1.Component({
+        selector: 'product-page-caption',
+        moduleId: module.id,
+        templateUrl: './product-page-caption.component.html',
+        styleUrls: ['./product-page-caption.component.css']
+    })
+], ProductPageCaptionComponent);
 exports.ProductPageCaptionComponent = ProductPageCaptionComponent;
 //# sourceMappingURL=product-page-caption.component.js.map

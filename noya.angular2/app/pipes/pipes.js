@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var services = require('../services/services');
-var dal = require('../dal/models');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var services = require("../services/services");
+var dal = require("../dal/models");
 var TranslatePipe = (function () {
     function TranslatePipe(translationService, cacheManager) {
         this.translationService = translationService;
@@ -28,14 +29,14 @@ var TranslatePipe = (function () {
         //    return value;
         //}
     };
-    TranslatePipe = __decorate([
-        core_1.Pipe({
-            name: 'translate',
-        }), 
-        __metadata('design:paramtypes', [services.TranslationService, services.CacheManager])
-    ], TranslatePipe);
     return TranslatePipe;
 }());
+TranslatePipe = __decorate([
+    core_1.Pipe({
+        name: 'translate',
+    }),
+    __metadata("design:paramtypes", [services.TranslationService, services.CacheManager])
+], TranslatePipe);
 exports.TranslatePipe = TranslatePipe;
 var SafeResourcePipe = (function () {
     function SafeResourcePipe(dataService, cacheManager, sanitizer) {
@@ -51,13 +52,13 @@ var SafeResourcePipe = (function () {
                 return this.sanitizer.bypassSecurityTrustResourceUrl(value);
         }
     };
-    SafeResourcePipe = __decorate([
-        core_1.Pipe({
-            name: 'safeResource',
-        }), 
-        __metadata('design:paramtypes', [services.DataService, services.CacheManager, platform_browser_1.DomSanitizer])
-    ], SafeResourcePipe);
     return SafeResourcePipe;
 }());
+SafeResourcePipe = __decorate([
+    core_1.Pipe({
+        name: 'safeResource',
+    }),
+    __metadata("design:paramtypes", [services.DataService, services.CacheManager, platform_browser_1.DomSanitizer])
+], SafeResourcePipe);
 exports.SafeResourcePipe = SafeResourcePipe;
 //# sourceMappingURL=pipes.js.map

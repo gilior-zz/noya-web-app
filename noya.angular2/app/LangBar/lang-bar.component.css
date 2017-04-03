@@ -33,10 +33,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;
-    background-image: url("http://res.cloudinary.com/lior/image/upload/v1488278819/ezgif-2-a9229be3be_ntr560.gif");
-    transition: transform .main-wrp--toggle-wrp --img;
-      transition-height: 50px;
-      transition-width: auto; }
+    background-image: url("http://res.cloudinary.com/lior/image/upload/v1488278819/ezgif-2-a9229be3be_ntr560.gif"); }
+    .main-wrp--toggle-wrp--img {
+      height: 50px;
+      width: auto; }
   .main-wrp--toggle-wrp-rtl {
     float: right;
     /*border-top-right-radius: 50%;

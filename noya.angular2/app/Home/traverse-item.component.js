@@ -9,9 +9,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var models_1 = require('../dal/models');
-var services_1 = require('../services/services');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var animations_1 = require("@angular/animations");
+var models_1 = require("../dal/models");
+var services_1 = require("../services/services");
 var TraverseItemComponent = (function () {
     function TraverseItemComponent(dataService) {
         this.dataService = dataService;
@@ -55,60 +57,60 @@ var TraverseItemComponent = (function () {
             _this.isSubmitting = false;
         });
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], TraverseItemComponent.prototype, "traverseItem", void 0);
-    TraverseItemComponent = __decorate([
-        core_1.Component({
-            selector: 'traverse-item',
-            moduleId: module.id,
-            templateUrl: './traverse-item.component.html',
-            styleUrls: ['./traverse-item.component.css'],
-            animations: [
-                core_1.trigger('flyInOut', [
-                    core_1.state('in', core_1.style({ transform: 'translateX(0)' })),
-                    core_1.transition('void => *', [
-                        core_1.style({ transform: 'translateX(-100%)' }),
-                        core_1.animate('1s')
-                    ]),
-                    core_1.transition('* => void', [
-                        core_1.animate('1s', core_1.style({ transform: 'translateX(100%)' }))
-                    ])
-                ]),
-                core_1.trigger('modalState', [
-                    core_1.state('block', core_1.style({ opacity: 1, })),
-                    core_1.state('none', core_1.style({ opacity: 0, })),
-                ]),
-                core_1.trigger('contentImageState', [
-                    core_1.state('active', core_1.style({ opacity: 1, hidden: 'false', display: 'inline' })),
-                    core_1.state('inactive', core_1.style({ opacity: 0, hidden: 'true', display: 'none' })),
-                    //transition('active => inactive', [
-                    //    style({ opacity: 1 }),
-                    //    animate('1s')
-                    //]),
-                    core_1.transition('inactive => active', [
-                        core_1.style({ opacity: 0 }),
-                        core_1.animate('1s')
-                    ])
-                ]),
-                core_1.trigger('contentTextState', [
-                    core_1.state('active', core_1.style({ opacity: 1, hidden: 'false' })),
-                    core_1.state('inactive', core_1.style({ opacity: 0, hidden: 'true' })),
-                    //transition('active => inactive', [
-                    //    style({ opacity: 1 }),
-                    //    animate('1s')
-                    //]),
-                    core_1.transition('inactive => active', [
-                        core_1.style({ opacity: 0 }),
-                        core_1.animate('1s')
-                    ])
-                ]),
-            ]
-        }), 
-        __metadata('design:paramtypes', [services_1.DataService])
-    ], TraverseItemComponent);
     return TraverseItemComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], TraverseItemComponent.prototype, "traverseItem", void 0);
+TraverseItemComponent = __decorate([
+    core_1.Component({
+        selector: 'traverse-item',
+        moduleId: module.id,
+        templateUrl: './traverse-item.component.html',
+        styleUrls: ['./traverse-item.component.css'],
+        animations: [
+            animations_1.trigger('flyInOut', [
+                animations_1.state('in', animations_1.style({ transform: 'translateX(0)' })),
+                animations_1.transition('void => *', [
+                    animations_1.style({ transform: 'translateX(-100%)' }),
+                    animations_1.animate('1s')
+                ]),
+                animations_1.transition('* => void', [
+                    animations_1.animate('1s', animations_1.style({ transform: 'translateX(100%)' }))
+                ])
+            ]),
+            animations_1.trigger('modalState', [
+                animations_1.state('block', animations_1.style({ opacity: 1, })),
+                animations_1.state('none', animations_1.style({ opacity: 0, })),
+            ]),
+            animations_1.trigger('contentImageState', [
+                animations_1.state('active', animations_1.style({ opacity: 1, hidden: 'false', display: 'inline' })),
+                animations_1.state('inactive', animations_1.style({ opacity: 0, hidden: 'true', display: 'none' })),
+                //transition('active => inactive', [
+                //    style({ opacity: 1 }),
+                //    animate('1s')
+                //]),
+                animations_1.transition('inactive => active', [
+                    animations_1.style({ opacity: 0 }),
+                    animations_1.animate('1s')
+                ])
+            ]),
+            animations_1.trigger('contentTextState', [
+                animations_1.state('active', animations_1.style({ opacity: 1, hidden: 'false' })),
+                animations_1.state('inactive', animations_1.style({ opacity: 0, hidden: 'true' })),
+                //transition('active => inactive', [
+                //    style({ opacity: 1 }),
+                //    animate('1s')
+                //]),
+                animations_1.transition('inactive => active', [
+                    animations_1.style({ opacity: 0 }),
+                    animations_1.animate('1s')
+                ])
+            ]),
+        ]
+    }),
+    __metadata("design:paramtypes", [services_1.DataService])
+], TraverseItemComponent);
 exports.TraverseItemComponent = TraverseItemComponent;
 //# sourceMappingURL=traverse-item.component.js.map

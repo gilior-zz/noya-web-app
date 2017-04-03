@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var dal = require('../dal/models');
-var services = require('../services/services');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var dal = require("../dal/models");
+var services = require("../services/services");
 var Calendar = (function () {
     function Calendar(dataService, cacheService) {
         this.dataService = dataService;
@@ -67,15 +68,15 @@ var Calendar = (function () {
             _this.cacheService.StoreInCache('currentDataDate', _this.dataDate);
         }, function (err) { });
     };
-    Calendar = __decorate([
-        core_1.Component({
-            selector: 'noya-calendar',
-            templateUrl: './calendar.html',
-            moduleId: module.id
-        }), 
-        __metadata('design:paramtypes', [services.DataService, services.CacheManager])
-    ], Calendar);
     return Calendar;
 }());
+Calendar = __decorate([
+    core_1.Component({
+        selector: 'noya-calendar',
+        templateUrl: './calendar.html',
+        moduleId: module.id
+    }),
+    __metadata("design:paramtypes", [services.DataService, services.CacheManager])
+], Calendar);
 exports.Calendar = Calendar;
 //# sourceMappingURL=calendar.js.map

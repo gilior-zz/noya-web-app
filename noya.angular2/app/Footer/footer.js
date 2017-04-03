@@ -8,15 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 var Footer = (function () {
     function Footer() {
     }
-    Footer = __decorate([
-        core_1.Component({ selector: 'noya-footer', template: require("./footer.html!text"), }), 
-        __metadata('design:paramtypes', [])
-    ], Footer);
     return Footer;
 }());
+Footer = __decorate([
+    core_1.Component({ selector: 'noya-footer', template: require("./footer.html!text"), }),
+    __metadata("design:paramtypes", [])
+], Footer);
 exports.Footer = Footer;
 //# sourceMappingURL=footer.js.map

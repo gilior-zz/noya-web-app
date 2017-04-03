@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
 /** A hero's name can't match the given regular expression */
 function forbiddenNameValidator() {
     return function (control) {
@@ -20,7 +21,7 @@ function forbiddenNameValidator() {
     };
 }
 exports.forbiddenNameValidator = forbiddenNameValidator;
-var ForbiddenValidatorDirective = (function () {
+var ForbiddenValidatorDirective = ForbiddenValidatorDirective_1 = (function () {
     function ForbiddenValidatorDirective() {
         this.valFn = forms_1.Validators.nullValidator;
     }
@@ -30,16 +31,17 @@ var ForbiddenValidatorDirective = (function () {
     ForbiddenValidatorDirective.prototype.validate = function (control) {
         return this.valFn(control);
     };
-    ForbiddenValidatorDirective = __decorate([
-        core_1.Directive({
-            selector: '[forbiddenName]',
-            providers: [{ provide: forms_1.NG_VALIDATORS, useExisting: ForbiddenValidatorDirective, multi: true }]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ForbiddenValidatorDirective);
     return ForbiddenValidatorDirective;
 }());
+ForbiddenValidatorDirective = ForbiddenValidatorDirective_1 = __decorate([
+    core_1.Directive({
+        selector: '[forbiddenName]',
+        providers: [{ provide: forms_1.NG_VALIDATORS, useExisting: ForbiddenValidatorDirective_1, multi: true }]
+    }),
+    __metadata("design:paramtypes", [])
+], ForbiddenValidatorDirective);
 exports.ForbiddenValidatorDirective = ForbiddenValidatorDirective;
+var ForbiddenValidatorDirective_1;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

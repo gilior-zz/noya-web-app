@@ -1,7 +1,8 @@
 "use strict";
-var core_1 = require('@angular/core');
-var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
-var app_module_1 = require('./app.module');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
+var app_module_1 = require("./app.module");
 if (!/localhost/.test(document.location.host)) {
     core_1.enableProdMode();
 }

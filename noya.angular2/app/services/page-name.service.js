@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var Subject_1 = require('rxjs/Subject');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var Subject_1 = require("rxjs/Subject");
 var pageNameService = (function () {
     function pageNameService(router) {
         this.router = router;
@@ -47,11 +48,11 @@ var pageNameService = (function () {
         enumerable: true,
         configurable: true
     });
-    pageNameService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], pageNameService);
     return pageNameService;
 }());
+pageNameService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [router_1.Router])
+], pageNameService);
 exports.pageNameService = pageNameService;
 //# sourceMappingURL=page-name.service.js.map

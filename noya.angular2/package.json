@@ -21,30 +21,32 @@
     "lint": "tslint ./src/**/*.ts -t verbose",
     "build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js"
   },
-  "keywords": [ ],
+  "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@angular/common": "~2.4.0",
-    "@angular/compiler": "~2.4.0",
-    "@angular/compiler-cli": "^2.4.8",
-    "@angular/core": "~2.4.0",
-    "@angular/forms": "~2.4.0",
-    "@angular/http": "~2.4.0",
-    "@angular/platform-browser": "~2.4.0",
-    "@angular/platform-browser-dynamic": "~2.4.0",
-    "@angular/platform-server": "^2.4.8",
-    "@angular/router": "~3.4.0",
+    "@angular/animations": "^4.0.1",
+    "@angular/common": "^4.0.1",
+    "@angular/compiler": "^4.0.1",
+    "@angular/compiler-cli": "^4.0.1",
+    "@angular/core": "^4.0.1",
+    "@angular/forms": "^4.0.1",
+    "@angular/http": "^4.0.1",
+    "@angular/platform-browser": "^4.0.1",
+    "@angular/platform-browser-dynamic": "^4.0.1",
+    "@angular/platform-server": "^4.0.1",
+    "@angular/router": "^4.0.1",
     "angular-in-memory-web-api": "~0.2.4",
     "core-js": "^2.4.1",
-    "rxjs": "5.0.1",
-    "systemjs": "0.19.40",
-    "zone.js": "^0.7.4"
+    "rxjs": "^5.2.1-smooth",
+    "systemjs": "^0.20.11",
+    "typescript": "^2.2.2",
+    "zone.js": "^0.8.5"
   },
   "devDependencies": {
     "concurrently": "^3.2.0",
     "lite-server": "^2.2.2",
-    "typescript": "~2.0.10",
+    "typescript": "~2.2.2",
     "canonical-path": "0.0.2",
     "tslint": "^3.15.1",
     "lodash": "^4.16.4",
@@ -59,5 +61,5 @@
     "@types/node": "^6.0.46",
     "@types/jasmine": "2.5.36"
   },
-  "repository": { }
+  "repository": {}
 }

@@ -1,9 +1,14 @@
 "use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13,31 +18,33 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var dal = require('../dal/models');
-var services = require('../services/services');
-var platform_browser_1 = require('@angular/platform-browser');
-var base_component_1 = require('../common/base.component');
-var router_1 = require('@angular/router');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var dal = require("../dal/models");
+var services = require("../services/services");
+var platform_browser_1 = require("@angular/platform-browser");
+var base_component_1 = require("../common/base.component");
+var router_1 = require("@angular/router");
 var Pictures = (function (_super) {
     __extends(Pictures, _super);
     function Pictures(sanitizer, dataService, cacheManager, router, injector) {
-        _super.call(this, injector);
-        this.sanitizer = sanitizer;
-        this.dataService = dataService;
-        this.cacheManager = cacheManager;
-        this.router = router;
-        this.injector = injector;
-        this.isHebrew = false;
-        this.isEnglish = false;
-        this.headImageUpdate = new core_1.EventEmitter();
-        this.mainImagePath = this.mainImagePath = this.sanitizer.bypassSecurityTrustStyle("Content/Sources/loading.gif");
+        var _this = _super.call(this, injector) || this;
+        _this.sanitizer = sanitizer;
+        _this.dataService = dataService;
+        _this.cacheManager = cacheManager;
+        _this.router = router;
+        _this.injector = injector;
+        _this.isHebrew = false;
+        _this.isEnglish = false;
+        _this.headImageUpdate = new core_1.EventEmitter();
+        _this.mainImagePath = _this.mainImagePath = _this.sanitizer.bypassSecurityTrustStyle("Content/Sources/loading.gif");
         ;
-        this.example1SwipeOptions = {
+        _this.example1SwipeOptions = {
             slidesPerView: 4,
             loop: false,
             spaceBetween: 5
         };
+        return _this;
     }
     Pictures.prototype.ngOnDestroy = function () {
     };
@@ -124,19 +131,19 @@ var Pictures = (function (_super) {
             _this.images = res.Images;
         }, function (err) { });
     };
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], Pictures.prototype, "headImageUpdate", void 0);
-    Pictures = __decorate([
-        core_1.Component({
-            templateUrl: "./pictures.html",
-            moduleId: module.id,
-            styleUrls: ['./pictures.css']
-        }), 
-        __metadata('design:paramtypes', [platform_browser_1.DomSanitizer, services.DataService, services.CacheManager, router_1.Router, core_1.Injector])
-    ], Pictures);
     return Pictures;
 }(base_component_1.BaseComponent));
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], Pictures.prototype, "headImageUpdate", void 0);
+Pictures = __decorate([
+    core_1.Component({
+        templateUrl: "./pictures.html",
+        moduleId: module.id,
+        styleUrls: ['./pictures.css']
+    }),
+    __metadata("design:paramtypes", [platform_browser_1.DomSanitizer, services.DataService, services.CacheManager, router_1.Router, core_1.Injector])
+], Pictures);
 exports.Pictures = Pictures;
 //# sourceMappingURL=pictures.js.map

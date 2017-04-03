@@ -53,7 +53,7 @@
         width: 50px;
         background-image: url('http://res.cloudinary.com/lior/image/upload/v1488278819/ezgif-2-a9229be3be_ntr560.gif');
 
-        transition: transform &--img {
+        &--img {
             height: 50px;
             width: auto;
         }

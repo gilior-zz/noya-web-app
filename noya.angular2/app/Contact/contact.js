@@ -1,9 +1,14 @@
 "use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13,28 +18,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
-var router_1 = require('@angular/router');
-var base_component_1 = require('../common/base.component');
-var services = require('../services/services');
-var dal = require('../dal/models');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
+var router_1 = require("@angular/router");
+var base_component_1 = require("../common/base.component");
+var services = require("../services/services");
+var dal = require("../dal/models");
 var Contact = (function (_super) {
     __extends(Contact, _super);
     function Contact(dataservice, cacheManager, dialogService, dialogeService, router, injector) {
-        _super.call(this, injector);
-        this.dataservice = dataservice;
-        this.cacheManager = cacheManager;
-        this.dialogService = dialogService;
-        this.dialogeService = dialogeService;
-        this.router = router;
-        this.injector = injector;
-        this.formErrors = {
+        var _this = _super.call(this, injector) || this;
+        _this.dataservice = dataservice;
+        _this.cacheManager = cacheManager;
+        _this.dialogService = dialogService;
+        _this.dialogeService = dialogeService;
+        _this.router = router;
+        _this.injector = injector;
+        _this.formErrors = {
             'name': '',
             'email': '',
             'content': ''
         };
-        this.validationMessages = {
+        _this.validationMessages = {
             'name': {
                 'required': 'name is required',
                 'minlength': 'name must be at least 4 characters long',
@@ -50,6 +56,7 @@ var Contact = (function (_super) {
                 'forbiddenName': 'invalid email format'
             }
         };
+        return _this;
     }
     Contact.prototype.ngAfterViewChecked = function () {
         this.formChanged();
@@ -140,31 +147,31 @@ var Contact = (function (_super) {
             _this.isSubmitting = false;
         });
     };
-    __decorate([
-        core_1.ViewChild('contactForm'), 
-        __metadata('design:type', forms_1.NgForm)
-    ], Contact.prototype, "currentForm", void 0);
-    Contact = __decorate([
-        core_1.Component({
-            templateUrl: "./contact.html",
-            moduleId: module.id,
-            styleUrls: ['./contact.css'],
-            animations: [
-                core_1.trigger('invalidAnimation', [
-                    core_1.state('in', core_1.style({ transform: 'translateX(0)', opacity: 1 })),
-                    core_1.transition('void => *', [
-                        core_1.style({ transform: 'translateX(-100%)', opacity: 0 }),
-                        core_1.animate(500)
-                    ]),
-                    core_1.transition('* => void', [
-                        core_1.animate(500, core_1.style({ transform: 'translateX(-100%)', opacity: 0 }))
-                    ])
-                ])
-            ]
-        }), 
-        __metadata('design:paramtypes', [services.DataService, services.CacheManager, services.DialogService, services.DialogService, router_1.Router, core_1.Injector])
-    ], Contact);
     return Contact;
 }(base_component_1.BaseComponent));
+__decorate([
+    core_1.ViewChild('contactForm'),
+    __metadata("design:type", forms_1.NgForm)
+], Contact.prototype, "currentForm", void 0);
+Contact = __decorate([
+    core_1.Component({
+        templateUrl: "./contact.html",
+        moduleId: module.id,
+        styleUrls: ['./contact.css'],
+        animations: [
+            core_1.trigger('invalidAnimation', [
+                core_1.state('in', core_1.style({ transform: 'translateX(0)', opacity: 1 })),
+                core_1.transition('void => *', [
+                    core_1.style({ transform: 'translateX(-100%)', opacity: 0 }),
+                    core_1.animate(500)
+                ]),
+                core_1.transition('* => void', [
+                    core_1.animate(500, core_1.style({ transform: 'translateX(-100%)', opacity: 0 }))
+                ])
+            ])
+        ]
+    }),
+    __metadata("design:paramtypes", [services.DataService, services.CacheManager, services.DialogService, services.DialogService, router_1.Router, core_1.Injector])
+], Contact);
 exports.Contact = Contact;
 //# sourceMappingURL=contact.js.map

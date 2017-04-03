@@ -1,7 +1,8 @@
 "use strict";
-var router_1 = require('@angular/router');
-var services = require('../services/services');
-var platform_browser_1 = require('@angular/platform-browser');
+Object.defineProperty(exports, "__esModule", { value: true });
+var router_1 = require("@angular/router");
+var services = require("../services/services");
+var platform_browser_1 = require("@angular/platform-browser");
 var BaseComponent = (function () {
     function BaseComponent(injector) {
         var titleService = injector.get(platform_browser_1.Title);

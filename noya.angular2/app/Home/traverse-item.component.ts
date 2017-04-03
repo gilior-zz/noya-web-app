@@ -1,7 +1,8 @@
 ﻿/// <reference path="../../scripts/typings/jquery/jquery.d.ts" />
 
 
-import { Component, OnInit, Input, animate, state, style, transition, trigger, AfterViewInit, AfterViewChecked } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations'
 import { TraverseItem, DataRequest, Language, Message, MessageRequest, MessageResponse, DataError, Person } from '../dal/models'
 
 import { DataService, CacheManager } from '../services/services'

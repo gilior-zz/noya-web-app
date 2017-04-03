@@ -8,11 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var services_1 = require('../../services/services');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var services_1 = require("../../services/services");
 var models_1 = require("../../dal/models");
-var page_name_service_1 = require('../../services/page-name.service');
+var page_name_service_1 = require("../../services/page-name.service");
 var GaliluLink = (function () {
     function GaliluLink(cacheManager, router, pn) {
         this.cacheManager = cacheManager;
@@ -99,16 +100,16 @@ var GaliluLink = (function () {
         enumerable: true,
         configurable: true
     });
-    GaliluLink = __decorate([
-        core_1.Component({
-            selector: 'galilu-link',
-            moduleId: module.id,
-            templateUrl: 'link.component.html',
-            styleUrls: ['./link.component.css']
-        }), 
-        __metadata('design:paramtypes', [services_1.CacheManager, router_1.Router, page_name_service_1.pageNameService])
-    ], GaliluLink);
     return GaliluLink;
 }());
+GaliluLink = __decorate([
+    core_1.Component({
+        selector: 'galilu-link',
+        moduleId: module.id,
+        templateUrl: 'link.component.html',
+        styleUrls: ['./link.component.css']
+    }),
+    __metadata("design:paramtypes", [services_1.CacheManager, router_1.Router, page_name_service_1.pageNameService])
+], GaliluLink);
 exports.GaliluLink = GaliluLink;
 //# sourceMappingURL=link.component.js.map

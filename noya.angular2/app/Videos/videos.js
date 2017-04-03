@@ -1,9 +1,14 @@
 "use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13,20 +18,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var base_component_1 = require('../common/base.component');
-var router_1 = require('@angular/router');
-var services_1 = require('../services/services');
-var models_1 = require('../dal/models');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var base_component_1 = require("../common/base.component");
+var router_1 = require("@angular/router");
+var services_1 = require("../services/services");
+var models_1 = require("../dal/models");
 var Videos = (function (_super) {
     __extends(Videos, _super);
     function Videos(router, injector, yts, cacheManager) {
-        _super.call(this, injector);
-        this.router = router;
-        this.injector = injector;
-        this.yts = yts;
-        this.cacheManager = cacheManager;
-        this.videos = new Array();
+        var _this = _super.call(this, injector) || this;
+        _this.router = router;
+        _this.injector = injector;
+        _this.yts = yts;
+        _this.cacheManager = cacheManager;
+        _this.videos = new Array();
+        return _this;
     }
     Videos.prototype.ngAfterViewInit = function () {
         //var options = {
@@ -57,15 +64,15 @@ var Videos = (function (_super) {
             _this.videos.push({ title: j['snippet']['title'], videoId: j['snippet']['resourceId']['videoId'], lang: lang });
         }); });
     };
-    Videos = __decorate([
-        core_1.Component({
-            templateUrl: "./videos.html",
-            moduleId: module.id,
-            styleUrls: ['./videos.css']
-        }), 
-        __metadata('design:paramtypes', [router_1.Router, core_1.Injector, services_1.youTubeService, services_1.CacheManager])
-    ], Videos);
     return Videos;
 }(base_component_1.BaseComponent));
+Videos = __decorate([
+    core_1.Component({
+        templateUrl: "./videos.html",
+        moduleId: module.id,
+        styleUrls: ['./videos.css']
+    }),
+    __metadata("design:paramtypes", [router_1.Router, core_1.Injector, services_1.youTubeService, services_1.CacheManager])
+], Videos);
 exports.Videos = Videos;
 //# sourceMappingURL=videos.js.map

@@ -59,6 +59,8 @@
 
         &--img {
             cursor: pointer;
+            position: absolute;
+            top: -350px;
         }
     }
 }

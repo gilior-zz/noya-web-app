@@ -1,4 +1,5 @@
-﻿import { Component, Injector, animate, trigger, state, style, transition, keyframes } from '@angular/core'
+﻿import { Component, Injector } from '@angular/core';
+import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 import { BaseComponent } from '../common/base.component'
 import { Language } from '../dal/models'
 import { CacheManager } from '../services/services'
@@ -13,8 +14,8 @@ import { CacheManager } from '../services/services'
     animations: [
         trigger(
             'isLangBarOpenRTL', [
-                state('true', style({ transform: 'translateX(0)' })),
-                state('false', style({ transform: 'translateX(-52px)' })),
+                state('1', style({ transform: 'translateX(0)' })),
+                state('0', style({ transform: 'translateX(-52px)' })),
                 transition('0=>1', [animate(300, keyframes([
                     style({ transform: 'translateX(-52px)', offset: 0 }),
                     style({ transform: 'translateX(15px)', offset: 0.3 }),
@@ -30,17 +31,17 @@ import { CacheManager } from '../services/services'
         ),
         trigger(
             'isLangBarOpenLTR', [
-                state('true', style({ transform: 'translateX(0)' })),
-                state('false', style({ transform: 'translateX(50px)' })),
+                state('1', style({ transform: 'translateX(0)' })),
+                state('0', style({ transform: 'translateX(89px)' })),
                 transition('0=>1', [animate(300, keyframes([
-                    style({ transform: 'translateX(50px)', offset: 0 }),
+                    style({ transform: 'translateX(89px)', offset: 0 }),
                     style({ transform: 'translateX(-15px)', offset: 0.3 }),
                     style({ transform: 'translateX(0)', offset: 1.0 })
                 ]))]),
                 transition('1=>0', [animate(300, keyframes([
                     style({ transform: 'translateX(0)', offset: 0 }),
                     style({ transform: 'translateX(-15px)', offset: 0.7 }),
-                    style({ transform: 'translateX(50px)', offset: 1.0 })
+                    style({ transform: 'translateX(89px)', offset: 1.0 })
                 ]))
                 ]),
             ]

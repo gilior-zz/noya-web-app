@@ -1,6 +1,6 @@
 ﻿import { NgModule } from '@angular/core'
 import { HttpModule } from '@angular/http';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routes'
@@ -35,7 +35,8 @@ import { pageNameService } from './services/page-name.service'
         HttpModule,
 
         AppRoutingModule,
-        SharedModule
+        SharedModule,
+        BrowserAnimationsModule
         //GaliluModule
     ],
 

@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var models_1 = require('../dal/models');
-var services_1 = require('./services');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var models_1 = require("../dal/models");
+var services_1 = require("./services");
 var UtiltyService = (function () {
     function UtiltyService(cacheManager) {
         this.cacheManager = cacheManager;
@@ -45,11 +46,11 @@ var UtiltyService = (function () {
         enumerable: true,
         configurable: true
     });
-    UtiltyService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [services_1.CacheManager])
-    ], UtiltyService);
     return UtiltyService;
 }());
+UtiltyService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [services_1.CacheManager])
+], UtiltyService);
 exports.UtiltyService = UtiltyService;
 //# sourceMappingURL=utitlity.js.map

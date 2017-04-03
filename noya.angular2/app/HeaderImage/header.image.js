@@ -8,11 +8,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var router_1 = require('@angular/router');
-var services = require('../services/services');
-var page_name_service_1 = require('../services/page-name.service');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var router_1 = require("@angular/router");
+var services = require("../services/services");
+var page_name_service_1 = require("../services/page-name.service");
 var HeaderImage = (function () {
     //ImageURL: string;
     //ImageURL: SafeUrl;
@@ -57,20 +58,20 @@ var HeaderImage = (function () {
         //        this.safeImage = this.sanitizer.bypassSecurityTrustStyle(`url('${this.ImageURL}')`);
         //    })
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], HeaderImage.prototype, "pageName", void 0);
-    HeaderImage = __decorate([
-        core_1.Component({
-            selector: 'header-image',
-            templateUrl: './header.image.html',
-            moduleId: module.id,
-            styleUrls: ['./header.image.css']
-        }), 
-        __metadata('design:paramtypes', [page_name_service_1.pageNameService, services.DataService, services.LogService, platform_browser_1.DomSanitizer, router_1.Router])
-    ], HeaderImage);
     return HeaderImage;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], HeaderImage.prototype, "pageName", void 0);
+HeaderImage = __decorate([
+    core_1.Component({
+        selector: 'header-image',
+        templateUrl: './header.image.html',
+        moduleId: module.id,
+        styleUrls: ['./header.image.css']
+    }),
+    __metadata("design:paramtypes", [page_name_service_1.pageNameService, services.DataService, services.LogService, platform_browser_1.DomSanitizer, router_1.Router])
+], HeaderImage);
 exports.HeaderImage = HeaderImage;
 //# sourceMappingURL=header.image.js.map
