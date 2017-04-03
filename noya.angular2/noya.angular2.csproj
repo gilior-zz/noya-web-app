@@ -119,7 +119,6 @@
     <Content Include="app\LangBar\lang-bar.component.css">
       <DependentUpon>lang-bar.component.scss</DependentUpon>
     </Content>
-    <Content Include="app\LangBar\lang-bar.component.html" />
     <Content Include="app\LangBar\lang-bar.component.min.css">
       <DependentUpon>lang-bar.component.css</DependentUpon>
     </Content>
