@@ -1,0 +1,65 @@
+﻿<!--<header-image [pageName]="'contact'">loading...</header-image>-->
+<div class="white-panel contact-form">
+    <div [hidden]="submitted">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+
+            <div [class.has-error]="!name.valid && !name.pristine" [class.has-success]="name.valid && !name.pristine" class="form-group  ">
+
+                <input [disabled]="isSubmitting" type="text" class="form-control form-field input-lg " required
+                       [(ngModel)]="message.Sender.Name" name="name"
+                       placeholder="{{'Name'|translate}}" #name="ngModel" />
+                <div *ngIf="formErrors.name" [@invalidAnimation]="'in'" class="invalid-label">
+                    {{ formErrors.name |translate}}
+                </div>
+            </div>
+            <div [class.has-error]="invalidEmailInput(email)" [class.has-success]="!email.pristine&&!invalidEmailInput(email)" class="form-group">
+
+                <input forbiddenName [disabled]="isSubmitting" type="email" class="form-control form-field input-lg" required
+                       [(ngModel)]="message.Sender.Email" name="email" placeholder="{{'Email'|translate}}" #email="ngModel">
+                <div *ngIf="formErrors.email" [@invalidAnimation]="'in'" class="invalid-label">
+                    {{ formErrors.email |translate}}
+                </div>
+
+            </div>
+            <div [class.has-error]="!content.valid && !content.pristine" [class.has-success]="content.valid && !content.pristine" class="form-group">
+
+                <textarea rows="8" [disabled]="isSubmitting" class="form-control input-lg" required
+                          [(ngModel)]="message.Content" name="content"
+                          placeholder="{{'Content'|translate}}" #content="ngModel"></textarea>
+                <div *ngIf="formErrors.content" [@invalidAnimation]="'in'" class="invalid-label">
+                    {{ formErrors.content |translate}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" [ngClass]="{'text-right':isEng,'text-left':isHeb}">
+                    <button type="submit" class="btn btn-info" [disabled]="isSubmitting||!contactForm.form.valid">{{'Submit'|translate}}</button>
+
+                </div>
+            </div>
+            <span class="alert alert-danger" [hidden]="!displaySubmitError || isSubmitting">message not sent - plz try again later</span>
+        </form>
+    </div>
+    <div [hidden]="!submitted">
+        <h2>You have submitted the following:</h2>
+        <div class="row back-cornsilk-color margin-row black-border x-large-font">
+            <div class="col-xs-12 col-sm-1">Name:</div>
+            <div class="col-xs-12 col-sm-11">{{ message.Sender.Name }}</div>
+        </div>
+
+        <div class="row back-cornsilk-color margin-row black-border x-large-font">
+            <div class="col-xs-12 col-sm-1">Email:</div>
+            <div class="col-xs-12 col-sm-11">{{ message.Sender.Email }}</div>
+        </div>
+
+        <div class="row back-cornsilk-color margin-row black-border x-large-font">
+            <div class="col-xs-12 col-sm-1">Content:</div>
+            <div class="col-xs-12 col-sm-11">{{ message.Content }}</div>
+        </div>
+
+
+        <div class="row">
+            <button class="btn btn-default" (click)="submitted=false">Send Another</button>
+        </div>
+
+    </div>
+</div>
