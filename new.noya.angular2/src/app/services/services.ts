@@ -68,7 +68,7 @@ export class DataService {
 
     public ConnectToApiData(request: model.DataRequest, url: string): Observable<model.DataResponse> {
 
-      const  endPoint:string='http://localhost:6159/api/Data/'
+      const  endPoint:string='api/Data/'
         var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
         request.Language = lang;
         let body = JSON.stringify({ request });
