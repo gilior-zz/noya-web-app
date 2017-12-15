@@ -111,7 +111,7 @@ export class Contact extends BaseComponent implements OnDestroy {
     this.isSubmitting = true;
     var req: dal.MessageRequest = {
       Language: dal.Language.Hebrew,
-      Message: {Sender: {Name: this.name.value, Email: this.email.value}, IP: '', Date: new Date(), Date, Content: this.content.value}
+      Message: {Sender: {Name: this.name.value, Email: this.email.value}, IP: '', Date: new Date(), Content: this.content.value}
     };
     this.dataservice.ConnectToApiData
     (req, 'SendMessage')

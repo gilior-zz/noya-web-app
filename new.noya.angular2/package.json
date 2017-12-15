@@ -4,6 +4,7 @@
   "license": "thoughtram Training Material License (TTML 1.0)",
   "angular-cli": {},
   "scripts": {
+  "build":"ng build --prod --build-optimizer",
     "start": "ng serve --aot --o",
     "rest-api": "node server/index.js",
     "lint": "tslint \"src/**/*.ts\"",
