@@ -2,14 +2,14 @@ import { PPipe } from './../pipes/pipes.pipe';
 import { SafeResourcePipe } from './../pipes/safe.pipe';
 import { NgModule }            from '@angular/core';
 import { CommonModule }        from '@angular/common';
-import { FormsModule }        from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 
 @NgModule({
-    imports: [CommonModule,FormsModule],
+    imports: [CommonModule,FormsModule,ReactiveFormsModule],
     declarations: [PPipe,SafeResourcePipe],
-    exports: [FormsModule,PPipe,SafeResourcePipe,CommonModule]
+    exports: [FormsModule,PPipe,SafeResourcePipe,CommonModule,ReactiveFormsModule]
 })
 export class SharedModule { }
 

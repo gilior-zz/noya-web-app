@@ -1,8 +1,8 @@
 ﻿import {Router} from '@angular/router'
 import {Component, OnInit, Injector} from '@angular/core'
-import {BaseComponent} from '../common/base.component'
-import * as services from '../services/services'
-import * as dal from '../dal/models'
+import {BaseComponent} from '../../common/base.component'
+import * as services from '../../services/services'
+import * as dal from '../../dal/models'
 
 @Component({
     templateUrl: "./links.html",

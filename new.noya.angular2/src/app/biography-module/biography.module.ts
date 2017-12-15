@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { BiographyRoutingModule } from './biography-routing.module';
-import { Biography } from "./biography";
+
+import { BiographyComponent } from './biography/biography.component';
+import {Biography} from './biographies/biography';
 
 @NgModule({
-  imports: [  
+  imports: [
     SharedModule,
     BiographyRoutingModule
   ],
-  declarations: [Biography]
+  declarations: [Biography, BiographyComponent]
 })
 export class BiographyModule { }

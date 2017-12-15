@@ -1,9 +1,10 @@
 ﻿import { Component, OnInit, Injector, HostBinding } from '@angular/core'
-import { BaseComponent } from '../common/base.component'
+import { BaseComponent } from '../../common/base.component'
 import { Router } from '@angular/router'
-import * as services from '../services/services'
-import * as dal from '../dal/models'
-import { slideInDownAnimation } from '../dal/animations'
+import * as services from '../../services/services'
+import * as dal from '../../dal/models'
+import { slideInDownAnimation } from '../../dal/animations'
+import {Observable} from 'rxjs/Observable';
 
 @Component({
     templateUrl: "./biography.html",

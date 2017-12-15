@@ -107,14 +107,6 @@ export class AppComponent extends BaseComponent implements OnInit, AfterViewInit
 
 
     ngOnInit() {
-        //var req: dal.DataRequest = { Language: dal.Language.Hebrew };
-        //this.dataService.ConnectToApiData(req, "api/Data/GetMenuItems").
-        //    subscribe(
-        //    (dataresponse: dal.MenuResponse) => {
-
-        //        this.menuItems = dataresponse.MenuItems
-        //    },
-        //    (error: dal.DataError) => console.error(error));
 
 
 

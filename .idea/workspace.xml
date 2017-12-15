@@ -2,594 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f3f2bed-df0d-4346-ad6a-9ece40a5998b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/.idea/noya.angular2.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/App_Start/WebApiConfig.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Biography.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Contact.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery/Workshops_for_children_during_Hanukkah.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Compressed/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Original/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Gallery_Thumbnails/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Home.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Links.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Pictures.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Programs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/Videos.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/back.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/back_32.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/close.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/down_arrow.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/galilu/galilu-home-image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/glyphicons-18-music.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Images/plus.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Sources/back_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Sources/bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Sources/footer_background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Sources/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Sources/loading_original.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Sources/regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/Swiper/swiper.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/css/bootstrap-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/fonts/GYADBR.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/fonts/GYADBR.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/fonts/GYADBR.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/fonts/GYADBR.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/fonts/GYADBR.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/site.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Content/site.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Dal/ExtensionMethods.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Dal/Models.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Global.asax" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Global.asax.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Properties/AssemblyInfo.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Properties/PublishProfiles/noyaschleien.com - Web Deploy.pubxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/JavaScript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/carousel-rtl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/hammer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/hammer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery-2.2.4.intellisense.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery-2.2.4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery-2.2.4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery-2.2.4.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery.hammer-full.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery.hammer-full.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery.hammer-full.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery.hammer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery.hammer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/jquery.hammer.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Scripts/typings/jquery/jquery.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Web.Debug.config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Web.Release.config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/Web.config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/apicontrolers/DataController.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Biography/biography.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Biography/biography.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Biography/biography.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Biography/biography.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Contact/contact.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Contact/contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Contact/contact.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Contact/contact.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Contact/contact.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Contact/contact.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Contact/contact.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Footer/footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Footer/footer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Footer/footer.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Footer/footer.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/HeaderImage/header.image.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/HeaderImage/header.image.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/HeaderImage/header.image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/HeaderImage/header.image.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/HeaderImage/header.image.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/HeaderImage/header.image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/HeaderImage/header.image.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/calendar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/calendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/calendar.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/calendar.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/cards-manager.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/cards-manager.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/cards-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/cards-manager.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/cards-manager.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/cards-manager.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/cards-manager.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/home.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/home.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/home.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/home.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/home.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/home.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/press.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/press.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/press.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/press.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/traverse-item.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/traverse-item.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/traverse-item.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/traverse-item.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/traverse-item.component.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/traverse-item.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/traverse-item.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/updates.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/updates.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/updates.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Home/updates.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/LangBar/lang-bar.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/LangBar/lang-bar.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/LangBar/lang-bar.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/LangBar/lang-bar.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/LangBar/lang-bar.component.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/LangBar/lang-bar.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/LangBar/lang-bar.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Links/links.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Links/links.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Links/links.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Links/links.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Menu/menu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Menu/menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Menu/menu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Menu/menu.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Menu/menu.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Menu/menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Menu/menu.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/pictures.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/pictures.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/pictures.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/pictures.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/pictures.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/pictures.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Pictures/pictures.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Programs/programs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Programs/programs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Programs/programs.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Programs/programs.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Videos/videos.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Videos/videos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Videos/videos.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Videos/videos.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Videos/videos.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Videos/videos.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/Videos/videos.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.component.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.routes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.routes.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/app.routes.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/base.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/base.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/base.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/can-deactivate-guard.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/can-deactivate-guard.service.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/can-deactivate-guard.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/invalid-email.directive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/invalid-email.directive.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/invalid-email.directive.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/invalid-enail.directive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/common/invalid-enail.directive.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/dal/animations.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/dal/animations.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/dal/animations.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/dal/models.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/dal/models.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/dal/models.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/bags/bags.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/bags/bags.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/bags/bags.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/bags/bags.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/bags/bags.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/books/books.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/books/books.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/books/books.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/books/books.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/books/books.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/center/center.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/center/center.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/center/center.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/center/center.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/center/center.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/cushions/cushions.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/cushions/cushions.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/cushions/cushions.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/cushions/cushions.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/cushions/cushions.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/galilu-rounting.module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/galilu-rounting.module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/galilu-rounting.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/galilu.module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/galilu.module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/galilu.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/helper-directives/product-page-caption.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/helper-directives/product-page-caption.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/helper-directives/product-page-caption.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/helper-directives/product-page-caption.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/helper-directives/product-page-caption.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/home/home.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/home/home.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/home/home.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/home/home.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/home/home.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/lamps/lamps.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/lamps/lamps.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/lamps/lamps.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/lamps/lamps.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/lamps/lamps.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/link/link.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/link/link.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/link/link.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/link/link.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/link/link.component.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/link/link.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/link/link.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/pallet/pallet.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/pallet/pallet.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/pallet/pallet.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/pallet/pallet.component.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/galilu/pallet/pallet.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/main-aot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/main-aot.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/main-aot.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/main.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/pipes/pipes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/pipes/pipes.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/pipes/pipes.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/mode.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/mode.service.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/mode.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/page-name.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/page-name.service.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/page-name.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/services.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/services.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/services.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/utitlity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/utitlity.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/services/utitlity.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/shared.module.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/shared.module.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/app/shared.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/compilerconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/compilerconfig.json.defaults" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/copy-dist-files.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/images/.keep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap-sprockets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/javascripts/bootstrap/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/Reflect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ks-swiper.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ks-swiper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ks-swiper.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/bundles/ng2-translate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/karma-test-shim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/make.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/ng2-translate.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/ng2-translate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/src/translate.parser.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/src/translate.parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/src/translate.pipe.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/src/translate.pipe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/src/translate.service.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/src/translate.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/ng2-translate/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/shim.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/swipe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/swiper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/system.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/lib/zone.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/noya.angular2.csproj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/packages.config" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/rollup-config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/src/build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/_bootstrap-compass.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/_bootstrap-mincer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/_bootstrap-sprockets.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/_bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_badges.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_breadcrumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_button-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_carousel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_close.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_code.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_component-animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_dropdowns.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_glyphicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_input-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_jumbotron.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_modals.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_navs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_pager.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_popovers.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_print.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_progress-bars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_responsive-embed.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_responsive-utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_theme.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_thumbnails.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_tooltip.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/_wells.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_background-variant.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_border-radius.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_center-block.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_clearfix.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_gradients.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_grid-framework.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_hide-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_nav-divider.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_nav-vertical-align.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_opacity.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_progress-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_reset-filter.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_reset-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_resize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_responsive-visibility.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_size.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_tab-focus.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_table-row.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_text-emphasis.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_text-overflow.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/stylesheets/bootstrap/mixins/_vendor-prefixes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/systemjs.config.extras.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/systemjs.config.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/tsconfig-aot.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/noya.angular2/typings.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/noya.angular2/package.json" afterPath="$PROJECT_DIR$/noya.angular2/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/noya.angular2/tsconfig.json" afterPath="$PROJECT_DIR$/noya.angular2/tsconfig.json" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -604,7 +17,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -614,7 +26,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -635,31 +47,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="noya.angular2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="noya.angular2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/noya.angular2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/new.noya.angular2" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -669,33 +84,125 @@
       <option name="presentableId" value="Default" />
       <updated>1491252348516</updated>
       <workItem from="1491252352213" duration="21000" />
+      <workItem from="1513235045724" duration="48000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21000" />
+    <option name="totallyTimeSpent" value="69000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24981412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1760973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/noya.angular2/app/shared.module.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/shared.module.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/services/utitlity.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/services/utitlity.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/services/services.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/services/services.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/services/page-name.service.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/services/page-name.service.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/services/mode.service.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/services/mode.service.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/pipes/pipes.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/pipes/pipes.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/main-aot.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/main-aot.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/pallet/pallet.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/pallet/pallet.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/link/link.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/link/link.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/lamps/lamps.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/lamps/lamps.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/home/home.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/home/home.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/helper-directives/product-page-caption.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/helper-directives/product-page-caption.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/galilu.module.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/galilu.module.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/galilu-rounting.module.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/galilu-rounting.module.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/cushions/cushions.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/cushions/cushions.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/center/center.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/center/center.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/books/books.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/books/books.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/bags/bags.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/galilu/bags/bags.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/dal/models.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/dal/models.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/dal/animations.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/dal/animations.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/common/invalid-email.directive.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/common/invalid-email.directive.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/common/can-deactivate-guard.service.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/common/can-deactivate-guard.service.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/common/base.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/common/base.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/app.routes.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/app.routes.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/app.module.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/app.module.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/app.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/app.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Videos/videos.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Videos/videos.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Programs/programs.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Programs/programs.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Pictures/pictures.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Pictures/pictures.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Menu/menu.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Menu/menu.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Links/links.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Links/links.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/LangBar/lang-bar.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/LangBar/lang-bar.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/updates.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/updates.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/traverse-item.component.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/traverse-item.component.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/press.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/press.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/home.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/home.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/cards-manager.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/cards-manager.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/calendar.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Home/calendar.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/HeaderImage/header.image.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/HeaderImage/header.image.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Footer/footer.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Footer/footer.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Contact/contact.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Contact/contact.js.map" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Biography/biography.js" />
+        <option value="$PROJECT_DIR$/noya.angular2/app/Biography/biography.js.map" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
