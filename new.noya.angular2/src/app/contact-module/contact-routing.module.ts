@@ -1,4 +1,4 @@
-import { Contact } from './contact';
+import { Contact } from './Contact/contact';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CanDeactivateGuard } from "../common/can-deactivate-guard.service";
