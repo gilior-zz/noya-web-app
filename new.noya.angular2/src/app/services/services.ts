@@ -158,7 +158,7 @@ export class TranslationService {
     'name is required': 'יש להזין שם',
     'email is required': 'יש להזין אימייל',
     'content is required': 'יש להזין תוכן',
-    'invalid email format': 'אימייל אינו חוקי',
+    'invalid email': 'אימייל אינו חוקי',
     'language': 'שפה'
 
   };

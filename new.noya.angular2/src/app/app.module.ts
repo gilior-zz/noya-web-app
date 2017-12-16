@@ -3,13 +3,13 @@
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import {BrowserModule, Title} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
-import {AppRoutingModule} from './routing/app.routes'
+import {AppRoutingModule} from './app.routes'
 
-import {Calendar} from './Home/calendar'
+import {Calendar} from './Home/calendar/calendar'
 
-import {Updates} from './Home/updates'
+import {Updates} from './Home/updates/updates'
 
-import {Press} from './Home/press'
+import {Press} from './Home/press/press'
 
 
 import {SharedModule} from './shared/shared.module'
@@ -35,7 +35,8 @@ import {GoogleAnalyticsService} from './services/google-analytics';
 declare  var ga;
 
 @NgModule({
-  declarations: [AppComponent, HeaderImage, Calendar, Press, Updates, MenuComponent, LangBarComponent, ForbiddenValidatorDirective, ],
+  declarations: [AppComponent, HeaderImage,MenuComponent, LangBarComponent, ForbiddenValidatorDirective,Calendar,Updates,Press ],
+
   imports: [
     BrowserModule,
     HttpClientModule,

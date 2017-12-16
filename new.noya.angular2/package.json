@@ -4,7 +4,7 @@
   "license": "thoughtram Training Material License (TTML 1.0)",
   "angular-cli": {},
   "scripts": {
-  "build":"ng build --prod --build-optimizer",
+    "build": "ng build --prod --build-optimizer",
     "start": "ng serve --aot --o",
     "rest-api": "node server/index.js",
     "lint": "tslint \"src/**/*.ts\"",
@@ -40,11 +40,12 @@
   "devDependencies": {
     "@angular/cli": "^1.6.1",
     "@angular/compiler-cli": "^5.1.1",
+    "@types/jquery": "^3.2.17",
+    "@types/lodash": "^4.14.88",
     "@types/node": "6.0.42",
     "cors": "2.8.0",
     "hammerjs": "2.0.8",
     "ts-node": "1.2.1",
-    "typescript": "~2.4.0",
-    "@types/lodash": "^4.14.88"
+    "typescript": "~2.4.0"
   }
 }
