@@ -3,17 +3,22 @@ import {BaseComponent} from '../../common/base.component'
 import {TraverseItem, DataRequest, Language, TraverseItemResponse, DataError} from '../../dal/models'
 import {DataService, CacheManager} from '../../services/services'
 import {UtiltyService} from '../../services/utitlity'
+import {Store} from '@ngrx/store';
+import {AppState} from '../../../store/states/state';
+import {CardItemLoadedAction} from '../../../store/actions/actions';
 
-@Component({selector: 'cards-manager',
+@Component({
+  selector: 'cards-manager',
   templateUrl: './cards-manager.component.html',
-  styleUrls: ['./cards-manager.component.scss']})
+  styleUrls: ['./cards-manager.component.scss']
+})
 
 export class CardsManagerComponent extends BaseComponent implements OnInit {
   traverseItems: TraverseItem[];
   trios: Array<Array<TraverseItem>>;
   dous: Array<Array<TraverseItem>>;
 
-  constructor(private dataService: DataService, private cacheManager: CacheManager, private injector: Injector, private utiltyService: UtiltyService) {
+  constructor(private dataService: DataService, private cacheManager: CacheManager, private injector: Injector, private utiltyService: UtiltyService, private  store: Store<AppState>) {
     super(injector);
     this.trios = new Array<Array<TraverseItem>>();
     this.dous = new Array<Array<TraverseItem>>();
@@ -40,6 +45,7 @@ export class CardsManagerComponent extends BaseComponent implements OnInit {
     let lang: Language = +this.cacheManager.GetFromCache('lang', '0');
     let req: DataRequest = {Language: lang}
     this.dataService.ConnectToApiData(req, 'GetTraverseItems').subscribe((res: TraverseItemResponse) => {
+        this.store.dispatch(new CardItemLoadedAction(res.TraverseItems))
         this.traverseItems = res.TraverseItems;
         let i = 0;
         let j = 0;

@@ -20,7 +20,7 @@ export const questions: QuestionBase<any>[] = [
     type: 'email',
     required: true,
     order: 2,
-    errMsgs: {'required': 'email is required','email': 'invalid email'}
+    errMsgs: {'required': 'email is required', 'email': 'invalid email'}
   }),
   new TextAreaQuestion({
     key: 'content',

@@ -5,11 +5,11 @@ import {BrowserModule, Title} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app.routes'
 
-import {Calendar} from './Home/calendar/calendar'
+import {Calendar} from './home-module/calendar/calendar'
 
-import {Updates} from './Home/updates/updates'
+import {Updates} from './home-module/updates/updates'
 
-import {Press} from './Home/press/press'
+import {Press} from './home-module/press/press'
 
 
 import {SharedModule} from './shared/shared.module'

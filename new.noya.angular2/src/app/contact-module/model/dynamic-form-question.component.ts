@@ -1,6 +1,6 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 import {FormControl, FormGroup, ValidationErrors} from '@angular/forms';
-import * as _ from 'lodash'
+
 import {QuestionBase} from './question-base';
 
 @Component({
