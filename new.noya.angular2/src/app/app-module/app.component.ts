@@ -1,12 +1,12 @@
 ﻿import { Component, OnInit, AfterViewInit, Injector, HostListener,ElementRef } from "@angular/core"
 
-import * as services from "./services/services"
-import * as dal from "./dal/models"
+import * as services from "../services/services"
+import * as dal from "../dal/models"
 import * as $ from 'jquery';
 
 import { Router, NavigationEnd } from '@angular/router'
-import { BaseComponent } from './common/base.component'
-import { pageNameService } from './services/page-name.service'
+import { BaseComponent } from '../common/base.component'
+import { pageNameService } from '../services/page-name.service'
 
 
 

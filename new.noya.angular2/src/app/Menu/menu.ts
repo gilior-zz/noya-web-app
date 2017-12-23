@@ -5,7 +5,7 @@ import * as dal from "../dal/models"
 import { Router, NavigationEnd } from '@angular/router'
 import { BaseComponent } from '../common/base.component'
 import { pageNameService } from '../services/page-name.service'
-@Component({ selector: 'main-menu', moduleId: module.id, templateUrl: './menu.html', styleUrls: ['./menu.scss'] })
+@Component({ selector: 'main-menu', templateUrl: './menu.html', styleUrls: ['./menu.scss'] })
 
 export class MenuComponent extends BaseComponent {
     currentPathName: string;

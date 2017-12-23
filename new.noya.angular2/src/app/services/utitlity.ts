@@ -5,7 +5,7 @@ import { CacheManager } from './services'
 export class UtiltyService {
     constructor(private cacheManager: CacheManager) { }
     get IsHebrewMode(): boolean { return this.cacheManager.GetFromCache('lang', 0) == Language.Hebrew; }
-    get IsEnglishMode(): boolean { return !this.IsHebrewMode }
+
     get IsMobile(): boolean { return window.innerWidth <= 767; }
     get IsPhablet(): boolean { return window.innerWidth > 767 && window.innerWidth <= 991; }
     get IsTablet(): boolean { return window.innerWidth > 991 && window.innerWidth <= 1199 }

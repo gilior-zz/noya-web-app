@@ -33,10 +33,10 @@ export class pageNameService {
     get currentPageName(): string {
         let urlItems = this.router.routerState.snapshot.url.split("/");
         let lastItem = urlItems[urlItems.length - 1];
-       
+
         return lastItem;
     }
 
-    get currentUrl() { return this.router.routerState.snapshot.url }
+    get currentUrl():string { return this.router.routerState.snapshot.url }
 
 }

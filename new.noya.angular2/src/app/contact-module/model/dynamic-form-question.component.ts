@@ -1,3 +1,4 @@
+import {keys} from 'lodash'
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 import {FormControl, FormGroup, ValidationErrors} from '@angular/forms';
 
@@ -29,6 +30,7 @@ export class DynamicFormQuestionComponent implements OnChanges {
 
   get errors(): string[] {
 
-    return _.keys(this.ctrl.errors);
+
+    return keys(this.ctrl.errors);
   }
 }

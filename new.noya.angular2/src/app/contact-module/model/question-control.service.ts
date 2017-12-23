@@ -13,12 +13,12 @@ export class QuestionControlService {
     let group: any = {};
 
     questions.forEach(question => {
-        const validatorFn: ValidatorFn[] = [];
+        const validators: ValidatorFn[] = [];
         if (question.required)
-          validatorFn.push(Validators.required);
+          validators.push(Validators.required);
         if (question.minLength)
-          validatorFn.push(Validators.minLength(question.minLength));
-        const formControl = new FormControl(question.value, validatorFn);
+          validators.push(Validators.minLength(question.minLength));
+        const formControl = new FormControl({value: question.value,disabled:false}, {validators:validators,updateOn:'blur'});
         group[question.key] = formControl
 
       }

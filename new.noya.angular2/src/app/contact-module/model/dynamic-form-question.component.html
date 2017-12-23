@@ -1,6 +1,6 @@
 <div [formGroup]="form">
   <div class="form-group">
-    <label [attr.for]="question.key">{{question.label|translate}}</label>
+    <label [attr.for]="question.key">{{question.label|translate}}<span class="asterisk" *ngIf="question.required">*</span> </label>
 
     <div [ngSwitch]="question.controlType">
 
