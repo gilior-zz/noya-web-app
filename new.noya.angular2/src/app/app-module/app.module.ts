@@ -29,6 +29,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {SafeResourcePipe} from '../pipes/safe.pipe';
+import {NgReduxModule} from '@angular-redux/store';
+import {NgReduxRouterModule} from '@angular-redux/router';
+import {StoreModule} from '../../store/store.module';
 
 
 declare var ga;
@@ -40,7 +43,8 @@ declare var ga;
     BrowserModule,
     SharedModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    StoreModule
   ],
   bootstrap: [AppComponent],
 })
