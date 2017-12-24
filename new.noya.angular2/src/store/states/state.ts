@@ -16,5 +16,5 @@ export const initState: IAppState = {
   links: {},
   biographies: {},
   programs: {},
-  cards: {}
+  cards: []
 }

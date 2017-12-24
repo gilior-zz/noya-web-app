@@ -18,7 +18,7 @@ import {Action} from '../../../store/actions/actions';
 })
 
 export class CardsManagerComponent extends BaseComponent implements OnInit {
-  @select('cards') cards$: Observable<TraverseItem[]>;
+  @select('cards') cards$: Observable<Array<TraverseItem>>;
   traverseItems: TraverseItem[];
   trios: Array<Array<TraverseItem>>;
   dous: Array<Array<TraverseItem>>;
