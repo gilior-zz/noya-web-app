@@ -2,10 +2,9 @@
 
 import * as model from '../dal/models'
 import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/toPromise';
-import 'rxjs/add/operator/map';
+
 import {HttpClient, HttpParams} from '@angular/common/http';
+import {DataResponse} from "../dal/models";
 
 @Injectable()
 export class CacheManager {
@@ -69,15 +68,19 @@ export class DataService {
   }
 
 
-  public ConnectToApiData(request: model.DataRequest, url: string): Observable<model.DataResponse> {
+  public ConnectToApiData(request: model.DataRequest, url: string): Observable<DataResponse> {
 
     const endPoint: string = 'http://noyaschleien.com/api/Data/'
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
     request.Language = lang;
     let body = JSON.stringify({request});
 
-    return this.http.post<model.DataResponse>(`${endPoint}${url}`, body, {headers: {'content-type': 'application/json'}})
-      .map(res => res)
+    return this.http.post<DataResponse>(`${endPoint}${url}`, body, {headers: {'content-type': 'application/json'}})
+      .do(res => {
+        console.log(res)
+        res.items = res[Object.keys(res)[0]]
+      })
+
       .catch(this.handleError)
   }
 

@@ -17,6 +17,6 @@ export class Links extends BaseComponent implements OnInit {
     }
     ngOnInit() {
         var request: dal.DataRequest = { Language: dal.Language.Hebrew };
-        this.dataService.ConnectToApiData(request, 'GetLinks').subscribe((res: dal.LinksResponse) => { this.links = res.Links }, (error: dal.DataError) => { console.error('error in Links in ngOnInit: ' + error.ErrorText); });
+        this.dataService.ConnectToApiData(request, 'GetLinks').subscribe((res: dal.LinksResponse) => { this.links = res.items }, (error: dal.DataError) => { console.error('error in items in ngOnInit: ' + error.ErrorText); });
     }
 }

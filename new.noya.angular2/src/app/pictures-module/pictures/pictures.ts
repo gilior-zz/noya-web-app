@@ -183,7 +183,7 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
     }
     this.dataService.ConnectToApiData(req, 'GetImages').subscribe(
       (res: dal.ImageGalleryResponse) => {
-        this.images = res.Images;
+        this.images = res.items;
       },
       (err: dal.DataError) => {
       }

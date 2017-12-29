@@ -5,11 +5,12 @@ import {UtiltyService} from '../services/utitlity';
 import {pageNameService} from '../services/page-name.service';
 import * as services from '../services/services';
 import {Title} from '@angular/platform-browser';
-import {Action} from '../../store/actions/actions';
+
+import {Actions} from "../../store/actions/actions";
 
 @NgModule({
 
-  providers: [pageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService, UtiltyService, GoogleAnalyticsService, Action]
+  providers: [pageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService, UtiltyService, GoogleAnalyticsService,Actions]
 })
 export class CoreModule {
 }

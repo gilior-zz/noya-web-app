@@ -2,6 +2,7 @@ import {CV, ImageGalleryItem, Link, Program, TraverseItem, VideoItem} from '../.
 
 
 export interface IAppState {
+  homePageText:string;
   videos: { [key: number]: VideoItem };
   images: { [key: number]: ImageGalleryItem };
   links: { [key: number]: Link };
@@ -11,10 +12,11 @@ export interface IAppState {
 }
 
 export const initState: IAppState = {
-  videos: {},
-  images: {},
-  links: {},
-  biographies: {},
-  programs: {},
+  homePageText:'',
+  videos: [],
+  images: [],
+  links: [],
+  biographies: [],
+  programs: [],
   cards: []
 }

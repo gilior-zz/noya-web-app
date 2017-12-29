@@ -7,6 +7,7 @@ import * as dal from '../../dal/models'
 
 @Component({
     templateUrl: "./programs.html",
+  styleUrls:['./programs.scss']
 
 })
 
@@ -19,8 +20,8 @@ export class Programs extends BaseComponent implements OnInit {
     ngOnInit() {
         var req: dal.DataRequest = { Language: dal.Language.Hebrew };
         this.dataService.ConnectToApiData(req, 'GetPrograms').subscribe(
-            (res: dal.ProgramResponse) => { this.programs = res.Programs },
-            (err: dal.DataError) => { console.error('error in Programs in ngOnInit: ' + err.ErrorText); },
+            (res: dal.ProgramResponse) => { this.programs = res.items },
+            (err: dal.DataError) => { console.error('error in items in ngOnInit: ' + err.ErrorText); },
             () => { }
         )
     }
