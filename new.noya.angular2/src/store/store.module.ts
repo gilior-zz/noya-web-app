@@ -7,7 +7,10 @@ import {createLogger} from 'redux-logger';
 import {provideReduxForms} from '@angular-redux/form';
 import {Epics} from "./epics/epics";
 import {createEpicMiddleware} from "redux-observable";
-import {CARDS_LOADED, CVs_LOADED, HOME_PAGE_TEXT_LOADED, LOAD_CARDS, LOAD_CVs, LOAD_HOME_PAGE_TEXT} from "./const";
+import {
+  CARDS_LOADED, CVs_LOADED, HOME_PAGE_TEXT_LOADED, IMGs_LOADED, LOAD_CARDS, LOAD_CVs, LOAD_HOME_PAGE_TEXT,
+  LOAD_IMGs
+} from "./const";
 
 
 @NgModule({
@@ -23,9 +26,11 @@ export class StoreModule {
 
     const middleware = [
       //createLogger(),
+      createEpicMiddleware(this.epics.createVideoEpic()),
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CARDS, CARDS_LOADED)),
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_HOME_PAGE_TEXT, HOME_PAGE_TEXT_LOADED)),
-      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CVs, CVs_LOADED))
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CVs, CVs_LOADED)),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_IMGs, IMGs_LOADED)),
     ];
     store.configureStore(rootReducer,
       initState, middleware,

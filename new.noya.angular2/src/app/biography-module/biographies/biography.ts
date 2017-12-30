@@ -17,7 +17,7 @@ import {select} from "@angular-redux/store";
 })
 
 export class Biography extends BaseComponent implements OnInit {
- @select('biographies') cvs$: dal.CV[];
+  @select('biographies') cvs$: Observable<dal.CV[]>;
 
 
   constructor(private dataService: services.DataService, public router: Router, private injector: Injector, public actions: Actions) {

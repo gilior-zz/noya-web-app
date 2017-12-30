@@ -1,7 +1,7 @@
 ﻿<div class="row">
-  <div #foo *ngFor="let img of images"
+  <div #foo *ngFor="let img of imgs$|async"
        class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center visible-md visible-sm visible-lg visible-xs">
-    <ny-picture (imageSedlected)="selectedID=$event;onImageSedlected()" [img]="img"></ny-picture>
+    <ny-picture (imageSedlected)="onImageSedlected($event)" [img]="img"></ny-picture>
   </div>
   <!--<div #doAction *ngFor="let img of images" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center visible-xs">-->
   <!--<img (click)="selectedID=img.ID" class="img-responsive img-rounded img-hover-animation" [src]="img.ImageURL" alt="" />-->
@@ -21,7 +21,7 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-            <div *ngFor="let img of images;let first=first" [ngClass]="setClasses(img.ID)">
+            <div *ngFor="let img of imgs$|async;let first=first" [ngClass]="setClasses(img.ID)">
               <ny-picture-carousel  [img]="img"></ny-picture-carousel>
             </div>
           </div>
