@@ -77,7 +77,7 @@ export class DataService {
 
     return this.http.post<DataResponse>(`${endPoint}${url}`, body, {headers: {'content-type': 'application/json'}})
       .do(res => {
-        console.log(res)
+
         res.items = res[Object.keys(res)[0]]
       })
 

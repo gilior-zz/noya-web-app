@@ -1,4 +1,4 @@
 ﻿<!--<header-image [pageName]="'links'">loading...</header-image>-->
-<div class="links-wrapper white-panel" *ngFor="let link of links">
+<div class="links-wrapper white-panel" *ngFor="let link of links$|async">
   <ny-link [link]="link"></ny-link>
 </div>

@@ -8,6 +8,10 @@ export const LOAD_IMGs="LOAD_IMGs";
 export const IMGs_LOADED="IMGs_LOADED";
 export const LOAD_VIDs="LOAD_VIDs";
 export const VIDs_LOADED="VIDs_LOADED";
+export const LOAD_PRGs="LOAD_PRGs";
+export const PRGs_LOADED="PRGs_LOADED";
+export const LOAD_LNKs="LOAD_LNKs";
+export const LNKs_LOADED="LNKs_LOADED";
 
 
 

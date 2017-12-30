@@ -1,7 +1,10 @@
 import {Action, Reducer} from 'redux';
 import {composeReducers, defaultFormReducer} from '@angular-redux/form';
 import {IAppState} from '../states/state';
-import {CARDS_LOADED, CVs_LOADED, HOME_PAGE_TEXT_LOADED, IMGs_LOADED, VIDs_LOADED} from '../const';
+import {
+  CARDS_LOADED, CVs_LOADED, HOME_PAGE_TEXT_LOADED, IMGs_LOADED, LNKs_LOADED, PRGs_LOADED,
+  VIDs_LOADED
+} from '../const';
 import * as _ from 'lodash'
 import {MetaData, Payload} from "../actions/actions";
 import {FSA} from "flux-standard-action";
@@ -17,13 +20,19 @@ export const appStateReducer: Reducer<IAppState> = (state: IAppState, a: Action)
       newStore.homePageText = action.payload[0].Text;
       return newStore;
     case CVs_LOADED:
-      newStore.biographies=action.payload;
+      newStore.biographies = action.payload;
       return newStore;
     case IMGs_LOADED:
-      newStore.images=action.payload;
+      newStore.images = action.payload;
       return newStore;
     case VIDs_LOADED:
-      newStore.videos=action.payload;
+      newStore.videos = action.payload;
+      return newStore;
+    case PRGs_LOADED:
+      newStore.programs = action.payload;
+      return newStore;
+    case LNKs_LOADED:
+      newStore.links = action.payload;
       return newStore;
     default:
       return state;

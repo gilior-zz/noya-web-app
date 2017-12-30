@@ -1,6 +1,6 @@
 ﻿<!--<header-image [pageName]="'programs'">loading...</header-image>-->
 <div class="">
-  <div *ngFor="let prg of programs" class="row program-item white-panel padding-5 back-cornsilk-color">
+  <div *ngFor="let prg of programs$|async" class="row program-item white-panel padding-5 back-cornsilk-color">
     <div class="box col-xs-push-2 col-xs-7 col-xs-push-2">
       <div class="row padding">
         <ny-program [prg]="prg"></ny-program>

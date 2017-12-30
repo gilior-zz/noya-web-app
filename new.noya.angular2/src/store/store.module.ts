@@ -8,8 +8,8 @@ import {provideReduxForms} from '@angular-redux/form';
 import {Epics} from "./epics/epics";
 import {createEpicMiddleware} from "redux-observable";
 import {
-  CARDS_LOADED, CVs_LOADED, HOME_PAGE_TEXT_LOADED, IMGs_LOADED, LOAD_CARDS, LOAD_CVs, LOAD_HOME_PAGE_TEXT,
-  LOAD_IMGs
+  CARDS_LOADED, CVs_LOADED, HOME_PAGE_TEXT_LOADED, IMGs_LOADED, LNKs_LOADED, LOAD_CARDS, LOAD_CVs, LOAD_HOME_PAGE_TEXT,
+  LOAD_IMGs, LOAD_LNKs, LOAD_PRGs, PRGs_LOADED
 } from "./const";
 
 
@@ -31,6 +31,8 @@ export class StoreModule {
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_HOME_PAGE_TEXT, HOME_PAGE_TEXT_LOADED)),
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CVs, CVs_LOADED)),
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_IMGs, IMGs_LOADED)),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_PRGs, PRGs_LOADED)),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_LNKs, LNKs_LOADED)),
     ];
     store.configureStore(rootReducer,
       initState, middleware,
