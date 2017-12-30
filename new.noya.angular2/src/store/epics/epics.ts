@@ -34,14 +34,10 @@ export class Epics {
     return (action$, store) => action$.ofType(LOAD_VIDs)
       .switchMap((action: FSA<Payload, MetaData>) => this.yts.fetchVideos()
         .map((data) => {
-            (<Array<any>>data).forEach(j => {
-
-              items.push({title: j['snippet']['title'], videoId: j['snippet']['resourceId']['videoId'], lang: l})
-
-            }
-
-            return this.homeAPIActions.doAction({actiontype: VIDs_LOADED}, items)
-          }
-        ))
+          (<Array<any>>data).forEach(j => {
+            items.push({title: j['snippet']['title'], videoId: j['snippet']['resourceId']['videoId'], lang: l})
+          })
+          return this.homeAPIActions.doAction({actiontype: VIDs_LOADED}, items)
+        }))
   }
 }

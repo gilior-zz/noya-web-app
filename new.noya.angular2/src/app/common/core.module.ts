@@ -8,9 +8,18 @@ import {Title} from '@angular/platform-browser';
 
 import {Actions} from "../../store/actions/actions";
 
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
+import {CachingInterceptor} from "../services/noop-interceptor.service";
+
+import {LocalStorageCache} from "../services/local-storage-cache";
+
 @NgModule({
 
-  providers: [pageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService, UtiltyService, GoogleAnalyticsService,Actions]
+  providers: [pageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService, UtiltyService, GoogleAnalyticsService,Actions,LocalStorageCache,{
+    provide: HTTP_INTERCEPTORS,
+    useClass: CachingInterceptor,
+    multi: true,
+  }]
 })
 export class CoreModule {
 }
