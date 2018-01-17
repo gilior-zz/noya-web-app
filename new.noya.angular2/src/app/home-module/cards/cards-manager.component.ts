@@ -55,25 +55,6 @@ export class CardsManagerComponent extends BaseComponent implements OnInit {
     let req: DataRequest = {Language: lang}
     this.dataService.ConnectToApiData(req, 'GetTraverseItems').subscribe((res: TraverseItemResponse) => {
         this.action.postCards(res.TraverseItems);
-        this.traverseItems = res.TraverseItems;
-        let i = 0;
-        let j = 0;
-        this.traverseItems.forEach((traverseItem) => {
-
-          if (i++ % 3 == 0) {
-            this.trios[this.trios.length] = new Array<TraverseItem>();
-            //console.log('new trio');
-          }
-          this.trios[this.trios.length - 1].push(traverseItem);
-          if (j++ % 2 == 0) {
-            this.dous[this.dous.length] = new Array<TraverseItem>();
-            //console.log('new dou');
-          }
-
-          this.dous[this.dous.length - 1].push(traverseItem);
-
-        })
-
       },
       (err: DataError) => {
       }
