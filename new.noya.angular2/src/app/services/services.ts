@@ -70,12 +70,13 @@ export class DataService {
 
   public ConnectToApiData(request: model.DataRequest, url: string): Observable<DataResponse> {
 
-    const endPoint: string = 'http://noyaschleien.com/api/Data/'
+    const endPoint: string = 'https://noyaschleien.com/api/Data/'
+    const nodeEndPoint: string = '/api/Data/'
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
     request.Language = lang;
     let body = JSON.stringify({request});
 
-    return this.http.post<DataResponse>(`${endPoint}${url}`, body, {headers: {'content-type': 'application/json'}})
+    return this.http.post<DataResponse>(`${nodeEndPoint}${url}`, body, {headers: {'content-type': 'application/json'}})
       .do(res => {
 
         res.items = res[Object.keys(res)[0]]
@@ -110,9 +111,12 @@ export class DialogService {
    * Returns promise resolving to `true`=confirm or `false`=cancel
    */
   confirm(message?: string) {
-    return new Promise<boolean>((resolve, reject) =>
-      resolve(window.confirm(message || 'Is it OK?')));
-  };
+    return new Promise<boolean>((resolve, reject) => {
+      return resolve(window.confirm(message || 'Is it OK?'))
+    })
+  }
+
+
 }
 
 export class LogService {

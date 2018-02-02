@@ -6,7 +6,8 @@ import {LocalStorageCache} from "./local-storage-cache";
 
 @Injectable()
 export class CachingInterceptor implements HttpInterceptor {
-  constructor(private cache: LocalStorageCache) {}
+  constructor(private cache: LocalStorageCache) {
+  }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     // Still skip non-GET requests.

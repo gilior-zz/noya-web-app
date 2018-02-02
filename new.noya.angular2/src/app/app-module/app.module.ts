@@ -1,4 +1,5 @@
-﻿
+﻿import {ServiceWorkerModule} from '@angular/service-worker';
+import {environment} from '../../environments/environment';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/toPromise';
@@ -52,7 +53,8 @@ declare var ga;
     SharedModule,
     AppRoutingModule,
     CoreModule,
-    StoreModule
+    StoreModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
   ],
   bootstrap: [AppComponent],
 })

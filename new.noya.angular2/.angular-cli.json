@@ -11,7 +11,6 @@
         "assets",
         "favicon.ico",
         "close.ico"
-
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -20,12 +19,11 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "ny",
+      "serviceWorker": true,
       "styles": [
         "styles.scss"
       ],
-      "scripts": [
-
-      ],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -56,6 +54,7 @@
   },
   "defaults": {
     "styleExt": "scss",
-    "component": {}
+    "component": {
+    }
   }
 }

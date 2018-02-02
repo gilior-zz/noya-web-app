@@ -39,8 +39,8 @@ export class HeaderImage implements OnInit {
     return this.pn.currentUrl.includes('galilu') ? 'Custom designed products for toddlers' : 'Marimba & Percussion';
   }
 
-  mainImage: string = 'http://res.cloudinary.com/lior/image/upload/v1468953847/home_pic.jpg';
-  kidsImage: string = 'http://res.cloudinary.com/lior/image/upload/v1478964869/galilu-home-image.png';
+  mainImage: string = 'https://res.cloudinary.com/lior/image/upload/v1468953847/home_pic.jpg';
+  kidsImage: string = 'https://res.cloudinary.com/lior/image/upload/v1478964869/galilu-home-image.png';
   safeMainImage = this.sanitizer.bypassSecurityTrustStyle(`url('${this.mainImage}')`);
   safeKidsImage = this.sanitizer.bypassSecurityTrustStyle(`url('${this.kidsImage}')`);
   @Input() pageName: string;

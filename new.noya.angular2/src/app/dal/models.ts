@@ -13,6 +13,8 @@ export interface TraverseItem {
 
 export interface HomePageText {
   Text: string;
+  ID: number;
+  TimeStamp: Date;
 }
 
 export interface HomePageTextResponse extends DataResponse {
@@ -35,6 +37,10 @@ export enum Mode { Store, Noya }
 
 export enum Language {
   Hebrew, English
+}
+
+export enum SqlLanguage {
+  Heb, Eng
 }
 
 export interface DataRequest {
