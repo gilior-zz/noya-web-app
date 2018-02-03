@@ -4,11 +4,11 @@
 }
 
 export interface TraverseItem {
-  Text: string;
-  Description: string;
-  Title: string;
-  ID: number;
-  Image_Url: string;
+  Text?: string;
+  Description?: string;
+  Title?: string;
+  ID?: number;
+  Image_Url?: string;
 }
 
 export interface HomePageText {

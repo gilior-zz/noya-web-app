@@ -1,6 +1,6 @@
 import * as express from 'express';
 import {join} from 'path';
-import {handleHomeRoutes} from "./routes";
+import {handleHomeRoutes, handleTraverseItemsRoutes} from "./routes";
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 
@@ -23,7 +23,10 @@ app.set('views', join(DIST_FOLDER, 'browser'));
 // app.use('/api/Data', () => handleHomeRoutes(app));
 
 app.post('/api/Data/GetHomePageText', (req, res) => {
-  handleHomeRoutes(req,res)
+  handleHomeRoutes(req, res)
+});
+app.post('/api/Data/GetTraverseItems', (req, res) => {
+  handleTraverseItemsRoutes(req, res)
 });
 
 // Server static files from /browser
