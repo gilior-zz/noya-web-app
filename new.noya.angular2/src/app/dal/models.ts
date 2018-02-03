@@ -12,9 +12,9 @@ export interface TraverseItem {
 }
 
 export interface HomePageText {
-  Text: string;
-  ID: number;
-  TimeStamp: Date;
+  Text?: string;
+  ID?: number;
+  TimeStamp?:Date;
 }
 
 export interface HomePageTextResponse extends DataResponse {
@@ -144,7 +144,7 @@ export interface CalendarResponse extends DataResponse {
 }
 
 export interface CVResponse extends DataResponse {
-  CVs: CV[];
+  items: CV[];
 }
 
 export interface ProgramResponse extends DataResponse {

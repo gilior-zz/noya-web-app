@@ -1,6 +1,6 @@
 import * as express from 'express';
 import {join} from 'path';
-import {handleHomeRoutes} from "./home";
+import {handleHomeRoutes} from "./routes";
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 
@@ -21,9 +21,8 @@ app.set('views', join(DIST_FOLDER, 'browser'));
 
 // TODO: implement data requests securely
 // app.use('/api/Data', () => handleHomeRoutes(app));
-let obj = {a: 'a'}
-app.post('/api/Data/GetHomePageText', (req, res) => {
 
+app.post('/api/Data/GetHomePageText', (req, res) => {
   handleHomeRoutes(req,res)
 });
 
