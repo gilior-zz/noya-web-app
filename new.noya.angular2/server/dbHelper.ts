@@ -28,6 +28,7 @@ function executeStatement<T>(dataResponse: DataResponse, proc: string, req: Requ
     handleRowEvent<T>(columns, dataResponse);
   });
   request.on('doneInProc', function (rowCount, more, rows) {
+    console.log('doneInProc')
     res.status(200).json(dataResponse);
   });
   connection.callProcedure(request);

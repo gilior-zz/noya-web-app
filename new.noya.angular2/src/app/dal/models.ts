@@ -6,7 +6,7 @@
 export interface TraverseItem {
   Text?: string;
   Description?: string;
-  Description?: string;
+
   Title?: string;
   ID?: number;
   Image_Url?: string;

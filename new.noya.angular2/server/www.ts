@@ -1,6 +1,6 @@
 import * as express from 'express';
 import {join} from 'path';
-import {handleCVRoutes, handleHomeRoutes, handleTraverseItemsRoutes} from "./routes";
+import {handleCVRoutes, handleHomeRoutes, handleImgRoutes, handleTraverseItemsRoutes} from "./routes";
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 
@@ -30,6 +30,12 @@ app.post('/api/Data/GetTraverseItems', (req, res) => {
 });
 app.post('/api/Data/GetCV', (req, res) => {
   handleCVRoutes(req, res)
+});
+app.post('/api/Data/GetImages', (req, res) => {
+  handleImgRoutes(req, res)
+});
+app.post('/api/Data/GetPrograms', (req, res) => {
+  handleImgRoutes(req, res)
 });
 
 // Server static files from /browser
