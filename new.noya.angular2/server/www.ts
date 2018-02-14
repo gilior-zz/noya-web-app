@@ -1,6 +1,10 @@
 import * as express from 'express';
 import {join} from 'path';
-import {handleCVRoutes, handleHomeRoutes, handleImgRoutes, handleTraverseItemsRoutes} from "./routes";
+import {
+  handleCVRoutes, handleHomeRoutes, handleImgRoutes, handleLinksRoutes, handleMsgRoutes, handlePrgRoutes,
+  handleTraverseItemsRoutes
+} from "./routes";
+import {Request, Response} from "express";
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 
@@ -22,20 +26,32 @@ app.set('views', join(DIST_FOLDER, 'browser'));
 // TODO: implement data requests securely
 // app.use('/api/Data', () => handleHomeRoutes(app));
 
-app.post('/api/Data/GetHomePageText', (req, res) => {
+app.use('/api/Data', function (req: Request, res: Response, next) {
+  console.log(req.query);
+  res.locals.lang = req.query.lang.substring(0, 3);
+  next();
+});
+app.get('/api/Data/GetHomePageText', (req, res) => {
   handleHomeRoutes(req, res)
 });
-app.post('/api/Data/GetTraverseItems', (req, res) => {
+app.get('/api/Data/GetTraverseItems', (req, res) => {
   handleTraverseItemsRoutes(req, res)
 });
-app.post('/api/Data/GetCV', (req, res) => {
+app.get('/api/Data/GetCV', (req, res) => {
   handleCVRoutes(req, res)
 });
-app.post('/api/Data/GetImages', (req, res) => {
+app.get('/api/Data/GetImages', (req, res) => {
   handleImgRoutes(req, res)
 });
-app.post('/api/Data/GetPrograms', (req, res) => {
-  handleImgRoutes(req, res)
+app.get('/api/Data/GetPrograms', (req, res) => {
+  handlePrgRoutes(req, res)
+});
+
+app.get('/api/Data/GetLinks', (req, res) => {
+  handleLinksRoutes(req, res)
+});
+app.get('/api/Data/SendMessage', (req, res) => {
+  handleMsgRoutes(req, res)
 });
 
 // Server static files from /browser

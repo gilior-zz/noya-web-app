@@ -4,7 +4,7 @@ import * as model from '../dal/models'
 import {Observable} from 'rxjs/Observable';
 
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {DataResponse} from "../dal/models";
+import {DataResponse, Language} from "../dal/models";
 
 @Injectable()
 export class CacheManager {
@@ -76,7 +76,11 @@ export class DataService {
     request.Language = lang;
     let body = JSON.stringify({request});
 
-    return this.http.post<DataResponse>(`${nodeEndPoint}${url}`, body, {headers: {'content-type': 'application/json'}})
+
+    return this.http.get<DataResponse>(`${nodeEndPoint}${url}`, {
+      headers: {'content-type': 'application/json'},
+      params: new HttpParams().set('lang', Language[request.Language])
+    })
       .do(res => {
 
         res.items = res[Object.keys(res)[0]]

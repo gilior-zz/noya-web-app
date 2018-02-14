@@ -187,12 +187,14 @@ export interface Message {
 
 export interface Link {
   ID: number;
-  Text_Heb: string;
-  Address_Heb: string;
-  Text_Eng: string;
-  Address_Eng: string;
-  Order: number
-  TimeStamp: Date;
+  Text_Heb?: string;
+  Text?: string;
+  Address_Heb?: string;
+  Address?: string;
+  Text_Eng?: string;
+  Address_Eng?: string;
+  Order?: number
+  TimeStamp?: Date;
 }
 
 export interface MenuImageResponse extends DataResponse {

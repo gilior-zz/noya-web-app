@@ -3,16 +3,20 @@ import {DataResponse} from "../src/app/dal/models";
 import {Request, Response} from "express";
 import {DBConfig} from "./config";
 
-function requestGenerator(proc: string) {
-  return new tedious.Request(proc, function (err: Error, rowCount: number, rows: any[]) {
+
+function requestGenerator(proc: string, lang: string) {
+  console.log(lang)
+  let request = new tedious.Request(proc, function (err: Error, rowCount: number, rows: any[]) {
     if (err) {
       console.log(err);
     }
   });
+  request.addParameter('lang', tedious.TYPES.NVarChar, lang);
+  return request;
 }
 
 function handleRowEvent<T>(columns: any[], dataResponse: DataResponse) {
-  let obj: T = {};
+  let obj: T = Object.create(Object.prototype);
   columns.forEach(i => {
     let metadata: tedious.ColumnMetaData = i.metadata;
     let value: any = i.value;
@@ -23,7 +27,7 @@ function handleRowEvent<T>(columns: any[], dataResponse: DataResponse) {
 
 function executeStatement<T>(dataResponse: DataResponse, proc: string, req: Request, res: Response, connection: tedious.Connection) {
 
-  let request = requestGenerator(proc);
+  let request = requestGenerator(proc, res.locals.lang);
   request.on('row', function (columns: any[]) {
     handleRowEvent<T>(columns, dataResponse);
   });
@@ -34,7 +38,7 @@ function executeStatement<T>(dataResponse: DataResponse, proc: string, req: Requ
   connection.callProcedure(request);
 }
 
-export function callDB<T>(req: Request, res: Response,proc: string) {
+export function callDB<T>(req: Request, res: Response, proc: string) {
   let dataResponse: DataResponse = {items: []};
   let Connection = tedious.Connection;
   let connection = new Connection(DBConfig);
