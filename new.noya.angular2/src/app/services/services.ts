@@ -3,8 +3,10 @@
 import * as model from '../dal/models'
 import {Observable} from 'rxjs/Observable';
 
-import {HttpClient, HttpParams} from '@angular/common/http';
-import {DataResponse, Language} from "../dal/models";
+import {HttpClient, HttpErrorResponse, HttpParams} from '@angular/common/http';
+import {DataRequest, DataResponse, Language} from "../dal/models";
+import {ErrorObservable} from "rxjs/observable/ErrorObservable";
+import {catchError} from "rxjs/operators";
 
 @Injectable()
 export class CacheManager {
@@ -39,10 +41,9 @@ export class CacheManager {
 
 export class DataService {
 
-  constructor(private http: HttpClient, private CacheManager: CacheManager) {
-  }
+  endPoint: string = 'https://noyaschleien.com/api/Data/'
 
-  //public ConnectToApiData(request: model.DataRequest, url: string): Promise<model.DataResponse> {
+  //public GetData(request: model.DataRequest, url: string): Promise<model.DataResponse> {
   //    let body = JSON.stringify({ request });
   //    let headers = new Headers({ 'Content-Type': 'application/json' });
   //    let options = new RequestOptions({ headers: headers });
@@ -60,6 +61,10 @@ export class DataService {
   //    let body = res.json();
   //    return body;
   //}
+  nodeEndPoint: string = '/api/Data/'
+
+  constructor(private http: HttpClient, private CacheManager: CacheManager) {
+  }
 
   public GetFileContent(filePath: string) {
     return this.http.get(filePath).map(res => res)
@@ -67,19 +72,27 @@ export class DataService {
     //.catch(this.handleError)
   }
 
-
-  public ConnectToApiData(request: model.DataRequest, url: string): Observable<DataResponse> {
-
-    const endPoint: string = 'https://noyaschleien.com/api/Data/'
-    const nodeEndPoint: string = '/api/Data/'
+  /** POST: add a new hero to the database */
+  public PostData(url: string, req: any): Observable<DataResponse> {
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
-    request.Language = lang;
-    let body = JSON.stringify({request});
-
-
-    return this.http.get<DataResponse>(`${nodeEndPoint}${url}`, {
+    console.log('req', req)
+    return this.http.post<DataResponse>(`${this.nodeEndPoint}${url}`, req, {
       headers: {'content-type': 'application/json'},
-      params: new HttpParams().set('lang', Language[request.Language])
+      params: new HttpParams().set('lang', Language[lang])
+    })
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
+
+  public GetData(url: string): Observable<DataResponse> {
+
+
+    var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
+    return this.http.get<DataResponse>(`${this.nodeEndPoint}${url}`, {
+      headers: {'content-type': 'application/json'},
+      params: new HttpParams().set('lang', Language[lang])
     })
       .do(res => {
 
@@ -90,14 +103,21 @@ export class DataService {
   }
 
 
-  private handleError(error: any) {
-    // In a real world app, we might use a remote logging infrastructure
-    // We'd also dig deeper into the error to get a better message
-    let errMsg = (error.message) ? error.message :
-      error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-    console.error(errMsg); // log to console instead
-    return Observable.throw(errMsg);
-  }
+  private handleError(error: HttpErrorResponse) {
+    if (error.error instanceof ErrorEvent) {
+      // A client-side or network error occurred. Handle it accordingly.
+      console.error('An error occurred:', error.error.message);
+    } else {
+      // The backend returned an unsuccessful response code.
+      // The response body may contain clues as to what went wrong,
+      console.error(
+        `Backend returned code ${error.status}, ` +
+        `body was: ${error.error}`);
+    }
+    // return an ErrorObservable with a user-facing error message
+    return new ErrorObservable(
+      'Something bad happened; please try again later.');
+  };
 
 
 }

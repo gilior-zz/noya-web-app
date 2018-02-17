@@ -15,7 +15,7 @@ export interface TraverseItem {
 export interface HomePageText {
   Text?: string;
   ID?: number;
-  TimeStamp?:Date;
+  TimeStamp?: Date;
 }
 
 export interface HomePageTextResponse extends DataResponse {

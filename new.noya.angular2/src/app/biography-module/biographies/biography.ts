@@ -32,7 +32,7 @@ export class Biography extends BaseComponent implements OnInit {
     this.actions.dispatcAction({actiontype: LOAD_CVs, url: 'GetCV'});
 
     // var req: dal.DataRequest = { Language: dal.Language.Hebrew };
-    // this.dataService.ConnectToApiData(req, 'GetCV').subscribe(
+    // this.dataService.GetData(req, 'GetCV').subscribe(
     //     (res: dal.CVResponse) => { this.cvs = res.CVs },
     //     (err: dal.DataError) => { console.error('error in Biography in ngOnInit: ' + err.ErrorText); },
     //     () => { }

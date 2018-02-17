@@ -36,7 +36,7 @@ export class Home extends BaseComponent implements OnInit, AfterViewInit {
     this.actions.dispatcAction({actiontype: LOAD_HOME_PAGE_TEXT, url: 'GetHomePageText'});
     // let lang: Language = +this.cacheManager.GetFromCache('lang', '0');
     // let req: DataRequest = {Language: lang}
-    // this.dataService.ConnectToApiData(req, 'GetHomePageText').subscribe((res: HomePageTextResponse) => {
+    // this.dataService.GetData(req, 'GetHomePageText').subscribe((res: HomePageTextResponse) => {
     //     this.homePageText = res.items[0];
     //   },
     //   (err: DataError) => {

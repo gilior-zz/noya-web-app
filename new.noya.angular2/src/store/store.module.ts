@@ -9,7 +9,7 @@ import {Epics} from "./epics/epics";
 import {createEpicMiddleware} from "redux-observable";
 import {
   CARDS_LOADED, CVs_LOADED, HOME_PAGE_TEXT_LOADED, IMGs_LOADED, LNKs_LOADED, LOAD_CARDS, LOAD_CVs, LOAD_HOME_PAGE_TEXT,
-  LOAD_IMGs, LOAD_LNKs, LOAD_PRGs, PRGs_LOADED
+  LOAD_IMGs, LOAD_LNKs, LOAD_PRGs, MSG_SNT, PRGs_LOADED, SND_MSG
 } from "./const";
 
 
@@ -33,6 +33,7 @@ export class StoreModule {
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_IMGs, IMGs_LOADED)),
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_PRGs, PRGs_LOADED)),
       createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_LNKs, LNKs_LOADED)),
+      createEpicMiddleware(this.epics.createDataServiceEpic(SND_MSG, MSG_SNT, 'PostData')),
     ];
     store.configureStore(rootReducer,
       initState, middleware,

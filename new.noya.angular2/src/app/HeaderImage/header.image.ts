@@ -54,7 +54,7 @@ export class HeaderImage implements OnInit {
 
     //var req: dal.MenuImageRequest = { Language: dal.Language.Hebrew, PathName: this.pageName };
 
-    //this.dataService.ConnectToApiData(req, 'api/Data/GetImageForMenuItem').subscribe(
+    //this.dataService.GetData(req, 'api/Data/GetImageForMenuItem').subscribe(
     //    (res: dal.MenuImageResponse) => {
     //        this.ImageURL = res.ImageURL; //console.log(this.ImageURL) }
     //        this.safeImage = this.sanitizer.bypassSecurityTrustStyle(`url('${this.ImageURL}')`);

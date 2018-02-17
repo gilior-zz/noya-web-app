@@ -28,7 +28,7 @@ export class Programs extends BaseComponent implements OnInit {
   ngOnInit() {
     this.actions.dispatcAction({actiontype: LOAD_PRGs, url: 'GetPrograms'})
     // var req: dal.DataRequest = { Language: dal.Language.Hebrew };
-    // this.dataService.ConnectToApiData(req, 'GetPrograms').subscribe(
+    // this.dataService.GetData(req, 'GetPrograms').subscribe(
     //     (res: dal.ProgramResponse) => { this.programs = res.items },
     //     (err: dal.DataError) => { console.error('error in items in ngOnInit: ' + err.ErrorText); },
     //     () => { }

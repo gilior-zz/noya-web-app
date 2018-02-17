@@ -5,6 +5,8 @@ import {QuestionBase} from '../model/question-base';
 import {questions} from './questions';
 import {CacheManager, DataService} from '../../services/services';
 import {DataError, Language, MessageRequest, MessageResponse} from '../../dal/models';
+import {Actions} from "../../../store/actions/actions";
+import {SND_MSG} from "../../../store/const";
 
 
 @Component({
@@ -18,32 +20,7 @@ export class Contact implements OnInit {
   form: FormGroup;
   payLoad = '';
 
-  constructor(private qcs: QuestionControlService, public cache: CacheManager,private dataService:DataService) {
-  }
-
-  ngOnInit() {
-    this.form = this.qcs.toFormGroup(questions);
-  }
-
-  onSubmit() {
-    this.isSubmitting = true;
-    var req: MessageRequest = {
-      Language: Language.Hebrew,
-      Message: {Sender: {Name: this.form.controls['name'].value, Email: this.form.controls['email'].value}, IP: '', Date: new Date(), Content: this.form.controls['content'].value}
-    };
-    this.dataService.ConnectToApiData
-    (req, 'SendMessage')
-      .subscribe
-      (
-        (res: MessageResponse) => {
-          // this.submitted = true;
-          this.isSubmitting = false;
-        },
-        (err: DataError) => {
-          // this.displaySubmitError = true;
-          this.isSubmitting = false;
-        }
-      )
+  constructor(private qcs: QuestionControlService, public cache: CacheManager, public actions: Actions) {
   }
 
   get isEng(): boolean {
@@ -58,5 +35,39 @@ export class Contact implements OnInit {
 
   get questions(): QuestionBase<any>[] {
     return questions;
+  }
+
+  ngOnInit() {
+    this.form = this.qcs.toFormGroup(questions);
+  }
+
+  onSubmit() {
+    this.isSubmitting = true;
+    var req: MessageRequest = {
+      Language: Language.Hebrew,
+      Message: {
+        Sender: {Name: this.form.controls['name'].value, Email: this.form.controls['email'].value},
+        IP: '',
+        Date: new Date(),
+        Content: this.form.controls['content'].value
+      }
+    };
+    // this.dataService.PostData
+    // (req, 'SendMessage')
+    //   .subscribe
+    //   (
+    //     (res: MessageResponse) => {
+    //       // this.submitted = true;
+    //       this.isSubmitting = false;
+    //     },
+    //     (err: DataError) => {
+    //       // this.displaySubmitError = true;
+    //       this.isSubmitting = false;
+    //     }
+    //   )
+
+    this.actions.dispatcAction({actiontype: SND_MSG, url: 'SendMessage'}, req);
+
+
   }
 }

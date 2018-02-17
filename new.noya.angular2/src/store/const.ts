@@ -12,6 +12,8 @@ export const LOAD_PRGs="LOAD_PRGs";
 export const PRGs_LOADED="PRGs_LOADED";
 export const LOAD_LNKs="LOAD_LNKs";
 export const LNKs_LOADED="LNKs_LOADED";
+export const SND_MSG="SND_MSG";
+export const MSG_SNT="MSG_SNT";
 
 
 

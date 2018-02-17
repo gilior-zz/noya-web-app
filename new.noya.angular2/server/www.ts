@@ -1,7 +1,9 @@
 import * as express from 'express';
 import {join} from 'path';
 import {
-  handleCVRoutes, handleHomeRoutes, handleImgRoutes, handleLinksRoutes, handleMsgRoutes, handlePrgRoutes,
+  handleCVRoutes, handleHomeRoutes, handleImgRoutes, handleLinksRoutes, handleMsgRoutes, handleMsgRoutesB,
+  handleMsgRoutesC,
+  handlePrgRoutes,
   handleTraverseItemsRoutes
 } from "./routes";
 import {Request, Response} from "express";
@@ -50,8 +52,8 @@ app.get('/api/Data/GetPrograms', (req, res) => {
 app.get('/api/Data/GetLinks', (req, res) => {
   handleLinksRoutes(req, res)
 });
-app.get('/api/Data/SendMessage', (req, res) => {
-  handleMsgRoutes(req, res)
+app.post('/api/Data/SendMessage', (req, res) => {
+  handleMsgRoutesC(req, res)
 });
 
 // Server static files from /browser

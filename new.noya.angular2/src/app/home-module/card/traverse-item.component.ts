@@ -91,8 +91,8 @@ export class TraverseItemComponent implements OnInit {
     //console.log(this.message);
     this.isSubmitting = true;
     var req: MessageRequest = {Message: this.message, Language: Language.Hebrew};
-    this.dataService.ConnectToApiData
-    (req, 'SendMessage')
+    this.dataService.GetData
+    ('SendMessage')
       .subscribe
       (
         (res: MessageResponse) => {

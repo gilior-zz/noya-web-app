@@ -4,7 +4,7 @@ import {Injectable} from "@angular/core";
 import {dispatch} from "@angular-redux/store";
 import {CARDS_LOADED, LOAD_CARDS} from "../const";
 
-export type Payload = any[];
+export type Payload = any;
 
 export interface MetaData {
   actiontype: string;

@@ -178,7 +178,7 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
     //   NextData: dal.NextData.Currnet,
     //   DataAmount: dal.DataAmount.Single
     // }
-    // this.dataService.ConnectToApiData(req, 'GetImages').subscribe(
+    // this.dataService.GetData(req, 'GetImages').subscribe(
     //   (res: dal.ImageGalleryResponse) => {
     //     this.mainImagePath = this.sanitizer.bypassSecurityTrustStyle(`url('${res.Image.ImageURL
     //       }')`);
@@ -197,7 +197,7 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
     //   NextData: dal.NextData.Currnet,
     //   DataAmount: dal.DataAmount.All
     // }
-    // this.dataService.ConnectToApiData(req, 'GetImages').subscribe(
+    // this.dataService.GetData(req, 'GetImages').subscribe(
     //   (res: dal.ImageGalleryResponse) => {
     //     this.images = res.items;
     //   },

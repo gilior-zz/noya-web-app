@@ -11,6 +11,8 @@ import {FSA} from "flux-standard-action";
 
 @Injectable()
 export class Epics {
+  lang: Language = +this.cacheManager.GetFromCache('lang', '0');
+  req: DataRequest = {Language: this.lang}
   private SessionActions: any;
   private http: any;
   private BASE_URL: any;
@@ -18,14 +20,12 @@ export class Epics {
   constructor(public dataService: DataService, private cacheManager: CacheManager, public  homeAPIActions: Actions, private yts: youTubeService) {
   }
 
-  lang: Language = +this.cacheManager.GetFromCache('lang', '0');
-  req: DataRequest = {Language: this.lang}
-
-  public createDataServiceEpic(actionType: string, nextActionType?: string): Epic<FSA<Payload, MetaData>, IAppState> {
-
+  public createDataServiceEpic(actionType: string, nextActionType?: string, verb: string = 'GetData'): Epic<FSA<Payload, MetaData>, IAppState> {
     return (action$, store) => action$.ofType(actionType)
-      .switchMap((action: FSA<Payload, MetaData>) => this.dataService.ConnectToApiData(this.req, action.meta.url)
-        .map((data) => this.homeAPIActions.doAction({actiontype: nextActionType}, data.items)))
+      .switchMap((action: FSA<Payload, MetaData>) => this.dataService[verb](action.meta.url, action.payload)
+        .map((data) => {
+          return this.homeAPIActions.doAction({actiontype: nextActionType}, data.items)
+        }))
   }
 
   public createVideoEpic(): Epic<FSA<Payload, MetaData>, IAppState> {
