@@ -7,7 +7,7 @@
   OnDestroy,
   Injector,
   ViewChild,
-  ElementRef
+  ElementRef, ChangeDetectionStrategy
 } from '@angular/core'
 import * as dal from '../../dal/models'
 import * as services from '../../services/services'
@@ -26,7 +26,8 @@ declare var Swiper: any;
 
   templateUrl: './pictures.html',
 
-  styleUrls: ['./pictures.scss']
+  styleUrls: ['./pictures.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 
 })
 
@@ -39,6 +40,21 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
   isEnglish: boolean = false;
   HTMLDivElement: HTMLDivElement
   example1SwipeOptions: any;
+  selectedID: number;
+  @ViewChild('myModal') modal: ElementRef;
+  @Output() headImageUpdate = new EventEmitter<string>();
+
+  constructor(public sanitizer: DomSanitizer, private dataService: services.DataService, private cacheManager: services.CacheManager, public router: Router, private injector: Injector, public actions: Actions) {
+    super(injector);
+    this.mainImagePath = this.mainImagePath = this.sanitizer.bypassSecurityTrustStyle(`Content/Sources/loading.gif`);
+    ;
+
+    this.example1SwipeOptions = {
+      slidesPerView: 4,
+      loop: false,
+      spaceBetween: 5
+    };
+  }
 
   ngOnDestroy() {
 
@@ -49,8 +65,6 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
 
   }
 
-  selectedID: number;
-
   setClasses(imgId: number) {
     let classes = {
       item: true,
@@ -59,11 +73,16 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
     return classes;
   }
 
-
   onLeft() {
 
     this.LoadRequestedImage(dal.NextData.Prev);
   }
+
+  // onSelectedImage(img: dal.ImageGalleryItem) {
+  //   var currentImageID = img.ID;
+  //   this.cacheManager.StoreInCache('currentImageID', currentImageID);
+  //   this.LoadRequestedImage(dal.NextData.Currnet);
+  // }
 
   onKeyUp(event: KeyboardEvent) {
 
@@ -130,39 +149,17 @@ export class Pictures extends BaseComponent implements OnInit, AfterViewInit, On
     this.LoadRequestedImage(dal.NextData.Next);
   }
 
-  // onSelectedImage(img: dal.ImageGalleryItem) {
-  //   var currentImageID = img.ID;
-  //   this.cacheManager.StoreInCache('currentImageID', currentImageID);
-  //   this.LoadRequestedImage(dal.NextData.Currnet);
-  // }
-
   isSelected(img: dal.ImageGalleryItem): boolean {
     return this.cacheManager.GetFromCache('currentImageID', -1) == img.ID;
   }
 
-  @ViewChild('myModal') modal: ElementRef;
-
   onImageSedlected($event) {
     //  this.modal['nativeElement']['modal']('show');
-    this.selectedID=$event;
+    this.selectedID = $event;
     if (window.innerWidth < 992) return;
     const id = '#' + this.modal.nativeElement.id;
     $(id)['modal']();
   }
-
-  constructor(public sanitizer: DomSanitizer, private dataService: services.DataService, private cacheManager: services.CacheManager, public router: Router, private injector: Injector, public actions: Actions) {
-    super(injector);
-    this.mainImagePath = this.mainImagePath = this.sanitizer.bypassSecurityTrustStyle(`Content/Sources/loading.gif`);
-    ;
-
-    this.example1SwipeOptions = {
-      slidesPerView: 4,
-      loop: false,
-      spaceBetween: 5
-    };
-  }
-
-  @Output() headImageUpdate = new EventEmitter<string>();
 
   ngOnInit() {
     this.actions.dispatcAction({actiontype: LOAD_IMGs, url: 'GetImages'})

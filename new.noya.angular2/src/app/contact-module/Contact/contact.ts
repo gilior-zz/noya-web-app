@@ -52,19 +52,7 @@ export class Contact implements OnInit {
         Content: this.form.controls['content'].value
       }
     };
-    // this.dataService.PostData
-    // (req, 'SendMessage')
-    //   .subscribe
-    //   (
-    //     (res: MessageResponse) => {
-    //       // this.submitted = true;
-    //       this.isSubmitting = false;
-    //     },
-    //     (err: DataError) => {
-    //       // this.displaySubmitError = true;
-    //       this.isSubmitting = false;
-    //     }
-    //   )
+
 
     this.actions.dispatcAction({actiontype: SND_MSG, url: 'SendMessage'}, req);
 

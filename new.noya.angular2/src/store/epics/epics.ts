@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {CacheManager, DataService, youTubeService} from "../../app/services/services";
 import {ActionsObservable, Epic} from "redux-observable";
-import {CARDS_LOADED, LOAD_CARDS, LOAD_VIDs, VIDs_LOADED} from "../const";
+import {CARDS_LOADED, LOAD_CARDS, LOAD_VIDs, MSG_SNT, VIDs_LOADED} from "../const";
 import {DataRequest, Language, TraverseItemResponse, VideoItem} from "../../app/dal/models";
 
 import {Observable} from "rxjs/Observable";
@@ -24,7 +24,7 @@ export class Epics {
     return (action$, store) => action$.ofType(actionType)
       .switchMap((action: FSA<Payload, MetaData>) => this.dataService[verb](action.meta.url, action.payload)
         .map((data) => {
-          return this.homeAPIActions.doAction({actiontype: nextActionType}, data.items)
+          return this.homeAPIActions.doAction({actiontype: nextActionType}, nextActionType === MSG_SNT ? true : data)
         }))
   }
 

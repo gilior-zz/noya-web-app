@@ -21,8 +21,9 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
+
             <div *ngFor="let img of imgs$|async;let first=first" [ngClass]="setClasses(img.ID)">
-              <ny-picture-carousel  [img]="img"></ny-picture-carousel>
+              <ny-picture-carousel [img]="img"></ny-picture-carousel>
             </div>
           </div>
           <!-- Controls -->

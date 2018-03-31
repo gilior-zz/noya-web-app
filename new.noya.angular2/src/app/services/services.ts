@@ -4,7 +4,7 @@ import * as model from '../dal/models'
 import {Observable} from 'rxjs/Observable';
 
 import {HttpClient, HttpErrorResponse, HttpParams} from '@angular/common/http';
-import {DataRequest, DataResponse, Language} from "../dal/models";
+import {DataRequest, DataResponse, Language, MessageRequest} from "../dal/models";
 import {ErrorObservable} from "rxjs/observable/ErrorObservable";
 import {catchError} from "rxjs/operators";
 
@@ -73,10 +73,14 @@ export class DataService {
   }
 
   /** POST: add a new hero to the database */
-  public PostData(url: string, req: any): Observable<DataResponse> {
+  public PostData(url: string, request: any): Observable<DataResponse> {
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
-    console.log('req', req)
-    return this.http.post<DataResponse>(`${this.nodeEndPoint}${url}`, req, {
+    var num_lang: Language = +this.CacheManager.GetFromCache('lang', '0');
+    if (!request) request = {};
+    request.Language = num_lang;
+    let body = JSON.stringify({request});
+    console.log('req', request)
+    return this.http.post<DataResponse>(`${this.endPoint}${url}`, body, {
       headers: {'content-type': 'application/json'},
       params: new HttpParams().set('lang', Language[lang])
     })
@@ -90,16 +94,14 @@ export class DataService {
 
 
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
-    return this.http.get<DataResponse>(`${this.nodeEndPoint}${url}`, {
+    console.log('req', {})
+    return this.http.post<DataResponse>(`${this.endPoint}${url}`, {"request": {"Language": 0}}, {
       headers: {'content-type': 'application/json'},
       params: new HttpParams().set('lang', Language[lang])
     })
-      .do(res => {
-
-        res.items = res[Object.keys(res)[0]]
-      })
-
-      .catch(this.handleError)
+      .pipe(
+        catchError(this.handleError)
+      );
   }
 
 
@@ -190,7 +192,10 @@ export class TranslationService {
     'email is required': 'יש להזין אימייל',
     'content is required': 'יש להזין תוכן',
     'invalid email': 'אימייל אינו חוקי',
-    'language': 'שפה'
+    'language': 'שפה',
+    'message sent to noya': 'הודעה נשלחה לנויה',
+    'continue': 'המשך',
+    'success': 'הצלחה'
 
   };
 

@@ -9,9 +9,11 @@ import {BaseComponent} from '../common/base.component'
 import {pageNameService} from '../services/page-name.service'
 import {Observable} from "rxjs/Observable";
 import {select} from "@angular-redux/store";
+import {MSG_SNT} from "../../store/const";
+import {Actions} from "../../store/actions/actions";
 
 
-//import * as blabla from './youmax/js/source_unpacked/jquery.youmax.js'
+
 
 @Component({
   selector: "ny-root",
@@ -22,13 +24,13 @@ import {select} from "@angular-redux/store";
 
 
 export class AppComponent extends BaseComponent implements OnInit, AfterViewInit {
-  @select('msg_snt') msg_snt$: Observable<boolean>;
+  @select('msg_snt') msg_snt$: Observable<{}>;
   currentPathName: string;
   menuItems: dal.MenuItem[];
   currentView: string;
   headerImage: string;
 
-  constructor(private elementRef: ElementRef, private dataService: services.DataService, private cacheManager: services.CacheManager, private router: Router, private injector: Injector, private pn: pageNameService, private yts: services.youTubeService) {
+  constructor(private elementRef: ElementRef, private dataService: services.DataService, private cacheManager: services.CacheManager, private router: Router, private injector: Injector, private pn: pageNameService, private yts: services.youTubeService, public  homeAPIActions: Actions) {
     super(injector);
 
   }
@@ -56,6 +58,10 @@ export class AppComponent extends BaseComponent implements OnInit, AfterViewInit
   get displayMenu(): boolean {
     //console.log('in displayMenu');
     return !this.pn.currentUrl.includes('galilu')
+  }
+
+  onDismiss() {
+    this.goToHomePage();
   }
 
   public UpdateImage(imageUrl: string) {
@@ -106,11 +112,21 @@ export class AppComponent extends BaseComponent implements OnInit, AfterViewInit
 
   }
 
+  goToHomePage() {
+    this.homeAPIActions.doAction({actiontype: MSG_SNT}, false)
+    this.router.navigate(['/'])
+  }
+
 
   ngOnInit() {
-    this.msg_snt$.subscribe((msg_snt) => {
-
-    })
+    // this.msg_snt$.subscribe((msg_snt) => {
+    //   if (msg_snt)
+    //     setTimeout(() => {
+    //       this.homeAPIActions.doAction({actiontype: MSG_SNT}, [false])
+    //       this.router.navigate(['/'])
+    //     }, 2000)
+    //
+    // })
 
   }
 

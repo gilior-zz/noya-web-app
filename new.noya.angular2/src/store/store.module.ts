@@ -27,12 +27,12 @@ export class StoreModule {
     const middleware = [
       //createLogger(),
       createEpicMiddleware(this.epics.createVideoEpic()),
-      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CARDS, CARDS_LOADED)),
-      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_HOME_PAGE_TEXT, HOME_PAGE_TEXT_LOADED)),
-      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CVs, CVs_LOADED)),
-      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_IMGs, IMGs_LOADED)),
-      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_PRGs, PRGs_LOADED)),
-      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_LNKs, LNKs_LOADED)),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CARDS, CARDS_LOADED,'PostData')),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_HOME_PAGE_TEXT, HOME_PAGE_TEXT_LOADED,'PostData')),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_CVs, CVs_LOADED,'PostData')),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_IMGs, IMGs_LOADED,'PostData')),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_PRGs, PRGs_LOADED,'PostData')),
+      createEpicMiddleware(this.epics.createDataServiceEpic(LOAD_LNKs, LNKs_LOADED,'PostData')),
       createEpicMiddleware(this.epics.createDataServiceEpic(SND_MSG, MSG_SNT, 'PostData')),
     ];
     store.configureStore(rootReducer,

@@ -23,7 +23,7 @@ export class Actions {
       payload: payload,
     }
   };
-
+  @dispatch()
   doAction = (meta: MetaData, payload?: Payload): FSA<Payload, MetaData> => ({
     type: meta.actiontype,
     meta: meta,
