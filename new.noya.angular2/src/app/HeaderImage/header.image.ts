@@ -51,6 +51,8 @@ export class HeaderImage implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     console.log(this.headerRow)
+    setTimeout(()=>{this.setCurrentStyles(false)}, 0)
+
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
@@ -71,7 +73,6 @@ export class HeaderImage implements OnInit, AfterViewInit {
 
     //    })
   }
-
 
 
   setCurrentStyles(show) {
