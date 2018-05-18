@@ -11,6 +11,7 @@ import {Observable} from "rxjs/Observable";
 import {select} from "@angular-redux/store";
 import {MSG_SNT} from "../../store/const";
 import {Actions} from "../../store/actions/actions";
+import {environment} from "../../environments/environment";
 
 
 
@@ -119,6 +120,11 @@ export class AppComponent extends BaseComponent implements OnInit, AfterViewInit
 
 
   ngOnInit() {
+    if (environment.production) {
+      if (location.protocol === 'http:') {
+        window.location.href = location.href.replace('http', 'https');
+      }
+    }
     // this.msg_snt$.subscribe((msg_snt) => {
     //   if (msg_snt)
     //     setTimeout(() => {

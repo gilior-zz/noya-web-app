@@ -1,4 +1,4 @@
-﻿import { Component, Injector } from '@angular/core'
+﻿import {Component, EventEmitter, Injector, Output} from '@angular/core'
 import * as services from "../services/services"
 import * as dal from "../dal/models"
 
@@ -8,6 +8,7 @@ import { pageNameService } from '../services/page-name.service'
 @Component({ selector: 'main-menu', templateUrl: './menu.html', styleUrls: ['./menu.scss'] })
 
 export class MenuComponent extends BaseComponent {
+  @Output() onHide:EventEmitter<boolean>=new EventEmitter();
     currentPathName: string;
     menuItems: dal.MenuItem[];
     currentView: string;
@@ -17,7 +18,12 @@ export class MenuComponent extends BaseComponent {
 
     }
 
-    isCollapsed: boolean = true;
+   public changeCollpse(){
+      this.isCollapsed=!this.isCollapsed;
+      this.onHide.emit(this.isCollapsed);
+    }
+
+    isCollapsed: boolean = false;
 
     get pageName(): string { return this.pn.currentPageName; }
     public UpdateImage(imageUrl: string) {
