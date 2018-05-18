@@ -51,7 +51,10 @@ export class HeaderImage implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     console.log(this.headerRow)
-    setTimeout(()=>{this.setCurrentStyles(false)}, 0)
+    setTimeout(() => {
+      if (this.utiltyService.IsMobile)
+        this.setCurrentStyles(false)
+    }, 0)
 
   }
 
