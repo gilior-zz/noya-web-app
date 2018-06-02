@@ -1,10 +1,10 @@
 ﻿import {Injectable} from '@angular/core'
 
 import * as model from '../dal/models'
+import {DataResponse, Language} from '../dal/models'
 import {Observable} from 'rxjs/Observable';
 
 import {HttpClient, HttpErrorResponse, HttpParams} from '@angular/common/http';
-import {DataRequest, DataResponse, Language, MessageRequest} from "../dal/models";
 import {ErrorObservable} from "rxjs/observable/ErrorObservable";
 import {catchError} from "rxjs/operators";
 
@@ -73,7 +73,7 @@ export class DataService {
   }
 
   /** POST: add a new hero to the database */
-  public PostData(url: string, request: any): Observable<DataResponse> {
+  public PostData(url: string, request: any): Observable<DataResponse | {}> {
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
     var num_lang: Language = +this.CacheManager.GetFromCache('lang', '0');
     if (!request) request = {};
@@ -90,7 +90,7 @@ export class DataService {
   }
 
 
-  public GetData(url: string): Observable<DataResponse> {
+  public GetData(url: string): Observable<DataResponse | {}> {
 
 
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
@@ -118,7 +118,7 @@ export class DataService {
     }
     // return an ErrorObservable with a user-facing error message
     return new ErrorObservable(
-      'Something bad happened; please try again later.');
+    );
   };
 
 

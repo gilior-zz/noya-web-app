@@ -1,13 +1,12 @@
 import {Injectable} from "@angular/core";
 import {CacheManager, DataService, youTubeService} from "../../app/services/services";
-import {ActionsObservable, Epic} from "redux-observable";
-import {CARDS_LOADED, LOAD_CARDS, LOAD_VIDs, MSG_SNT, VIDs_LOADED} from "../const";
-import {DataRequest, Language, TraverseItemResponse, VideoItem} from "../../app/dal/models";
-
-import {Observable} from "rxjs/Observable";
+import {Epic, ofType} from "redux-observable";
+import {LOAD_VIDs, MSG_SNT, VIDs_LOADED} from "../const";
+import {DataRequest, Language, VideoItem} from "../../app/dal/models";
 import {IAppState} from "../states/state";
 import {Actions, MetaData, Payload} from "../actions/actions";
 import {FSA} from "flux-standard-action";
+import "rxjs-compat/add/operator/switchMap";
 
 @Injectable()
 export class Epics {
@@ -21,7 +20,7 @@ export class Epics {
   }
 
   public createDataServiceEpic(actionType: string, nextActionType?: string, verb: string = 'GetData'): Epic<FSA<Payload, MetaData>, IAppState> {
-    return (action$, store) => action$.ofType(actionType)
+    return (action$, store) => action$.pipe(ofType(actionType))
       .switchMap((action: FSA<Payload, MetaData>) => this.dataService[verb](action.meta.url, action.payload)
         .map((data) => {
           return this.homeAPIActions.doAction({actiontype: nextActionType}, nextActionType === MSG_SNT ? true : data)
@@ -31,7 +30,7 @@ export class Epics {
   public createVideoEpic(): Epic<FSA<Payload, MetaData>, IAppState> {
     let l = this.lang == Language.English ? 'en' : 'he';
     let items: Array<VideoItem> = [];
-    return (action$, store) => action$.ofType(LOAD_VIDs)
+    return (action$, store) => action$.ofType(['type'][LOAD_VIDs])
       .switchMap((action: FSA<Payload, MetaData>) => this.yts.fetchVideos()
         .map((data) => {
           (<Array<any>>data).forEach(j => {

@@ -1,26 +1,23 @@
-﻿import {Component, OnInit, AfterViewInit, Injector, HostListener, ElementRef} from "@angular/core"
+﻿import {AfterViewInit, Component, ElementRef, Injector, OnInit} from "@angular/core"
 
 import * as services from "../services/services"
 import * as dal from "../dal/models"
 import * as $ from 'jquery';
 
-import {Router, NavigationEnd} from '@angular/router'
+import {Router} from '@angular/router'
 import {BaseComponent} from '../common/base.component'
 import {pageNameService} from '../services/page-name.service'
 import {Observable} from "rxjs/Observable";
 import {select} from "@angular-redux/store";
 import {MSG_SNT} from "../../store/const";
 import {Actions} from "../../store/actions/actions";
-import {environment} from "../../environments/environment";
-
-
 
 
 @Component({
   selector: "ny-root",
   templateUrl: "./app.component.html",
   styleUrls: ['./app.component.scss'],
-  moduleId: module.id
+
 })
 
 
@@ -120,11 +117,11 @@ export class AppComponent extends BaseComponent implements OnInit, AfterViewInit
 
 
   ngOnInit() {
-    if (environment.production) {
-      if (location.protocol === 'http:') {
-        window.location.href = location.href.replace('http', 'https');
-      }
-    }
+    // if (environment.production) {
+    //   if (location.protocol === 'http:') {
+    //     window.location.href = location.href.replace('http', 'https');
+    //   }
+    // }
     // this.msg_snt$.subscribe((msg_snt) => {
     //   if (msg_snt)
     //     setTimeout(() => {

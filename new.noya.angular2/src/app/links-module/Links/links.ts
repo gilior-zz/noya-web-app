@@ -10,7 +10,7 @@ import {Observable} from "rxjs/Observable";
 
 @Component({
   templateUrl: "./links.html",
-  moduleId: module.id
+
 })
 
 export class Links extends BaseComponent implements OnInit {

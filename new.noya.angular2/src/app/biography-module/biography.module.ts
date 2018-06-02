@@ -6,14 +6,15 @@ import {BiographyRoutingModule} from './biography-routing.module';
 
 import {BiographyComponent} from './biography/biography.component';
 import {Biography} from './biographies/biography';
-import {CommonModule} from '@angular/common';
 
 @NgModule({
+  declarations: [BiographyComponent, Biography],
   imports: [
     SharedModule,
     BiographyRoutingModule
   ],
-  declarations: [Biography, BiographyComponent]
+
+
 })
 export class BiographyModule {
 }

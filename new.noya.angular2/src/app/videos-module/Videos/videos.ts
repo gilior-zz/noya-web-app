@@ -11,7 +11,7 @@ declare var youmax: any;
 
 @Component({
   templateUrl: './videos.html',
-  moduleId: module.id,
+
   styleUrls: ['./videos.scss']
 
 })
