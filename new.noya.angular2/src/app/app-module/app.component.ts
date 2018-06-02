@@ -1,4 +1,4 @@
-﻿import {AfterViewInit, Component, ElementRef, Injector, OnInit} from "@angular/core"
+import {AfterViewInit, Component, ElementRef, Injector, OnInit} from "@angular/core"
 
 import * as services from "../services/services"
 import * as dal from "../dal/models"
@@ -7,7 +7,7 @@ import * as $ from 'jquery';
 import {Router} from '@angular/router'
 import {BaseComponent} from '../common/base.component'
 import {pageNameService} from '../services/page-name.service'
-import {Observable} from "rxjs/Observable";
+import {Observable} from "rxjs";
 import {select} from "@angular-redux/store";
 import {MSG_SNT} from "../../store/const";
 import {Actions} from "../../store/actions/actions";

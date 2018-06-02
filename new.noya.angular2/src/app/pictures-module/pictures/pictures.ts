@@ -1,4 +1,4 @@
-﻿import {
+import {
   Component,
   OnInit,
   AfterViewInit,
@@ -16,7 +16,7 @@ import {DomSanitizer, SafeUrl, SafeResourceUrl, SafeScript, SafeStyle} from '@an
 import {BaseComponent} from '../../common/base.component'
 import {Router} from '@angular/router'
 import {select} from "@angular-redux/store";
-import {Observable} from "rxjs/Observable";
+import {Observable} from "rxjs";
 import {Actions} from "../../../store/actions/actions";
 import {LOAD_IMGs} from "../../../store/const";
 

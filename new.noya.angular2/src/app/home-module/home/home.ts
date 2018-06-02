@@ -1,4 +1,4 @@
-﻿import {Component, OnInit, Injector, AfterViewInit} from '@angular/core'
+import {Component, OnInit, Injector, AfterViewInit} from '@angular/core'
 import {BaseComponent} from '../../common/base.component'
 import {DataService, CacheManager} from '../../services/services'
 import {TraverseItem, DataRequest, Language, HomePageTextResponse, DataError, HomePageText} from '../../dal/models'
@@ -7,7 +7,7 @@ import {UtiltyService} from '../../services/utitlity'
 import {LOAD_HOME_PAGE_TEXT} from "../../../store/const";
 import {Actions} from "../../../store/actions/actions";
 import {select, select$} from "@angular-redux/store";
-import {Observable} from "rxjs/Observable";
+import {Observable} from "rxjs";
 
 
 @Component({

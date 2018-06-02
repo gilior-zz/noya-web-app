@@ -51,7 +51,7 @@
     "redux-logger": "",
     "redux-observable": "^0.18.0",
     "rxjs": "^6.2.0",
-    "rxjs-compat": "^6.0.0-rc.0",
+    "rxjs-compat": "^6.2.0",
     "tedious": "^2.3.1",
     "zone.js": "^0.8.26"
   },

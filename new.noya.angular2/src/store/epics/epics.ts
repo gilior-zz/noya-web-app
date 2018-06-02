@@ -1,3 +1,5 @@
+import {map, switchMap} from 'rxjs/operators';
+
 import {Injectable} from "@angular/core";
 import {CacheManager, DataService, youTubeService} from "../../app/services/services";
 import {Epic, ofType} from "redux-observable";
@@ -6,7 +8,7 @@ import {DataRequest, Language, VideoItem} from "../../app/dal/models";
 import {IAppState} from "../states/state";
 import {Actions, MetaData, Payload} from "../actions/actions";
 import {FSA} from "flux-standard-action";
-import "rxjs-compat/add/operator/switchMap";
+
 
 @Injectable()
 export class Epics {
@@ -20,23 +22,23 @@ export class Epics {
   }
 
   public createDataServiceEpic(actionType: string, nextActionType?: string, verb: string = 'GetData'): Epic<FSA<Payload, MetaData>, IAppState> {
-    return (action$, store) => action$.pipe(ofType(actionType))
-      .switchMap((action: FSA<Payload, MetaData>) => this.dataService[verb](action.meta.url, action.payload)
-        .map((data) => {
-          return this.homeAPIActions.doAction({actiontype: nextActionType}, nextActionType === MSG_SNT ? true : data)
-        }))
+    return (action$, store) => action$.pipe(ofType(actionType)).pipe(
+      switchMap((action: FSA<Payload, MetaData>) => this.dataService[verb](action.meta.url, action.payload)),
+      map((data) => {
+        return this.homeAPIActions.doAction({actiontype: nextActionType}, nextActionType === MSG_SNT ? true : data)
+      }))
   }
 
   public createVideoEpic(): Epic<FSA<Payload, MetaData>, IAppState> {
     let l = this.lang == Language.English ? 'en' : 'he';
     let items: Array<VideoItem> = [];
-    return (action$, store) => action$.ofType(['type'][LOAD_VIDs])
-      .switchMap((action: FSA<Payload, MetaData>) => this.yts.fetchVideos()
-        .map((data) => {
+    return (action$, store) => action$.ofType(['type'][LOAD_VIDs]).pipe(
+      switchMap((action: FSA<Payload, MetaData>) => this.yts.fetchVideos().pipe(
+        map((data) => {
           (<Array<any>>data).forEach(j => {
             items.push({title: j['snippet']['title'], videoId: j['snippet']['resourceId']['videoId'], lang: l})
           })
           return this.homeAPIActions.doAction({actiontype: VIDs_LOADED}, items)
-        }))
+        }))))
   }
 }

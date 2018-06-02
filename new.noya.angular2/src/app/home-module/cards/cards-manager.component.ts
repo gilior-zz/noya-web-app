@@ -7,7 +7,7 @@ import {UtiltyService} from '../../services/utitlity'
 import {IAppState} from '../../../store/states/state';
 import {NgRedux, select} from '@angular-redux/store';
 import {CARDS_LOADED, LOAD_CARDS} from '../../../store/const';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 
 import {Actions} from "../../../store/actions/actions";
 

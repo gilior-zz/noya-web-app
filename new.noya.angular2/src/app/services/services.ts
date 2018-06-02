@@ -1,12 +1,13 @@
-﻿import {Injectable} from '@angular/core'
+import {catchError, map} from 'rxjs/operators';
+
+import {Injectable} from '@angular/core'
 
 import * as model from '../dal/models'
 import {DataResponse, Language} from '../dal/models'
-import {Observable} from 'rxjs/Observable';
+import {Observable, of} from 'rxjs';
 
 import {HttpClient, HttpErrorResponse, HttpParams} from '@angular/common/http';
-import {ErrorObservable} from "rxjs/observable/ErrorObservable";
-import {catchError} from "rxjs/operators";
+
 
 @Injectable()
 export class CacheManager {
@@ -67,7 +68,7 @@ export class DataService {
   }
 
   public GetFileContent(filePath: string) {
-    return this.http.get(filePath).map(res => res)
+    return this.http.get(filePath).pipe(map(res => res))
     //.do(data => //console.log(data)) // eyeball results in the console
     //.catch(this.handleError)
   }
@@ -117,8 +118,7 @@ export class DataService {
         `body was: ${error.error}`);
     }
     // return an ErrorObservable with a user-facing error message
-    return new ErrorObservable(
-    );
+    return of(error)
   };
 
 
@@ -233,8 +233,8 @@ export class youTubeService {
     params = params.set('playlistId', 'UUO2Xi-wHrqM27neDaVrfebQ');
     params = params.set('maxResults', '50');
     params = params.set('key', 'AIzaSyBH2ltO-MFMiW7dftsCCM3w8F86M-kwDHM');
-    return this.http.get('https://www.googleapis.com/youtube/v3/playlistItems', {params: params}).map(
-      k => k['items'])
+    return this.http.get('https://www.googleapis.com/youtube/v3/playlistItems', {params: params}).pipe(map(
+      k => k['items']))
   }
 
 }

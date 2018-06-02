@@ -1,10 +1,10 @@
-﻿import {Component, OnInit, Injector, HostBinding} from '@angular/core'
+import {Component, OnInit, Injector, HostBinding} from '@angular/core'
 import {BaseComponent} from '../../common/base.component'
 import {Router} from '@angular/router'
 import * as services from '../../services/services'
 import * as dal from '../../dal/models'
 
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 import {Actions} from "../../../store/actions/actions";
 import {LOAD_CVs} from "../../../store/const";
 import {select} from "@angular-redux/store";

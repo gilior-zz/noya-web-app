@@ -1,4 +1,4 @@
-﻿import {Component, OnInit, Injector} from '@angular/core'
+import {Component, OnInit, Injector} from '@angular/core'
 
 import {BaseComponent} from '../../common/base.component'
 import {Router} from '@angular/router'
@@ -7,7 +7,7 @@ import * as dal from '../../dal/models'
 import {Actions} from "../../../store/actions/actions";
 import {LOAD_PRGs} from "../../../store/const";
 import {select} from "@angular-redux/store";
-import {Observable} from "rxjs/Observable";
+import {Observable} from "rxjs";
 
 @Component({
   templateUrl: "./programs.html",
