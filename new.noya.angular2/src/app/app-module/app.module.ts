@@ -26,13 +26,15 @@ import {GoogleAnalyticsService} from '../services/google-analytics';
 import {CoreModule} from '../common/core.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {StoreModule} from '../../store/store.module';
+import {ContactWidget} from "../contact-widget/contact-widget";
+import {ReactiveFormsModule} from "@angular/forms";
 //import {GaliluModule} from './galilu/galilu-module'
 
 
 declare var ga;
 
 @NgModule({
-  declarations: [AppComponent, HeaderImage, MenuComponent, LangBarComponent],
+  declarations: [AppComponent, HeaderImage, MenuComponent, LangBarComponent,ContactWidget],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -40,6 +42,7 @@ declare var ga;
     AppRoutingModule,
     CoreModule,
     StoreModule,
+    ReactiveFormsModule,
     ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
   ],
   bootstrap: [AppComponent],
