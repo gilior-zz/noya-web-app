@@ -43,6 +43,12 @@ export class AppComponent extends BaseComponent implements OnInit, AfterViewInit
     else return 'ltr'
   }
 
+  get oppositeDir():string{
+    let l = this.cacheManager.GetFromCache('lang', dal.Language.Hebrew);
+    if (l == dal.Language.Hebrew) return 'ltr';
+    else return 'rtl';
+  }
+
   get isHebrew(): boolean {
     let l = this.cacheManager.GetFromCache('lang', dal.Language.Hebrew) == dal.Language.Hebrew;
     return l;

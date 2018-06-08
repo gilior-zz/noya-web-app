@@ -14,6 +14,11 @@ export class CacheManager {
   constructor() {
   }
 
+  get Language(): Language {
+    let lang = this.GetFromCache('lang', Language.Hebrew);
+    return lang;
+  }
+
   public StoreInCache(key: string, value: any): void {
     sessionStorage.setItem(key, value);
   }
@@ -28,7 +33,6 @@ export class CacheManager {
   public RemoveFromCache(key: string): void {
     sessionStorage.removeItem(key);
   }
-
 
   public ClearCache(): void {
     sessionStorage.clear();
@@ -195,7 +199,9 @@ export class TranslationService {
     'language': 'שפה',
     'message sent to noya': 'הודעה נשלחה לנויה',
     'continue': 'המשך',
-    'success': 'הצלחה'
+    'success': 'הצלחה',
+    'send': 'שליחה',
+    'phone': 'טלפון'
 
   };
 
