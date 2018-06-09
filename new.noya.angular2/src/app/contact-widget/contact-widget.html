@@ -1,6 +1,7 @@
 <div *ngIf="showWidget" [dir]="dir" [@onContactVisibleChanged]="contactVisible" class="contact-widget">
   <div class="contact-widget--arrow">
-    <i (click)="contactVisible=!contactVisible" class="fas fa-sort-{{arrowUpDown}}"></i>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i (click)="contactVisible=!contactVisible" class="fas fa-caret-{{arrowUpDown}}"></i>
   </div>
 
   <form class="contact-widget--form" (ngSubmit)="onSubmit()" [formGroup]="contactWidgetForm">
