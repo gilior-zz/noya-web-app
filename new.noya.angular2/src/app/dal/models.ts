@@ -114,11 +114,11 @@ export interface CalendarRequest extends DataRequest {
 }
 
 export interface Program {
-  ID: number;
-  Name: string;
-  Text: string;
-  TimeStamp: Date;
-  Order: number;
+  ID?: number;
+  Name?: string;
+  Text?: string;
+  TimeStamp?: Date;
+  Order?: number;
 }
 
 
@@ -131,9 +131,9 @@ export interface CalendarItem {
 }
 
 export interface CV {
-  ID: number;
-  Text: string;
-  TimeStamp: Date;
+  ID?: number;
+  Text?: string;
+  TimeStamp?: Date;
 }
 
 export enum NextData {

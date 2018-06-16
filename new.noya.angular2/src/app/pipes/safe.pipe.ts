@@ -10,7 +10,7 @@ import * as dal from '../dal/models'
 export class SafeResourcePipe implements PipeTransform {
 
 
-    constructor(private dataService: services.DataService, private cacheManager: services.CacheManager, public sanitizer: DomSanitizer) {
+    constructor(public sanitizer: DomSanitizer) {
 
     }
     transform(value: string, resourceType: dal.ResourceType) {

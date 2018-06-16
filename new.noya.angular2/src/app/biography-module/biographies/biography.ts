@@ -1,4 +1,4 @@
-import {Component, OnInit, Injector, HostBinding} from '@angular/core'
+import {Component, OnInit, Injector, HostBinding, OnDestroy} from '@angular/core'
 import {BaseComponent} from '../../common/base.component'
 import {Router} from '@angular/router'
 import * as services from '../../services/services'
@@ -7,7 +7,10 @@ import * as dal from '../../dal/models'
 import {Observable} from 'rxjs';
 import {Actions} from "../../../store/actions/actions";
 import {LOAD_CVs} from "../../../store/const";
-import {select} from "@angular-redux/store";
+import {NgRedux, select} from "@angular-redux/store";
+import {IAppState} from "../../../store/states/state";
+import {CV} from "../../dal/models";
+import {Subscription} from "rxjs/Rx";
 
 @Component({
   templateUrl: "./biography.html",
@@ -16,12 +19,18 @@ import {select} from "@angular-redux/store";
 
 })
 
-export class Biography extends BaseComponent implements OnInit {
-  @select('biographies') cvs$: Observable<dal.CV[]>;
+export class Biography  implements OnInit,OnDestroy {
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
+  // @select('biographies') cvs$: Observable<dal.CV[]>;
+  cvs: CV[];
+  private subscription: Subscription;
 
 
-  constructor(private dataService: services.DataService, public router: Router, private injector: Injector, public actions: Actions) {
-    super(injector);
+  constructor(public actions: Actions,
+              public store: NgRedux<IAppState> ) {
+
   }
 
   //@HostBinding('@routeAnimation') routeAnimation = true;
@@ -30,7 +39,10 @@ export class Biography extends BaseComponent implements OnInit {
 
   ngOnInit() {
     this.actions.dispatcAction({actiontype: LOAD_CVs, url: 'GetCV'});
-
+    let obs = this.store.select('biographies');
+    this.subscription = obs.subscribe((cvs: dal.CV[]) => {
+      this.cvs = cvs;
+    })
     // var req: dal.DataRequest = { Language: dal.Language.Hebrew };
     // this.dataService.GetData(req, 'GetCV').subscribe(
     //     (res: dal.CVResponse) => { this.cvs = res.CVs },

@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'translate'
 })
 export class PPipe implements PipeTransform {
-  constructor(private translationService: TranslationService, private cacheManager: CacheManager) {
+  constructor(private translationService: TranslationService) {
 
     }
   transform(value: any, args?: any): string {
