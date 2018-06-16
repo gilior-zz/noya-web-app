@@ -1,10 +1,10 @@
-﻿import {Component, Input, OnInit} from '@angular/core';
+﻿import {Component, OnInit} from '@angular/core';
 import {FormGroup} from '@angular/forms';
 import {QuestionControlService} from '../model/question-control.service';
 import {QuestionBase} from '../model/question-base';
 import {questions} from './questions';
-import {CacheManager, DataService} from '../../services/services';
-import {DataError, Language, MessageRequest, MessageResponse} from '../../dal/models';
+import {CacheManager} from '../../services/services';
+import {Language, MessageRequest} from '../../dal/models';
 import {Actions} from "../../../store/actions/actions";
 import {SND_MSG} from "../../../store/const";
 
