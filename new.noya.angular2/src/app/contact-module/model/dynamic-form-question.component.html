@@ -1,6 +1,7 @@
 <div [formGroup]="form">
   <div class="form-group">
-    <label [attr.for]="question.key">{{question.label|translate}}<span class="asterisk" *ngIf="question.required">*</span> </label>
+    <label [attr.for]="question.key">{{question.label|translate}}<span class="asterisk"
+                                                                       *ngIf="question.required">*</span> </label>
 
     <div [ngSwitch]="question.controlType">
 
@@ -8,7 +9,8 @@
              [formControlName]="question.key"
              [id]="question.key" [type]="question.type" [email]="question.key==='email'">
 
-      <textarea [disabled]="disabled" *ngSwitchCase="'textarea'" [formControlName]="question.key" class="form-control input-lg" rows="8"
+      <textarea [disabled]="disabled" *ngSwitchCase="'textarea'" [formControlName]="question.key"
+                class="form-control input-lg" rows="8"
                 class="form-control input-lg"
       ></textarea>
 

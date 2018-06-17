@@ -11,8 +11,8 @@ import {QuestionBase} from './question-base';
 })
 export class DynamicFormQuestionComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['disabled'])
-      console.log(changes['disabled'])
+    // if (changes['disabled'])
+    //   console.log(changes['disabled'])
   }
 
   @Input() question: QuestionBase<any>;
