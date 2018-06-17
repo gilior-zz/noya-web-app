@@ -1,13 +1,14 @@
-import {Component, OnInit} from "@angular/core";
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {CacheManager} from "../services/services";
-import {Language, MessageRequest} from "../dal/models";
-import {animate, state, style, transition, trigger} from "@angular/animations";
-import {Actions} from "../../store/actions/actions";
-import {SND_MSG} from "../../store/const";
-import {select} from "@angular-redux/store";
-import {Observable} from "rxjs/Rx";
-import {NavigationEnd, Router} from "@angular/router";
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {CacheManager} from '../services/services';
+import {Language, MessageRequest} from '../dal/models';
+import {animate, state, style, transition, trigger} from '@angular/animations';
+import {Actions} from '../../store/actions/actions';
+import {SND_MSG} from '../../store/const';
+import {NgRedux} from '@angular-redux/store';
+import {Observable} from 'rxjs/Rx';
+import {NavigationEnd, Router} from '@angular/router';
+import {IAppState} from '../../store/states/state';
 
 @Component({
   selector: 'contact-widget',
@@ -25,13 +26,14 @@ import {NavigationEnd, Router} from "@angular/router";
 })
 export class ContactWidget implements OnInit {
   contactVisible = false;
-  @select('msg_snt') msg_snt$: Observable<{}>;
+  msg_snt$: Observable<{}>;
   public contactWidgetForm: FormGroup;
   public showWidget = true;
 
   constructor(private formBuilder: FormBuilder,
               private cacheManager: CacheManager,
-              public actions: Actions, private router: Router) {
+              public actions: Actions, private router: Router,
+              public store: NgRedux<IAppState>) {
     this.buildForm();
   }
 
@@ -64,7 +66,8 @@ export class ContactWidget implements OnInit {
   }
 
   ngOnInit(): void {
-    this.msg_snt$
+    const obs = this.store.select('msg_snt');
+    obs
       .subscribe(() => {
         this.contactWidgetForm.reset({
           email: ['noyaschleien@gmail.com'],
@@ -75,10 +78,10 @@ export class ContactWidget implements OnInit {
     this.router.events
       .subscribe((event) => {
         if (event instanceof NavigationEnd) {
-         this.showWidget=!event.url.toLowerCase().includes('contact')
+          this.showWidget = !event.url.toLowerCase().includes('contact')
         }
       });
-    this.showWidget=!this.router.url.toLowerCase().includes('contact')
+    this.showWidget = !this.router.url.toLowerCase().includes('contact')
   }
 
   public onSubmit() {
