@@ -1,13 +1,14 @@
-import {async, ComponentFixture, fakeAsync, flush, TestBed} from "@angular/core/testing";
-import {Contact} from "./contact";
-import {QuestionControlService} from "../model/question-control.service";
-import {CacheManager, TranslationService} from "../../services/services";
-import {Actions} from "../../../store/actions/actions";
-import {questions} from "./questions";
-import {DynamicFormQuestionComponent} from "../model/dynamic-form-question.component";
-import {By} from "@angular/platform-browser";
-import {ReactiveFormsModule} from "@angular/forms";
-import {PPipe} from "../../pipes/pipes.pipe";
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {Contact} from './contact';
+import {QuestionControlService} from '../model/question-control.service';
+import {CacheManager, TranslationService} from '../../services/services';
+import {Actions} from '../../../store/actions/actions';
+import {questions} from './questions';
+import {DynamicFormQuestionComponent} from '../model/dynamic-form-question.component';
+import {By} from '@angular/platform-browser';
+import {NgForm, ReactiveFormsModule} from '@angular/forms';
+import {PPipe} from '../../pipes/pipes.pipe';
+
 
 describe('contact', () => {
   let qcs, cache, actions
@@ -23,7 +24,7 @@ describe('contact', () => {
         TranslationService,
         QuestionControlService,
         CacheManager,
-        Actions,
+        Actions
       ]
     })
     fixture = TestBed.createComponent(Contact);
@@ -34,19 +35,47 @@ describe('contact', () => {
     let dynamicFormQuestionComponents = fixture.debugElement.queryAll(By.directive(DynamicFormQuestionComponent));
     expect(dynamicFormQuestionComponents.length).toEqual(questions.length)
   })
-  it(`should disable button on submit`, fakeAsync(() => {
-    let form = fixture.debugElement.query(By.css('form'));
-    let button = fixture.debugElement.query(By.css('button'));
-    console.log(button);
-    button.properties['disabled'] = false;
-    fixture.detectChanges();
+  describe(`form sanity`, () => {
+    let ngForm, form, button, dynamicFormQuestionComponents;
+    let legalValue = 'lslfgjlgnjhklkgnjldfkg@dfgdfgfdgsdgbdgf.com';
+    let ilegalValue = '';
+    beforeEach(() => {
+      fixture.detectChanges();
+      ngForm = fixture.debugElement.query(By.css('form')).componentInstance.form as NgForm;
+      form = fixture.debugElement.query(By.css('form'));
+      button = fixture.debugElement.query(By.css('button'));
+      dynamicFormQuestionComponents = fixture.debugElement.queryAll(By.directive(DynamicFormQuestionComponent));
+    })
 
-    form.triggerEventHandler('submit', null);
 
+    describe('send button sanity', () => {
 
-    flush();
-    fixture.detectChanges();
-    console.log(button);
-    expect(button.properties['disabled'].toString()).toBe('true');
-  }))
+      it('button is enabled for valid fields', () => {
+        dynamicFormQuestionComponents.forEach((dynamicFormQuestionComponent) => {
+          ngForm.controls[dynamicFormQuestionComponent.componentInstance.question.key].setValue(legalValue);
+          fixture.detectChanges();
+          let item = dynamicFormQuestionComponent.query(By.css('input, textarea'));
+        })
+        expect(button.properties['disabled'].toString()).toBe('false');
+      })
+      it('button is disabled for invalid fields', () => {
+        dynamicFormQuestionComponents.forEach((dynamicFormQuestionComponent) => {
+          ngForm.controls[dynamicFormQuestionComponent.componentInstance.question.key].setValue(ilegalValue);
+          fixture.detectChanges();
+        })
+        expect(button.properties['disabled'].toString()).toBe('true');
+      })
+      it('send button is disabled after sending (wait 2 seconds!!)', () => {
+        dynamicFormQuestionComponents.forEach((dynamicFormQuestionComponent) => {
+          ngForm.controls[dynamicFormQuestionComponent.componentInstance.question.key].setValue(legalValue);
+          fixture.detectChanges();
+        })
+        setTimeout(() => {
+          form.triggerEventHandler('submit', null);
+          fixture.detectChanges();
+          expect(button.properties['disabled'].toString()).toBe('true');
+        }, 2000)
+      })
+    })
+  })
 })
