@@ -8,6 +8,7 @@ import {Actions} from '../../store/actions/actions';
 import {of} from 'rxjs/index';
 import {NgRedux} from '@angular-redux/store';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {By} from "@angular/platform-browser";
 
 describe('contact-widget', () => {
   let mockNgRedux = jasmine.createSpyObj(['select'])
@@ -27,8 +28,9 @@ describe('contact-widget', () => {
     fixture.detectChanges();
   })
   it('hide widget if showWidget is false', () => {
-    fixture.componentInstance.showWidget = false;
+    fixture.componentInstance.showWidget = true ;
     fixture.detectChanges();
-    expect(fixture.componentInstance).toBeTruthy();
+    console.log('fixture',fixture.componentInstance)
+    expect(fixture.debugElement.query(By.css('div'))).toBeTruthy();
   })
 })
