@@ -9,7 +9,7 @@ import { CacheManager } from '../services/services'
 
 @Component({
     selector: 'lang-bar',
-    moduleId: module.id, templateUrl: './lang-bar.component.html',
+    templateUrl: './lang-bar.component.html',
     styleUrls: ['./lang-bar.component.scss'],
     animations: [
         trigger(

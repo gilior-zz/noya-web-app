@@ -5,12 +5,13 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CommonModule} from '@angular/common';
+import { DialogComponent } from './dialog.component';
 
 
 @NgModule({
-  imports: [],
-  declarations: [PPipe, SafeResourcePipe],
-  exports: [FormsModule, PPipe, SafeResourcePipe, ReactiveFormsModule, HttpClientModule,CommonModule]
+  imports: [CommonModule],
+  declarations: [PPipe, SafeResourcePipe, DialogComponent],
+  exports: [FormsModule, PPipe, SafeResourcePipe, ReactiveFormsModule, HttpClientModule,CommonModule, DialogComponent]
 })
 export class SharedModule {
 }

@@ -5,11 +5,21 @@ import {UtiltyService} from '../services/utitlity';
 import {pageNameService} from '../services/page-name.service';
 import * as services from '../services/services';
 import {Title} from '@angular/platform-browser';
-import {Action} from '../../store/actions/actions';
+
+import {Actions} from "../../store/actions/actions";
+
+import {HTTP_INTERCEPTORS} from "@angular/common/http";
+import {CachingInterceptor} from "../services/noop-interceptor.service";
+
+import {LocalStorageCache} from "../services/local-storage-cache";
 
 @NgModule({
 
-  providers: [pageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService, UtiltyService, GoogleAnalyticsService, Action]
+  providers: [pageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService, UtiltyService, GoogleAnalyticsService,Actions,LocalStorageCache,{
+    provide: HTTP_INTERCEPTORS,
+    useClass: CachingInterceptor,
+    multi: true,
+  }]
 })
 export class CoreModule {
 }

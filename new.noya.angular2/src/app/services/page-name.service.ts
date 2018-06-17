@@ -1,7 +1,7 @@
-﻿import {Injectable} from '@angular/core'
+import {Injectable} from '@angular/core'
 import {Router, NavigationEnd} from '@angular/router'
 
-import { Subject }    from 'rxjs/Subject';
+import { Subject }    from 'rxjs';
 @Injectable()
 
 export class pageNameService {

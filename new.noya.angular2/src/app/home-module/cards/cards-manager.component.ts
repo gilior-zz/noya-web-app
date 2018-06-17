@@ -6,9 +6,10 @@ import {UtiltyService} from '../../services/utitlity'
 
 import {IAppState} from '../../../store/states/state';
 import {NgRedux, select} from '@angular-redux/store';
-import {CARDS_LOADED} from '../../../store/const';
-import {Observable} from 'rxjs/Observable';
-import {Action} from '../../../store/actions/actions';
+import {CARDS_LOADED, LOAD_CARDS} from '../../../store/const';
+import {Observable} from 'rxjs';
+
+import {Actions} from "../../../store/actions/actions";
 
 
 @Component({
@@ -23,10 +24,9 @@ export class CardsManagerComponent extends BaseComponent implements OnInit {
   trios: Array<Array<TraverseItem>>;
   dous: Array<Array<TraverseItem>>;
 
-  constructor(private dataService: DataService, private cacheManager: CacheManager, private injector: Injector, private utiltyService: UtiltyService, public store: NgRedux<IAppState>, private  action: Action) {
+  constructor(private dataService: DataService, private cacheManager: CacheManager, private injector: Injector, private utiltyService: UtiltyService, public actions: Actions) {
     super(injector);
-    this.trios = new Array<Array<TraverseItem>>();
-    this.dous = new Array<Array<TraverseItem>>();
+
     this.cards$.subscribe((val) => {
       console.log(val);
     })
@@ -51,14 +51,7 @@ export class CardsManagerComponent extends BaseComponent implements OnInit {
 
 
   ngOnInit() {
-    let lang: Language = +this.cacheManager.GetFromCache('lang', '0');
-    let req: DataRequest = {Language: lang}
-    this.dataService.ConnectToApiData(req, 'GetTraverseItems').subscribe((res: TraverseItemResponse) => {
-        this.action.postCards(res.TraverseItems);
-      },
-      (err: DataError) => {
-      }
-    );
+    this.actions.dispatcAction({actiontype:LOAD_CARDS,url:'GetTraverseItems'});
   }
 }
 

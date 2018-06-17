@@ -2,6 +2,9 @@ import {QuestionBase} from '../model/question-base';
 import {TextboxQuestion} from '../model/question-textbox';
 import {TextAreaQuestion} from '../model/question-textarea';
 
+let name_min = 4
+let email_min = 10
+
 
 export const questions: QuestionBase<any>[] = [
   new TextboxQuestion({
@@ -10,8 +13,8 @@ export const questions: QuestionBase<any>[] = [
     value: '',
     required: true,
     order: 1,
-    minLength: 4,
-    errMsgs: {'required': 'name is required', 'minlength': 'must be at least ' + this.minLength + ' chars'}
+    minLength: name_min,
+    errMsgs: {'required': 'name is required', 'minlength': 'must be at least ' + name_min + ' chars'}
   }),
 
   new TextboxQuestion({
@@ -27,8 +30,8 @@ export const questions: QuestionBase<any>[] = [
     label: 'content',
     required: true,
     order: 3,
-    minLength: 10,
-    errMsgs: {'required': 'content is required', 'minlength': 'must be at least ' + this.minLength + ' chars'}
+    minLength: email_min,
+    errMsgs: {'required': 'content is required', 'minlength': 'must be at least ' + email_min + ' chars'}
   })
 
 ]

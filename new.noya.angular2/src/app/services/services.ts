@@ -1,15 +1,22 @@
-﻿import {Injectable} from '@angular/core'
+import {catchError, map} from 'rxjs/operators';
+
+import {Injectable} from '@angular/core'
 
 import * as model from '../dal/models'
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/toPromise';
-import 'rxjs/add/operator/map';
-import {HttpClient, HttpParams} from '@angular/common/http';
+import {DataResponse, Language} from '../dal/models'
+import {Observable, of} from 'rxjs';
+
+import {HttpClient, HttpErrorResponse, HttpParams} from '@angular/common/http';
+
 
 @Injectable()
 export class CacheManager {
   constructor() {
+  }
+
+  get Language(): Language {
+    let lang = this.GetFromCache('lang', Language.Hebrew);
+    return lang;
   }
 
   public StoreInCache(key: string, value: any): void {
@@ -27,7 +34,6 @@ export class CacheManager {
     sessionStorage.removeItem(key);
   }
 
-
   public ClearCache(): void {
     sessionStorage.clear();
   }
@@ -40,10 +46,9 @@ export class CacheManager {
 
 export class DataService {
 
-  constructor(private http: HttpClient, private CacheManager: CacheManager) {
-  }
+  endPoint: string = 'https://noyaschleien.com/api/Data/'
 
-  //public ConnectToApiData(request: model.DataRequest, url: string): Promise<model.DataResponse> {
+  //public GetData(request: model.DataRequest, url: string): Promise<model.DataResponse> {
   //    let body = JSON.stringify({ request });
   //    let headers = new Headers({ 'Content-Type': 'application/json' });
   //    let options = new RequestOptions({ headers: headers });
@@ -61,35 +66,64 @@ export class DataService {
   //    let body = res.json();
   //    return body;
   //}
+  nodeEndPoint: string = '/api/Data/'
+
+  constructor(private http: HttpClient, private CacheManager: CacheManager) {
+  }
 
   public GetFileContent(filePath: string) {
-    return this.http.get(filePath).map(res => res)
+    return this.http.get(filePath).pipe(map(res => res))
     //.do(data => //console.log(data)) // eyeball results in the console
     //.catch(this.handleError)
   }
 
-
-  public ConnectToApiData(request: model.DataRequest, url: string): Observable<model.DataResponse> {
-
-    const endPoint: string = 'http://noyaschleien.com/api/Data/'
+  /** POST: add a new hero to the database */
+  public PostData(url: string, request: any): Observable<DataResponse | {}> {
     var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
-    request.Language = lang;
+    var num_lang: Language = +this.CacheManager.GetFromCache('lang', '0');
+    if (!request) request = {};
+    request.Language = num_lang;
     let body = JSON.stringify({request});
-
-    return this.http.post<model.DataResponse>(`${endPoint}${url}`, body, {headers: {'content-type': 'application/json'}})
-      .map(res => res)
-      .catch(this.handleError)
+    console.log('req', request)
+    return this.http.post<DataResponse>(`${this.endPoint}${url}`, body, {
+      headers: {'content-type': 'application/json'},
+      params: new HttpParams().set('lang', Language[lang])
+    })
+      .pipe(
+        catchError(this.handleError)
+      );
   }
 
 
-  private handleError(error: any) {
-    // In a real world app, we might use a remote logging infrastructure
-    // We'd also dig deeper into the error to get a better message
-    let errMsg = (error.message) ? error.message :
-      error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-    console.error(errMsg); // log to console instead
-    return Observable.throw(errMsg);
+  public GetData(url: string): Observable<DataResponse | {}> {
+
+
+    var lang = this.CacheManager.GetFromCache('lang', model.Language.Hebrew);
+    console.log('req', {})
+    return this.http.post<DataResponse>(`${this.endPoint}${url}`, {"request": {"Language": 0}}, {
+      headers: {'content-type': 'application/json'},
+      params: new HttpParams().set('lang', Language[lang])
+    })
+      .pipe(
+        catchError(this.handleError)
+      );
   }
+
+
+  private handleError(error: HttpErrorResponse) {
+    if (error.error instanceof ErrorEvent) {
+      // A client-side or network error occurred. Handle it accordingly.
+      console.error('An error occurred:', error.error.message);
+    } else {
+      // The backend returned an unsuccessful response code.
+      // The response body may contain clues as to what went wrong,
+      console.error(
+        `Backend returned code ${error.status}, ` +
+        `body was: ${error.error}`);
+    }
+    // return an ErrorObservable with a user-facing error message
+    return of(error)
+  };
 
 
 }
@@ -107,9 +141,12 @@ export class DialogService {
    * Returns promise resolving to `true`=confirm or `false`=cancel
    */
   confirm(message?: string) {
-    return new Promise<boolean>((resolve, reject) =>
-      resolve(window.confirm(message || 'Is it OK?')));
-  };
+    return new Promise<boolean>((resolve, reject) => {
+      return resolve(window.confirm(message || 'Is it OK?'))
+    })
+  }
+
+
 }
 
 export class LogService {
@@ -159,7 +196,12 @@ export class TranslationService {
     'email is required': 'יש להזין אימייל',
     'content is required': 'יש להזין תוכן',
     'invalid email': 'אימייל אינו חוקי',
-    'language': 'שפה'
+    'language': 'שפה',
+    'message sent to noya': 'הודעה נשלחה לנויה',
+    'continue': 'המשך',
+    'success': 'הצלחה',
+    'send': 'שליחה',
+    'phone': 'טלפון'
 
   };
 
@@ -197,8 +239,8 @@ export class youTubeService {
     params = params.set('playlistId', 'UUO2Xi-wHrqM27neDaVrfebQ');
     params = params.set('maxResults', '50');
     params = params.set('key', 'AIzaSyBH2ltO-MFMiW7dftsCCM3w8F86M-kwDHM');
-    return this.http.get('https://www.googleapis.com/youtube/v3/playlistItems', {params: params}).map(
-      k => k['items'])
+    return this.http.get('https://www.googleapis.com/youtube/v3/playlistItems', {params: params}).pipe(map(
+      k => k['items']))
   }
 
 }

@@ -13,4 +13,6 @@ export class PictureCarouselComponent implements OnInit {
   ngOnInit() {
   }
 
+
+
 }

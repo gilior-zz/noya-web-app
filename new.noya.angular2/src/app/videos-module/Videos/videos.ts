@@ -3,13 +3,15 @@ import {BaseComponent} from '../../common/base.component'
 import {Router} from '@angular/router'
 import {youTubeService, CacheManager} from '../../services/services'
 import {VideoItem, Language} from '../../dal/models'
+import {Actions} from "../../../store/actions/actions";
+import {LOAD_VIDs} from "../../../store/const";
 
 
 declare var youmax: any;
 
 @Component({
   templateUrl: './videos.html',
-  moduleId: module.id,
+
   styleUrls: ['./videos.scss']
 
 })
@@ -18,7 +20,11 @@ export class Videos extends BaseComponent implements OnInit, AfterViewInit {
   youmaxObj: any;
   ImageURL: string;
 
-  constructor(public router: Router, private injector: Injector, private yts: youTubeService, private cacheManager: CacheManager) {
+  constructor(public router: Router
+    , private injector: Injector
+    , private yts: youTubeService
+    , private cacheManager: CacheManager
+    , public actions: Actions) {
     super(injector);
     this.videos = new Array<VideoItem>();
   }
@@ -52,9 +58,11 @@ export class Videos extends BaseComponent implements OnInit, AfterViewInit {
   videos: Array<VideoItem>;
 
   ngOnInit() {
+    this.actions.dispatcAction({actiontype:LOAD_VIDs})
     let cachedLang = this.cacheManager.GetFromCache('lang', Language.Hebrew);
     let lang = cachedLang == Language.English ? 'en' : 'he';
-    this.yts.fetchVideos().subscribe(i => (<Array<any>>i).forEach(j => {
+    this.yts.fetchVideos().subscribe(i =>
+      (<Array<any>>i).forEach(j => {
 
         this.videos.push({title: j['snippet']['title'], videoId: j['snippet']['resourceId']['videoId'], lang: lang})
 

@@ -1,25 +1,20 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from "@angular/core/testing";
+import {ProgramComponent} from "./program.component";
+import {SafeResourcePipe} from "../../pipes/safe.pipe";
 
-import { ProgramComponent } from './program.component';
-
-describe('ProgramComponent', () => {
-  let component: ProgramComponent;
+describe('program.component', () => {
   let fixture: ComponentFixture<ProgramComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ProgramComponent ]
-    })
-    .compileComponents();
-  }));
-
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProgramComponent);
-    component = fixture.componentInstance;
+    TestBed.configureTestingModule({
+      declarations: [ProgramComponent, SafeResourcePipe]
+    })
+    fixture = TestBed.createComponent(ProgramComponent)
+    fixture.componentInstance.prg = {Text: 'some text'}
     fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  })
+  it('should render text into div', () => {
+    let l = fixture.nativeElement.querySelector('div')
+    let ll = l.textContent;
+    expect(ll).toBe('some text')
+  })
+})
