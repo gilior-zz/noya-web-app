@@ -101,6 +101,10 @@ export class ContactWidget implements OnInit {
     this.contactVisible = false;
   }
 
+  onClick(){
+    this.contactVisible=!this.contactVisible
+  }
+
   private buildForm() {
     this.contactWidgetForm = this.formBuilder.group({
       email: ['noyaschleien@gmail.com'],
