@@ -18,7 +18,7 @@ export class Home implements OnInit, OnDestroy {
   private subscription: Subscription;
 
   constructor(public actions: Actions,
-              private utiltyService: UtiltyService,
+              public utiltyService: UtiltyService,
               public store: NgRedux<IAppState>) {
 
   }

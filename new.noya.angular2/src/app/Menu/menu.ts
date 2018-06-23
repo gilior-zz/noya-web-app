@@ -64,10 +64,7 @@ export class MenuComponent extends BaseComponent {
     //}
 
 
-    get displayMenu(): boolean {
-        //console.log('in displayMenu');
-        return !this.pn.currentUrl.includes('galilu')
-    }
+
     changeToEnglish() {
         this.cacheManager.StoreInCache("lang", dal.Language.English);
         document.location.reload();

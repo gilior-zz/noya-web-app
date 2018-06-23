@@ -3,7 +3,7 @@ import { Language } from '../dal/models'
 import { CacheManager } from './services'
 @Injectable()
 export class UtiltyService {
-    constructor(private cacheManager: CacheManager) { }
+    constructor(public cacheManager: CacheManager) { }
     get IsHebrewMode(): boolean { return this.cacheManager.GetFromCache('lang', 0) == Language.Hebrew; }
 
     get IsMobile(): boolean { return window.innerWidth <= 767; }
