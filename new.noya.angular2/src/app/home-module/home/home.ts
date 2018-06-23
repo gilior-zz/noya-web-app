@@ -1,13 +1,10 @@
-import {Component, OnInit, Injector, AfterViewInit} from '@angular/core'
-import {BaseComponent} from '../../common/base.component'
-import {DataService, CacheManager} from '../../services/services'
-import {TraverseItem, DataRequest, Language, HomePageTextResponse, DataError, HomePageText} from '../../dal/models'
-import {Router} from '@angular/router'
+import {Component, OnDestroy, OnInit} from '@angular/core'
 import {UtiltyService} from '../../services/utitlity'
 import {LOAD_HOME_PAGE_TEXT} from "../../../store/const";
 import {Actions} from "../../../store/actions/actions";
-import {select, select$} from "@angular-redux/store";
-import {Observable} from "rxjs";
+import {NgRedux} from "@angular-redux/store";
+import {IAppState} from "../../../store/states/state";
+import {Subscription} from "rxjs/Rx";
 
 
 @Component({
@@ -16,15 +13,13 @@ import {Observable} from "rxjs";
 })
 
 
-export class Home extends BaseComponent implements OnInit, AfterViewInit {
-  @select('homePageText') homePageText$: string;
+export class Home implements OnInit, OnDestroy {
+  public homePageText: string;
+  private subscription: Subscription;
 
-
-  constructor(public router: Router, private injector: Injector, public actions: Actions, private cacheManager: CacheManager, private utiltyService: UtiltyService) {
-    super(injector);
-  }
-
-  ngAfterViewInit(): void {
+  constructor(public actions: Actions,
+              private utiltyService: UtiltyService,
+              public store: NgRedux<IAppState>) {
 
   }
 
@@ -32,16 +27,22 @@ export class Home extends BaseComponent implements OnInit, AfterViewInit {
     return this.utiltyService.IsHebrewMode;
   }
 
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
+
+  ngAfterViewInit(): void {
+
+  }
+
   ngOnInit() {
+
     this.actions.dispatcAction({actiontype: LOAD_HOME_PAGE_TEXT, url: 'GetHomePageText'});
-    // let lang: Language = +this.cacheManager.GetFromCache('lang', '0');
-    // let req: DataRequest = {Language: lang}
-    // this.dataService.GetData(req, 'GetHomePageText').subscribe((res: HomePageTextResponse) => {
-    //     this.homePageText = res.items[0];
-    //   },
-    //   (err: DataError) => {
-    //   }
-    // );
+
+    let obs = this.store.select('homePageText');
+    this.subscription = obs.subscribe((homePageText: string) => {
+      this.homePageText = homePageText;
+    })
   }
 
 
