@@ -4,7 +4,7 @@ import {Router, NavigationEnd} from '@angular/router'
 import { Subject }    from 'rxjs';
 @Injectable()
 
-export class pageNameService {
+export class PageNameService {
     private pageName: string;
     private pageNameSubject = new Subject();
     pageNameEvent$ = this.pageNameSubject.asObservable();

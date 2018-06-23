@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {GoogleAnalyticsService} from '../services/google-analytics';
 import {UtiltyService} from '../services/utitlity';
-import {pageNameService} from '../services/page-name.service';
+import {PageNameService} from '../services/page-name.service';
 import * as services from '../services/services';
 import {Title} from '@angular/platform-browser';
 
@@ -15,7 +15,7 @@ import {LocalStorageCache} from "../services/local-storage-cache";
 
 @NgModule({
 
-  providers: [pageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService, UtiltyService, GoogleAnalyticsService,Actions,LocalStorageCache,{
+  providers: [PageNameService, services.CacheManager, services.DataService, services.DialogService, services.LogService, services.TranslationService, Title, services.youTubeService, UtiltyService, GoogleAnalyticsService,Actions,LocalStorageCache,{
     provide: HTTP_INTERCEPTORS,
     useClass: CachingInterceptor,
     multi: true,

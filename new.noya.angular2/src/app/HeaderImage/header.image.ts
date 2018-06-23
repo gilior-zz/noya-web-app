@@ -2,7 +2,7 @@
 import {DomSanitizer, SafeStyle} from '@angular/platform-browser';
 import {ActivatedRouteSnapshot, Router, RouterStateSnapshot} from '@angular/router'
 import * as services from '../services/services'
-import {pageNameService} from '../services/page-name.service'
+import {PageNameService} from '../services/page-name.service'
 import {UtiltyService} from "../services/utitlity";
 
 @Component({
@@ -28,7 +28,7 @@ export class HeaderImage implements OnInit, AfterViewInit {
   currentStyles: {};
 
   //ImageURL: SafeUrl;
-  constructor(private pn: pageNameService,
+  constructor(private pn: PageNameService,
               private dataService: services.DataService,
               private logService: services.LogService,
               public sanitizer: DomSanitizer,
