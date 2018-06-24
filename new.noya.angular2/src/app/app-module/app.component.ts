@@ -6,7 +6,7 @@ import * as $ from 'jquery';
 
 import {Router} from '@angular/router'
 import {BaseComponent} from '../common/base.component'
-import {pageNameService} from '../services/page-name.service'
+import {PageNameService} from '../services/page-name.service'
 import {Observable} from "rxjs";
 import {select} from "@angular-redux/store";
 import {MSG_SNT} from "../../store/const";
@@ -28,7 +28,7 @@ export class AppComponent extends BaseComponent implements OnInit, AfterViewInit
   currentView: string;
   headerImage: string;
 
-  constructor(private elementRef: ElementRef, private dataService: services.DataService, private cacheManager: services.CacheManager, private router: Router, private injector: Injector, private pn: pageNameService, private yts: services.youTubeService, public  homeAPIActions: Actions) {
+  constructor(private elementRef: ElementRef, private dataService: services.DataService, private cacheManager: services.CacheManager, private router: Router, private injector: Injector, private pn: PageNameService, private yts: services.youTubeService, public  homeAPIActions: Actions) {
     super(injector);
 
   }

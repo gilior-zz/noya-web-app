@@ -186,7 +186,7 @@ export interface Message {
 }
 
 export interface Link {
-  ID: number;
+  ID?: number;
   Text_Heb?: string;
   Text?: string;
   Address_Heb?: string;

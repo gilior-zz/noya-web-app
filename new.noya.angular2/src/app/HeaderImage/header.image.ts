@@ -1,4 +1,4 @@
-﻿import {AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core'
+﻿﻿import {AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core'
 import {DomSanitizer, SafeStyle} from '@angular/platform-browser';
 import {ActivatedRouteSnapshot, Router, RouterStateSnapshot} from '@angular/router'
 import {pageNameService} from '../services/page-name.service'
