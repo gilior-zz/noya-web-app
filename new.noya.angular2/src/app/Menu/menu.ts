@@ -13,7 +13,10 @@ export class MenuComponent extends BaseComponent {
     menuItems: dal.MenuItem[];
     currentView: string;
     headerImage: string;
-    constructor(private dataService: services.DataService, private cacheManager: services.CacheManager, private router: Router, private injector: Injector, private pn: pageNameService, private yts: services.youTubeService) {
+    constructor(private cacheManager: services.CacheManager,
+                private router: Router,
+                private injector: Injector,
+                private pn: pageNameService) {
         super(injector);
 
     }

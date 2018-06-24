@@ -11,6 +11,8 @@ export class UtiltyService {
     get IsTablet(): boolean { return window.innerWidth > 991 && window.innerWidth <= 1199 }
     get IsDesktop(): boolean { return window.innerWidth > 1199 }
 
+
+
 }
 
 

@@ -1,9 +1,7 @@
-﻿import {Component, OnInit, Input} from '@angular/core';
-import {trigger, state, style, transition, animate} from '@angular/animations'
-import {Language, Message, MessageRequest, MessageResponse, DataError, Person, TraverseItem} from '../../dal/models'
+﻿import {Component, Input, OnInit} from '@angular/core';
+import {animate, state, style, transition, trigger} from '@angular/animations'
+import {Message, Person, TraverseItem} from '../../dal/models'
 import * as $ from 'jquery';
-
-import {DataService, CacheManager} from '../../services/services'
 
 @Component({
   selector: 'traverse-item',
@@ -14,7 +12,7 @@ import {DataService, CacheManager} from '../../services/services'
   animations: [
 
     trigger('contentImageState', [
-      state('active', style({opacity: 1,visibility: 'visible', display: 'inline'})),
+      state('active', style({opacity: 1, visibility: 'visible', display: 'inline'})),
       state('inactive', style({opacity: 0, visibility: 'hidden', display: 'none'})),
       //transition('active => inactive', [
       //    style({ opacity: 1 }),
@@ -43,8 +41,16 @@ export class TraverseItemComponent implements OnInit {
   isCollapsed: boolean;
   @Input() traverseItem: TraverseItem;
   person: Person = {Email: '', Name: ''};
+  contentImageState: string = 'active';
+  contentTextState: string = 'inactive';
+  isImageMode: boolean = true;
+  displaySubmitError: boolean;
+  isSubmitting: boolean;
+  submitted: boolean;
+  message: Message;
+  modalState: string = 'none';
 
-  constructor(private dataService: DataService) {
+  constructor() {
   }
 
   ngOnInit() {
@@ -57,22 +63,11 @@ export class TraverseItemComponent implements OnInit {
     $(content).height(`${l}px`);
   }
 
-  contentImageState: string = 'active';
-  contentTextState: string = 'inactive';
-  isImageMode: boolean = true;
-
   toggleImageMode() {
-    this.isImageMode = !this.isImageMode
+    this.isImageMode = !this.isImageMode;
     this.contentImageState = this.isImageMode ? 'active' : 'inactive';
     this.contentTextState = this.isImageMode ? 'inactive' : 'active';
   }
-
-  displaySubmitError: boolean;
-  isSubmitting: boolean;
-  submitted: boolean;
-  message: Message;
-
-  modalState: string = 'none';
 
   public toggleModalState(state: string): void {
     //console.log(this.modalState);
@@ -87,22 +82,4 @@ export class TraverseItemComponent implements OnInit {
   }
 
 
-  onSubmit() {
-    //console.log(this.message);
-    this.isSubmitting = true;
-    var req: MessageRequest = {Message: this.message, Language: Language.Hebrew};
-    this.dataService.GetData
-    ('SendMessage')
-      .subscribe
-      (
-        (res: MessageResponse) => {
-          this.submitted = true;
-          this.isSubmitting = false;
-        },
-        (err: DataError) => {
-          this.displaySubmitError = true;
-          this.isSubmitting = false;
-        }
-      )
-  }
 }
