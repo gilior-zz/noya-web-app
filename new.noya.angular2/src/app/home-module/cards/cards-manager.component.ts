@@ -17,7 +17,7 @@ import {Subscription} from 'rxjs/Rx';
 })
 
 export class CardsManagerComponent implements OnInit, OnDestroy {
-  private cards: Array<TraverseItem>;
+  public cards: Array<TraverseItem>;
   private subscription: Subscription;
 
   constructor(private utiltyService: UtiltyService,

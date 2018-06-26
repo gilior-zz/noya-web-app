@@ -1,7 +1,7 @@
 ﻿﻿import {AfterViewInit, Component, Input, OnInit, ViewChild} from '@angular/core'
 import {DomSanitizer, SafeStyle} from '@angular/platform-browser';
 import {ActivatedRouteSnapshot, Router, RouterStateSnapshot} from '@angular/router'
-import {pageNameService} from '../services/page-name.service'
+import {PageNameService} from '../services/page-name.service'
 import {UtiltyService} from '../services/utitlity';
 
 @Component({
@@ -29,7 +29,7 @@ export class HeaderImage implements OnInit, AfterViewInit {
 
 
   //ImageURL: SafeUrl;
-  constructor(private pn: pageNameService,
+  constructor(private pn: PageNameService,
               public sanitizer: DomSanitizer,
               public router: Router,
               public utiltyService: UtiltyService) {

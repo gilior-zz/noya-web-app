@@ -4,12 +4,13 @@ import {LangBarComponent} from '../LangBar/lang-bar.component';
 import {MenuComponent} from '../Menu/menu';
 import {PPipe} from '../pipes/pipes.pipe';
 import {RouterTestingModule} from '@angular/router/testing';
-import {pageNameService} from '../services/page-name.service';
+
 import {UtiltyService} from '../services/utitlity';
 import {CacheManager, TranslationService} from '../services/services';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {By} from '@angular/platform-browser';
 import {SafeResourcePipe} from '../pipes/safe.pipe';
+import {PageNameService} from '../services/page-name.service';
 
 describe('header.image', () => {
   let fixture: ComponentFixture<HeaderImage>
@@ -17,7 +18,7 @@ describe('header.image', () => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, BrowserAnimationsModule],
       declarations: [HeaderImage, LangBarComponent, PPipe, MenuComponent],
-      providers: [pageNameService, UtiltyService, CacheManager, TranslationService]
+      providers: [PageNameService, UtiltyService, CacheManager, TranslationService]
     })
     fixture = TestBed.createComponent(HeaderImage);
     fixture.detectChanges();

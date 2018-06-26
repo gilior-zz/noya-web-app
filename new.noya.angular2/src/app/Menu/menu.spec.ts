@@ -1,11 +1,11 @@
-import {ComponentFixture, TestBed} from "@angular/core/testing";
-import {MenuComponent} from "./menu";
-import {CacheManager, TranslationService} from "../services/services";
-import {PageNameService} from "../services/page-name.service";
-import {Router} from "@angular/router";
-import {Directive, HostListener, Input, OnInit} from "@angular/core";
-import {By} from "@angular/platform-browser";
-import {PPipe} from "../pipes/pipes.pipe";
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {MenuComponent} from './menu';
+import {CacheManager, TranslationService} from '../services/services';
+import {PageNameService} from '../services/page-name.service';
+import {Router} from '@angular/router';
+import {Directive, HostListener, Input, OnInit} from '@angular/core';
+import {By} from '@angular/platform-browser';
+import {PPipe} from '../pipes/pipes.pipe';
 
 @Directive({
   selector: '[routerLink]'
@@ -55,5 +55,19 @@ describe('menu test:', () => {
 
       expect(isCollapsed).toEqual(false)
     }, 1000)
+  })
+
+  it('should update navigaeTo on anchor click (afer 1 second)', () => {
+    setTimeout(() => {
+      let a = fixture.debugElement.query(By.css('a'));
+      a.triggerEventHandler('click', null);
+      fixture.detectChanges();
+      let mockRouterLink = fixture.debugElement.query(By.directive(MockRouterLink));
+      let mockRouterLinkDirective = mockRouterLink.injector.get(MockRouterLink);
+      let navigaeTo = mockRouterLinkDirective.navigaeTo;
+      expect(navigaeTo).toEqual('home')
+    }, 1000)
+
+
   })
 })

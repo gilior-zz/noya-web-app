@@ -11,7 +11,7 @@ describe('cards-manager.component', () => {
     })
     TestBed.createComponent(CardsManagerComponent);
   })
-  it('should display correct number of items', () => {
+  xit('should display correct number of items', () => {
     let traverseItemComponents = fixture.debugElement.query(By.directive(TraverseItemComponent))
     expect()
   })
